@@ -1,0 +1,92 @@
+--- 
+    location: Altitude Kanata
+    style: indoor bouldering
+    description:
+      A brief description of the climbing session
+    date: 2020-07-18
+    time:
+      start: 10:00 AM
+      end: 11:30 PM
+    climbers: 
+      - Nancy Lam
+      - Brandon Hua
+      - Carissa Wong
+      - Alvin Tam
+      - Austin Do
+      - Roy Saavedra
+      - Tamami Ichimura
+      - Daniel Alievsky
+      - Bilal Khalid
+    injury: 
+        - false
+        - Add a description here
+    session_counter:
+      - grade: VB/V0
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V0/V1
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V1/V2
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V2/V3
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V3/V4
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V4/V5
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V5/V6
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: V6/V7
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: comp-style
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0
+      - grade: ungraded
+        flash: 0
+        redpoint: 0
+        repeat: 0
+        attempts: 0 
+    climbs:
+        - name: Describe the problem or give it a name
+          location: slab / left overhang / comp wall / cave / right overhang / slabish
+          style:
+              - dynamic
+              - crimp
+              - compression
+              - overhang
+              - competition
+              - coordination
+          grade: comp / squad circuit / V Scale / Font
+          flash: 0
+          redpoint: 0
+          repeat: 0
+          attempts: 0
+          notes:
+    media:
+        - URL_to_image
+        - URL_to_video
