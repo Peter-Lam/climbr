@@ -3,6 +3,9 @@
 
 import datetime
 import socket
+import os
+import yaml
+import common.file_util as file
 
 
 def is_valid_date(value, raise_error=False):
@@ -58,3 +61,29 @@ def is_valid_kibana_config(config, raise_error=False):
             raise Exception(f"Error - api limit must be greater than 0")
         return False
     return True
+
+
+def is_number():
+    print("TODO: Check if number is valid - 0 or higher and integer ")
+
+
+def is_dir(path):
+    print("TODO: Check if it's directory, otherwise throw and error")
+    # if not path:
+    # return
+    path = get_real_path(path)
+    if not os.path.isdir(path):
+        msg = f"{path} is not a directory."
+        raise IOError(msg)
+    return path
+
+
+def is_file():
+    print("TODO: Check if it's a file, otherwise throw and error")
+
+
+def climbing_log(log):
+    '''
+    TODO
+    '''
+    return None

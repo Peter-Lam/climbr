@@ -13,6 +13,9 @@
     injury: 
       - false
       - Add a description here
+    media:
+      - URL_to_image
+      - URL_to_video
     session_counter:
       - grade: VB
         onsight: 0
@@ -74,6 +77,9 @@
         attempts: 2
         notes:
           Any notes about the climb here
+        media:
+          - URL_to_image
+          - URL_to_video
       - name: Shitty Paperboy
         location: Hog
         style:
@@ -85,6 +91,4 @@
         attempts: 5
         notes:
           Any notes about the climb here
-    media:
-      - URL_to_image
-      - URL_to_video
+        media:
