@@ -9,3 +9,7 @@ def strip_brackets(value):
     :rtype: string
     '''
     return value.replace('[', '').replace(']', '').strip()
+
+def convert_grades(grade):
+    # TODO: Convert climbing grades to normalize data
+    return None
