@@ -1,0 +1,115 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Afternoon light climbing session today. Spent some more time in the Quarry, to warm up and work on technique.
+  Redpointed a pink overhang on the second attempt today (V3/V4).
+date: 2020-07-25
+time:
+  start: 4:00 PM
+  end: 5:30 PM
+climbers: 
+  - Brandon Hua
+  - Carissa Wong
+media:
+  - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+session_counter:
+  - grade: VB/V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: V0/V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    redpoint: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+  - grade: V4/V5
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5/V6
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - VB/V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V0/V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V1/V2
+    redpoint: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V2/V3
+    onsight: 0
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V4/V5
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+climbs:
+  - name: pink overhang 
+    location: comp wall
+    style:
+      - overhang
+    grade: V3/V4
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+    notes:
+      Got it on the second attempt. Not too challenging but it was good to work on overhang problems
+    media:
+      - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
