@@ -1,94 +1,120 @@
 --- 
-    location: Hog's Back Falls
-    style: outdoor bouldering
-    description:
-      Optional - Description and notes of the climbing session
-    date: YYYY-MM-DD
-    time:
-      start: HH:MM AM/PM
-      end: HH:MM AM/PM
-    climbers: 
-      - Person A
-      - Person B
-    injury: 
-      - false
-      - Add a description here
+location: Hog's Back Falls
+# some options: indoor bouldering, outdoor bouldering, indoor lead, outdoor lead, auto-belay, speed
+# multiple styles can be added to a session (outdoor bouldering, outdoor lead)
+style: outdoor bouldering
+description:
+  A brief description of the climbing session
+  Can span multiple lines if needed
+date: YYYY-MM-DD
+time:
+  start: HH:MM AM/PM
+  end: HH:MM AM/PM
+climbers: 
+  - Person A
+  - Person B
+# You can leave this blank if not injured
+injury: 
+  - false
+  - Add a description here
+# Links to any media (images, videos) related to this climbing session
+media:
+  - URL_to_image
+  - URL_to_video
+session_counter:
+  # Enter a grade, it can be format you want as long as you are consistent (V Scale, Font, Dankyu, ungraded ...)
+  # This template shows range between two grades since that's how Altitude grades problems, however this can be changed for your gym
+  # ---- Terminology ----
+  # Onsight - Completing a problem on your first try - without beta from others (typically not used indoors, so you can remove this section if you want)
+  # Flash - Completing a problem on your first try, beta from others is allowed
+  # Redpoint - Completing a problem for the first time but with multiple attempts (ie. Finishing V3/V4 after 5 attempts)
+  # Attempts - Trying a problem
+  - grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V6
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+# This section is for logging individual climbs, can be useful for tracking projects
+climbs:
+  # If you are projecting a problem, make sure to name it the same every time
+  - name: Calf City
+    # Specific boulder name or location
+    location: Hog
+    # Some suggested styles: [compression, coordination, competition, crimp, dynamic, overhang, power]
+    # Each climb can have multiple styles
+    style:
+        - traverse
+        - static
+    grade: V0
+    # See session_counter for terminology
+              # Note: Since this is tracking 1 specific problem, it is not possible to flash AND redpoint AND onsight the same problem
+    # It's also not possible to onsight, flash, or redpoint multiple times, instead uses 'repeat'
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 2
+    notes:
+      Any notes about the climb here
     media:
       - URL_to_image
       - URL_to_video
-    session_counter:
-      - grade: VB
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V0
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V1
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V2
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V3
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V4
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V5
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-      - grade: V6
-        onsight: 0
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 0
-    climbs:
-      - name: Calf City
-        location: Hog
-        style:
-            - traverse
-        grade: V0
-        flash: 0
-        redpoint: 1
-        repeat: 0
-        attempts: 2
-        notes:
-          Any notes about the climb here
-        media:
-          - URL_to_image
-          - URL_to_video
-      - name: Shitty Paperboy
-        location: Hog
-        style:
-            - power
-        grade: V2
-        flash: 0
-        redpoint: 0
-        repeat: 0
-        attempts: 5
-        notes:
-          Any notes about the climb here
-        media:
+  # Multiple climbs can be logged here, just copy and paste the format
+  - name: Shitty Paperboy
+    location: Hog
+    style:
+        - power
+    grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 5
+    notes:
+      Any notes about the climb here
+    media:
+      - URL_to_image
+      - URL_to_video
