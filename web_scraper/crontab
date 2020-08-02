@@ -1,1 +1,1 @@
-58 9,11,13,15,17,19 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1  
+58 9,11,13,15,17,19 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1  

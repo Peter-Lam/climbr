@@ -18,12 +18,16 @@ from selenium import webdriver
 from selenium.webdriver import Chrome
 
 PROJECT_DIR = pathlib.Path(__file__).parent.absolute()
-
+PARENT_DIR = os.path.dirname(PROJECT_DIR)
 def main():
     '''
     Main Script
     '''
     try:
+        # Variables
+        output_log =  os.path.join(PARENT_DIR, 'logs', 'bookings.log')
+        output_file = os.path.join(PARENT_DIR, 'data','output','bookings.json')
+
         # Setting up chromedriver depending on OS
         webdriver_path = None
         if platform.system() == 'Windows':
@@ -71,9 +75,9 @@ def main():
                    'availability': availability,
                    'retrieved_at': current_time}
         # Logging and saving info
-        common.write_log(f"Retrieved session at {current_time}", os.path.join(os.path.dirname(PROJECT_DIR), 'logs', 'bookings.log'))
-        common.update_bulk_api(booking, os.path.join(os.path.dirname(PROJECT_DIR), 'data','output','bookings.json'), 'bookings')
-
+        common.write_log(f"Retrieved session at {current_time}", output_log)
+        common.update_bulk_api(booking, output_file, 'bookings')
+        print(f"Session info successfully retrieved! See information at '{output_file}'")
     except Exception as ex:
         # driver.quit()
         raise ex
