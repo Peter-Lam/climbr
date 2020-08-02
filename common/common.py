@@ -48,16 +48,19 @@ def load_yaml(path):
 
 def write_log(log, output_path):
     '''
-    Writing to log file
+    Writing to log file, will create file and parent folder if the path doesn't exist
+    :param log: Log information
+    :param output_path: path to log file
+    :type log: str
     :type output_path: str
     '''
     try:
-        if os.path.isfile(output_path):
-            with open(output_path, "a") as file:
-                file.write(log + '\n')
-        else:
-            with open(output_path, 'w') as file:
-                file.write(log + '\n')
+        if not os.path.exists(os.path.dirname(output_path)):
+            print(f"'os.path.dirname(output_path)' does not exist, creating folder")
+            os.makedirs(os.path.dirname(output_path))
+        file_perm = 'a' if os.path.isfile(output_path) else 'w'
+        with open(output_path, file_perm) as file:
+            file.write(log + '\n')
     except Exception as ex:
         raise ex
 
@@ -65,7 +68,6 @@ def write_log(log, output_path):
 def write_json(data, output_path):
     '''
     Reads values and writes into output file path,
-    will overwrite file if already exists
     :param data: Ioc data to add write to json
     :param output_path: Output path including filename.json
     :type data: list of dict
@@ -73,12 +75,9 @@ def write_json(data, output_path):
     '''
 
     try:
-        if os.path.isfile(output_path):
-            with open(output_path, "a") as file:
-                json.dump(data, file, indent=4)
-        else:
-            with open(output_path, 'w') as file:
-                json.dump(data, file, indent=4)
+        file_perm = 'a' if os.path.isfile(output_path) else 'w'
+        with open(output_path, file_perm) as file:
+            json.dump(data, file, indent=4)
     except Exception as ex:
         raise ex
 
