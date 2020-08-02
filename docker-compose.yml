@@ -2,9 +2,12 @@ version: '3.7'
 services:
   altitude-scraper:
     build: ./web_scraper
-    container_name: bookings_scraper
+    container_name: bookings_scraper_cron
     volumes:
-      - ./common:/workspace/common
-      - ./web_scraper:/workspace/web_scraper
-      - ./elasticsearch_files:/workspace/elasticsearch_files
-    command: cron && tail -f /workspace/web_scraper/cron.log
+      - ./:/workspace/
+    command: cron && tail -f /workspace/logs/cron.log
+  # dev:
+  #   build: ./
+  #   container_name: climb_dev
+  #   volumes:
+  #     - ./:/workspace/
