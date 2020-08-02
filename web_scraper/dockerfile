@@ -7,7 +7,6 @@ ENV DISPLAY=:99
 RUN mkdir /workspace /workspace/logs/
 WORKDIR /workspace/web_scraper
 
-COPY crontab /etc/cron.d/simple-cron
 # Install packages and python libraries
 RUN apt-get -y update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y install cron curl python3 python3-pip tzdata wget unzip\
@@ -24,6 +23,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip \
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/bin/
 # Setup cron job
+COPY crontab /etc/cron.d/simple-cron
 RUN chmod 0644 /etc/cron.d/simple-cron && crontab /etc/cron.d/simple-cron && touch /workspace/logs/cron.log
 # Start cron and keep running
 CMD cron && tail -f /workspace/logs/cron.log
