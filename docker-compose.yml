@@ -1,1 +1,10 @@
-# command: ["tail", "-f", "/dev/null"]
+version: '3.7'
+services:
+  altitude-scraper:
+    build: ./web_scraper
+    container_name: bookings_scraper
+    volumes:
+      - ./common:/workspace/common
+      - ./web_scraper:/workspace/web_scraper
+      - ./elasticsearch_files:/workspace/elasticsearch_files
+    command: cron && tail -f /workspace/web_scraper/cron.log
