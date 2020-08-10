@@ -1,0 +1,134 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Climbed yesterday so took it easy today. Fun climbing session because of a new reset. We all tried a lot of comp problems
+date: 2020-08-08
+time:
+  start: 08:00 PM
+  end: 09:30 PM
+climbers: 
+  - Brandon Hua
+  - Roy Saavedra
+injury: 
+  isTrue: true
+  description: Left forearm sore the day after.
+media:
+  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipN4XNZxWIsXZhBV4PpTVsNDOTfV2CHeRdePTyYt
+  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMN0qAkEx8ckXT4xLOV1Cd-6mH2HhkG-8WN9mPv
+  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipOrvah6bL7XDaWJt4W2k0pb96Xp8-dv_SA41jBg
+  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNI0b2-eivqxoqT_QgMJoC04knL71srAOcxAujo
+  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipOxvSZs76ojunKC52z1esxi5drRw-a0We5P2rbt
+  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNHJ4I85Nzz9rdgh-sTC_mlmWacFWA5EQP6Vgc1
+  - https://photos.google.com/photo/AF1QipPE-ERL4_OYQ1DV1DJHZ5cd12-IiFnX8ZkRGs0R
+  - https://photos.google.com/photo/AF1QipMz70wz0v3BNTT3Ot34CBWFtXXyYpXKUN2axWXj
+session_counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: V1/V2
+    flash: 2
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 5
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: competition
+    flash: 1
+    redpoint: 0 
+    repeat: 0
+    attempts: 2
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+  climbs:
+    - name: 3 Pocket Death Punch
+      location: right overhang / slabbish
+      style:
+        - big movement
+        - pockets
+        - jugs
+      grade: V4/V5
+      flash: 0
+      redpoint: 0
+      repeat: 0
+      attempts: 2
+      notes:
+        Didn't look too bad at first glance since a lot of the holds were jugs. The last 3 pockets holds are not great so I think the crux will be around there.
+        After watching Roy go first, Brandon and I decided to skip the first pocket, but I might have to find a different beta because skipping will require a big move that
+        is at my mac arm-span
+    - name: The Hulk
+      location: slab
+      style:
+        - balance
+        - volume
+      grade: V5/V6
+      flash: 0
+      redpoint: 0
+      repeat: 0
+      attempts: 5
+      notes:
+        Not a hard problem but I felt really scared with the starting foot hold because it's soo small. I need to work on using my toe more because I think I;ve been struggling with
+        small foot holds ever since coming back.

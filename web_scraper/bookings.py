@@ -9,7 +9,6 @@ import pathlib
 import os
 import platform
 import sys
-import re
 import requests
 sys.path.append('../')
 import common.common as common
@@ -25,8 +24,13 @@ def main():
     '''
     try:
         # Variables
-        output_log =  os.path.join(PARENT_DIR, 'logs', 'bookings.log')
+        output_log = os.path.join(PARENT_DIR, 'logs', 'bookings.log')
         output_file = os.path.join(PARENT_DIR, 'data','output','bookings.json')
+        webpage = "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=90a6abd5e5124f7384b2b60d00683e3d&random=5f1483d0c152d&iframeid=&mode=p"
+        date_obj = datetime.now()
+        current_time = str(date_obj)
+        current_year = str(date_obj.year)
+        current_day = date_obj.day
 
         # Setting up chromedriver depending on OS
         webdriver_path = None
@@ -38,10 +42,6 @@ def main():
             webdriver_path = '/usr/bin/chromedriver'
         else:
             raise Exception(f"{platform.system()} is not supported")
-        # Declaring variables
-        webpage = "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=90a6abd5e5124f7384b2b60d00683e3d&random=5f1483d0c152d&iframeid=&mode=p"
-        current_time = str(datetime.now())
-        year = str(datetime.now().year)
 
         # Using Selenium to read the website
         chrome_options = webdriver.ChromeOptions()
@@ -51,35 +51,50 @@ def main():
         driver = webdriver.Chrome(options=chrome_options, executable_path=webdriver_path)
         driver.get(webpage)
         
+        # Click on the current date, find the selected date and verify 
+        driver.find_element_by_xpath("//td[contains(@class,'ui-datepicker-today')]").click()
+        selected_day = int(driver.find_element_by_xpath("//a[contains(@class,'ui-state-active')]").text)
+        if not selected_day is current_day:
+            # raise Exception(f"[{current_time}] Unable to select the current date...")
+            pass
+        
         # Find the first time slot and it's availability
         time_slot = driver.find_element_by_class_name('offering-page-schedule-list-time-column').text
         availability = driver.find_element_by_xpath("//td[@class='offering-page-schedule-list-time-column']/following-sibling::td").text
-        driver.quit()
 
         # Parsing data
         __, date, time = time_slot.split(',')
         start = time.split('to')[0].strip()
         end = time.split('to')[1].strip()
-        # If format doesn't match HH:MM AM/PM format then change it to that
-        pattern = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
-        if not pattern.match(start):
-            start = datetime.strftime(datetime.strptime(start, "%I %p"), "%I:%M %p")
-        if not pattern.match(end):
-            end = datetime.strftime(datetime.strptime(end, "%I:%M %p"), "%I:%M %p")
-        availability = int(availability.replace('Availability', '').replace('spaces', '').strip('\n').strip())
+
+        # Converting to HH:MM AM/PM format
+        start = common.convert_to_hhmm(start)
+        end = common.convert_to_hhmm(end)
+
+        # Checking availability
+        if 'Full' in availability:
+            availability = 0
+        else:
+            try:
+                availability = int(availability.replace('Availability', '').replace('spaces', '').replace('space', '').strip('\n').strip())
+            except ValueError as ex:
+                print(f"[{current_time}] Warning: Unpredicted format, `{availability}`, ignoring conversion to integer")
         booking = {'date': date.strip(),
-                   'year': year,
+                   'year': current_year,
                    'time_slot': time.strip(),
                    'start_time': start,
                    'end_time': end,
                    'availability': availability,
                    'retrieved_at': current_time}
+        
         # Logging and saving info
         common.write_log(f"Retrieved session at {current_time}", output_log)
         common.update_bulk_api(booking, output_file, 'bookings')
-        print(f"Session info successfully retrieved! See information at '{output_file}'")
+        print(f"[{current_time}] Session info successfully retrieved! See information at '{output_file}'")
+
+        driver.quit()
     except Exception as ex:
-        # driver.quit()
+        driver.quit()
         raise ex
 if __name__ == "__main__":
     main()

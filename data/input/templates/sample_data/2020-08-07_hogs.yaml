@@ -1,0 +1,106 @@
+--- 
+location: Hog's Back Falls
+style: outdoor bouldering
+description:
+  Quick session since we were planning cottage logistics. 
+date: 2020-08-07
+time:
+  start: 8:00 PM
+  end: 9:00 PM
+climbers: 
+  - Nancy Lam
+  - Daniel Atlas
+  - Rebekka Chhom
+media:
+  - https://photos.google.com/photo/AF1QipMJCfwpxmOxyWgAToFMn-73BNbUrtiB8HPrUZqm
+  - https://photos.google.com/photo/AF1QipOHxr0osNk8UGurLgFQsnIrSXxKmy9eErKKex7O
+session_counter:
+  - grade: VB
+    onsight: 1
+    flash: 0
+    redpoint: 0
+    repeat: 3
+    attempts: 0
+  - grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 4
+    attempts: 0
+  - grade: V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+climbs:
+  - name: Radioactive
+    location: Hog
+    style:
+        - traverse
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 3
+    attempts: 0
+    notes:
+      Felt much more comfortable on this problem now that I know which holds are good. It's becoming a good warmup
+  - name: Radioactive 2.0
+    location: Hog
+    style:
+      - traverse
+    grade: VB
+    onsight: 1
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+    notes:
+      Reverse of Radioactive that Nancy has been doing. Felt easier than Radioactive so I'm giving it a VB. I've usually have been doing this 
+      problem on the way back from the down climb.
+  - name: Geppetto
+    location: Hog
+    style:
+      - static
+      - jug
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+    notes:
+      Top=out was not as good as the first time. Very sloppy but my technique on the start was better.
+  - name: Cover Girl
+    location: Hog
+    style:
+      - static
+      - jug
+    grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+    notes:
+      Really easy. Didn't have much trouble other than feeling that the holds weren't super secure.
+  - name: Shitty Paper Boy
+    location: Hog
+    style:
+      - Crimp
+      - Heel hook
+    grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      Did the heel hook poorly this time, also the move to the crimp felt worse than before.

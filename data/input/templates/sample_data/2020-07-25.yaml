@@ -5,8 +5,8 @@ description:
   The Quarry opened today so mostly worked on kids problems and focusing on technique. End of V3/4 streak today, but repeated to 3/4's from before
 date: 2020-07-25
 time:
-  start: 08:00 PM
-  end: 09:30 PM
+  start: 8:00 PM
+  end: 9:30 PM
 climbers: 
   - Nancy Lam
   - Brandon Hua
@@ -19,85 +19,71 @@ media:
   - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNrZevs7c-w7DNHSuo8PINNkMGhoxQ8-S-h9NMP
 session_counter:
   - grade: VB/V0
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 1
     attempts: 0
   - grade: V0/V1
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V1/V2
-    redpoint: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V2/V3
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V3/V4
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 2
     attempts: 4
   - grade: V4/V5
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V5/V6
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - VB/V0
-    onsight: 0
     flash: 5
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V0/V1
-    onsight: 0
     flash: 1
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V1/V2
-    redpoint: 0
     flash: 1
     redpoint: 0
     repeat: 0
     attempts: 1
   - grade: Kids - V2/V3
-    onsight: 0
     flash: 1
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V3/V4
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 4
   - grade: Kids - V4/V5
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Kids - V5/6
-    onsight: 0
+  - grade: Kids - V5/V6
     flash: 0
     redpoint: 0
     repeat: 0
@@ -108,7 +94,6 @@ climbs:
     style:
       - coordination
     grade: V3/V4
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 1
@@ -121,7 +106,6 @@ climbs:
       - big move
       - mantle
     grade: V5/V6
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
