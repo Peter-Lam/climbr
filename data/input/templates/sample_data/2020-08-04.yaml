@@ -1,0 +1,132 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Full session today so it was a little busier than normal. The Chow family were also climbing today.
+  Felt pretty accomplished today, since I sent a V5/V6 Kids on the second go and got a V3/4 pinch adult on the first go of the day (with 1 attempt last session)
+date: 2020-08-04
+time:
+  start: 8:00 PM
+  end: 9:30 PM
+climbers: 
+  - Nancy Lam
+  - Brandon Hua
+  - Xavier
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - https://photos.google.com/photo/AF1QipPygesD4M3grJbyUNWwXVf08dC3Pkrh-Ydai94H
+  - https://photos.google.com/photo/AF1QipO8puG1vujzYWLqZrfCJsmZfEoFsLLEb1NfhHJ5
+  - https://photos.google.com/photo/AF1QipNennrikSfxzZ7e7peHBA4SDo1JlZ_jEKpkYbQd
+  - https://photos.google.com/photo/AF1QipOg9xdATElTmwrK7jGMHPMgHW9_NcjHI9C2qEnB
+session_counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    redpoint: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/V6
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1 
+  climbs:
+    - name: Blue Igloo Boogaloo
+      location: quarry
+      style:
+          - crimp
+          - overhang
+      grade: V5/V6
+      flash: 0
+      redpoint: 1
+      repeat: 0
+      attempts: 1
+      notes:
+        Pretty proud of a redpointing a V5/V/6 on the second try. The igloo/brick hold were intimidating since I remember not being able to grip them on slab.
+        After watching Austin and Nancy attempt it last session, and hearing that the angle wasn't bad, I really wanted to try the problem. Also I'm surprised that I was
+        able to read the beta for the last move, and realized that I could move my hips close to the wall with a good down-turn heel hook.
+    - name: In a Pinch (Blue)
+      location: right overhang / slabbish
+      style:
+        - pinches
+      grade: V3/V4
+      flash: 0
+      redpoint: 1
+      repeat: 0
+      attempts: 0
+      notes:
+        After thinking about the beta from last session, decided that going for the left hold would result in my arms being too extended for the next dynamic 
+        right hold so I avoided ti this time and it worked out well. Pinches weren't super great but good to practice on since I don't do them often

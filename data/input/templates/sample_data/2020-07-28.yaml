@@ -17,85 +17,71 @@ media:
   - https://photos.google.com/photo/AF1QipPR1BNbcOIN50IVYgPMnBk8_oxJX31IjaExCFFg
 session_counter:
   - grade: VB/V0
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V0/V1
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V1/V2
-    redpoint: 0
     flash: 1
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V2/V3
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V3/V4
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V4/V5
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V5/V6
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 3
   - grade: Kids - VB/V0
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 3
     attempts: 0
   - grade: Kids - V0/V1
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V1/V2
-    redpoint: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V2/V3
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V3/V4
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V4/V5
-    onsight: 0
     flash: 0
     redpoint: 1
     repeat: 0
     attempts: 34
-  - grade: Kids - V5/6
-    onsight: 0
+  - grade: Kids - V5/V6
     flash: 0
     redpoint: 0
     repeat: 0
@@ -107,7 +93,6 @@ climbs:
       - coordination
       - dyno
     grade: V4/V5
-    onsight: 0
     flash: 0
     redpoint: 1
     repeat: 0
@@ -125,7 +110,6 @@ climbs:
       - big move
       - mantle
     grade: V5/V6
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0

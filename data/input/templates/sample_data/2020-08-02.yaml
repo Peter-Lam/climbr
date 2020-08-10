@@ -2,22 +2,25 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Afternoon light climbing session today. Spent some more time in the Quarry, to warm up and work on technique.
-  Redpointed a pink overhang on the second attempt today (V3/V4).
-date: 2020-07-26
+  Casual session today since Nancy and I climbed with Daniel at Hog's Back yesterday. Spent majority of the time in the Quarry. Flashed a kids 3/4
+date: 2020-08-02
 time:
-  start: 4:00 PM
-  end: 5:30 PM
+  start: 8:00 PM
+  end: 9:30 PM
 climbers: 
+  - Nancy Lam
   - Brandon Hua
   - Carissa Wong
-media:
-  - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+  - Austin Do
+  - Xavier
+injury: 
+  isTrue: false
+  description: Add a description of injury here
 session_counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0
-    repeat: 1
+    repeat: 0
     attempts: 0
   - grade: V0/V1
     flash: 0
@@ -36,7 +39,7 @@ session_counter:
     attempts: 0
   - grade: V3/V4
     flash: 0
-    redpoint: 1
+    redpoint: 0
     repeat: 0
     attempts: 1
   - grade: V4/V5
@@ -49,10 +52,11 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0
+    attempts: 1
   - grade: Kids - VB/V0
     flash: 0
     redpoint: 0
-    repeat: 2
+    repeat: 3
     attempts: 0
   - grade: Kids - V0/V1
     flash: 0
@@ -60,42 +64,27 @@ session_counter:
     repeat: 2
     attempts: 0
   - grade: Kids - V1/V2
-    redpoint: 0
     flash: 0
     redpoint: 0
-    repeat: 2
+    repeat: 1
     attempts: 0
   - grade: Kids - V2/V3
-    flash: 1
+    flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: Kids - V3/V4
-    flash: 0
-    redpoint: 0
+    flash: 1
+    redpoint: 1
     repeat: 0
-    attempts: 0
+    attempts: 2
   - grade: Kids - V4/V5
     flash: 0
     redpoint: 0
     repeat: 0
-    attempts: 0
+    attempts: 5
   - grade: Kids - V5/V6
-    flash: 0
-    redpoint: 0
-    repeat: 0
-    attempts: 0
-climbs:
-  - name: pink overhang 
-    location: comp wall
-    style:
-      - overhang
-    grade: V3/V4
     flash: 0
     redpoint: 1
     repeat: 0
-    attempts: 1
-    notes:
-      Got it on the second attempt. Not too challenging but it was good to work on overhang problems
-    media:
-      - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+    attempts: 0

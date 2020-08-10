@@ -1,1 +1,6 @@
-58 9,11,13,15,17,19 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1  
+58 9 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1
+03 12 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1
+08 14 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1
+13 16 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1
+18 18 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1
+23 20 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py >> /workspace/logs/cron.log 2>&1

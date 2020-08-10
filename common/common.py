@@ -2,17 +2,42 @@
 '''
 This module contains common used functions by scripts within Climbing-Tracker
 '''
-
-import os
 import json
+import os
+import re
 import sys
 import yaml
+from datetime import datetime
 
 def convert_grades(grade):
     # TODO: Convert climbing grades to normalize data
     # https://www.mec.ca/en/explore/climbing-grade-conversion
     raise Exception("TODO")
 
+def convert_to_hhmm(time):
+    '''
+    Coverting time string to HH:MM AM/PM format, throwing an error if unexpected format
+    :param time: time in 12 hour format
+    :type time: str
+    :raises Exception: Unexpected time format
+    :return: Time in HH:MM AM/PM format
+    :rtype: str
+    '''
+    try:
+        # Declaring regex pattens
+        hh_mm = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
+        h_mm = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
+        hh = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
+        h = re.compile("^[1-9] (AM|PM)$")
+        if hh_mm.match(time) or h_mm.match(time):
+            return datetime.strftime(datetime.strptime(time, "%I:%M %p"), "%I:%M %p")
+        elif hh.match(time) or h.match(time):
+            return datetime.strftime(datetime.strptime(time, "%I %p"), "%I:%M %p")
+        # TODO: Convert 24 hour format to 12 hour
+        else:
+            raise Exception(f"Unexpected format. Unable to convert '{time}'to HH:MM AM/PM format.")
+    except Exception as ex:
+        raise ex
 
 def load_json(path):
     '''
@@ -46,6 +71,22 @@ def load_yaml(path):
     except Exception as ex:
         raise Exception(f"Unable to read climbing log, formatting error found {ex.args[3]}")
 
+def load_file(path):
+    '''
+    Reads the contents of a file and returns a string with contents
+    :param path: Path to file
+    :type path: str
+    :raises Exception: file path does not exist
+    :return: file contents
+    :rtype: str
+    '''
+    try:
+        if not os.path.exists(path):
+            raise Exception(f"The path: {path} does not exist")
+        with open(path, 'r') as file:
+            return file.read()
+    except Exception as ex:
+        raise Exception(f"Unable to read file: {path}")
 def write_log(log, output_path):
     '''
     Writing to log file, will create file and parent folder if the path doesn't exist

@@ -15,9 +15,9 @@ climbers:
   - Carissa Wong
   - Alvin Tam
   - Austin Do
-injury:
-  - false
-  - Add a description here
+injury: 
+  isTrue: false
+  description: Add a description of injury here
 session_counter:
   - grade: VB/V0
     flash: 1
