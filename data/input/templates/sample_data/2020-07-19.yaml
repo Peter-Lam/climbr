@@ -62,4 +62,6 @@ climbs:
     attempts: 6
     notes: Switched feet and started left this time but still struggling on the third move    
 media: null
-injury: null
+injury: 
+  isTrue: false
+  description: Add a description of injury here

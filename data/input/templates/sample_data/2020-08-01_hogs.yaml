@@ -1,0 +1,95 @@
+--- 
+location: Hog's Back Falls
+style: outdoor bouldering
+description:
+  It's been about a week and a half since I climbed outdoors and even longer since Hog's Back. Felt way more confident in my strength and smearing after climbing indoors.
+date: 2020-08-01
+time:
+  start: 07:45 PM
+  end: 9:00 PM
+climbers: 
+  - Nancy Lam
+  - Daniel Atlas
+  - false
+  - Add a description here
+media:
+  - https://photos.google.com/photo/AF1QipOUTj5zpUWxxXSvMaZ9dzEqZTvHtDa8bW7e0i5m
+  - https://photos.google.com/photo/AF1QipMuXGpAWVUbzXVZfufvvmBlo-ZAc9uLdNE1BcTm
+  - https://photos.google.com/photo/AF1QipNUNbfTfqe6Ff7GjBGdo-Kx5WdQb8e7s09ZFm2E
+  - https://photos.google.com/photo/AF1QipPIBBjmQgzOkV_aQM-W0PTT_XQ8W7HWOp4fo6IZ
+  - https://photos.google.com/photo/AF1QipPOOqLb6fmMsQm15pyWrN8Ie4istZpQUEoNRAkF
+  - https://photos.google.com/photo/AF1QipP6NFBzlXOXQWsaVlomrT9xwsgJab57DG6ynDJg
+  - https://photos.google.com/photo/AF1QipMU10WcmsThU2-RirS8Mv3X8wslXOFAE_HfibIh
+  - https://photos.google.com/photo/AF1QipPIv037igJn08ImRhgpEIQkSqm_oBrUlbIRt7aY
+  - https://photos.google.com/photo/AF1QipO3IMRuu_WFWEz3URMVa_k5mTYV-brnocBaAaJ0
+  - https://photos.google.com/photo/AF1QipM_CVNlK4KsLzSDTOjY0f5NxJ_IoYVk6WfJ2_JU
+  - https://photos.google.com/photo/AF1QipMcSGD1rkeGsZJU8n0KWXsimgJDdIagfQVToWL3
+  - https://photos.google.com/photo/AF1QipPdJNcwhFZvKrrWBx8oM4Ks_bMfqu-783_E-sVP
+  - https://photos.google.com/photo/AF1QipN0giH0YEaEGmam_XUGGH1z0hqNrFRatnXXFhng
+  - https://photos.google.com/photo/AF1QipOxvsGrZm8hwORG09zM24c_xf7IQUqtAbPN_t46
+session_counter:
+  - grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0
+    onsight: 1
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 3
+climbs:
+  - name: Calf City
+    location: Hog
+    style:
+      - traverse
+      - static
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+    notes:
+      Got further this time around. I need to climb more efficiently at the start
+      overhang so I'm less gassed for the topout. The last holds seem ok but I think
+      the topout and height is scary esp. when i'm tired.
+    media:
+      - https://photos.google.com/photo/AF1QipMU10WcmsThU2-RirS8Mv3X8wslXOFAE_HfibIh
+      - https://photos.google.com/photo/AF1QipPIv037igJn08ImRhgpEIQkSqm_oBrUlbIRt7aY
+      - https://photos.google.com/photo/AF1QipO3IMRuu_WFWEz3URMVa_k5mTYV-brnocBaAaJ0
+      - https://photos.google.com/photo/AF1QipM_CVNlK4KsLzSDTOjY0f5NxJ_IoYVk6WfJ2_JU
+      - https://photos.google.com/photo/AF1QipN0giH0YEaEGmam_XUGGH1z0hqNrFRatnXXFhng
+      - https://photos.google.com/photo/AF1QipPdJNcwhFZvKrrWBx8oM4Ks_bMfqu-783_E-sVP
+      - https://photos.google.com/photo/AF1QipMcSGD1rkeGsZJU8n0KWXsimgJDdIagfQVToWL3
+  - name: Geppetto
+    location: Hog
+    style:
+        - static
+        - jug
+    grade: V0
+    onsight: 1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+    notes:
+      Not as hard as I thought it would be
+    media:
+      - https://photos.google.com/photo/AF1QipOxvsGrZm8hwORG09zM24c_xf7IQUqtAbPN_t46
+  - name: Radioactive
+    location: Hog
+    style:
+        - traverse
+    grade: V0
+    onsight: 1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 1
+    notes:
+      Felt easier than last time, had time to even hang to look at footholds. More confident in the holds this time,
+      even using a crimp instead of the slopers to get past the crux. Topped out on the arete properly too.
+      Tried to repeat the climb at the end of the session btu it was dark and didn't have a a pad setup for the crux.

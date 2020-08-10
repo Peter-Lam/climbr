@@ -68,6 +68,6 @@ media:
   - https://photos.google.com/photo/AF1QipM6RbIt7LB0VPnpU6fVVUFjvhIUVneJmHLM9SY0
   - https://photos.google.com/photo/AF1QipP4cfgCEXEdjkMprqnGyP-FnaF4ToHS09JF76L0
   - https://photos.google.com/photo/AF1QipN2aybzPo4YMVslWsuWW__zWfQHIZyzMNhzkhqR
-injury:
-  - false
-  - Add a description here
+injury: 
+  isTrue: false
+  description: Add a description of injury here
