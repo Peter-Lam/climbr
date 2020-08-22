@@ -1,0 +1,119 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+   First day climbing with the new time changes. The session felt much longer, and I was dusted quite early.
+   Finished two new V3/V4's and worked on '3 Pocket Death Punch' with Nancy
+date: 2020-08-10
+time:
+  start: 8:25 PM
+  end: 10:10 PM
+climbers: 
+  - Nancy Lam
+  - Xavier
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - https://photos.google.com/photo/AF1QipPwX3YOan-uJxtuUzIigc5aTHFFPR-fpzo86EQO
+  - https://photos.google.com/photo/AF1QipMkpQ_ZjYO2cxypqZvXbFe3hHZ53L2tUrLJw8jj
+  - https://photos.google.com/photo/AF1QipMrGMKVHe8SGjb4NFkKNd3-UnUYx__Y7K6OgTsR
+  - https://photos.google.com/photo/AF1QipMf9UqX5XZETKk6G8qmpL2zqvhlalKgTjCxfDlm
+  - https://photos.google.com/photo/AF1QipM1cdVA7FzyZn5CIi4sGh0af5lFErGKPvvTl7PJ
+session_counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 2
+    repeat: 1
+    attempts: 14
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 6
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 1
+    redpoint: 0
+    repeat: 1
+    attempts: 3
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: Kids - V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+climbs:
+  - name: 3 Pocket Death Punch
+    location: right overhang / slabbish
+    style:
+      - big movement
+      - pockets
+      - jugs
+    grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+    notes:
+      Trying different beta with Nancy but was pretty gassed out. Might look for static beta
+shoes: La Sportiva Tarantula
+  
