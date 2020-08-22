@@ -1,0 +1,160 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Double session today. I thought my hands would be in bad shape from climbing yesterday,
+  but it held up pretty well. I got my first V5/V6 post COVID shutdown, and got closer on the
+  white comp problem. I got to the last hold but slipped.
+date: 2020-08-16
+time:
+  start: 8:25 PM
+  end: 10:10 PM
+climbers: 
+  - Nancy Lam
+  - Brandon Hua
+  - Alvin Tam
+  - Austin Do
+  - Xavier
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - https://photos.google.com/photo/AF1QipOey4UXFLUAFwZubgKKJLK7WMKO0kWO7uHhisy8
+  - https://photos.google.com/photo/AF1QipNe58hI2za6pfFMgxQw5j86_kCf502kavqtajfb
+  - https://photos.google.com/photo/AF1QipNfa8hsf5HH8Rd3IJvsy8UpIT4akwwgBn7yDxvj
+  - https://photos.google.com/photo/AF1QipMzHWkjF5e0WGrhKGDH3O-fepyDTr7jKZGakwON
+  - https://photos.google.com/photo/AF1QipNQtI-Y6SichAVBTC04fDGcnqr7Mq4-S_XT4bJJ
+  - https://photos.google.com/photo/AF1QipN32mJO9kJfFOgP7pGI2kKdUP9ibhayor5--_oR
+  - https://photos.google.com/photo/AF1QipM408d0gkDgOUY7ffv08P64LEwUzakSGTWWQEbS
+  - https://photos.google.com/photo/AF1QipPsr63sqxK1i0G-M6n96Mr_bDcPSrjxygf7qjkg
+  - https://photos.google.com/photo/AF1QipNCf-Omp4N13qn1BHf7iEFROqR3oMwtJ8ObB2I6
+session_counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: V5/V6
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 6
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+climbs:
+  - name: pink step=up foot-match
+    location: quarry
+    style:
+      - coordination
+      - dyno
+    grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+    notes:
+      My first repeat on this problem. I used Brandon's beta and shifted my weight to the right
+      when switching feet and that helped me control my movements more.
+  - name: 3 Pocket Death Punch
+    location: right overhang / slabbish
+    style:
+      - big movement
+      - pockets
+      - jugs
+    grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      Quick attempt on this but my hands hurt too much to try again. I went for a static
+      beta that I saw on instagram and it might work well if my hands are recovered. I will have to try this beta
+      again next time.
+    media:
+      - https://photos.google.com/photo/AF1QipM8mQXqACUfQISxfrq0tLr9dgOhqQx6MWmBivOR
+  - name: The Hulk
+    location: slab
+    style:
+      - balance
+      - volume
+    grade: V5/V6
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 6
+    notes:
+      Completed my first V5/V6 post shutdown on my second attempt of the day. I tried a couple more times
+      afterwards to try to get it on video but no success. I think I was just getting tired and sloppy
+      since it was at the very end of the session.
+    media:
+      - https://photos.google.com/photo/AF1QipNCf-Omp4N13qn1BHf7iEFROqR3oMwtJ8ObB2I6
+      - https://photos.google.com/photo/AF1QipM408d0gkDgOUY7ffv08P64LEwUzakSGTWWQEbS
+shoes: La Sportiva Tarantula
