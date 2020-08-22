@@ -1,0 +1,15 @@
+{
+    "mappings": {
+        "properties": {
+        "month": {"type": "keyword"},
+        "day": {"type": "keyword"},
+        "day_of_week": {"type": "keyword"},
+        "year": {"type": "keyword"},
+        "time_slot": {"type": "keyword"},
+        "start_time": {"type":"keyword"},
+        "end_time": {"type":"keyword"},
+        "availability": {"type":"integer"},
+        "retrieved_at": {"type":"date"}
+        }
+    }
+}
