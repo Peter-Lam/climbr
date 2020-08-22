@@ -7,12 +7,15 @@ import os
 import re
 import sys
 import yaml
+import common.validate as validate
 from datetime import datetime
+
 
 def convert_grades(grade):
     # TODO: Convert climbing grades to normalize data
     # https://www.mec.ca/en/explore/climbing-grade-conversion
     raise Exception("TODO")
+
 
 def convert_to_hhmm(time):
     '''
@@ -35,9 +38,11 @@ def convert_to_hhmm(time):
             return datetime.strftime(datetime.strptime(time, "%I %p"), "%I:%M %p")
         # TODO: Convert 24 hour format to 12 hour
         else:
-            raise Exception(f"Unexpected format. Unable to convert '{time}'to HH:MM AM/PM format.")
+            raise Exception(
+                f"Unexpected format. Unable to convert '{time}'to HH:MM AM/PM format.")
     except Exception as ex:
         raise ex
+
 
 def load_json(path):
     '''
@@ -69,7 +74,9 @@ def load_yaml(path):
         with open(path, 'r') as stream:
             return yaml.safe_load(stream)
     except Exception as ex:
-        raise Exception(f"Unable to read climbing log, formatting error found {ex.args[3]}")
+        raise Exception(
+            f"Unable to read climbing log, formatting error found {ex.args[3]}")
+
 
 def load_file(path):
     '''
@@ -87,6 +94,8 @@ def load_file(path):
             return file.read()
     except Exception as ex:
         raise Exception(f"Unable to read file: {path}")
+
+
 def write_log(log, output_path):
     '''
     Writing to log file, will create file and parent folder if the path doesn't exist
@@ -122,6 +131,7 @@ def write_json(data, output_path):
     except Exception as ex:
         raise ex
 
+
 def write_bulk_api(data, output_path, index_name):
     '''
     Writes to a json file in bulk api format given a list of information,
@@ -138,7 +148,7 @@ def write_bulk_api(data, output_path, index_name):
         # If the data is a dict, then assume it's one object
         if type(data) is dict:
             new_contents.append(json.dumps(
-                    {"index": {"_index": index_name, "_id": current_index}}))
+                {"index": {"_index": index_name, "_id": current_index}}))
             new_contents.append(json.dumps(data))
         # If it's a list then, then assume it's multiple
         elif type(data) is list:
@@ -148,31 +158,87 @@ def write_bulk_api(data, output_path, index_name):
                 current_index += 1
                 new_contents.append(json.dumps(row))
         else:
-            raise Exception(f"Object type '{type(data)} is not supported. Must be list or dict")
-        
+            raise Exception(
+                f"Object type '{type(data)} is not supported. Must be list or dict")
+
         with open(output_path, "w") as file:
             for line in new_contents:
                 file.write(line + "\n")
     except Exception as ex:
         raise ex
 
-def get_last_index(bulk_api_path):
+
+def get_last_id(bulk_api_path):
     '''
-    Retreiving the last index from a JSON in bulk api format,
+    Retreiving the last id from a JSON in bulk api format,
     will raise exception if file path doesn't exist
     :param bulk_api_path: File path to json in bulk api format
     :type bulk_api_path: str
     :raises Exception: Bulk API path does not exist
-    :return last_index: The last index in the json
-    :rtype last_index: int
+    :return last_id: The last id in the json
+    :rtype last_id: int
     '''
-    if not os.path.exists(bulk_api_path):
-        raise Exception(f"The path: {bulk_api_path} does not exist")
+    try:
+        if not os.path.exists(bulk_api_path):
+            raise Exception(f"The path: {bulk_api_path} does not exist")
 
-    with open(bulk_api_path) as file:
-        lines = file.read().splitlines()
-        last_index = (json.loads(lines[-2]))["index"]["_id"]
-        return last_index
+        with open(bulk_api_path) as file:
+            lines = file.read().splitlines()
+            last_id = (json.loads(lines[-2]))["index"]["_id"]
+            return last_id
+    except Exception as ex:
+        raise(ex)
+
+
+def get_last_document(bulk_api_path):
+    '''
+    Retrieve the last document (row) from aa JSON in bulk api format,
+    will raise exception if file path doesn't exist
+    :param bulk_api_path: File path to json in bulk api format
+    :type bulk_api_path: str
+    :raises Exception: Bulk API path does not exist
+    :return last_document: The row of information
+    :rtype last_document: dict
+    '''
+    try:
+        if not os.path.exists(bulk_api_path):
+            raise Exception(f"The path: {bulk_api_path} does not exist")
+
+        with open(bulk_api_path) as file:
+            lines = file.read().splitlines()
+            last_document = (json.loads(lines[-1]))
+            return last_document
+    except Exception as ex:
+        raise(ex)
+
+
+def get_files(path, pattern, recursive=False):
+    '''
+    This function returns a list of files that match a given pattern.
+    :param path: Path to a directory
+    :param regex: regex pattern to match files
+    :param recursive: option to look for files recursively within a directory, default=False
+    :type path: str
+    :type pattern: str
+    :type recursive: bool
+    :raises Exception: path is not a directory, does not exist
+    :return files: A list of found files, returning an empty list if nothing is found
+    :rtype files: list
+    '''
+    try:
+        files = []
+        validate.is_dir(path)
+        regex = re.compile(pattern)
+        for file in os.listdir(path):
+            full_path = os.path.join(path, file)
+            __, extension = os.path.splitext(full_path)
+            if os.path.isfile(full_path) and regex.match(file):
+                files.append(full_path)
+            elif os.path.isdir(full_path) and recursive:
+                files.extend(get_files(full_path, pattern, recursive=True))
+        return files
+    except Exception as ex:
+        raise(ex)
 
 
 def update_bulk_api(data, output_path, index_name):
@@ -193,12 +259,12 @@ def update_bulk_api(data, output_path, index_name):
             write_bulk_api(data, output_path, index_name)
         elif data:
             updated_list = []
-            current_index = get_last_index(output_path) + 1
+            current_index = get_last_id(output_path) + 1
 
             # If the data is a dict, then assume it's one object
             if type(data) is dict:
                 updated_list.append(json.dumps(
-                        {"index": {"_index": index_name, "_id": current_index}}))
+                    {"index": {"_index": index_name, "_id": current_index}}))
                 updated_list.append(json.dumps(data))
                 current_index += 1
             # If it's a list then, then assume it's multiple
@@ -209,7 +275,8 @@ def update_bulk_api(data, output_path, index_name):
                     updated_list.append(json.dumps(value))
                     current_index += 1
             else:
-                raise Exception(f"Object type '{type(data)} is not supported. Must be list or dict")
+                raise Exception(
+                    f"Object type '{type(data)} is not supported. Must be list or dict")
             # Write to the JSON file
             with open(output_path, "a") as file:
                 for line in updated_list:
