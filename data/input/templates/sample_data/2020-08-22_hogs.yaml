@@ -1,0 +1,110 @@
+--- 
+location: Hog's Back Falls
+style: outdoor bouldering
+description:
+  Chill session today. Since the sun is setting earlier, I brought a light out to climb a little longer. Went to 'By the water' for the second time too.
+date: 2020-08-22
+time:
+  start: 7:15 PM
+  end: 8:35 PM
+climbers: 
+  - Nancy Lam
+  - Daniel Atlas
+  - Roy Saavedra
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+session_counter:
+  - grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: V3
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+climbs:
+  - name: Radioactive
+    location: Hog
+    style:
+        - traverse
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+    notes:
+      Warm up
+  - name: Radioactive 2.0
+    location: Hog
+    style:
+      - traverse
+    grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 1
+    notes:
+      Failed the second attempt on the way back from Radioactive
+  - name: Shitty Paper Boy
+    location: Hog
+    style:
+      - Crimp
+      - Heel hook
+    grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      Messing around with different beta. Watch Daniel do it and he puts his
+      left leg under him to shift his weight. I need to commit to the move more if 
+      I want to finish it.
+  - name: BeachBum
+    location: By the Water
+    style:
+      - Crimp
+      - Dynamic
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+    notes:
+      The starting is really hard to statically climb, so Roy had a good
+      beta to skip the intermediate hold and dynamically move for the shelf/ last
+      hold instead.
+shoes: La Sportiva Tarantula
+  

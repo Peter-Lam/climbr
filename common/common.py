@@ -141,6 +141,7 @@ def write_bulk_api(data, output_path, index_name):
     :param index_name: Index name for elasticsearch
     :type data: list of dict
     :type output_path: str
+    :type index_name: str
     '''
     try:
         new_contents = []
@@ -227,7 +228,7 @@ def get_files(path, pattern, recursive=False):
     '''
     try:
         files = []
-        validate.is_dir(path)
+        validate.directory(path)
         regex = re.compile(pattern)
         for file in os.listdir(path):
             full_path = os.path.join(path, file)
