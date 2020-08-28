@@ -10,8 +10,9 @@ import platform
 import os
 import pathlib
 import argparse
-
 from datetime import datetime
+from time import sleep
+
 from selenium import webdriver
 from selenium.webdriver import Chrome
 
@@ -67,7 +68,7 @@ def main():
         if selected_day != current_day:
             raise Exception(
                 f"[{current_time}] Unable to select the current date... Selected {selected_day} instead")
-
+        sleep(5)
         # Find the first time slot and it's availability
         time_slot = driver.find_element_by_class_name(
             'offering-page-schedule-list-time-column').text
