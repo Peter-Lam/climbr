@@ -88,7 +88,7 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 3 
-climbs:
+projects:
   - name: black step-up
     location: comp wall
     style:

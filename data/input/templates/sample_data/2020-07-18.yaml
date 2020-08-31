@@ -8,7 +8,7 @@ description:
 date: 2020-07-18
 time:
   start: 10:00 AM
-  end: 11:30 PM
+  end: 11:30 AM
 climbers: 
   - Nancy Lam
   - Brandon Hua
@@ -54,7 +54,7 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 3
-climbs:
+projects:
   - name: black step-up
     location: comp wall
     style:

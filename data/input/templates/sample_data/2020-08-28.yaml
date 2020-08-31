@@ -2,17 +2,26 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Afternoon light climbing session today. Spent some more time in the Quarry, to warm up and work on technique.
-  Redpointed a pink overhang on the second attempt today (V3/V4).
-date: 2020-07-26
+  A brief description of the climbing session
+  Can span multiple lines if needed
+date: 2020-08-28
 time:
-  start: 4:00 PM
-  end: 5:30 PM
+  start: 6:20 PM
+  end: 8:05 PM
 climbers: 
   - Brandon Hua
   - Carissa Wong
+  - Bilal Khalid
+  - Xavier
+injury: 
+  isTrue: false
+  description: Add a description of injury here
 media:
-  - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+  - 
+  - 
+  - 
+  - 
+  - 
 session_counter:
   - grade: VB/V0
     flash: 0
@@ -20,13 +29,13 @@ session_counter:
     repeat: 1
     attempts: 0
   - grade: V0/V1
-    flash: 0
+    flash: 1
     redpoint: 0
     repeat: 0
     attempts: 0
   - grade: V1/V2
     flash: 0
-    redpoint: 0
+    redpoint: 1
     repeat: 0
     attempts: 0
   - grade: V2/V3
@@ -36,34 +45,33 @@ session_counter:
     attempts: 0
   - grade: V3/V4
     flash: 0
-    redpoint: 1
+    redpoint: 0
     repeat: 0
-    attempts: 1
+    attempts: 4
   - grade: V4/V5
     flash: 0
     redpoint: 0
     repeat: 0
-    attempts: 0
+    attempts: 2
   - grade: V5/V6
     flash: 0
     redpoint: 0
     repeat: 0
-    attempts: 0
+    attempts: 2
   - grade: Kids - VB/V0
     flash: 0
     redpoint: 0
-    repeat: 2
+    repeat: 3
     attempts: 0
   - grade: Kids - V0/V1
     flash: 0
     redpoint: 0
-    repeat: 2
+    repeat: 0
     attempts: 0
   - grade: Kids - V1/V2
-    redpoint: 0
     flash: 0
     redpoint: 0
-    repeat: 2
+    repeat: 1
     attempts: 0
   - grade: Kids - V2/V3
     flash: 1
@@ -80,23 +88,34 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Kids - V5/V6
+  - grade: Kids - V5/6
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-projects:
-  - name: pink overhang 
-    location: comp wall
-    style:
-      - overhang
-    grade: V3/V4
+  - grade: competition
     flash: 0
-    redpoint: 1
+    redpoint: 0
     repeat: 0
-    attempts: 1
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+climbs:
+  - name: 3 Pocket Death Punch
+    location: right overhang / slabbish
+    style:
+      - big movement
+      - pockets
+      - jugs
+    grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
     notes:
-      Got it on the second attempt. Not too challenging but it was good to work on overhang problems
-    media:
-      - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+      Got my hands in the pocket for the first time. I was very controlled, so I should have just committed to grabbing the hold. I didn't think I would make it 
+      so I just fell.
 shoes: La Sportiva Tarantula

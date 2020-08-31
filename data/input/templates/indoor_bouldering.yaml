@@ -103,7 +103,7 @@ session_counter:
     repeat: 0
     attempts: 0 
 # This section is for logging individual climbs, can be useful for tracking projects
-climbs:
+projects:
   # If you are projecting a problem, make sure to name it the same every time
   - name: Describe the problem or give it a name
     # Some suggested options: slab / left overhang / comp wall / cave / right overhang / slabish
