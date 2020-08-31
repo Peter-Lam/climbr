@@ -44,6 +44,33 @@ def convert_to_hhmm(time):
         raise ex
 
 
+def str_to_time(string):
+    '''
+    Coverting time string to a datetime object, throwing an error if unexpected format
+    :param time: time in 12 hour format
+    :type time: str
+    :raises Exception: Unexpected time format
+    :return: datetime object
+    :rtype: datetime
+    '''
+    try:
+        # Declaring regex pattens
+        hh_mm = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
+        h_mm = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
+        hh = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
+        h = re.compile("^[1-9] (AM|PM)$")
+        if hh_mm.match(string) or h_mm.match(string):
+            return datetime.strptime(string, "%I:%M %p")
+        elif hh.match(string) or h.match(string):
+            return datetime.strptime(string, "%I %p")
+        # TODO: Convert 24 hour format to 12 hour
+        else:
+            raise Exception(
+                f"Unexpected format. Unable to convert '{string}'to HH:MM AM/PM format.")
+    except Exception as ex:
+        raise ex
+
+
 def load_json(path):
     '''
     Opens and loads a JSON file
@@ -136,7 +163,7 @@ def write_bulk_api(data, output_path, index_name):
     '''
     Writes to a json file in bulk api format given a list of information,
     if the output path already exists, will overwrite
-    :param data: ioc data to add write to json
+    :param data: data to add write to json
     :param output_path: the path to the json in bulk api format
     :param index_name: Index name for elasticsearch
     :type data: list of dict

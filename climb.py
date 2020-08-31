@@ -7,16 +7,10 @@ import common.validate as validate
 import common.common as common
 import common.globals as glbs
 import urllib
-import json
 import os
-import pathlib
 import requests
-import pprint
-from datetime import datetime
 from elasticsearch import Elasticsearch
-import re
-
-# Creating a index (table)
+from common.session import Session
 
 
 def connect_to_es(es_url):
@@ -108,33 +102,6 @@ def create_index_pattern(kibana_url, index_name):
         raise ex
 
 
-def get_climbing_sessions(path):
-    '''
-    Gather session information from a given directory. If no files are found, will default to using sample_data.
-    :param path: path to directory containing session yamls
-    :type: str
-    :return: list of session files
-    :rtype: list of str
-    '''
-    try:
-        if not os.path.exists(path):
-            raise Exception(
-                f"Unable to find climbing sessions, the path '{path}' does not exist.")
-        # Look for logs, if they don't exist, then use the sample data instead
-        sessions = common.get_files(
-            path, ".*\.yaml$", recursive=False)
-        if not sessions:
-            print(
-                f"Warning: Unable to find logs located at {path}, using sample data instead...")
-            sessions = common.get_files(
-                glbs.SAMPLE_DATA_DIR, ".*\.yaml$", recursive=False)
-            if not sessions:
-                raise Exception("Unable to locate sample data.")
-        return sessions
-    except Exception as ex:
-        raise ex
-
-
 def get_user_input():
     '''
     Ask the user for information about the climbing session
@@ -168,6 +135,33 @@ def get_user_input():
     # media - add url and validate, loop
 
     # Return object with session information
+
+
+def get_session_yamls(path):
+    '''
+    Gather session information from a given directory. If no files are found, will default to using sample_data.
+    :param path: path to directory containing session yamls
+    :type: str
+    :return: list of session files
+    :rtype: list of str
+    '''
+    try:
+        if not os.path.exists(path):
+            raise Exception(
+                f"Unable to find climbing sessions, the path '{path}' does not exist.")
+        # Look for logs, if they don't exist, then use the sample data instead
+        sessions = common.get_files(
+            path, ".*\.yaml$", recursive=False)
+        if not sessions:
+            print(
+                f"Warning: Unable to find logs located at {path}, using sample data instead...")
+            sessions = common.get_files(
+                glbs.SAMPLE_DATA_DIR, ".*\.yaml$", recursive=False)
+            if not sessions:
+                raise Exception("Unable to locate sample data.")
+        return sessions
+    except Exception as ex:
+        raise ex
 
 
 def import_data(es_url, path, recursive=False):
@@ -210,102 +204,56 @@ def import_data(es_url, path, recursive=False):
         raise ex
 
 
-def normalize_data(session):
-    '''
-    Normalize and fill missing fields in a session log
-    :param session: climbing session object
-    :type: dict
-    :return: normalized session object
-    :rtype: dict
-    '''
+def main():
     try:
-        validated_session = validate.session(session)
+        args = cmd_args.init()
+        cmd = args.command
+        # Variables
+        output_dir = validate.directory(glbs.OUTPUT_DIR)
+        if cmd == 'log':
+            raise Exception("This command is currently not supported")
+            sessions = []
+            # Creating Session
+            for path in args.log_path:
+                log = common.load_yaml(path)
+                # session.append(Session(log))
+                validate.climbing_log(log)
+            # create_record()
+            # common.write_bulk_api(updated_values, )
+            # common.update_bulk_json()
+        elif cmd == 'update':
+            logs_found = False
+            session_file = os.path.join(output_dir, "sessions.json")
+            session_logs = get_session_yamls(glbs.INPUT_DIR)
+            # Loop through all climbing logs, normalize and add additional information
+            final_data = []
+            for log in session_logs:
+                climbing_session = Session(log)
+                final_data.append(climbing_session.toDict())
+            common.write_bulk_api(final_data, session_file, 'sessions')
+            print(
+                f"Climbing information successfully updated at '{session_file}'!\nPlease use 'climb.py show' to view statistics and graphs")
+
+        elif cmd == 'show':
+            # Gathering mapping information for bookings and session
+            bookings_mapping = validate.file(
+                os.path.join(glbs.ES_DIR, 'bookings_mapping.json'))
+            session_mapping = validate.file(
+                os.path.join(glbs.ES_DIR, 'session_mapping.json'))
+
+            # Preparing Elasticsearch and Kibana for data consumption
+            create_index(glbs.ES_URL, 'bookings', bookings_mapping)
+            create_index_pattern(glbs.KIBANA_URL, 'bookings')
+            create_index(glbs.ES_URL, 'sessions', session_mapping)
+            create_index_pattern(glbs.KIBANA_URL, 'sessions')
+
+            # Importing sessions and booking formation into elasticSearch
+            import_data(glbs.ES_URL, output_dir)
+            print(f"Visualizations and stats are ready at {glbs.KIBANA_URL}")
     except Exception as ex:
         raise ex
-    #
-    # # pp = pprint.PrettyPrinter(indent=4)
-    # # pp.pprint()
-    validated_session['date'] = validated_session['date'].strftime("%Y-%m-%d")
-    return session
 
 
-def main():
-    args = cmd_args.init()
-    cmd = args.command
-    # Variables
-    output_dir = validate.directory(glbs.OUTPUT_DIR)
-    if cmd == 'log':
-        sessions = []
-        # Creating Session
-        for path in args.log_path:
-            log = common.load_yaml(path)
-            # session.append(Session(log))
-            validate.climbing_log(log)
-        # create_record()
-        # common.write_bulk_api(updated_values, )
-        # common.update_bulk_json()
-    elif cmd == 'update':
-        logs_found = False
-        log_dir = glbs.INPUT_DIR
-        session_file = os.path.join(output_dir, "session.json")
-        sessions = get_climbing_sessions(log_dir)
-
-        # print(sessions)
-
-        # Loop through all climbing logs and generate a new output for visualization
-        normalized_sessions = []
-        for session in sessions:
-            try:
-                normalized_session = normalize_data(common.load_yaml(session))
-            except Exception as ex:
-                raise Exception(
-                    f"Unable to normalize data for '{session}'\n{ex}")
-            normalized_sessions.append(normalized_session)
-        common.write_bulk_api(normalized_sessions, session_file, 'sessions')
-        # raise Exception("TODO: Currently not implemented")
-        print(
-            f"Climbing information successfully updated at '{session_file}'!\nPlease use 'climb.py show' to view statistics and graphs")
-
-    elif cmd == 'show':
-        # Gathering mapping information for bookings and session
-        bookings_mapping = validate.file(
-            os.path.join(glbs.ES_DIR, 'bookings_mapping.json'))
-        # session_mapping = validate.file(
-        #     os.path.join(glbs.ES_DIR, 'session_mapping.json'))
-
-        # Preparing Elasticsearch and Kibana for data consumption
-        create_index(glbs.ES_URL, 'bookings', bookings_mapping)
-        create_index_pattern(glbs.KIBANA_URL, 'bookings')
-        # create_index(glbs.ES_URL, 'session', bookings_mapping)
-        # create_index_pattern(glbs.KIBANA_URL, 'session')
-
-        # Importing sessions and booking formation into elasticSearch
-        import_data(glbs.ES_URL, output_dir)
-        print(f"Visualizations and stats are ready at {glbs.KIBANA_URL}")
-    else:
-        raise Exception(f"Unknown command:{cmd}")
-
-    # if config file, validate that the correct information is present
-    # read config into object
-    # validator.is_date()
-    # validator.is_number() - attempts are above 0 and integers
-    # TODO: If a grade is not listed in "Session Counter" then assume 0
-    # TODO: call function to add geo-location based on session info
-    # TODO: calculate duration of climbing
-
-    # If no cofig, get user information
-    # session_info = get_user_input()
-
-    # Verify with user about information
-    # Option to modify if needed
-    # If not from config, Write to YAML to have a papertail for logs with format YYYY-MM-DD
-    # If config, edit the file and make the changes
-    # validator.file_exists()
-
-
-    # Logging information...
-    # Update elasticsearch and kibana
-    # YAML* -> BULK_JSON-> Elastic Search -> Kibana
 if __name__ == "__main__":
     try:
         main()
