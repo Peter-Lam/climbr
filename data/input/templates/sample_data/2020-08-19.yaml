@@ -115,8 +115,8 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0 
-climbs:
-  - name: pink step=up foot-match
+projects:
+  - name: pink step-up foot-match
     location: quarry
     style:
       - coordination

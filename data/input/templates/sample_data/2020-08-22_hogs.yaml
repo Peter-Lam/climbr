@@ -51,7 +51,7 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-climbs:
+projects:
   - name: Radioactive
     location: Hog
     style:

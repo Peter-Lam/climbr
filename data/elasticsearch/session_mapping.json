@@ -1,0 +1,26 @@
+{
+    "mappings": {
+        "properties": {
+            "location":{"type": "keyword"},
+            "coordinates": {"type": "geo_point"},
+            "style": {"type": "keyword"},
+            "description": {"type": "keyword"},
+            "date": {"type": "date"},
+            "start_time": {"type": "keyword"},
+            "end_time": {"type": "keyword"},
+            "climbers": {"type":"keyword"},
+            "injury": {"properties":{
+                "isTrue": {"type": "boolean"},
+                "description": {"type":"text"}
+            }},
+            "session_counter": {"type": "nested"},
+            "projects": {"type": "nested"},
+            "media": {"type": "text"},
+            "shoes": {"type": "keyword"},
+            "duration": {
+                "type": "date",
+                "format": "hour_minute_second"
+            }
+        }
+    }
+}

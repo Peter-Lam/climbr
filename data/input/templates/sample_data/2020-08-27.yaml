@@ -1,0 +1,128 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Daniel's first day back. It was super busy today so it was really hard to project and try the new problems. Saw a V5/V6 in the quarry that looked flash-able but
+  I got a cramp on my attempts.
+date: 2020-08-28
+time:
+  start: 6:20 PM
+  end: 8:05 PM
+climbers: 
+  - Nancy Lam
+  - Daniel Atlas
+injury: 
+  isTrue: true
+  description: Lower right but cramp on my V5/v6 flash attempt
+media:
+  - https://photos.google.com/u/0/photo/AF1QipNn7-2ZpHGDjRxMcCM8I1uIgXVBknIgBMEBXi6w
+  - https://photos.google.com/u/0/photo/AF1QipO9Q7BuRlFlas0QUJMOFCX_LuGdMVnjgiqicbLn
+  - https://photos.google.com/u/0/photo/AF1QipPca25hH_11FRJbAr3Xr8q5VFZBhIsUMSG8t8za
+  - https://photos.google.com/u/0/photo/AF1QipOCYmm1x0GRVB9imziMM4q7E330s4f2CYzUkwQR
+  - https://photos.google.com/u/0/photo/AF1QipMybkWgSG3PUhzRfBr2aydEsrBJxl7HHLTnkz3Q
+  - https://photos.google.com/u/0/photo/AF1QipONpBN1VxEDuFMa7faXcTvCv_6UdzvvQMJFwtyE
+  - https://photos.google.com/u/0/photo/AF1QipNVZuPIm5gzThTtma_sGcuhx-GqaQVE4zn4eVu0
+  - https://photos.google.com/u/0/photo/AF1QipOmgd3ILq-r7EBzFZLDWOmhYrFQbBoveCd7lWKX
+  - https://photos.google.com/u/0/photo/AF1QipMgU8lCYrqPhi5nCyemuCR_tObwwohU-hjIKEkA
+session_counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 1
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 6
+  - grade: Kids - VB/V0
+    flash: 1
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 3
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 3
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: White Butt Cramp
+    location: quarry
+    style:
+      - balance
+    grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      For sure it's flash able but I got a cramp on the second move so I couldn't finish it.
+      I should be able to get it my next attempt but I'm still bummed I didn't flash it
+    media:
+      - https://photos.google.com/u/0/photo/AF1QipMgU8lCYrqPhi5nCyemuCR_tObwwohU-hjIKEkA
+shoes: Scarpa Instinct VS

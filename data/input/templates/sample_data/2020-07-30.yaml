@@ -2,7 +2,7 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Wore my Scrapas today to test reproducibility for the 4/5 kids 'pink step=up foot-match'. Wasn't able to see a big difference but I got 'mellow yellow mantle' this session
+  Wore my Scrapas today to test reproducibility for the 4/5 kids 'pink step-up foot-match'. Wasn't able to see a big difference but I got 'mellow yellow mantle' this session
 date: 2020-07-30
 time:
   start: 8:00 PM
@@ -100,8 +100,8 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0 
-climbs:
-  - name: pink step=up foot-match
+projects:
+  - name: pink step-up foot-match
     location: quarry
     style:
       - coordination

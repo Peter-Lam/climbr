@@ -10,8 +10,9 @@ time:
 climbers: 
   - Nancy Lam
   - Daniel Atlas
-  - false
-  - Add a description here
+injury: 
+  isTrue: false
+  description: Add a description of injury here
 media:
   - https://photos.google.com/photo/AF1QipOUTj5zpUWxxXSvMaZ9dzEqZTvHtDa8bW7e0i5m
   - https://photos.google.com/photo/AF1QipMuXGpAWVUbzXVZfufvvmBlo-ZAc9uLdNE1BcTm
@@ -40,7 +41,7 @@ session_counter:
     redpoint: 0
     repeat: 2
     attempts: 3
-climbs:
+projects:
   - name: Calf City
     location: Hog
     style:

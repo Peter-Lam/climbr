@@ -101,7 +101,7 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0 
-climbs:
+projects:
   - name: 3 Pocket Death Punch
     location: right overhang / slabbish
     style:
