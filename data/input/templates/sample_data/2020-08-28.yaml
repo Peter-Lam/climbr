@@ -2,8 +2,8 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  A brief description of the climbing session
-  Can span multiple lines if needed
+  Climbing with Bilal for the first time since before COVID. Taking it easy today because
+  I climbed yesterday
 date: 2020-08-28
 time:
   start: 6:20 PM
@@ -17,12 +17,11 @@ injury:
   isTrue: false
   description: Add a description of injury here
 media:
-  - 
-  - 
-  - 
-  - 
-  - 
-session_counter:
+  - https://photos.google.com/photo/AF1QipOdYuuXe6JHLDF4S_rPlH4bKhZ3EQFJbPnN3lQb
+  - https://photos.google.com/photo/AF1QipOnwL9VuLZA8VSKmKOaA_A6aD6hhE6r_ddFhYV_
+  - https://photos.google.com/photo/AF1QipOf1RX1odlXcjvyUEteFn3smVCV5HLMELMAR6mI
+  - https://photos.google.com/photo/AF1QipOS8pMnGSvzRhLz2SxaQSomIPCerZ2Db9nfQoga
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0
@@ -103,7 +102,7 @@ session_counter:
     redpoint: 0
     repeat: 0
     attempts: 0 
-climbs:
+projects:
   - name: 3 Pocket Death Punch
     location: right overhang / slabbish
     style:

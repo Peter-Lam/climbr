@@ -15,7 +15,7 @@ climbers:
   - Austin Do
 media:
   - https://photos.google.com/photo/AF1QipPR1BNbcOIN50IVYgPMnBk8_oxJX31IjaExCFFg
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

@@ -39,7 +39,7 @@ media:
   - https://photos.google.com/u/0/photo/AF1QipPPeUJA67zgYqkKq7UnVMTD0LSCDdX45yonY-tF
   - https://photos.google.com/u/0/photo/AF1QipO2U2WATbxRavWpSVNPEsWVCFVKMoXaemdUhOHb
   - https://photos.google.com/u/0/photo/AF1QipNxlaSY59Z98eYsvSUeeq3VP2ckMOnXbraN1h25  
-session_counter:
+counter:
   - grade: White
     flash: 3
     redpoint: 0
