@@ -13,8 +13,6 @@
                 "isTrue": {"type": "boolean"},
                 "description": {"type":"text"}
             }},
-            "session_counter": {"type": "nested"},
-            "projects": {"type": "nested"},
             "media": {"type": "text"},
             "shoes": {"type": "keyword"},
             "duration": {

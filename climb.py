@@ -120,7 +120,7 @@ def get_user_input():
     # Time start& end HH:MM AM/PM
     # Climbers
     # injury? Y/N if yes then describe
-    # Would you like to log session_counter?
+    # Would you like to log counter?
     #   grade? [V-Scale, Font, Comp, ungraded]
     #   Number of flashes/ redpoint / repeat / attempts
     #   Log another?
