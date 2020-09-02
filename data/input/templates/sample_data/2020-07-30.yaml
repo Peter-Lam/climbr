@@ -19,7 +19,7 @@ media:
   - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMUiHp4zcRoj2zmMK9MPSuDk5L6pAJYDbGc6yBW
   - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNBWhXNfDquPUAqdP2vP-E9aQH4vmr4cve9d7dw
   - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNiS09AGqi1YztroubWuTyle11A6gBRLrMA1vg8
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

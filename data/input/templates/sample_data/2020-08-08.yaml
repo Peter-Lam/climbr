@@ -22,7 +22,7 @@ media:
   - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNHJ4I85Nzz9rdgh-sTC_mlmWacFWA5EQP6Vgc1
   - https://photos.google.com/photo/AF1QipPE-ERL4_OYQ1DV1DJHZ5cd12-IiFnX8ZkRGs0R
   - https://photos.google.com/photo/AF1QipMz70wz0v3BNTT3Ot34CBWFtXXyYpXKUN2axWXj
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

@@ -22,7 +22,7 @@ media:
   - URL_to_image
   - URL_to_video
 # Session counter is used to track the TOTAL problems/routes climbed in a session
-session_counter:
+counter:
   # Enter a grade, it can be format you want as long as you are consistent (V Scale, Font, Dankyu, ungraded ...)
   # This template shows range between two grades since that's how Altitude grades problems, however this can be changed for your gym
   # ---- Terminology ----

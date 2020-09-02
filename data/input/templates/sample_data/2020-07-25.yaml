@@ -17,7 +17,7 @@ climbers:
 media:
   - https://photos.google.com/photo/AF1QipOdrtFetd8hAuzvlZkI21S9_50k_VTRMXO-IL6K
   - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNrZevs7c-w7DNHSuo8PINNkMGhoxQ8-S-h9NMP
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

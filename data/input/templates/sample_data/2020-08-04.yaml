@@ -20,7 +20,7 @@ media:
   - https://photos.google.com/photo/AF1QipO8puG1vujzYWLqZrfCJsmZfEoFsLLEb1NfhHJ5
   - https://photos.google.com/photo/AF1QipNennrikSfxzZ7e7peHBA4SDo1JlZ_jEKpkYbQd
   - https://photos.google.com/photo/AF1QipOg9xdATElTmwrK7jGMHPMgHW9_NcjHI9C2qEnB
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

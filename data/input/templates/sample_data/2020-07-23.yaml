@@ -10,7 +10,7 @@ time:
   end: 1:25 PM
 climbers: 
   - Nancy Lam
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

@@ -14,7 +14,7 @@ climbers:
 injury: 
   isTrue: false
   description: Add a description of injury here
-session_counter:
+counter:
   - grade: VB
     onsight: 0
     flash: 0

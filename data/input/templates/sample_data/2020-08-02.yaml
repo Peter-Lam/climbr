@@ -16,7 +16,7 @@ climbers:
 injury: 
   isTrue: false
   description: Add a description of injury here
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0
