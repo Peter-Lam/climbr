@@ -13,7 +13,7 @@ climbers:
   - Carissa Wong
 media:
   - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

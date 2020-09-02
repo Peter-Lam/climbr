@@ -29,7 +29,7 @@ media:
   - 
   - 
   - 
-session_counter:
+counter:
   - grade: White
     flash: 0
     redpoint: 0

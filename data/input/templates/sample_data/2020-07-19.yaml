@@ -14,7 +14,7 @@ climbers:
   - Austin Do
   - Roy Saavedra
   - Tamami Ichimura
-session_counter:
+counter:
   - grade: VB/V0
     flash: 2
     redpoint: 0

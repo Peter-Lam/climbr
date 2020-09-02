@@ -34,7 +34,7 @@ media:
   - https://photos.google.com/photo/AF1QipNT0R-vn3T37Box3U6WRVTXWXUWes0Gnk5LUECZ
   - https://photos.google.com/photo/AF1QipPaN1U1zh1gl9R22Bx3uIh80SMK4YJI5Hovi09L
   - https://photos.google.com/photo/AF1QipPM3jbcNFXfFHRoxT0MG_fDQ-lTz-9yH1yows9O
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

@@ -16,7 +16,7 @@ injury:
   description: Add a description of injury here
 media:
   - https://photos.google.com/share/AF1QipNmSCLgFLq13YUFtS8rWi65CjQALk4FWhm8E6iti4tKzw5HIpJKTAKXHUpT-Ln3Fw
-session_counter:
+counter:
   - grade: V0-
     onsight: 0
     flash: 0

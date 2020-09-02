@@ -29,7 +29,7 @@ media:
   - https://photos.google.com/photo/AF1QipNrsAt_EpRZs5Dpyi_LpvgpvciWd0KuQHbthzWO
   - https://photos.google.com/photo/AF1QipOnBMax-7BSL6w-oB48Mga6i33wr4XimcoWiJLa
   - https://photos.google.com/photo/AF1QipOgmZhXC_Jr0rNfF7Z_IeDDlhwCYHv38fJXQa_x
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0

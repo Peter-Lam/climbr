@@ -28,7 +28,7 @@ media:
   - https://photos.google.com/photo/AF1QipM408d0gkDgOUY7ffv08P64LEwUzakSGTWWQEbS
   - https://photos.google.com/photo/AF1QipPsr63sqxK1i0G-M6n96Mr_bDcPSrjxygf7qjkg
   - https://photos.google.com/photo/AF1QipNCf-Omp4N13qn1BHf7iEFROqR3oMwtJ8ObB2I6
-session_counter:
+counter:
   - grade: VB/V0
     flash: 0
     redpoint: 0
