@@ -119,6 +119,7 @@ def main():
                    'start_time': start,
                    'end_time': end,
                    'availability': availability,
+                   'reserved_spots': 50-availability,
                    'retrieved_at': current_time}
 
         # Logging and saving info
