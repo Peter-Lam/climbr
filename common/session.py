@@ -63,7 +63,7 @@ class Session:
             self.location_name = session_info['location']
             self.media = session_info['media']
             self.projects = session_info['projects']
-            self.session_counter = session_info['session_counter']
+            self.counter = session_info['counter']
             self.shoes = session_info['shoes'] if 'shoes' in session_info.keys(
             ) else None
             self.start_time = session_info['time']['start']
@@ -90,11 +90,11 @@ class Session:
                 "end": self.end_time,
                 "climbers": self.climbers,
                 "injury": self.injury,
-                "session_counter": self.session_counter,
+                "counter": self.counter,
                 "projects": self.projects,
                 "media": self.media,
                 "shoes": self.shoes,
-                "duration": self.duration
+                "duration": self.duration,
             }
         except Exception as ex:
             raise ex
@@ -121,10 +121,10 @@ _LOCATIONS = [Location('Altitude Kanata', '0E5, 501 Palladium Dr, Kanata, ON K2V
 
 def enchance(session_log):
     '''
-    Add coordinates, climbing duration and other information to session data
+    Adding coordinates, climbing duration and other information for data analysis
     :param session_log: climbing session object
     :type session_log: dict
-    :return: enhanced session log with duration, lon, lat values added
+    :return: enhanced session log with duration, lon, lat values, and additional counters added
     :rtype: dict
     '''
     try:
@@ -135,6 +135,39 @@ def enchance(session_log):
         # Get/set lon and latitude
         location = get_location(session_log['location'])
         session_log['coordinates'] = [location.lon, location.lat]
+        # Boolean variable to add extra stats for Altitude Kanata
+        altitude_kanata = location.lat == 45.297970 and location.lon == -75.911150
+        # Intializing counters
+        counter_keys = ['flash', 'redpoint', 'repeat',
+                        'attempts', 'completed', 'problems']
+        if location.is_outdoor:
+            counter_keys.append('onsight')
+        total_counter = {}
+        for key in counter_keys:
+            total_counter[key] = {'total': 0}
+            if altitude_kanata:
+                total_counter[key]['kids'] = 0
+                total_counter[key]['adult'] = 0
+        for counter in session_log['counter']['session'].keys():
+            # Add two additional fields to agreggate overall completed problems, and total problems
+            session_log['counter']['session'][counter]['completed'] = session_log['counter']['session'][counter]['flash'] + \
+                session_log['counter']['session'][counter]['redpoint'] + \
+                session_log['counter']['session'][counter]['repeat']
+            session_log['counter']['session'][counter]['problems'] = session_log['counter']['session'][counter]['completed'] + \
+                session_log['counter']['session'][counter]['attempts']
+            # Creating a fields to count the overall total of a session
+            for key in counter_keys:
+                total_counter[key]['total'] += session_log['counter']['session'][counter][key]
+                # Track Adult vs Kids problems if the session is at Altitude Kanata
+                if altitude_kanata:
+                    if 'Kids' in counter:
+                        total_counter[key]['kids'] += session_log['counter']['session'][counter][key]
+                    else:
+                        total_counter[key]['adult'] += session_log['counter']['session'][counter][key]
+        # Create new key:value pair for total counter stats
+        session_log['counter']['total'] = {}
+        for key in total_counter.keys():
+            session_log['counter']['total'].update({key: total_counter[key]})
         return session_log
     except Exception as ex:
         raise ex
@@ -190,7 +223,7 @@ def is_valid(session_log):
                     'time': 'time' in session_keys,
                     'start_time': 'time' in session_keys and 'start' in session_log['time'].keys(),
                     'end_time': 'time' in session_keys and 'end' in session_log['time'].keys(),
-                    'session_counter': 'session_counter' in session_keys}
+                    'counter': 'counter' in session_keys}
         missing = []
         # If not all values are present, then raise an error
         if not (all(list(required.values()))):
@@ -244,22 +277,22 @@ def is_valid(session_log):
                 pass
             else:
                 valid_media = False
-        valid_session_counter = type(session_log['session_counter']) == list
-        if valid_session_counter:
-            for counter in session_log['session_counter']:
+        valid_counter = type(session_log['counter']) == list
+        if valid_counter:
+            for counter in session_log['counter']:
                 min_set = ['grade', 'flash', 'redpoint', 'repeat', 'attempts']
                 if 'outdoor' in session_log['style']:
                     min_set.append('onsight')
                 if set(min_set).issubset(counter.keys()):
                     for item in min_set:
                         if item == 'grade' and type(counter[item]) != str:
-                            valid_session_counter = False
+                            valid_counter = False
                             break
                         elif item != 'grade' and type(counter[item]) != int:
-                            valid_session_counter = False
+                            valid_counter = False
                             break
                 else:
-                    valid_session_counter = False
+                    valid_counter = False
                     break
         valid_projects = True
         if 'projects' in session_keys:
@@ -309,7 +342,7 @@ def is_valid(session_log):
                         'climbers': valid_climbers,
                         'injury': valid_injury,
                         'media': valid_media,
-                        'session_counter': valid_session_counter,
+                        'counter': valid_counter,
                         'projects': valid_projects,
                         'shoes': valid_shoes}
         # If all fields are not valid, then raise an error with the offending fields
@@ -343,10 +376,10 @@ def normalize(session_log):
         # Split the style field by commas and turn it into a list instead
         #  This is because style could be multiple fields ie. indoor bouldering, indoor lead
         session_log['style'] = session_log['style'].split(',')
-        # Compare the session_counter list with the location's grading scale
+        # Compare the counter list with the location's grading scale
         # If any counters are missing, add to it and just defult to 0 for all categories
         counted_grades = []
-        for counter in session_log['session_counter']:
+        for counter in session_log['counter']:
             counted_grades.append(counter['grade'])
         missing_counters = list(set(location.grading) - set(counted_grades))
         for counter in missing_counters:
@@ -354,9 +387,9 @@ def normalize(session_log):
                                'redpoint': 0, 'repeat': 0, 'attempts': 0}
             if location.is_outdoor:
                 default_counter['onsight'] = 0
-            session_log['session_counter'].append(default_counter)
-        session_log['session_counter'] = reformat_counter(
-            session_log['session_counter'])
+            session_log['counter'].append(default_counter)
+        session_log['counter'] = reformat_counter(
+            session_log['counter'])
         # Look at the optional fields and add filler values
         if 'climbers' not in available_fields:
             session_log['climbers'] = None
@@ -389,22 +422,19 @@ def normalize(session_log):
 
 def reformat_counter(counters):
     '''
-    Restructuring the list session_counter to nest onsight,flash,redpoint,repeat and attempts under the grade name.
+    Restructuring the list counter to nest onsight,flash,redpoint,repeat and attempts under the grade name.
     :param counters: list of sessions logs
     :type: list of dict
     :return: reformatted list of sessions logs
     :rtype: list of dict
     '''
     try:
-        reformatted = []
+        reformatted = {'session': {}}
         for counter in counters:
-            new_counter = {counter['grade']: {"flash": counter['flash'],
-                                              "redpoint": counter['redpoint'],
-                                              "repeat": counter['repeat'],
-                                              "attempts": counter['attempts']}}
-            if 'onsight' in counter.keys():
-                new_counter[counter['grade']]['onsight'] = counter['onsight']
-            reformatted.append(new_counter)
+            reformatted['session'].update({counter['grade']: {}})
+            for key in counter.keys()-'grade':
+                reformatted['session'][counter['grade']].update(
+                    {key: counter[key]})
         return reformatted
     except Exception as ex:
         raise ex
