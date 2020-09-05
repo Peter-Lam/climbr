@@ -20,6 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 import common.globals as glbs  # noqa
 import common.common as common  # noqa
+import common.validate as validate  # noqa
 
 
 def main():
@@ -125,9 +126,21 @@ def main():
         # Logging and saving info
         common.write_log(f"Retrieved session at {current_time}", output_log)
         common.update_bulk_api(booking, output_file, 'bookings')
-        print(
-            f"[{current_time}] Session info successfully retrieved! See information at '{output_file}'")
 
+        # Initialize ES and Kibana urls depending on if it's running in Docker or host
+        es_url = glbs.ES_URL if 'DOCKER_SCRAPER' not in os.environ else glbs.ES_URL_DOCKER
+        kibana_url = glbs.KIBANA_URL if 'DOCKER_SCRAPER' not in os.environ else glbs.KIBANA_URL_DOCKER
+        try:
+            # Preparing Elasticsearch and Kibana for data consumption
+            common.create_index(es_url, 'bookings', validate.file(
+                os.path.join(glbs.ES_DIR, "bookings_mapping.json")), silent=True)
+            common.create_index_pattern(kibana_url, 'bookings', silent=True)
+            # Uploading data into Elasticsearch
+            common.upload_to_es(es_url, output_file, silent=True)
+        except Exception as ex:
+            print("WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information")
+        print(
+            f"[{current_time}] Session info successfully retrieved! See information at '{output_file}' or on port 5601")
         driver.quit()
     except Exception as ex:
         driver.quit()

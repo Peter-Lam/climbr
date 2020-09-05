@@ -12,7 +12,7 @@ RUN apt-get -y update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y install cron curl python3 python3-pip tzdata wget unzip\
     && ln -s /usr/bin/python3 /usr/bin/python \ 
     && ln -s /usr/bin/pip3 /usr/bin/pip \
-    && pip install requests selenium pyyaml \ 
+    && pip install requests selenium pyyaml elasticsearch\ 
     && apt-get update
 # Install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \

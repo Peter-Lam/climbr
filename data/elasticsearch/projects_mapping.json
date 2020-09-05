@@ -1,0 +1,25 @@
+{
+    "mappings": {
+        "properties": {
+            "name": {"type":"keyword"},
+            "location": {"type":"keyword"},
+            "style": {"type":"keyword"},
+            "grade":{"type": "keyword"},
+            "onsight":{"type": "integer"},
+            "flash":{"type": "integer"},
+            "redpoint":{"type": "integer"},
+            "repeat":{"type": "integer"},
+            "attempts":{"type": "integer"},
+            "completed":{"type": "integer"},
+            "total":{"type": "integer"},
+            "notes": {"type":"text"},
+            "media": {"type":"keyword"},
+            "session":{ "properties": {
+                "location":{"type": "keyword"},
+                "style":{"type": "keyword"},
+                "date":{"type": "date"},
+                "shoes": {"type": "keyword"}
+            }}
+        }
+    }
+}

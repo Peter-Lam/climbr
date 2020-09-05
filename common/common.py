@@ -5,10 +5,110 @@ This module contains common used functions by scripts within Climbing-Tracker
 import json
 import os
 import re
+import requests
 import sys
+import urllib
 import yaml
 import common.validate as validate
+
+from elasticsearch import Elasticsearch
 from datetime import datetime
+
+
+def connect_to_es(es_url):
+    '''
+    Try to connect to Elasticsearch and return ES object, raises exception if unable to ping
+    :param es_url: url to the Elasticsearch instance
+    :type: str
+    :return: ES Instance
+    :rtype: obj
+    :raises Exception: Elasticsearch is not running
+    '''
+    try:
+        es = Elasticsearch([es_url], verify_certs=True)
+        if not es.ping():
+            raise Exception(
+                "Unable to ping Elasticsearch, please confirm connection and try again.")
+        return es
+    except Exception as ex:
+        raise ex
+    # TODO: Check for docker, and if installed, build ELK stack images
+
+
+def create_index(es_url, index_name, mapping_path, silent=False):
+    '''
+    Create an Elasticsearch index (table) using a mapping to define field types
+    :param es_url: url to Elasticsearch instance
+    :param index_name: Name of index
+    :param mapping_path: Path to a json
+    :param silent: suppres print messages
+    :type es_url: str
+    :type index_name: str
+    :type mapping_path: str
+    :type silent: bool
+    :raises Exception: path is not a directory, does not exist or Elasticsearch is not running
+    '''
+    try:
+        # Connecting to Elasticsearch
+        es = connect_to_es(es_url)
+        # Deleting any old indexes
+        if es.indices.exists(index_name):
+            es.indices.delete(index_name)
+        # TODO: If it exists, then do nothing, else create index
+        mapping = load_file(mapping_path)
+        try:
+            if not silent:
+                print(f"Creating {index_name} index...")
+            es.indices.create(index_name, body=mapping)
+            if not silent:
+                print(f"Successfully created {index_name} index!")
+        except Exception as ex:
+            raise Exception(
+                f"Unable to create mapping from '{mapping_path}'")
+    except Exception as ex:
+        raise ex
+
+
+def create_index_pattern(kibana_url, index_name, silent=False):
+    '''
+    Create a general Kibana index pattern by calling a cURL command
+    :param kibana_url: url to the Kibana instance
+    :param index_name: Name of index
+    :param silent: suppres print messages
+    :type index_name: str
+    :type mapping_path: str
+    :type silent: bool
+    :raises Exception: path is not a directory, does not exist
+    '''
+    try:
+        # Try to ping Kibana
+        if requests.get(kibana_url).status_code != 200:
+            raise Exception(
+                f"Unable to ping Kibana instance located at '{kibana_url}'")
+        index_url = urllib.parse.urljoin(
+            kibana_url, f"api/saved_objects/index-pattern/{index_name}")
+        # Create index pattern if not present
+        if requests.get(index_url).status_code != 200:
+            headers = {'kbn-xsrf': 'true',
+                       'Content-Type': 'application/json'}
+            data = '{{ "attributes": {{ "title": "{}*" }} }}'.format(
+                index_name)
+            if not silent:
+                print(f"Creating index pattern for {index_name}...")
+            response = requests.post(
+                index_url, headers=headers, data=data)
+            if response.status_code == 200 and not silent:
+                print(f"Successfully created index pattern for {index_name}!")
+            else:
+                # TODO: Log respons output on error
+                # response.json()
+                raise Exception(
+                    f"{response} Unable to create bookings index pattern")
+        elif not silent:
+            print(
+                f"Found existing index pattern for {index_name}, skipping creation")
+    except Exception as ex:
+        raise ex
 
 
 def convert_grades(grade):
@@ -42,6 +142,16 @@ def convert_to_hhmm(time):
                 f"Unexpected format. Unable to convert '{time}'to HH:MM AM/PM format.")
     except Exception as ex:
         raise ex
+
+
+def delete_file(path):
+    '''
+    Deletes file if it exists
+    :param path: Path of file
+    :type: str
+    '''
+    if os.path.exists(path):
+        os.remove(path)
 
 
 def str_to_time(string):
@@ -313,11 +423,48 @@ def update_bulk_api(data, output_path, index_name):
         raise ex
 
 
-def delete_file(path):
+def upload_to_es(es_url, path, recursive=False, silent=False):
     '''
-    Deletes file if it exists
-    :param path: Path of file
-    :type: str
+    Upload bulk json files into Elasticsearch
+    :param es_url: url to Elasticsearch instance
+    :param path: path to directory to import OR path to a specific file
+    :param recursive: optional bool to collect files from sub-dirs
+    :param silent: suppres print messages
+    :type es_url: str
+    :type path: str
+    :type recursive: bool
+    :type silent: bool
+    :raises Exception: path is not a directory, does not exist
     '''
-    if os.path.exists(path):
-        os.remove(path)
+    try:
+        # Connecting to Elasticsearch
+        es = connect_to_es(es_url)
+        # Load all json files located in output dir into ES
+        bulk_json = []
+        try:
+            validate.file(path)
+            bulk_json.append(path)
+        except Exception:
+            bulk_json = get_files(path, ".*\.json$")
+            if not bulk_json:
+                raise Exception(
+                    f"Unable to find files to upload, please use 'climb.py update' first then re-run 'climb.py show'")
+
+        for file in bulk_json:
+            content = load_file(file)
+            es_response = es.bulk(content)
+            # If there are errors, look for problematic index and alert user
+            if es_response['errors']:
+                es_error = ''
+                for item in es_response['items']:
+                    if item['index']['status'] != 200:
+                        id = item['index']['_id']
+                        exception_type = item['index']['error']['type']
+                        reason = item['index']['error']['reason']
+                        es_error += f"  [id:{id}] {exception_type}: {reason} \n"
+                raise Exception(
+                    f"Unable to upload '{file}' into Elasticsearch do to the following rows:\n{es_error}")
+            elif not silent:
+                print(f"'{file}' has been successfully uploaded!")
+    except Exception as ex:
+        raise ex

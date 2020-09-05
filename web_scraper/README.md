@@ -1,5 +1,5 @@
 # bookings.py
-`bookings.py` collects Altitude Gym's availability for a current climbing session. Although this script can be manually ran, `/crontab` has been provided to automatically call this script 2 minutes before the end of a session.
+`bookings.py` collects Altitude Gym's availability for a current climbing session. Although this script can be manually ran, a crontab has been provided to automatically call this script 2 minutes before the start of a session.
 
 ## Motivation
 Looking for trends in the session availability so I can plan my climbing days accordingly. With COVID-19, I'm looking to climb when the gym is most likely to be empty
