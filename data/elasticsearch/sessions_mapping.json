@@ -1,0 +1,46 @@
+{
+    "mappings": {
+        "properties": {
+            "location":{"type": "keyword"},
+            "coordinates": {"type": "geo_point"},
+            "style": {"type": "keyword"},
+            "description": {"type": "keyword"},
+            "date": {"type": "date"},
+            "start": {"type": "keyword"},
+            "end": {"type": "keyword"},
+            "climbers": {"type":"keyword"},
+            "injury": {"properties":{
+                "isTrue": {"type": "boolean"},
+                "description": {"type":"text"}
+            }},
+            "media": {"type": "text"},
+            "shoes": {"type": "keyword"},
+            "duration": {
+                "type": "date",
+                "format": "hour_minute_second"
+            },
+            "onsight": {"type": "integer"},
+            "flash": {"type": "integer"},
+            "redpoint": {"type": "integer"},
+            "repeat": {"type": "integer"},
+            "attempts": {"type": "integer"},
+            "completed": {"type": "integer"},
+            "total_problems": {"type": "integer"},
+            "onsight_kids": {"type": "integer"},
+            "flash_kids": {"type": "integer"},
+            "redpoint_kids": {"type": "integer"},
+            "repeat_kids": {"type": "integer"},
+            "attempts_kids": {"type": "integer"},
+            "completed_kids": {"type": "integer"},
+            "total_problems_kids": {"type": "integer"},
+            "onsight_adult": {"type": "integer"},
+            "flash_adult": {"type": "integer"},
+            "redpoint_adult": {"type": "integer"},
+            "repeat_adult": {"type": "integer"},
+            "attempts_adult": {"type": "integer"},
+            "completed_adult": {"type": "integer"},
+            "total_problems_adult": {"type": "integer"}
+
+        }
+    }
+}
