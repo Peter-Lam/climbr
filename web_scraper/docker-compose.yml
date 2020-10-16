@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  web_scraper:
+    build: ./
+    container_name: climbr_bookings
+    volumes:
+      - ../:/workspace/
+    command: cron && tail -f /workspace/logs/cron.log
+  
