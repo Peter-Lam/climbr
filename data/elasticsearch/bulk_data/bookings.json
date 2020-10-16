@@ -1,0 +1,954 @@
+{"index": {"_index": "bookings", "_id": 0}}
+{"month": "August", "day_of_week": "Sunday", "day": "2", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 23, "retrieved_at": "2020-08-02T09:58:01.314168", "location": "Altitude Kanata", "reserved_spots": 27, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 1}}
+{"month": "August", "day_of_week": "Sunday", "day": "2", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 25, "retrieved_at": "2020-08-02T11:58:02.019169", "location": "Altitude Kanata", "reserved_spots": 25, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 2}}
+{"month": "August", "day_of_week": "Sunday", "day": "2", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 13, "retrieved_at": "2020-08-02T13:58:01.965641", "location": "Altitude Kanata", "reserved_spots": 37, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 3}}
+{"month": "August", "day_of_week": "Sunday", "day": "2", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 15, "retrieved_at": "2020-08-02T15:58:01.513525", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 4}}
+{"month": "August", "day_of_week": "Sunday", "day": "2", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 21, "retrieved_at": "2020-08-02T17:58:02.593026", "location": "Altitude Kanata", "reserved_spots": 29, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 5}}
+{"month": "August", "day_of_week": "Sunday", "day": "2", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 21, "retrieved_at": "2020-08-02T19:58:02.231314", "location": "Altitude Kanata", "reserved_spots": 29, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 6}}
+{"month": "August", "day_of_week": "Monday", "day": "3", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 29, "retrieved_at": "2020-08-03T09:58:01.510190", "location": "Altitude Kanata", "reserved_spots": 21, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 7}}
+{"month": "August", "day_of_week": "Monday", "day": "3", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 37, "retrieved_at": "2020-08-03T11:58:01.436436", "location": "Altitude Kanata", "reserved_spots": 13, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 8}}
+{"month": "August", "day_of_week": "Monday", "day": "3", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 38, "retrieved_at": "2020-08-03T13:58:04.131093", "location": "Altitude Kanata", "reserved_spots": 12, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 9}}
+{"month": "August", "day_of_week": "Monday", "day": "3", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 30, "retrieved_at": "2020-08-03T15:58:02.184600", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 10}}
+{"month": "August", "day_of_week": "Monday", "day": "3", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 27, "retrieved_at": "2020-08-03T17:58:02.689774", "location": "Altitude Kanata", "reserved_spots": 23, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 11}}
+{"month": "August", "day_of_week": "Monday", "day": "3", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 26, "retrieved_at": "2020-08-03T19:58:01.861966", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 12}}
+{"month": "August", "day_of_week": "Tuesday", "day": "4", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 35, "retrieved_at": "2020-08-04T09:58:01.969926", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 13}}
+{"month": "August", "day_of_week": "Tuesday", "day": "4", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 38, "retrieved_at": "2020-08-04T11:58:02.057786", "location": "Altitude Kanata", "reserved_spots": 12, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 14}}
+{"month": "August", "day_of_week": "Tuesday", "day": "4", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 37, "retrieved_at": "2020-08-04T13:58:02.095963", "location": "Altitude Kanata", "reserved_spots": 13, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 15}}
+{"month": "August", "day_of_week": "Tuesday", "day": "4", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 35, "retrieved_at": "2020-08-04T15:58:02.163192", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 16}}
+{"month": "August", "day_of_week": "Tuesday", "day": "4", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 0, "retrieved_at": "2020-08-04T17:58:02.689774", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 17}}
+{"month": "August", "day_of_week": "Tuesday", "day": "4", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 0, "retrieved_at": "2020-08-04T19:58:01.380987", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 18}}
+{"month": "August", "day_of_week": "Wednesday", "day": "5", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 37, "retrieved_at": "2020-08-05T09:58:01.727052", "location": "Altitude Kanata", "reserved_spots": 13, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 19}}
+{"month": "August", "day_of_week": "Wednesday", "day": "5", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 40, "retrieved_at": "2020-08-05T11:58:01.446269", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 20}}
+{"month": "August", "day_of_week": "Wednesday", "day": "5", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 35, "retrieved_at": "2020-08-05T13:58:01.757554", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 21}}
+{"month": "August", "day_of_week": "Wednesday", "day": "5", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 33, "retrieved_at": "2020-08-05T15:58:01.890067", "location": "Altitude Kanata", "reserved_spots": 17, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 22}}
+{"month": "August", "day_of_week": "Wednesday", "day": "5", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 5, "retrieved_at": "2020-08-05T17:58:01.242196", "location": "Altitude Kanata", "reserved_spots": 45, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 23}}
+{"month": "August", "day_of_week": "Wednesday", "day": "5", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 18, "retrieved_at": "2020-08-05T19:58:01.797394", "location": "Altitude Kanata", "reserved_spots": 32, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 24}}
+{"month": "August", "day_of_week": "Thursday", "day": "6", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 36, "retrieved_at": "2020-08-06T09:58:01.503162", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 25}}
+{"month": "August", "day_of_week": "Thursday", "day": "6", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 35, "retrieved_at": "2020-08-06T11:58:02.210984", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 26}}
+{"month": "August", "day_of_week": "Thursday", "day": "6", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 39, "retrieved_at": "2020-08-06T13:58:01.339889", "location": "Altitude Kanata", "reserved_spots": 11, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 27}}
+{"month": "August", "day_of_week": "Thursday", "day": "6", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 27, "retrieved_at": "2020-08-06T15:58:01.327758", "location": "Altitude Kanata", "reserved_spots": 23, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 28}}
+{"month": "August", "day_of_week": "Thursday", "day": "6", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 9, "retrieved_at": "2020-08-06T17:58:02.085900", "location": "Altitude Kanata", "reserved_spots": 41, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 29}}
+{"month": "August", "day_of_week": "Thursday", "day": "6", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 1, "retrieved_at": "2020-08-06T19:58:01.797394", "location": "Altitude Kanata", "reserved_spots": 49, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 30}}
+{"month": "August", "day_of_week": "Friday", "day": "7", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 40, "retrieved_at": "2020-08-07T09:58:02.249217", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 31}}
+{"month": "August", "day_of_week": "Friday", "day": "7", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 36, "retrieved_at": "2020-08-07T11:58:01.294269", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 32}}
+{"month": "August", "day_of_week": "Friday", "day": "7", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 37, "retrieved_at": "2020-08-07T13:58:01.805177", "location": "Altitude Kanata", "reserved_spots": 13, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 33}}
+{"month": "August", "day_of_week": "Friday", "day": "7", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 30, "retrieved_at": "2020-08-07T15:58:01.749691", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 34}}
+{"month": "August", "day_of_week": "Friday", "day": "7", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 28, "retrieved_at": "2020-08-07T17:58:01.912041", "location": "Altitude Kanata", "reserved_spots": 22, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 35}}
+{"month": "August", "day_of_week": "Friday", "day": "7", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 26, "retrieved_at": "2020-08-07T19:58:02.052447", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 36}}
+{"month": "August", "day_of_week": "Saturday", "day": "8", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 31, "retrieved_at": "2020-08-08T09:58:01.478272", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 37}}
+{"month": "August", "day_of_week": "Saturday", "day": "8", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 36, "retrieved_at": "2020-08-08T11:58:01.408109", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 38}}
+{"month": "August", "day_of_week": "Saturday", "day": "8", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 20, "retrieved_at": "2020-08-08T13:58:01.881602", "location": "Altitude Kanata", "reserved_spots": 30, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 39}}
+{"month": "August", "day_of_week": "Saturday", "day": "8", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 35, "retrieved_at": "2020-08-08T15:58:01.979120", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 40}}
+{"month": "August", "day_of_week": "Saturday", "day": "8", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 39, "retrieved_at": "2020-08-08T17:58:02.187454", "location": "Altitude Kanata", "reserved_spots": 11, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 41}}
+{"month": "August", "day_of_week": "Saturday", "day": "8", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 38, "retrieved_at": "2020-08-08T19:58:01.515439", "location": "Altitude Kanata", "reserved_spots": 12, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 42}}
+{"month": "August", "day_of_week": "Sunday", "day": "9", "year": "2020", "time_slot": "10 AM to 11:30 AM", "start_time": "10:00 AM", "end_time": "11:30 AM", "availability": 23, "retrieved_at": "2020-08-09T09:58:01.326365", "location": "Altitude Kanata", "reserved_spots": 27, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 43}}
+{"month": "August", "day_of_week": "Sunday", "day": "9", "year": "2020", "time_slot": "12 PM to 1:30 PM", "start_time": "12:00 PM", "end_time": "01:30 PM", "availability": 30, "retrieved_at": "2020-08-09T11:58:02.224006", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 12, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 44}}
+{"month": "August", "day_of_week": "Sunday", "day": "9", "year": "2020", "time_slot": "2 PM to 3:30 PM", "start_time": "02:00 PM", "end_time": "03:30 PM", "availability": 19, "retrieved_at": "2020-08-09T13:58:01.697155", "location": "Altitude Kanata", "reserved_spots": 31, "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 45}}
+{"month": "August", "day_of_week": "Sunday", "day": "9", "year": "2020", "time_slot": "4 PM to 5:30 PM", "start_time": "04:00 PM", "end_time": "05:30 PM", "availability": 9, "retrieved_at": "2020-08-09T15:58:02.228383", "location": "Altitude Kanata", "reserved_spots": 41, "capacity": 50, "start_hour": 16, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 46}}
+{"month": "August", "day_of_week": "Sunday", "day": "9", "year": "2020", "time_slot": "6 PM to 7:30 PM", "start_time": "06:00 PM", "end_time": "07:30 PM", "availability": 29, "retrieved_at": "2020-08-09T17:58:01.487998", "location": "Altitude Kanata", "reserved_spots": 21, "capacity": 50, "start_hour": 18, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 47}}
+{"month": "August", "day_of_week": "Sunday", "day": "9", "year": "2020", "time_slot": "8 PM to 9:30 PM", "start_time": "08:00 PM", "end_time": "09:30 PM", "availability": 24, "retrieved_at": "2020-08-09T19:58:01.487379", "location": "Altitude Kanata", "reserved_spots": 26, "capacity": 50, "start_hour": 20, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 48}}
+{"month": "August", "day_of_week": "Monday", "day": "10", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 37, "retrieved_at": "2020-08-10T09:58:02.095854", "location": "Altitude Kanata", "reserved_spots": 13, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 49}}
+{"month": "August", "day_of_week": "Monday", "day": "10", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 43, "retrieved_at": "2020-08-10T13:58:01.370142", "location": "Altitude Kanata", "reserved_spots": 7, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 50}}
+{"month": "August", "day_of_week": "Monday", "day": "10", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 32, "retrieved_at": "2020-08-10T15:58:02.076752", "location": "Altitude Kanata", "reserved_spots": 18, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 51}}
+{"month": "August", "day_of_week": "Monday", "day": "10", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 8, "retrieved_at": "2020-08-10T17:58:01.646163", "location": "Altitude Kanata", "reserved_spots": 42, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 52}}
+{"month": "August", "day_of_week": "Monday", "day": "10", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 19, "retrieved_at": "2020-08-10T19:58:01.820394", "location": "Altitude Kanata", "reserved_spots": 31, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 53}}
+{"month": "August", "day_of_week": "Tuesday", "day": "11", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 40, "retrieved_at": "2020-08-11T09:58:01.379505", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 54}}
+{"month": "August", "day_of_week": "Tuesday", "day": "11", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 46, "retrieved_at": "2020-08-11T11:58:02.074512", "location": "Altitude Kanata", "reserved_spots": 4, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 55}}
+{"month": "August", "day_of_week": "Tuesday", "day": "11", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 40, "retrieved_at": "2020-08-11T13:58:01.946908", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 56}}
+{"month": "August", "day_of_week": "Tuesday", "day": "11", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 12, "retrieved_at": "2020-08-11T17:58:01.543986", "location": "Altitude Kanata", "reserved_spots": 38, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 57}}
+{"month": "August", "day_of_week": "Tuesday", "day": "11", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 14, "retrieved_at": "2020-08-11T19:58:01.945918", "location": "Altitude Kanata", "reserved_spots": 36, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 58}}
+{"month": "August", "day_of_week": "Wednesday", "day": "12", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 36, "retrieved_at": "2020-08-12T09:58:01.942070", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 59}}
+{"month": "August", "day_of_week": "Wednesday", "day": "12", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 34, "retrieved_at": "2020-08-12T11:58:02.052144", "location": "Altitude Kanata", "reserved_spots": 16, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 60}}
+{"month": "August", "day_of_week": "Wednesday", "day": "12", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 31, "retrieved_at": "2020-08-12T13:58:01.807379", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 61}}
+{"month": "August", "day_of_week": "Wednesday", "day": "12", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 30, "retrieved_at": "2020-08-12T15:58:01.699628", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 62}}
+{"month": "August", "day_of_week": "Wednesday", "day": "12", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 13, "retrieved_at": "2020-08-12T17:58:01.528770", "location": "Altitude Kanata", "reserved_spots": 37, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 63}}
+{"month": "August", "day_of_week": "Wednesday", "day": "12", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 31, "retrieved_at": "2020-08-12T19:58:01.214120", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 64}}
+{"month": "August", "day_of_week": "Thursday", "day": "13", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 42, "retrieved_at": "2020-08-13T09:58:01.317977", "location": "Altitude Kanata", "reserved_spots": 8, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 65}}
+{"month": "August", "day_of_week": "Thursday", "day": "13", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 45, "retrieved_at": "2020-08-13T11:58:01.697770", "location": "Altitude Kanata", "reserved_spots": 5, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 66}}
+{"month": "August", "day_of_week": "Thursday", "day": "13", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 39, "retrieved_at": "2020-08-13T13:58:01.777924", "location": "Altitude Kanata", "reserved_spots": 11, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 67}}
+{"month": "August", "day_of_week": "Thursday", "day": "13", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 18, "retrieved_at": "2020-08-13T15:58:01.815510", "location": "Altitude Kanata", "reserved_spots": 32, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 68}}
+{"month": "August", "day_of_week": "Thursday", "day": "13", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 17, "retrieved_at": "2020-08-13T17:58:01.750999", "location": "Altitude Kanata", "reserved_spots": 33, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 69}}
+{"month": "August", "day_of_week": "Thursday", "day": "13", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 11, "retrieved_at": "2020-08-13T19:58:01.868832", "location": "Altitude Kanata", "reserved_spots": 39, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 70}}
+{"month": "August", "day_of_week": "Friday", "day": "14", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 38, "retrieved_at": "2020-08-14T09:58:01.262165", "location": "Altitude Kanata", "reserved_spots": 12, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 71}}
+{"month": "August", "day_of_week": "Friday", "day": "14", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 32, "retrieved_at": "2020-08-14T11:58:01.366238", "location": "Altitude Kanata", "reserved_spots": 18, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 72}}
+{"month": "August", "day_of_week": "Friday", "day": "14", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 26, "retrieved_at": "2020-08-14T13:58:02.116776", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 73}}
+{"month": "August", "day_of_week": "Friday", "day": "14", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 32, "retrieved_at": "2020-08-14T15:58:01.205309", "location": "Altitude Kanata", "reserved_spots": 18, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 74}}
+{"month": "August", "day_of_week": "Friday", "day": "14", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 8, "retrieved_at": "2020-08-14T17:58:01.295579", "location": "Altitude Kanata", "reserved_spots": 42, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 75}}
+{"month": "August", "day_of_week": "Friday", "day": "14", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 19, "retrieved_at": "2020-08-14T19:58:01.888941", "location": "Altitude Kanata", "reserved_spots": 31, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 76}}
+{"month": "August", "day_of_week": "Saturday", "day": "15", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 23, "retrieved_at": "2020-08-15T09:58:01.433672", "location": "Altitude Kanata", "reserved_spots": 27, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 77}}
+{"month": "August", "day_of_week": "Saturday", "day": "15", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 35, "retrieved_at": "2020-08-15T11:58:02.027479", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 78}}
+{"month": "August", "day_of_week": "Saturday", "day": "15", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 28, "retrieved_at": "2020-08-15T13:58:01.194584", "location": "Altitude Kanata", "reserved_spots": 22, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 79}}
+{"month": "August", "day_of_week": "Saturday", "day": "15", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 31, "retrieved_at": "2020-08-15T15:58:01.188874", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 80}}
+{"month": "August", "day_of_week": "Saturday", "day": "15", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 36, "retrieved_at": "2020-08-15T17:58:01.898999", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 81}}
+{"month": "August", "day_of_week": "Saturday", "day": "15", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 27, "retrieved_at": "2020-08-15T19:58:02.115887", "location": "Altitude Kanata", "reserved_spots": 23, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 82}}
+{"month": "August", "day_of_week": "Sunday", "day": "16", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 34, "retrieved_at": "2020-08-16T09:58:01.715134", "location": "Altitude Kanata", "reserved_spots": 16, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 83}}
+{"month": "August", "day_of_week": "Sunday", "day": "16", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 28, "retrieved_at": "2020-08-16T11:58:01.885507", "location": "Altitude Kanata", "reserved_spots": 22, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 84}}
+{"month": "August", "day_of_week": "Sunday", "day": "16", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 15, "retrieved_at": "2020-08-16T13:58:01.982622", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 85}}
+{"month": "August", "day_of_week": "Sunday", "day": "16", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 29, "retrieved_at": "2020-08-16T15:58:01.606858", "location": "Altitude Kanata", "reserved_spots": 21, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 86}}
+{"month": "August", "day_of_week": "Sunday", "day": "16", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 31, "retrieved_at": "2020-08-16T17:58:02.086612", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 87}}
+{"month": "August", "day_of_week": "Monday", "day": "17", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 32, "retrieved_at": "2020-08-17T12:03:01.579300", "location": "Altitude Kanata", "reserved_spots": 18, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 88}}
+{"month": "August", "day_of_week": "Monday", "day": "17", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 25, "retrieved_at": "2020-08-17T14:08:01.356289", "location": "Altitude Kanata", "reserved_spots": 25, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 89}}
+{"month": "August", "day_of_week": "Monday", "day": "17", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 27, "retrieved_at": "2020-08-17T16:13:01.467950", "location": "Altitude Kanata", "reserved_spots": 23, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 90}}
+{"month": "August", "day_of_week": "Monday", "day": "17", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 18, "retrieved_at": "2020-08-17T18:18:01.217076", "location": "Altitude Kanata", "reserved_spots": 32, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 91}}
+{"month": "August", "day_of_week": "Monday", "day": "17", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 23, "retrieved_at": "2020-08-17T20:23:01.339114", "location": "Altitude Kanata", "reserved_spots": 27, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 92}}
+{"month": "August", "day_of_week": "Tuesday", "day": "18", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 42, "retrieved_at": "2020-08-18T09:58:01.493366", "location": "Altitude Kanata", "reserved_spots": 8, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 93}}
+{"month": "August", "day_of_week": "Tuesday", "day": "18", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 31, "retrieved_at": "2020-08-18T12:03:02.338218", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 94}}
+{"month": "August", "day_of_week": "Tuesday", "day": "18", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 26, "retrieved_at": "2020-08-18T14:08:01.726313", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 95}}
+{"month": "August", "day_of_week": "Tuesday", "day": "18", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 23, "retrieved_at": "2020-08-18T16:13:01.882947", "location": "Altitude Kanata", "reserved_spots": 27, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 96}}
+{"month": "August", "day_of_week": "Tuesday", "day": "18", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 7, "retrieved_at": "2020-08-18T18:18:01.740286", "location": "Altitude Kanata", "reserved_spots": 43, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 97}}
+{"month": "August", "day_of_week": "Tuesday", "day": "18", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 2, "retrieved_at": "2020-08-18T20:23:02.086111", "location": "Altitude Kanata", "reserved_spots": 48, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 98}}
+{"month": "August", "day_of_week": "Wednesday", "day": "19", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 40, "retrieved_at": "2020-08-19T09:58:01.529974", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 99}}
+{"month": "August", "day_of_week": "Wednesday", "day": "19", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 41, "retrieved_at": "2020-08-19T12:03:01.955280", "location": "Altitude Kanata", "reserved_spots": 9, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 100}}
+{"month": "August", "day_of_week": "Wednesday", "day": "19", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 36, "retrieved_at": "2020-08-19T14:08:01.995083", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 101}}
+{"month": "August", "day_of_week": "Wednesday", "day": "19", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 30, "retrieved_at": "2020-08-19T16:13:02.028557", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 102}}
+{"month": "August", "day_of_week": "Wednesday", "day": "19", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 9, "retrieved_at": "2020-08-19T18:18:01.201465", "location": "Altitude Kanata", "reserved_spots": 41, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 103}}
+{"month": "August", "day_of_week": "Wednesday", "day": "19", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 15, "retrieved_at": "2020-08-19T20:23:01.999170", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 104}}
+{"month": "August", "day_of_week": "Thursday", "day": "20", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 39, "retrieved_at": "2020-08-20T09:58:02.049740", "location": "Altitude Kanata", "reserved_spots": 11, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 105}}
+{"month": "August", "day_of_week": "Thursday", "day": "20", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 34, "retrieved_at": "2020-08-20T12:03:02.162857", "location": "Altitude Kanata", "reserved_spots": 16, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 106}}
+{"month": "August", "day_of_week": "Thursday", "day": "20", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 35, "retrieved_at": "2020-08-20T14:08:01.200229", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 107}}
+{"month": "August", "day_of_week": "Thursday", "day": "20", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 15, "retrieved_at": "2020-08-20T16:13:02.149647", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 108}}
+{"month": "August", "day_of_week": "Thursday", "day": "20", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 8, "retrieved_at": "2020-08-20T18:18:01.339495", "location": "Altitude Kanata", "reserved_spots": 42, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 109}}
+{"month": "August", "day_of_week": "Thursday", "day": "20", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 0, "retrieved_at": "2020-08-20T20:23:01.423406", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 110}}
+{"month": "August", "day_of_week": "Friday", "day": "21", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 40, "retrieved_at": "2020-08-21T09:58:01.645906", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 111}}
+{"month": "August", "day_of_week": "Friday", "day": "21", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 34, "retrieved_at": "2020-08-21T12:03:01.842667", "location": "Altitude Kanata", "reserved_spots": 16, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 112}}
+{"month": "August", "day_of_week": "Friday", "day": "21", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 20, "retrieved_at": "2020-08-21T14:08:01.224925", "location": "Altitude Kanata", "reserved_spots": 30, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 113}}
+{"month": "August", "day_of_week": "Friday", "day": "21", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 26, "retrieved_at": "2020-08-21T16:13:01.659937", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 114}}
+{"month": "August", "day_of_week": "Friday", "day": "21", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 19, "retrieved_at": "2020-08-21T18:18:01.781899", "location": "Altitude Kanata", "reserved_spots": 31, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 115}}
+{"month": "August", "day_of_week": "Friday", "day": "21", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 16, "retrieved_at": "2020-08-21T20:23:01.907193", "location": "Altitude Kanata", "reserved_spots": 34, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 116}}
+{"month": "August", "day_of_week": "Saturday", "day": "22", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 24, "retrieved_at": "2020-08-22T09:58:01.564241", "location": "Altitude Kanata", "reserved_spots": 26, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 117}}
+{"month": "August", "day_of_week": "Saturday", "day": "22", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 32, "retrieved_at": "2020-08-22T12:03:01.795642", "location": "Altitude Kanata", "reserved_spots": 18, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 118}}
+{"month": "August", "day_of_week": "Saturday", "day": "22", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 31, "retrieved_at": "2020-08-22T14:08:01.977829", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 119}}
+{"month": "August", "day_of_week": "Saturday", "day": "22", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 30, "retrieved_at": "2020-08-22T18:18:01.627815", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 120}}
+{"month": "August", "day_of_week": "Saturday", "day": "22", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 40, "retrieved_at": "2020-08-22T20:23:01.972625", "location": "Altitude Kanata", "reserved_spots": 10, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 121}}
+{"month": "August", "day_of_week": "Sunday", "day": "23", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 30, "retrieved_at": "2020-08-23T09:58:01.516837", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 122}}
+{"month": "August", "day_of_week": "Sunday", "day": "23", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 24, "retrieved_at": "2020-08-23T12:03:02.314764", "location": "Altitude Kanata", "reserved_spots": 26, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 123}}
+{"month": "August", "day_of_week": "Sunday", "day": "23", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 24, "retrieved_at": "2020-08-23T14:08:02.112980", "location": "Altitude Kanata", "reserved_spots": 26, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 124}}
+{"month": "August", "day_of_week": "Sunday", "day": "23", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 29, "retrieved_at": "2020-08-23T18:18:01.514882", "location": "Altitude Kanata", "reserved_spots": 21, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 125}}
+{"month": "August", "day_of_week": "Sunday", "day": "23", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 25, "retrieved_at": "2020-08-23T20:23:01.603878", "location": "Altitude Kanata", "reserved_spots": 25, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 126}}
+{"month": "August", "day_of_week": "Monday", "day": "24", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 36, "retrieved_at": "2020-08-24T09:58:01.459714", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 127}}
+{"month": "August", "day_of_week": "Monday", "day": "24", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 35, "retrieved_at": "2020-08-24T12:03:15.006342", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 128}}
+{"month": "August", "day_of_week": "Monday", "day": "24", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 36, "retrieved_at": "2020-08-24T14:08:01.828568", "location": "Altitude Kanata", "reserved_spots": 14, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 129}}
+{"month": "August", "day_of_week": "Monday", "day": "24", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 12, "retrieved_at": "2020-08-24T16:13:02.004860", "location": "Altitude Kanata", "reserved_spots": 38, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 130}}
+{"month": "August", "day_of_week": "Monday", "day": "24", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 3, "retrieved_at": "2020-08-24T18:18:02.141646", "location": "Altitude Kanata", "reserved_spots": 47, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 131}}
+{"month": "August", "day_of_week": "Monday", "day": "25", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 0, "retrieved_at": "2020-08-24T20:23:02.202916", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 132}}
+{"month": "August", "day_of_week": "Tuesday", "day": "25", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 34, "retrieved_at": "2020-08-25T09:58:02.086208", "location": "Altitude Kanata", "reserved_spots": 16, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 133}}
+{"month": "August", "day_of_week": "Tuesday", "day": "25", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 30, "retrieved_at": "2020-08-25T12:03:01.355078", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 134}}
+{"month": "August", "day_of_week": "Tuesday", "day": "25", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 27, "retrieved_at": "2020-08-25T14:08:01.324030", "location": "Altitude Kanata", "reserved_spots": 23, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 135}}
+{"month": "August", "day_of_week": "Tuesday", "day": "25", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 13, "retrieved_at": "2020-08-25T16:13:01.886448", "location": "Altitude Kanata", "reserved_spots": 37, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 136}}
+{"month": "August", "day_of_week": "Tuesday", "day": "25", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 8, "retrieved_at": "2020-08-25T18:18:01.847100", "location": "Altitude Kanata", "reserved_spots": 42, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 137}}
+{"month": "August", "day_of_week": "Tuesday", "day": "25", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 14, "retrieved_at": "2020-08-25T20:23:02.091674", "location": "Altitude Kanata", "reserved_spots": 36, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 138}}
+{"month": "August", "day_of_week": "Wednesday", "day": "26", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 42, "retrieved_at": "2020-08-26T09:58:02.112589", "location": "Altitude Kanata", "reserved_spots": 8, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 139}}
+{"month": "August", "day_of_week": "Wednesday", "day": "26", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 31, "retrieved_at": "2020-08-26T12:03:01.469308", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 140}}
+{"month": "August", "day_of_week": "Wednesday", "day": "26", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 28, "retrieved_at": "2020-08-26T14:08:01.689258", "location": "Altitude Kanata", "reserved_spots": 22, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 141}}
+{"month": "August", "day_of_week": "Wednesday", "day": "26", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 31, "retrieved_at": "2020-08-26T16:13:01.758449", "location": "Altitude Kanata", "reserved_spots": 19, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 142}}
+{"month": "August", "day_of_week": "Wednesday", "day": "26", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 12, "retrieved_at": "2020-08-26T18:18:01.859779", "location": "Altitude Kanata", "reserved_spots": 38, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 143}}
+{"month": "August", "day_of_week": "Thursday", "day": "27", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 30, "retrieved_at": "2020-08-27T09:58:01.949959", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 144}}
+{"month": "August", "day_of_week": "Thursday", "day": "27", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 35, "retrieved_at": "2020-08-27T12:03:01.933621", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 145}}
+{"month": "August", "day_of_week": "Thursday", "day": "27", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 30, "retrieved_at": "2020-08-27T14:08:02.238140", "location": "Altitude Kanata", "reserved_spots": 20, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 146}}
+{"month": "August", "day_of_week": "Thursday", "day": "27", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 16, "retrieved_at": "2020-08-27T16:13:01.790396", "location": "Altitude Kanata", "reserved_spots": 34, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 147}}
+{"month": "August", "day_of_week": "Thursday", "day": "27", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 0, "retrieved_at": "2020-08-27T18:18:01.735137", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 148}}
+{"month": "August", "day_of_week": "Thursday", "day": "27", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 0, "retrieved_at": "2020-08-27T20:23:01.867237", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 149}}
+{"month": "August", "day_of_week": "Friday", "day": "28", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 24, "retrieved_at": "2020-08-28T09:58:01.966887", "location": "Altitude Kanata", "reserved_spots": 26, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 150}}
+{"month": "August", "day_of_week": "Friday", "day": "28", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 29, "retrieved_at": "2020-08-28T12:03:02.236844", "location": "Altitude Kanata", "reserved_spots": 21, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 151}}
+{"month": "August", "day_of_week": "Friday", "day": "28", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 23, "retrieved_at": "2020-08-28T14:08:01.496103", "location": "Altitude Kanata", "reserved_spots": 27, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 152}}
+{"month": "August", "day_of_week": "Friday", "day": "28", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 15, "retrieved_at": "2020-08-28T16:13:01.579806", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 153}}
+{"month": "August", "day_of_week": "Saturday", "day": "29", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 14, "retrieved_at": "2020-08-29T09:58:02.238561", "location": "Altitude Kanata", "reserved_spots": 36, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 154}}
+{"month": "August", "day_of_week": "Saturday", "day": "29", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 17, "retrieved_at": "2020-08-29T12:03:01.350648", "location": "Altitude Kanata", "reserved_spots": 33, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 155}}
+{"month": "August", "day_of_week": "Saturday", "day": "29", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 0, "retrieved_at": "2020-08-29T14:08:01.457655", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 156}}
+{"month": "August", "day_of_week": "Saturday", "day": "29", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 0, "retrieved_at": "2020-08-29T16:13:01.975828", "location": "Altitude Kanata", "reserved_spots": 50, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 157}}
+{"month": "August", "day_of_week": "Saturday", "day": "29", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 14, "retrieved_at": "2020-08-29T18:18:02.021960", "location": "Altitude Kanata", "reserved_spots": 36, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 158}}
+{"month": "August", "day_of_week": "Saturday", "day": "29", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 35, "retrieved_at": "2020-08-29T20:23:01.909501", "location": "Altitude Kanata", "reserved_spots": 15, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 159}}
+{"month": "August", "day_of_week": "Sunday", "day": "30", "year": "2020", "time_slot": "10 AM to 11:45 AM", "start_time": "10:00 AM", "end_time": "11:45 AM", "availability": 20, "retrieved_at": "2020-08-30T09:58:01.636015", "location": "Altitude Kanata", "reserved_spots": 30, "capacity": 50, "start_hour": 10, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 160}}
+{"month": "August", "day_of_week": "Sunday", "day": "30", "year": "2020", "time_slot": "12:05 PM to 1:50 PM", "start_time": "12:05 PM", "end_time": "01:50 PM", "availability": 26, "retrieved_at": "2020-08-30T12:03:01.876770", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 12, "start_minute": 5}
+{"index": {"_index": "bookings", "_id": 161}}
+{"month": "August", "day_of_week": "Sunday", "day": "30", "year": "2020", "time_slot": "2:10 PM to 3:55 PM", "start_time": "02:10 PM", "end_time": "03:55 PM", "availability": 15, "retrieved_at": "2020-08-30T14:08:01.417502", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 14, "start_minute": 10}
+{"index": {"_index": "bookings", "_id": 162}}
+{"month": "August", "day_of_week": "Sunday", "day": "30", "year": "2020", "time_slot": "4:15 PM to 6 PM", "start_time": "04:15 PM", "end_time": "06:00 PM", "availability": 26, "retrieved_at": "2020-08-30T16:13:01.694864", "location": "Altitude Kanata", "reserved_spots": 24, "capacity": 50, "start_hour": 16, "start_minute": 15}
+{"index": {"_index": "bookings", "_id": 163}}
+{"month": "August", "day_of_week": "Sunday", "day": "30", "year": "2020", "time_slot": "6:20 PM to 8:05 PM", "start_time": "06:20 PM", "end_time": "08:05 PM", "availability": 15, "retrieved_at": "2020-08-30T18:18:02.053193", "location": "Altitude Kanata", "reserved_spots": 35, "capacity": 50, "start_hour": 18, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 164}}
+{"month": "August", "day_of_week": "Sunday", "day": "30", "year": "2020", "time_slot": "8:25 PM to 10:10 PM", "start_time": "08:25 PM", "end_time": "10:10 PM", "availability": 14, "retrieved_at": "2020-08-30T20:23:02.007259", "location": "Altitude Kanata", "reserved_spots": 36, "capacity": 50, "start_hour": 20, "start_minute": 25}
+{"index": {"_index": "bookings", "_id": 165}}
+{"month": "August", "day_of_week": "Monday", "day": "31", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 43, "retrieved_at": "2020-08-31T09:58:01.745872", "location": "Altitude Kanata", "reserved_spots": 7, "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 166}}
+{"month": "August", "day_of_week": "Monday", "day": "31", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-08-31T13:58:02.258193", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 167}}
+{"month": "August", "day_of_week": "Monday", "day": "31", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 21, "reserved_spots": 29, "retrieved_at": "2020-08-31T16:18:01.960247", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 168}}
+{"month": "August", "day_of_week": "Monday", "day": "31", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 7, "reserved_spots": 43, "retrieved_at": "2020-08-31T18:38:01.303842", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 169}}
+{"month": "August", "day_of_week": "Monday", "day": "31", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-08-31T20:58:02.138780", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 170}}
+{"month": "September", "day_of_week": "Tuesday", "day": "1", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 33, "reserved_spots": 17, "retrieved_at": "2020-09-01T11:38:01.992216", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 171}}
+{"month": "September", "day_of_week": "Tuesday", "day": "1", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-09-01T13:58:02.316059", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 172}}
+{"month": "September", "day_of_week": "Tuesday", "day": "1", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 4, "reserved_spots": 46, "retrieved_at": "2020-09-01T16:18:01.928724", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 173}}
+{"month": "September", "day_of_week": "Tuesday", "day": "1", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-01T18:38:01.969119", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 174}}
+{"month": "September", "day_of_week": "Tuesday", "day": "1", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 2, "reserved_spots": 48, "retrieved_at": "2020-09-01T20:58:02.175195", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 175}}
+{"month": "September", "day_of_week": "Wednesday", "day": "2", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-09-02T09:18:02.184756", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 176}}
+{"month": "September", "day_of_week": "Wednesday", "day": "2", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 30, "reserved_spots": 20, "retrieved_at": "2020-09-02T11:38:01.942739", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 177}}
+{"month": "September", "day_of_week": "Wednesday", "day": "2", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 14, "reserved_spots": 36, "retrieved_at": "2020-09-02T13:58:02.040081", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 178}}
+{"month": "September", "day_of_week": "Wednesday", "day": "2", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 4, "reserved_spots": 46, "retrieved_at": "2020-09-02T16:18:02.071165", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 179}}
+{"month": "September", "day_of_week": "Wednesday", "day": "2", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-02T18:38:01.960684", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 180}}
+{"month": "September", "day_of_week": "Wednesday", "day": "2", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 15, "reserved_spots": 35, "retrieved_at": "2020-09-02T20:58:03.313369", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 181}}
+{"month": "September", "day_of_week": "Thursday", "day": "3", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 46, "reserved_spots": 4, "retrieved_at": "2020-09-03T09:18:01.818016", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 182}}
+{"month": "September", "day_of_week": "Thursday", "day": "3", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-03T11:38:02.381890", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 183}}
+{"month": "September", "day_of_week": "Thursday", "day": "3", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-03T13:58:01.707017", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 184}}
+{"month": "September", "day_of_week": "Thursday", "day": "3", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-03T16:18:01.801238", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 185}}
+{"month": "September", "day_of_week": "Thursday", "day": "3", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-03T18:38:01.455265", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 186}}
+{"month": "September", "day_of_week": "Thursday", "day": "3", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-03T20:58:01.982756", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 187}}
+{"month": "September", "day_of_week": "Friday", "day": "4", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 31, "reserved_spots": 19, "retrieved_at": "2020-09-04T09:18:01.950857", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 188}}
+{"month": "September", "day_of_week": "Friday", "day": "4", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 27, "reserved_spots": 23, "retrieved_at": "2020-09-04T11:38:01.769074", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 189}}
+{"month": "September", "day_of_week": "Friday", "day": "4", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 33, "reserved_spots": 17, "retrieved_at": "2020-09-04T13:58:01.452682", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 190}}
+{"month": "September", "day_of_week": "Friday", "day": "4", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 15, "reserved_spots": 35, "retrieved_at": "2020-09-04T16:18:01.641507", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 191}}
+{"month": "September", "day_of_week": "Friday", "day": "4", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-04T18:38:01.953311", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 192}}
+{"month": "September", "day_of_week": "Friday", "day": "4", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 20, "reserved_spots": 30, "retrieved_at": "2020-09-04T20:57:13.205260", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 193}}
+{"month": "September", "day_of_week": "Saturday", "day": "5", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 32, "reserved_spots": 18, "retrieved_at": "2020-09-05T09:18:01.444153", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 194}}
+{"month": "September", "day_of_week": "Saturday", "day": "5", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 29, "reserved_spots": 21, "retrieved_at": "2020-09-05T11:38:02.047489", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 195}}
+{"month": "September", "day_of_week": "Saturday", "day": "5", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 23, "reserved_spots": 27, "retrieved_at": "2020-09-05T13:58:01.790355", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 196}}
+{"month": "September", "day_of_week": "Saturday", "day": "5", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-09-05T16:18:01.532635", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 197}}
+{"month": "September", "day_of_week": "Saturday", "day": "5", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 22, "reserved_spots": 28, "retrieved_at": "2020-09-05T18:38:02.014169", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 198}}
+{"month": "September", "day_of_week": "Saturday", "day": "5", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-05T20:58:01.216054", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 199}}
+{"month": "September", "day_of_week": "Sunday", "day": "6", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-09-06T09:18:01.606154", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 200}}
+{"month": "September", "day_of_week": "Sunday", "day": "6", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 19, "reserved_spots": 31, "retrieved_at": "2020-09-06T11:38:02.212499", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 201}}
+{"month": "September", "day_of_week": "Sunday", "day": "6", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 7, "reserved_spots": 43, "retrieved_at": "2020-09-06T13:58:01.744464", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 202}}
+{"month": "September", "day_of_week": "Sunday", "day": "6", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 28, "reserved_spots": 22, "retrieved_at": "2020-09-06T16:18:02.073648", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 203}}
+{"month": "September", "day_of_week": "Sunday", "day": "6", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 28, "reserved_spots": 22, "retrieved_at": "2020-09-06T18:38:02.154649", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 204}}
+{"month": "September", "day_of_week": "Sunday", "day": "6", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 28, "reserved_spots": 22, "retrieved_at": "2020-09-06T20:58:01.542954", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 205}}
+{"month": "September", "day_of_week": "Monday", "day": "7", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 22, "reserved_spots": 28, "retrieved_at": "2020-09-07T09:18:01.533450", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 206}}
+{"month": "September", "day_of_week": "Monday", "day": "7", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 23, "reserved_spots": 27, "retrieved_at": "2020-09-07T11:38:01.711917", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 207}}
+{"month": "September", "day_of_week": "Monday", "day": "7", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-07T13:58:02.121350", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 208}}
+{"month": "September", "day_of_week": "Monday", "day": "7", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-07T16:18:01.351358", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 209}}
+{"month": "September", "day_of_week": "Monday", "day": "7", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 19, "reserved_spots": 31, "retrieved_at": "2020-09-07T18:38:01.931406", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 210}}
+{"month": "September", "day_of_week": "Monday", "day": "7", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-09-07T20:58:02.288669", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 211}}
+{"month": "September", "day_of_week": "Tuesday", "day": "8", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 41, "reserved_spots": 9, "retrieved_at": "2020-09-08T09:18:01.543838", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 212}}
+{"month": "September", "day_of_week": "Tuesday", "day": "8", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 39, "reserved_spots": 11, "retrieved_at": "2020-09-08T11:38:01.849979", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 213}}
+{"month": "September", "day_of_week": "Tuesday", "day": "8", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 29, "reserved_spots": 21, "retrieved_at": "2020-09-08T13:58:02.195833", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 214}}
+{"month": "September", "day_of_week": "Tuesday", "day": "8", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 4, "reserved_spots": 46, "retrieved_at": "2020-09-08T16:18:01.917371", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 215}}
+{"month": "September", "day_of_week": "Tuesday", "day": "8", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-08T18:38:01.961980", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 216}}
+{"month": "September", "day_of_week": "Tuesday", "day": "8", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-09-08T20:58:01.446525", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 217}}
+{"month": "September", "day_of_week": "Wednesday", "day": "9", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 42, "reserved_spots": 8, "retrieved_at": "2020-09-09T09:18:01.428141", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 218}}
+{"month": "September", "day_of_week": "Wednesday", "day": "9", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-09T11:38:01.705363", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 219}}
+{"month": "September", "day_of_week": "Wednesday", "day": "9", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 31, "reserved_spots": 19, "retrieved_at": "2020-09-09T13:58:01.606590", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 220}}
+{"month": "September", "day_of_week": "Wednesday", "day": "9", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-09T16:18:02.114057", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 221}}
+{"month": "September", "day_of_week": "Wednesday", "day": "9", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-09T18:38:01.265883", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 222}}
+{"month": "September", "day_of_week": "Wednesday", "day": "9", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 19, "reserved_spots": 31, "retrieved_at": "2020-09-09T20:58:01.950344", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 223}}
+{"month": "September", "day_of_week": "Thursday", "day": "10", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 46, "reserved_spots": 4, "retrieved_at": "2020-09-10T09:18:01.879251", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 224}}
+{"month": "September", "day_of_week": "Thursday", "day": "10", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-10T11:38:01.424298", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 225}}
+{"month": "September", "day_of_week": "Thursday", "day": "10", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 27, "reserved_spots": 23, "retrieved_at": "2020-09-10T13:58:01.813381", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 226}}
+{"month": "September", "day_of_week": "Thursday", "day": "10", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-10T16:18:01.449844", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 227}}
+{"month": "September", "day_of_week": "Thursday", "day": "10", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-10T18:38:01.394940", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 228}}
+{"month": "September", "day_of_week": "Thursday", "day": "10", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-10T20:58:01.340414", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 229}}
+{"month": "September", "day_of_week": "Friday", "day": "11", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 40, "reserved_spots": 10, "retrieved_at": "2020-09-11T09:18:01.564432", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 230}}
+{"month": "September", "day_of_week": "Friday", "day": "11", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-09-11T11:38:02.433417", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 231}}
+{"month": "September", "day_of_week": "Friday", "day": "11", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 44, "reserved_spots": 6, "retrieved_at": "2020-09-11T13:58:02.135789", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 232}}
+{"month": "September", "day_of_week": "Friday", "day": "11", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 1, "reserved_spots": 49, "retrieved_at": "2020-09-11T16:18:01.786052", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 233}}
+{"month": "September", "day_of_week": "Friday", "day": "11", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-11T18:38:02.364934", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 234}}
+{"month": "September", "day_of_week": "Friday", "day": "11", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-11T20:58:02.094587", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 235}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 21, "reserved_spots": 29, "retrieved_at": "2020-09-12T01:44:01.363234", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 236}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 15, "reserved_spots": 35, "retrieved_at": "2020-09-12T09:18:01.997726", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 237}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 26, "reserved_spots": 24, "retrieved_at": "2020-09-12T11:38:01.640200", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 238}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 6, "reserved_spots": 44, "retrieved_at": "2020-09-12T13:58:01.860854", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 239}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-09-12T16:18:02.191407", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 240}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 30, "reserved_spots": 20, "retrieved_at": "2020-09-12T18:38:01.625864", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 241}}
+{"month": "September", "day_of_week": "Saturday", "day": "12", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-12T20:58:02.161493", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 242}}
+{"month": "September", "day_of_week": "Sunday", "day": "13", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 18, "reserved_spots": 32, "retrieved_at": "2020-09-13T09:18:01.956805", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 243}}
+{"month": "September", "day_of_week": "Sunday", "day": "13", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 19, "reserved_spots": 31, "retrieved_at": "2020-09-13T11:38:02.665268", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 244}}
+{"month": "September", "day_of_week": "Sunday", "day": "13", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-13T13:58:01.956450", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 245}}
+{"month": "September", "day_of_week": "Sunday", "day": "13", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-13T16:18:02.436290", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 246}}
+{"month": "September", "day_of_week": "Sunday", "day": "13", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-13T18:38:02.212694", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 247}}
+{"month": "September", "day_of_week": "Sunday", "day": "13", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 10, "reserved_spots": 40, "retrieved_at": "2020-09-13T20:58:02.164894", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 248}}
+{"month": "September", "day_of_week": "Monday", "day": "14", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 39, "reserved_spots": 11, "retrieved_at": "2020-09-14T09:18:02.118721", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 249}}
+{"month": "September", "day_of_week": "Monday", "day": "14", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-09-14T11:38:01.558321", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 250}}
+{"month": "September", "day_of_week": "Monday", "day": "14", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 38, "reserved_spots": 12, "retrieved_at": "2020-09-14T13:58:02.128325", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 251}}
+{"month": "September", "day_of_week": "Monday", "day": "14", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-14T16:18:01.520738", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 252}}
+{"month": "September", "day_of_week": "Monday", "day": "14", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-14T18:38:02.018167", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 253}}
+{"month": "September", "day_of_week": "Monday", "day": "14", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 16, "reserved_spots": 34, "retrieved_at": "2020-09-14T20:58:02.020612", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 254}}
+{"month": "September", "day_of_week": "Tuesday", "day": "15", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-09-15T09:18:01.579864", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 255}}
+{"month": "September", "day_of_week": "Tuesday", "day": "15", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-15T11:38:01.673314", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 256}}
+{"month": "September", "day_of_week": "Tuesday", "day": "15", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 33, "reserved_spots": 17, "retrieved_at": "2020-09-15T13:58:01.384011", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 257}}
+{"month": "September", "day_of_week": "Tuesday", "day": "15", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 6, "reserved_spots": 44, "retrieved_at": "2020-09-15T16:18:01.819111", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 258}}
+{"month": "September", "day_of_week": "Tuesday", "day": "15", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 1, "reserved_spots": 49, "retrieved_at": "2020-09-15T18:38:01.893190", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 259}}
+{"month": "September", "day_of_week": "Tuesday", "day": "15", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-15T20:58:02.082616", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 260}}
+{"month": "September", "day_of_week": "Wednesday", "day": "16", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-09-16T09:18:01.577819", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 261}}
+{"month": "September", "day_of_week": "Wednesday", "day": "16", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-16T11:38:02.099272", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 262}}
+{"month": "September", "day_of_week": "Wednesday", "day": "16", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 32, "reserved_spots": 18, "retrieved_at": "2020-09-16T13:58:01.474915", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 263}}
+{"month": "September", "day_of_week": "Wednesday", "day": "16", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-16T16:18:01.854421", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 264}}
+{"month": "September", "day_of_week": "Wednesday", "day": "16", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-16T18:38:01.802701", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 265}}
+{"month": "September", "day_of_week": "Wednesday", "day": "16", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-16T20:58:02.440806", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 266}}
+{"month": "September", "day_of_week": "Thursday", "day": "17", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 41, "reserved_spots": 9, "retrieved_at": "2020-09-17T09:18:02.201505", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 267}}
+{"month": "September", "day_of_week": "Thursday", "day": "17", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 46, "reserved_spots": 4, "retrieved_at": "2020-09-17T11:38:03.181605", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 268}}
+{"month": "September", "day_of_week": "Thursday", "day": "17", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-09-17T13:58:02.645703", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 269}}
+{"month": "September", "day_of_week": "Thursday", "day": "17", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-17T16:18:01.483121", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 270}}
+{"month": "September", "day_of_week": "Thursday", "day": "17", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-17T18:38:01.685177", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 271}}
+{"month": "September", "day_of_week": "Thursday", "day": "17", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-17T20:58:03.993335", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 272}}
+{"month": "September", "day_of_week": "Friday", "day": "18", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-18T09:18:01.402153", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 273}}
+{"month": "September", "day_of_week": "Friday", "day": "18", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-18T11:38:02.179397", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 274}}
+{"month": "September", "day_of_week": "Friday", "day": "18", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 33, "reserved_spots": 17, "retrieved_at": "2020-09-18T13:58:02.323837", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 275}}
+{"month": "September", "day_of_week": "Friday", "day": "18", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-18T16:18:01.381506", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 276}}
+{"month": "September", "day_of_week": "Friday", "day": "18", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-18T18:38:01.769377", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 277}}
+{"month": "September", "day_of_week": "Friday", "day": "18", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-18T20:58:01.265389", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 278}}
+{"month": "September", "day_of_week": "Saturday", "day": "19", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 31, "reserved_spots": 19, "retrieved_at": "2020-09-19T09:18:02.345846", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 279}}
+{"month": "September", "day_of_week": "Saturday", "day": "19", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 32, "reserved_spots": 18, "retrieved_at": "2020-09-19T11:38:02.636781", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 280}}
+{"month": "September", "day_of_week": "Saturday", "day": "19", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 14, "reserved_spots": 36, "retrieved_at": "2020-09-19T13:58:02.949271", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 281}}
+{"month": "September", "day_of_week": "Saturday", "day": "19", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-19T16:18:01.995259", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 282}}
+{"month": "September", "day_of_week": "Saturday", "day": "19", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 23, "reserved_spots": 27, "retrieved_at": "2020-09-19T18:38:01.253337", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 283}}
+{"month": "September", "day_of_week": "Saturday", "day": "19", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-09-19T20:58:01.625272", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 284}}
+{"month": "September", "day_of_week": "Sunday", "day": "20", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 20, "reserved_spots": 30, "retrieved_at": "2020-09-20T09:18:01.586868", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 285}}
+{"month": "September", "day_of_week": "Sunday", "day": "20", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-09-20T11:38:02.310248", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 286}}
+{"month": "September", "day_of_week": "Sunday", "day": "20", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 13, "reserved_spots": 37, "retrieved_at": "2020-09-20T13:58:02.054084", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 287}}
+{"month": "September", "day_of_week": "Sunday", "day": "20", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 6, "reserved_spots": 44, "retrieved_at": "2020-09-20T16:18:02.171350", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 288}}
+{"month": "September", "day_of_week": "Sunday", "day": "20", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 23, "reserved_spots": 27, "retrieved_at": "2020-09-20T18:38:01.615787", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 289}}
+{"month": "September", "day_of_week": "Sunday", "day": "20", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 31, "reserved_spots": 19, "retrieved_at": "2020-09-20T20:58:01.221046", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 290}}
+{"month": "September", "day_of_week": "Monday", "day": "21", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 44, "reserved_spots": 6, "retrieved_at": "2020-09-21T09:18:01.963710", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 291}}
+{"month": "September", "day_of_week": "Monday", "day": "21", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 42, "reserved_spots": 8, "retrieved_at": "2020-09-21T11:38:01.901959", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 292}}
+{"month": "September", "day_of_week": "Monday", "day": "21", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 40, "reserved_spots": 10, "retrieved_at": "2020-09-21T13:58:02.159835", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 293}}
+{"month": "September", "day_of_week": "Monday", "day": "21", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 6, "reserved_spots": 44, "retrieved_at": "2020-09-21T16:18:02.056531", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 294}}
+{"month": "September", "day_of_week": "Monday", "day": "21", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-21T18:38:01.697366", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 295}}
+{"month": "September", "day_of_week": "Monday", "day": "21", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 11, "reserved_spots": 39, "retrieved_at": "2020-09-21T20:58:02.092133", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 296}}
+{"month": "September", "day_of_week": "Tuesday", "day": "22", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 47, "reserved_spots": 3, "retrieved_at": "2020-09-22T09:18:02.003215", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 297}}
+{"month": "September", "day_of_week": "Tuesday", "day": "22", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-09-22T11:38:02.003186", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 298}}
+{"month": "September", "day_of_week": "Tuesday", "day": "22", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-22T13:58:01.852416", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 299}}
+{"month": "September", "day_of_week": "Tuesday", "day": "22", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 2, "reserved_spots": 48, "retrieved_at": "2020-09-22T16:18:01.904705", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 300}}
+{"month": "September", "day_of_week": "Tuesday", "day": "22", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 1, "reserved_spots": 49, "retrieved_at": "2020-09-22T18:38:01.335467", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 301}}
+{"month": "September", "day_of_week": "Tuesday", "day": "22", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-22T20:58:01.801608", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 302}}
+{"month": "September", "day_of_week": "Wednesday", "day": "23", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 47, "reserved_spots": 3, "retrieved_at": "2020-09-23T09:18:01.727251", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 303}}
+{"month": "September", "day_of_week": "Wednesday", "day": "23", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-09-23T11:38:02.645899", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 304}}
+{"month": "September", "day_of_week": "Wednesday", "day": "23", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-09-23T13:58:01.849618", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 305}}
+{"month": "September", "day_of_week": "Wednesday", "day": "23", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-23T16:18:01.860039", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 306}}
+{"month": "September", "day_of_week": "Wednesday", "day": "23", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-23T18:38:01.829885", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 307}}
+{"month": "September", "day_of_week": "Wednesday", "day": "23", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 22, "reserved_spots": 28, "retrieved_at": "2020-09-23T20:58:01.898025", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 308}}
+{"month": "September", "day_of_week": "Thursday", "day": "24", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 39, "reserved_spots": 11, "retrieved_at": "2020-09-24T09:18:01.662692", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 309}}
+{"month": "September", "day_of_week": "Thursday", "day": "24", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 44, "reserved_spots": 6, "retrieved_at": "2020-09-24T11:38:02.265342", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 310}}
+{"month": "September", "day_of_week": "Thursday", "day": "24", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-09-24T13:58:01.267895", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 311}}
+{"month": "September", "day_of_week": "Thursday", "day": "24", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-24T16:18:01.586730", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 312}}
+{"month": "September", "day_of_week": "Thursday", "day": "24", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-24T18:38:02.072146", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 313}}
+{"month": "September", "day_of_week": "Thursday", "day": "24", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-24T20:58:01.545337", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 314}}
+{"month": "September", "day_of_week": "Friday", "day": "25", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-09-25T09:18:02.223710", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 315}}
+{"month": "September", "day_of_week": "Friday", "day": "25", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 41, "reserved_spots": 9, "retrieved_at": "2020-09-25T11:38:01.425693", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 316}}
+{"month": "September", "day_of_week": "Saturday", "day": "26", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 21, "reserved_spots": 29, "retrieved_at": "2020-09-26T09:18:10.564569", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 317}}
+{"month": "September", "day_of_week": "Saturday", "day": "26", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 29, "reserved_spots": 21, "retrieved_at": "2020-09-26T11:38:02.199875", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 318}}
+{"month": "September", "day_of_week": "Saturday", "day": "26", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 14, "reserved_spots": 36, "retrieved_at": "2020-09-26T13:58:01.646165", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 319}}
+{"month": "September", "day_of_week": "Saturday", "day": "26", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 16, "reserved_spots": 34, "retrieved_at": "2020-09-26T16:18:01.803861", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 320}}
+{"month": "September", "day_of_week": "Saturday", "day": "26", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 12, "reserved_spots": 38, "retrieved_at": "2020-09-26T18:38:02.479871", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 321}}
+{"month": "September", "day_of_week": "Saturday", "day": "26", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 14, "reserved_spots": 36, "retrieved_at": "2020-09-26T20:58:02.151352", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 322}}
+{"month": "September", "day_of_week": "Sunday", "day": "27", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 6, "reserved_spots": 44, "retrieved_at": "2020-09-27T09:18:01.496852", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 323}}
+{"month": "September", "day_of_week": "Sunday", "day": "27", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 7, "reserved_spots": 43, "retrieved_at": "2020-09-27T11:38:01.789952", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 324}}
+{"month": "September", "day_of_week": "Sunday", "day": "27", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 8, "reserved_spots": 42, "retrieved_at": "2020-09-27T13:58:01.353108", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 325}}
+{"month": "September", "day_of_week": "Sunday", "day": "27", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 13, "reserved_spots": 37, "retrieved_at": "2020-09-27T16:18:01.187715", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 326}}
+{"month": "September", "day_of_week": "Sunday", "day": "27", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 29, "reserved_spots": 21, "retrieved_at": "2020-09-27T18:38:01.797825", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 327}}
+{"month": "September", "day_of_week": "Sunday", "day": "27", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-27T20:58:01.876485", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 328}}
+{"month": "September", "day_of_week": "Monday", "day": "28", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 42, "reserved_spots": 8, "retrieved_at": "2020-09-28T09:18:01.406509", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 329}}
+{"month": "September", "day_of_week": "Monday", "day": "28", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 42, "reserved_spots": 8, "retrieved_at": "2020-09-28T11:38:01.309499", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 330}}
+{"month": "September", "day_of_week": "Monday", "day": "28", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-09-28T13:58:01.798743", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 331}}
+{"month": "September", "day_of_week": "Monday", "day": "28", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 19, "reserved_spots": 31, "retrieved_at": "2020-09-28T16:18:01.283978", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 332}}
+{"month": "September", "day_of_week": "Monday", "day": "28", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-28T18:38:01.602176", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 333}}
+{"month": "September", "day_of_week": "Monday", "day": "28", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 13, "reserved_spots": 37, "retrieved_at": "2020-09-28T20:58:02.106607", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 334}}
+{"month": "September", "day_of_week": "Tuesday", "day": "29", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-09-29T09:18:02.046570", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 335}}
+{"month": "September", "day_of_week": "Tuesday", "day": "29", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 42, "reserved_spots": 8, "retrieved_at": "2020-09-29T11:38:01.932920", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 336}}
+{"month": "September", "day_of_week": "Tuesday", "day": "29", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 30, "reserved_spots": 20, "retrieved_at": "2020-09-29T13:58:02.013946", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 337}}
+{"month": "September", "day_of_week": "Tuesday", "day": "29", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-29T16:18:02.176287", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 338}}
+{"month": "September", "day_of_week": "Tuesday", "day": "29", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-29T18:38:01.976591", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 339}}
+{"month": "September", "day_of_week": "Tuesday", "day": "29", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 9, "reserved_spots": 41, "retrieved_at": "2020-09-29T20:58:01.356901", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 340}}
+{"month": "September", "day_of_week": "Wednesday", "day": "30", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 46, "reserved_spots": 4, "retrieved_at": "2020-09-30T09:18:01.622377", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 341}}
+{"month": "September", "day_of_week": "Wednesday", "day": "30", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 34, "reserved_spots": 16, "retrieved_at": "2020-09-30T11:38:01.751027", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 342}}
+{"month": "September", "day_of_week": "Wednesday", "day": "30", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-09-30T16:18:02.084386", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 343}}
+{"month": "September", "day_of_week": "Wednesday", "day": "30", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 2, "reserved_spots": 48, "retrieved_at": "2020-09-30T18:38:01.203928", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 344}}
+{"month": "September", "day_of_week": "Wednesday", "day": "30", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 6, "reserved_spots": 44, "retrieved_at": "2020-09-30T20:58:01.319406", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 345}}
+{"month": "October", "day_of_week": "Thursday", "day": "1", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 47, "reserved_spots": 3, "retrieved_at": "2020-10-01T09:18:01.906175", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 346}}
+{"month": "October", "day_of_week": "Thursday", "day": "1", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 39, "reserved_spots": 11, "retrieved_at": "2020-10-01T11:38:01.873559", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 347}}
+{"month": "October", "day_of_week": "Thursday", "day": "1", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-10-01T13:58:01.530442", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 348}}
+{"month": "October", "day_of_week": "Thursday", "day": "1", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-10-01T16:18:01.507159", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 349}}
+{"month": "October", "day_of_week": "Thursday", "day": "1", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-10-01T18:38:02.120624", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 350}}
+{"month": "October", "day_of_week": "Thursday", "day": "1", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 3, "reserved_spots": 47, "retrieved_at": "2020-10-01T20:58:01.722892", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 351}}
+{"month": "October", "day_of_week": "Friday", "day": "2", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 40, "reserved_spots": 10, "retrieved_at": "2020-10-02T09:18:02.078571", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 352}}
+{"month": "October", "day_of_week": "Friday", "day": "2", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-10-02T11:38:01.896115", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 353}}
+{"month": "October", "day_of_week": "Friday", "day": "2", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 36, "reserved_spots": 14, "retrieved_at": "2020-10-02T13:58:01.224197", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 354}}
+{"month": "October", "day_of_week": "Friday", "day": "2", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 8, "reserved_spots": 42, "retrieved_at": "2020-10-02T16:18:02.015198", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 355}}
+{"month": "October", "day_of_week": "Friday", "day": "2", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 2, "reserved_spots": 48, "retrieved_at": "2020-10-02T18:38:01.418674", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 356}}
+{"month": "October", "day_of_week": "Friday", "day": "2", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-10-02T20:58:01.640901", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 357}}
+{"month": "October", "day_of_week": "Saturday", "day": "3", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 13, "reserved_spots": 37, "retrieved_at": "2020-10-03T09:18:01.881825", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 358}}
+{"month": "October", "day_of_week": "Saturday", "day": "3", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-10-03T11:38:01.382570", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 359}}
+{"month": "October", "day_of_week": "Saturday", "day": "3", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 30, "reserved_spots": 20, "retrieved_at": "2020-10-03T13:58:01.600492", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 360}}
+{"month": "October", "day_of_week": "Saturday", "day": "3", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 23, "reserved_spots": 27, "retrieved_at": "2020-10-03T16:18:02.049922", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 361}}
+{"month": "October", "day_of_week": "Saturday", "day": "3", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 28, "reserved_spots": 22, "retrieved_at": "2020-10-03T18:38:01.782225", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 362}}
+{"month": "October", "day_of_week": "Saturday", "day": "3", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 37, "reserved_spots": 13, "retrieved_at": "2020-10-03T20:58:01.204056", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 363}}
+{"month": "October", "day_of_week": "Sunday", "day": "4", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 3, "reserved_spots": 47, "retrieved_at": "2020-10-04T09:18:01.819347", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 364}}
+{"month": "October", "day_of_week": "Sunday", "day": "4", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 22, "reserved_spots": 28, "retrieved_at": "2020-10-04T11:38:01.381756", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 365}}
+{"month": "October", "day_of_week": "Sunday", "day": "4", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 8, "reserved_spots": 42, "retrieved_at": "2020-10-04T13:58:01.195325", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 366}}
+{"month": "October", "day_of_week": "Sunday", "day": "4", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 8, "reserved_spots": 42, "retrieved_at": "2020-10-04T16:18:01.418230", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 367}}
+{"month": "October", "day_of_week": "Sunday", "day": "4", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-10-04T18:38:01.340995", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 368}}
+{"month": "October", "day_of_week": "Sunday", "day": "4", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 31, "reserved_spots": 19, "retrieved_at": "2020-10-04T20:58:01.911887", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 369}}
+{"month": "October", "day_of_week": "Monday", "day": "5", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 45, "reserved_spots": 5, "retrieved_at": "2020-10-05T09:18:01.497899", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 370}}
+{"month": "October", "day_of_week": "Monday", "day": "5", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-10-05T11:38:02.015913", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 371}}
+{"month": "October", "day_of_week": "Monday", "day": "5", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 42, "reserved_spots": 8, "retrieved_at": "2020-10-05T13:58:01.961763", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 372}}
+{"month": "October", "day_of_week": "Monday", "day": "5", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 4, "reserved_spots": 46, "retrieved_at": "2020-10-05T16:18:01.835769", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 373}}
+{"month": "October", "day_of_week": "Monday", "day": "5", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 1, "reserved_spots": 49, "retrieved_at": "2020-10-05T18:38:02.134760", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 374}}
+{"month": "October", "day_of_week": "Monday", "day": "5", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 17, "reserved_spots": 33, "retrieved_at": "2020-10-05T20:58:01.474800", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 375}}
+{"month": "October", "day_of_week": "Tuesday", "day": "6", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "end_time": "11:20 AM", "availability": 43, "reserved_spots": 7, "retrieved_at": "2020-10-06T09:18:01.641061", "location": "Altitude Kanata", "capacity": 50, "start_hour": 9, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 376}}
+{"month": "October", "day_of_week": "Tuesday", "day": "6", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "end_time": "01:40 PM", "availability": 40, "reserved_spots": 10, "retrieved_at": "2020-10-06T11:38:01.538955", "location": "Altitude Kanata", "capacity": 50, "start_hour": 11, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 377}}
+{"month": "October", "day_of_week": "Tuesday", "day": "6", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "end_time": "04:00 PM", "availability": 35, "reserved_spots": 15, "retrieved_at": "2020-10-06T13:58:02.146736", "location": "Altitude Kanata", "capacity": 50, "start_hour": 14, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 378}}
+{"month": "October", "day_of_week": "Tuesday", "day": "6", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 2, "reserved_spots": 48, "retrieved_at": "2020-10-06T16:18:01.996412", "location": "Altitude Kanata", "capacity": 50, "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 379}}
+{"month": "October", "day_of_week": "Tuesday", "day": "6", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "retrieved_at": "2020-10-06T18:38:01.575590", "location": "Altitude Kanata", "capacity": 50, "start_hour": 18, "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 380}}
+{"month": "October", "day_of_week": "Tuesday", "day": "6", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "end_time": "11:00 PM", "availability": 7, "reserved_spots": 43, "retrieved_at": "2020-10-06T20:58:01.932448", "location": "Altitude Kanata", "capacity": 50, "start_hour": 21, "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 381}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 4, "reserved_spots": 46, "capacity": 50, "retrieved_at": "2020-10-07T16:18:02.597922", "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 382}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "end_time": "06:20 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "retrieved_at": "2020-10-07T16:18:09.371345", "start_hour": 16, "start_minute": 20}
+{"index": {"_index": "bookings", "_id": 383}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "4:30 PM to 6:30 PM", "start_time": "04:30 PM", "end_time": "06:30 PM", "availability": 15, "reserved_spots": 45, "capacity": 60, "retrieved_at": "2020-10-07T16:28:02.932041", "start_hour": 16, "start_minute": 30}
+{"index": {"_index": "bookings", "_id": 384}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "start_hour": 18, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-07T18:38:03.746958", "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 385}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "retrieved_at": "2020-10-07T18:38:10.842868", "start_minute": 40}
+{"index": {"_index": "bookings", "_id": 386}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "end_time": "09:00 PM", "availability": 9, "reserved_spots": 51, "capacity": 60, "retrieved_at": "2020-10-07T18:58:02.703117", "start_minute": 0}
+{"index": {"_index": "bookings", "_id": 387}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 9, "reserved_spots": 41, "capacity": 50, "retrieved_at": "2020-10-07T20:58:03.310173"}
+{"index": {"_index": "bookings", "_id": 388}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 32, "reserved_spots": 43, "capacity": 75, "retrieved_at": "2020-10-07T20:58:10.061736"}
+{"index": {"_index": "bookings", "_id": 389}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Wednesday", "day": "7", "year": "2020", "time_slot": "9:15 PM to 11:15 PM", "start_time": "09:15 PM", "start_hour": 21, "start_minute": 15, "end_time": "11:15 PM", "availability": 19, "reserved_spots": 41, "capacity": 60, "retrieved_at": "2020-10-07T21:13:02.482349"}
+{"index": {"_index": "bookings", "_id": 390}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 47, "reserved_spots": 3, "capacity": 50, "retrieved_at": "2020-10-08T09:18:02.500391"}
+{"index": {"_index": "bookings", "_id": 391}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-08T09:18:10.577248"}
+{"index": {"_index": "bookings", "_id": 392}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "11:30 AM to 1:30 PM", "start_time": "11:30 AM", "start_hour": 11, "start_minute": 30, "end_time": "01:30 PM", "availability": 37, "reserved_spots": 23, "capacity": 60, "retrieved_at": "2020-10-08T11:28:03.388086"}
+{"index": {"_index": "bookings", "_id": 393}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 40, "reserved_spots": 10, "capacity": 50, "retrieved_at": "2020-10-08T11:38:03.002495"}
+{"index": {"_index": "bookings", "_id": 394}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-08T11:38:13.271878"}
+{"index": {"_index": "bookings", "_id": 395}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 31, "reserved_spots": 19, "capacity": 50, "retrieved_at": "2020-10-08T13:57:02.834171"}
+{"index": {"_index": "bookings", "_id": 396}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-08T13:57:09.460283"}
+{"index": {"_index": "bookings", "_id": 397}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 39, "reserved_spots": 21, "capacity": 60, "retrieved_at": "2020-10-08T13:57:14.957370"}
+{"index": {"_index": "bookings", "_id": 398}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-08T16:18:02.657033"}
+{"index": {"_index": "bookings", "_id": 399}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "retrieved_at": "2020-10-08T16:18:10.022744"}
+{"index": {"_index": "bookings", "_id": 400}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "4:30 PM to 6:30 PM", "start_time": "04:30 PM", "start_hour": 16, "start_minute": 30, "end_time": "06:30 PM", "availability": 22, "reserved_spots": 38, "capacity": 60, "retrieved_at": "2020-10-08T16:28:02.456825"}
+{"index": {"_index": "bookings", "_id": 401}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-08T18:38:05.168863"}
+{"index": {"_index": "bookings", "_id": 402}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "retrieved_at": "2020-10-08T18:38:14.296076"}
+{"index": {"_index": "bookings", "_id": 403}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "start_minute": 0, "end_time": "09:00 PM", "availability": 10, "reserved_spots": 50, "capacity": 60, "retrieved_at": "2020-10-08T18:58:04.405513"}
+{"index": {"_index": "bookings", "_id": 404}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "retrieved_at": "2020-10-08T20:58:03.966199"}
+{"index": {"_index": "bookings", "_id": 405}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 40, "reserved_spots": 35, "capacity": 75, "retrieved_at": "2020-10-08T20:58:11.303042"}
+{"index": {"_index": "bookings", "_id": 406}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Thursday", "day": "8", "year": "2020", "time_slot": "9:15 PM to 11:15 PM", "start_time": "09:15 PM", "start_hour": 21, "start_minute": 15, "end_time": "11:15 PM", "availability": 34, "reserved_spots": 26, "capacity": 60, "retrieved_at": "2020-10-08T21:13:03.456545"}
+{"index": {"_index": "bookings", "_id": 407}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 39, "reserved_spots": 11, "capacity": 50, "retrieved_at": "2020-10-09T09:18:03.159869"}
+{"index": {"_index": "bookings", "_id": 408}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-09T09:18:10.725634"}
+{"index": {"_index": "bookings", "_id": 409}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "11:30 AM to 1:30 PM", "start_time": "11:30 AM", "start_hour": 11, "start_minute": 30, "end_time": "01:30 PM", "availability": 37, "reserved_spots": 23, "capacity": 60, "retrieved_at": "2020-10-09T11:28:03.544741"}
+{"index": {"_index": "bookings", "_id": 410}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 42, "reserved_spots": 8, "capacity": 50, "retrieved_at": "2020-10-09T11:38:03.134512"}
+{"index": {"_index": "bookings", "_id": 411}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-09T11:38:10.501073"}
+{"index": {"_index": "bookings", "_id": 412}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 27, "reserved_spots": 23, "capacity": 50, "retrieved_at": "2020-10-09T13:57:02.983800"}
+{"index": {"_index": "bookings", "_id": 413}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-09T13:57:11.083727"}
+{"index": {"_index": "bookings", "_id": 414}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 27, "reserved_spots": 33, "capacity": 60, "retrieved_at": "2020-10-09T13:57:16.609306"}
+{"index": {"_index": "bookings", "_id": 415}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-09T16:18:03.108231"}
+{"index": {"_index": "bookings", "_id": 416}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 69, "capacity": 75, "retrieved_at": "2020-10-09T16:18:09.736091"}
+{"index": {"_index": "bookings", "_id": 417}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "4:30 PM to 6:30 PM", "start_time": "04:30 PM", "start_hour": 16, "start_minute": 30, "end_time": "06:30 PM", "availability": 21, "reserved_spots": 39, "capacity": 60, "retrieved_at": "2020-10-09T16:28:03.309228"}
+{"index": {"_index": "bookings", "_id": 418}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "6:40 PM to 8:40 PM", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-09T18:38:02.714244"}
+{"index": {"_index": "bookings", "_id": 419}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "retrieved_at": "2020-10-09T18:38:10.009963"}
+{"index": {"_index": "bookings", "_id": 420}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "start_minute": 0, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 58, "capacity": 60, "retrieved_at": "2020-10-09T18:58:03.341951"}
+{"index": {"_index": "bookings", "_id": 421}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "9 PM to 11 PM", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-09T20:58:02.957605"}
+{"index": {"_index": "bookings", "_id": 422}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 32, "reserved_spots": 43, "capacity": 75, "retrieved_at": "2020-10-09T20:58:09.620368"}
+{"index": {"_index": "bookings", "_id": 423}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Friday", "day": "9", "year": "2020", "time_slot": "9:15 PM to 11:15 PM", "start_time": "09:15 PM", "start_hour": 21, "start_minute": 15, "end_time": "11:15 PM", "availability": 9, "reserved_spots": 51, "capacity": 60, "retrieved_at": "2020-10-09T21:13:03.045529"}
+{"index": {"_index": "bookings", "_id": 424}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "9:20 AM to 11:20 AM", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 9, "reserved_spots": 41, "capacity": 50, "retrieved_at": "2020-10-10T09:18:02.929699"}
+{"index": {"_index": "bookings", "_id": 425}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 33, "reserved_spots": 42, "capacity": 75, "retrieved_at": "2020-10-10T09:18:09.788901"}
+{"index": {"_index": "bookings", "_id": 426}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "11:30 AM to 1:30 PM", "start_time": "11:30 AM", "start_hour": 11, "start_minute": 30, "end_time": "01:30 PM", "availability": 48, "reserved_spots": 12, "capacity": 60, "retrieved_at": "2020-10-10T11:28:03.423406"}
+{"index": {"_index": "bookings", "_id": 427}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "11:40 AM to 1:40 PM", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 13, "reserved_spots": 37, "capacity": 50, "retrieved_at": "2020-10-10T11:38:03.001321"}
+{"index": {"_index": "bookings", "_id": 428}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 13, "reserved_spots": 62, "capacity": 75, "retrieved_at": "2020-10-10T11:38:09.567101"}
+{"index": {"_index": "bookings", "_id": 429}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "retrieved_at": "2020-10-10T13:57:03.516647"}
+{"index": {"_index": "bookings", "_id": 430}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 34, "reserved_spots": 41, "capacity": 75, "retrieved_at": "2020-10-10T13:57:11.960850"}
+{"index": {"_index": "bookings", "_id": 431}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 40, "reserved_spots": 10, "capacity": 50, "retrieved_at": "2020-10-10T13:57:17.448308"}
+{"index": {"_index": "bookings", "_id": 432}}
+{"location": "Altitude Kanata", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "4:20 PM to 6:20 PM", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 19, "reserved_spots": 31, "capacity": 50, "retrieved_at": "2020-10-10T16:18:03.485043"}
+{"index": {"_index": "bookings", "_id": 433}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 34, "reserved_spots": 41, "capacity": 75, "retrieved_at": "2020-10-10T16:18:13.021707"}
+{"index": {"_index": "bookings", "_id": 434}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "4:30 PM to 6:30 PM", "start_time": "04:30 PM", "start_hour": 16, "start_minute": 30, "end_time": "06:30 PM", "availability": 43, "reserved_spots": 7, "capacity": 50, "retrieved_at": "2020-10-10T16:28:02.405640"}
+{"index": {"_index": "bookings", "_id": 435}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Saturday", "day": "10", "year": "2020", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "start_minute": 0, "end_time": "09:00 PM", "availability": 48, "reserved_spots": 2, "capacity": 50, "retrieved_at": "2020-10-10T18:58:02.435599"}
+{"index": {"_index": "bookings", "_id": 436}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 34, "reserved_spots": 41, "capacity": 75, "retrieved_at": "2020-10-11T09:18:02.817365"}
+{"index": {"_index": "bookings", "_id": 437}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 30, "reserved_spots": 45, "capacity": 75, "retrieved_at": "2020-10-11T11:38:02.625957"}
+{"index": {"_index": "bookings", "_id": 438}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 38, "reserved_spots": 37, "capacity": 75, "retrieved_at": "2020-10-11T13:57:02.727159"}
+{"index": {"_index": "bookings", "_id": 439}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 43, "reserved_spots": 7, "capacity": 50, "retrieved_at": "2020-10-11T13:57:11.153435"}
+{"index": {"_index": "bookings", "_id": 440}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 34, "reserved_spots": 41, "capacity": 75, "retrieved_at": "2020-10-11T16:18:02.591171"}
+{"index": {"_index": "bookings", "_id": 441}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-11T18:38:02.890781"}
+{"index": {"_index": "bookings", "_id": 442}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "11", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-11T20:58:02.836878"}
+{"index": {"_index": "bookings", "_id": 443}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 37, "reserved_spots": 38, "capacity": 75, "retrieved_at": "2020-10-12T09:18:10.291737"}
+{"index": {"_index": "bookings", "_id": 444}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 22, "reserved_spots": 53, "capacity": 75, "retrieved_at": "2020-10-12T11:38:02.422479"}
+{"index": {"_index": "bookings", "_id": 445}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 28, "reserved_spots": 47, "capacity": 75, "retrieved_at": "2020-10-12T13:57:02.639639"}
+{"index": {"_index": "bookings", "_id": 446}}
+{"location": "Coyote Rock Gym", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 48, "reserved_spots": 2, "capacity": 50, "retrieved_at": "2020-10-12T13:57:09.204901"}
+{"index": {"_index": "bookings", "_id": 447}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 33, "reserved_spots": 42, "capacity": 75, "retrieved_at": "2020-10-12T16:18:02.727620"}
+{"index": {"_index": "bookings", "_id": 448}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 21, "reserved_spots": 54, "capacity": 75, "retrieved_at": "2020-10-12T18:38:03.093174"}
+{"index": {"_index": "bookings", "_id": 449}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "12", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-12T20:58:04.149995"}
+{"index": {"_index": "bookings", "_id": 450}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "13", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-13T09:18:03.583309"}
+{"index": {"_index": "bookings", "_id": 451}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "13", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-13T11:38:03.213280"}
+{"index": {"_index": "bookings", "_id": 452}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "13", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-13T13:57:02.911735"}
+{"index": {"_index": "bookings", "_id": 453}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "13", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 3, "reserved_spots": 72, "capacity": 75, "retrieved_at": "2020-10-13T16:18:03.353334"}
+{"index": {"_index": "bookings", "_id": 454}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "13", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 1, "reserved_spots": 74, "capacity": 75, "retrieved_at": "2020-10-13T18:38:02.754187"}
+{"index": {"_index": "bookings", "_id": 455}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "13", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 5, "reserved_spots": 70, "capacity": 75, "retrieved_at": "2020-10-13T20:58:02.889685"}
+{"index": {"_index": "bookings", "_id": 456}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "14", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-14T09:18:03.084002"}
+{"index": {"_index": "bookings", "_id": 457}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "14", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-14T11:38:02.395281"}
+{"index": {"_index": "bookings", "_id": 458}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "14", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "retrieved_at": "2020-10-14T13:57:02.683270"}
+{"index": {"_index": "bookings", "_id": 459}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "14", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 16, "reserved_spots": 59, "capacity": 75, "retrieved_at": "2020-10-14T16:18:02.625024"}
+{"index": {"_index": "bookings", "_id": 460}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "14", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 1, "reserved_spots": 74, "capacity": 75, "retrieved_at": "2020-10-14T18:38:03.014520"}
+{"index": {"_index": "bookings", "_id": 461}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "14", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 9, "reserved_spots": 66, "capacity": 75, "retrieved_at": "2020-10-14T20:58:03.130750"}
+{"index": {"_index": "bookings", "_id": 462}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-15T09:18:04.252146"}
+{"index": {"_index": "bookings", "_id": 463}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 49, "reserved_spots": 26, "capacity": 75, "zone": null, "retrieved_at": "2020-10-15T11:38:02.642688"}
+{"index": {"_index": "bookings", "_id": 464}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 50, "reserved_spots": 25, "capacity": 75, "zone": null, "retrieved_at": "2020-10-15T13:57:03.153366"}
+{"index": {"_index": "bookings", "_id": 465}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 9, "reserved_spots": 16, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-15T16:18:02.383172"}
+{"index": {"_index": "bookings", "_id": 466}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 2, "reserved_spots": 48, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-15T16:18:09.669149"}
+{"index": {"_index": "bookings", "_id": 467}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 11, "reserved_spots": 64, "capacity": 75, "zone": null, "retrieved_at": "2020-10-15T16:18:02.383172"}
+{"index": {"_index": "bookings", "_id": 468}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 4, "reserved_spots": 21, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-15T18:38:02.814378"}
+{"index": {"_index": "bookings", "_id": 469}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-15T18:38:10.911089"}
+{"index": {"_index": "bookings", "_id": 470}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 4, "reserved_spots": 71, "capacity": 75, "zone": null, "retrieved_at": "2020-10-15T18:38:02.814378"}
+{"index": {"_index": "bookings", "_id": 471}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 25, "reserved_spots": 0, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-15T20:58:02.344812"}
+{"index": {"_index": "bookings", "_id": 472}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 19, "reserved_spots": 31, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-15T20:58:09.167980"}
+{"index": {"_index": "bookings", "_id": 473}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "15", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 44, "reserved_spots": 31, "capacity": 75, "zone": null, "retrieved_at": "2020-10-15T20:58:02.344812"}
+{"index": {"_index": "bookings", "_id": 474}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "16", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-16T09:18:03.496634"}
+{"index": {"_index": "bookings", "_id": 475}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "16", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 35, "reserved_spots": 40, "capacity": 75, "zone": null, "retrieved_at": "2020-10-16T11:38:02.866855"}
+{"index": {"_index": "bookings", "_id": 476}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "16", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 47, "reserved_spots": 28, "capacity": 75, "zone": null, "retrieved_at": "2020-10-16T13:57:02.431564"}
