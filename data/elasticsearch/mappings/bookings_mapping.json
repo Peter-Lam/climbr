@@ -1,14 +1,19 @@
 {
     "mappings": {
         "properties": {
+        "location": {"type": "keyword"},
         "month": {"type": "keyword"},
         "day": {"type": "keyword"},
         "day_of_week": {"type": "keyword"},
         "year": {"type": "keyword"},
         "time_slot": {"type": "keyword"},
         "start_time": {"type":"keyword"},
+        "start_hour": {"type":"integer"},
+        "start_minute": {"type":"integer"},
         "end_time": {"type":"keyword"},
         "availability": {"type":"integer"},
+        "reserved_spots": {"type":"integer"},
+        "capacity": {"type":"integer"},
         "retrieved_at": {"type":"date"}
         }
     }

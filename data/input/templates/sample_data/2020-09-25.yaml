@@ -1,0 +1,121 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-25
+time:
+  start: 9:00 PM
+  end: 11:00 PM
+climbers: 
+  - Frank N. Stein
+  - Claude Strophobia
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 4
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 11
+  - grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 5
+  - grade: Kids - VB/V0
+    flash: 1
+    redpoint: 0
+    repeat: 6
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 4
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 7
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 12
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: Yellow Donuts
+    location: right overhang / slabish
+    style:
+      - dynamic
+      - power
+      - shoulder
+      - jugs
+    grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 5
+    notes:
+      Getting more used to the starting of this problem and I'm gaining more confidence.
+      Unless I find a more static way to the finish hold, I think I'm just going to have to power through
+      the mental games
+shoes: Scarpa Instinct VS

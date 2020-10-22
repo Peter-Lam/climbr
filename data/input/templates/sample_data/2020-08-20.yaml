@@ -2,33 +2,35 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Forearms were still sore from yesterday's climbing so took it pretty easy today. Small cut from messing around on a V6/V7
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-20
 time:
   start: 8:25 PM
   end: 10:10 PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Alvin Tam
-  - Austin Do
-  - Roy Saavedra
-  - Tamami Ichimura
+  - Frank N. Stein
+  - Rose Bush
+  - U.R. Nice
+  - Cherry Blossom
+  - John Doe
+  - Manuel Labor
 injury: 
   isTrue: True
   description: Scraped my the back of my right hand trying a V6/V7 in the Quarry. Started bleeding so had to tape up
 media:
-  - https://photos.google.com/photo/AF1QipPUn_2vwIrREzp_V9HJIgkSs0B-nvEoicOb_BwH
-  - https://photos.google.com/photo/AF1QipMaImP20oN5nS1cEJO7ZgyEd4ZUYIUNz_BfP-GA
-  - https://photos.google.com/photo/AF1QipNQ5CFwaKokoRxce-iZA-ed5kud7nD7iGwSTw1f
-  - https://photos.google.com/photo/AF1QipObyHsUfaVyq5YTxe68GuuuI5yyF4-jMXpbZ5EF
-  - https://photos.google.com/photo/AF1QipOT_AdngRWxVp0ZUbjfKEHNJ2qGlciMUkCsnrM7
-  - https://photos.google.com/photo/AF1QipMv08-qkMsAm_t9kSFw37SqxzsEjs6HLhEz0WJd
-  - https://photos.google.com/photo/AF1QipNFecyYEBCZ85ilXb-0qS3CXHNxYAbDSbQAIQpp
-  - https://photos.google.com/photo/AF1QipPiCEsF_xSSKTzkjHrVaA3lkUW54KM1sJ4b5e5w
-  - https://photos.google.com/photo/AF1QipNrsAt_EpRZs5Dpyi_LpvgpvciWd0KuQHbthzWO
-  - https://photos.google.com/photo/AF1QipOnBMax-7BSL6w-oB48Mga6i33wr4XimcoWiJLa
-  - https://photos.google.com/photo/AF1QipOgmZhXC_Jr0rNfF7Z_IeDDlhwCYHv38fJXQa_x
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -127,9 +129,10 @@ projects:
     repeat: 1
     attempts: 2
     notes:
-      USed a different beta to try to stick the last move. Got past my crux from last session but had issues finishing it,
-      it a stable way. Got up to the last hold all 3 times today.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
     media:
-      - https://photos.google.com/photo/AF1QipNQ5CFwaKokoRxce-iZA-ed5kud7nD7iGwSTw1f
-      - https://photos.google.com/photo/AF1QipOT_AdngRWxVp0ZUbjfKEHNJ2qGlciMUkCsnrM7
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
 shoes: La Sportiva Tarantula

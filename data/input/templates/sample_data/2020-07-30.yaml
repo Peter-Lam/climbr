@@ -2,23 +2,25 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Wore my Scrapas today to test reproducibility for the 4/5 kids 'pink step-up foot-match'. Wasn't able to see a big difference but I got 'mellow yellow mantle' this session
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-30
 time:
   start: 8:00 PM
   end: 9:30 PM
 climbers: 
-  - Nancy Lam
-  - Austin Do
+  - Frank N. Stein
+  - Cherry Blossom
 injury: 
   isTrue: false
   description: Add a description of injury here
 media:
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMGFBLl1PaNgsCsj8i0F0fOahz1YafDfagU3pGN
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMpWkWuoLPnHkK4IbVfzvL4QeyNz1KOdq00WI8x
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMUiHp4zcRoj2zmMK9MPSuDk5L6pAJYDbGc6yBW
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNBWhXNfDquPUAqdP2vP-E9aQH4vmr4cve9d7dw
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNiS09AGqi1YztroubWuTyle11A6gBRLrMA1vg8
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -114,9 +116,9 @@ projects:
     notes:
       Shoes weren't a game change and I still struggle with switching feet. Probably should just take my time instead of rushing things
     media:
-      - https://photos.google.com/photo/AF1QipNkl6Af84sDXw1fjRB3TXnHooBupc4LMcC43hMW
-      - https://photos.google.com/photo/AF1QipOc70RfG3Xlshh2jl--RF5A8q_yc0cR-ifuZn5R
-      - https://photos.google.com/photo/AF1QipPDCEl9-6E8pURzXcTT1GSaq4UErKmf9BivRQwR
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
   - name: mellow yellow mantle
     location: quarry
     style:
@@ -130,5 +132,5 @@ projects:
     notes:
       I got the problem this time. Just needed to be more patient and careful about balance when I 1/2 mantle up
     media:
-      - https://photos.google.com/photo/AF1QipP84Asre-hOuEfRgSFx9ru98UgqGdNVdp7ngXPI
+      - Lorem ipsum dolor sit amet.
 shoes: Scarpa Instinct VS

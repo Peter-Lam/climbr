@@ -1,0 +1,119 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-06
+time:
+  start: 9:00 PM
+  end: 11:00 PM
+climbers: 
+  - Frank N. Stein
+  - Rose Bush
+  - U.R. Nice
+  - Cherry Blossom
+  - Jen Tile
+injury: 
+  isTrue: true
+  description: Pulled something in my neck while hangboard/campusing
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: VB/V0
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 4
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 4
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: 3 Pocket Death Punch
+    location: right overhang / slabbish
+    style:
+      - big movement
+      - pockets
+      - jugs
+    grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+    notes:
+      Felt pretty gassed
+shoes: La Sportiva Tarantula

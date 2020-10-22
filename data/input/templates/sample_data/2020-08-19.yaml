@@ -2,38 +2,40 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Some new problems today. Did kids pretty quickly since there weren't many problems left to do. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-19
 time:
   start: 8:25 PM
   end: 10:10 PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Roy Saavedra
-  - Xavier
+  - Frank N. Stein
+  - Rose Bush
+  - John Doe
+  - Liz Erd
 injury: 
   isTrue: false
   description: Add a description of injury here
 media:
-  - https://photos.google.com/photo/AF1QipMgkAjW27IwFYQSpx4jyn-8OM0P4sry9BrDrc1s
-  - https://photos.google.com/photo/AF1QipO6xhWCaU8QSTzQpesOE34or-a87YfnVJ3O9L_A
-  - https://photos.google.com/photo/AF1QipOZE8DrIl72gl-fW0Kh8MxznOw4wOagyed9MD6H
-  - https://photos.google.com/photo/AF1QipMuTNo_fRiP3ght0nMLAD6qTXf3cCZlMqAX_7sW
-  - https://photos.google.com/photo/AF1QipMBFYhipHzkDtiklvGq7irZVfpG6-mC_3gWR8iA
-  - https://photos.google.com/photo/AF1QipPfEiRpBjncQb5fwdOsangpVp5o_Sv_IRD9CGTh
-  - https://photos.google.com/photo/AF1QipNiYN7Q9zYIMslDdHuiKdK1QWRU4soEsn0UCVYj
-  - https://photos.google.com/photo/AF1QipPwVgMjRlDx3Nqq2fchLfEocmtQN2exnwlymqOk
-  - https://photos.google.com/photo/AF1QipN7dq1Ymw05739LVlyjWnfJ4wOE-i_bRwEmw2iQ
-  - https://photos.google.com/photo/AF1QipMsi9BvyL0WkTtkHNUEOttQ1EAeQJMGKluL6mUx
-  - https://photos.google.com/photo/AF1QipM9KtEHPntlO01F-jJ78W1ww8MDioDOwDDV3ZqL
-  - https://photos.google.com/photo/AF1QipMD4HREPAyDyJDjTnMNF0BEXAn3lRObDjpL3aSV
-  - https://photos.google.com/photo/AF1QipN52Pu3w1GUK5ZyOfq3_2wtHbB03qulWQUognuI
-  - https://photos.google.com/photo/AF1QipNmC2bSS-y1QkSRCWzEWSPHEC-zphnF5z_SGyM1
-  - https://photos.google.com/photo/AF1QipN0A0ezmPVM247c1InIDrvsQzj5sVtdS9kBelvB
-  - https://photos.google.com/photo/AF1QipNT0R-vn3T37Box3U6WRVTXWXUWes0Gnk5LUECZ
-  - https://photos.google.com/photo/AF1QipPaN1U1zh1gl9R22Bx3uIh80SMK4YJI5Hovi09L
-  - https://photos.google.com/photo/AF1QipPM3jbcNFXfFHRoxT0MG_fDQ-lTz-9yH1yows9O
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -129,8 +131,8 @@ projects:
     notes:
       Repeated again for the camera
     media:
-      - https://photos.google.com/photo/AF1QipO6xhWCaU8QSTzQpesOE34or-a87YfnVJ3O9L_A
-      - https://photos.google.com/photo/AF1QipOZE8DrIl72gl-fW0Kh8MxznOw4wOagyed9MD6H
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
   - name: 3 Pocket Death Punch
     location: right overhang / slabbish
     style:
@@ -143,10 +145,11 @@ projects:
     repeat: 0
     attempts: 1
     notes:
-      Tried the static beta again and Im feeling better about it. Watched John and a couple others
-      use that beta with good success and seems safer than the dino
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
     media:
-      - https://photos.google.com/photo/AF1QipNiYN7Q9zYIMslDdHuiKdK1QWRU4soEsn0UCVYj
+      - Lorem ipsum dolor sit amet.
   - name: The Hulk
     location: slab
     style:
@@ -160,9 +163,9 @@ projects:
     notes:
       Tried to repeat for the camera but this time I struggled with balancing the last hold
     media:
-      - https://photos.google.com/photo/AF1QipN52Pu3w1GUK5ZyOfq3_2wtHbB03qulWQUognuI
-      - https://photos.google.com/photo/AF1QipPaN1U1zh1gl9R22Bx3uIh80SMK4YJI5Hovi09L
-      - https://photos.google.com/photo/AF1QipMD4HREPAyDyJDjTnMNF0BEXAn3lRObDjpL3aSV
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
   - name: mellow yellow mantle
     location: quarry
     style:
@@ -174,7 +177,9 @@ projects:
     repeat: 1
     attempts: 0
     notes:
-      Repeated this climb today showing Xavier the beta.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
   - name: blue crimp
     location: left overhang
     style:
@@ -185,6 +190,7 @@ projects:
     repeat: 0
     attempts: 4
     notes:
-      Practicing crimps, and technique with this problem. Not really fun but good practice. Just over halfway through this problem but struggling to keep my hips close to the wall,
-      as it begins to over hang. I feel like if I do 1 wrong move, I'm too tired to recover from it.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
 shoes: Scarpa Instinct VS

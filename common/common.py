@@ -35,26 +35,42 @@ def connect_to_es(es_url):
     # TODO: Check for docker, and if installed, build ELK stack images
 
 
-def create_index(es_url, index_name, mapping_path, silent=False):
+def create_index(es_url, index_name, mapping_path, silent=False, force=False):
     '''
     Create an Elasticsearch index (table) using a mapping to define field types
     :param es_url: url to Elasticsearch instance
     :param index_name: Name of index
     :param mapping_path: Path to a json
-    :param silent: suppres print messages
+    :param silent: suppress print messages
+    :param force: force delete existing index
     :type es_url: str
     :type index_name: str
     :type mapping_path: str
     :type silent: bool
+    :type force: bool
     :raises Exception: path is not a directory, does not exist or Elasticsearch is not running
     '''
     try:
         # Connecting to Elasticsearch
         es = connect_to_es(es_url)
-        # Deleting any old indexes
+        # Check for old indexes
         if es.indices.exists(index_name):
-            es.indices.delete(index_name)
-        # TODO: If it exists, then do nothing, else create index
+            if force:
+                if not silent:
+                    print(f"Deleting index {index_name}...")
+                es.indices.delete(index_name)
+            else:
+                valid_input = False
+                while not valid_input:
+                    value = input(
+                        f"The following index, '{index_name}', already exists. Would you like you override the index? All data will be deleted. (y/N)\t").lower()
+                    if value == 'y':
+                        print(f"Deleting index {index_name}...")
+                        es.indices.delete(index_name)
+                        valid_input = True
+                    if value == 'n':
+                        print(f"Skipping index creation for '{index_name}'.")
+                        return
         mapping = load_file(mapping_path)
         try:
             if not silent:
@@ -64,49 +80,86 @@ def create_index(es_url, index_name, mapping_path, silent=False):
                 print(f"Successfully created {index_name} index!")
         except Exception as ex:
             raise Exception(
-                f"Unable to create mapping from '{mapping_path}'")
+                f"Unable to create mapping from '{mapping_path}'.")
     except Exception as ex:
         raise ex
 
 
-def create_index_pattern(kibana_url, index_name, silent=False):
+def create_index_pattern(kibana_url, index_name, silent=False, force=False):
     '''
     Create a general Kibana index pattern by calling a cURL command
     :param kibana_url: url to the Kibana instance
     :param index_name: Name of index
-    :param silent: suppres print messages
+    :param silent: suppress print messages
+    :param force: force delete existing patterns
     :type index_name: str
     :type mapping_path: str
     :type silent: bool
-    :raises Exception: path is not a directory, does not exist
+    :type force: bool
+    :raises Exception: Unable to ping Kibana instance
     '''
     try:
+        # Variables for API call
+        timefields = {'bookings': 'retrieved_at',
+                      'projects': 'session.date',
+                      'counters': 'session.date',
+                      'sessions': 'date'}
+        timefield = f', "timeFieldName":"{timefields[index_name]}"' if index_name in timefields.keys(
+        ) else ''
+        headers = {'kbn-xsrf': 'true',
+                   'Content-Type': 'application/json'}
+        data = '{{ "attributes": {{ "title": "{}*" {}}} }}'.format(
+            index_name, timefield)
         # Try to ping Kibana
         if requests.get(kibana_url).status_code != 200:
             raise Exception(
-                f"Unable to ping Kibana instance located at '{kibana_url}'")
+                f"Unable to ping Kibana instance located at '{kibana_url}'.")
         index_url = urllib.parse.urljoin(
             kibana_url, f"api/saved_objects/index-pattern/{index_name}")
-        # Create index pattern if not present
-        if requests.get(index_url).status_code != 200:
-            headers = {'kbn-xsrf': 'true',
-                       'Content-Type': 'application/json'}
-            data = '{{ "attributes": {{ "title": "{}*" }} }}'.format(
-                index_name)
-            if not silent:
-                print(f"Creating index pattern for {index_name}...")
-            response = requests.post(
-                index_url, headers=headers, data=data)
-            if response.status_code == 200 and not silent:
-                print(f"Successfully created index pattern for {index_name}!")
+        # Check for existing index patterns, ask user to delete if found
+        if requests.get(index_url).status_code == 200:
+            if force:
+                if not silent:
+                    print(f"Deleting index pattern,'{index_name}' ...")
+                del_response = requests.delete(index_url, headers=headers)
+                if del_response.status_code != 200:
+                    raise Exception(
+                        "{del_response} Unable to delete index pattern for 'index_name'.")
             else:
-                # TODO: Log respons output on error
-                # response.json()
-                raise Exception(
-                    f"{response} Unable to create bookings index pattern")
-        elif not silent:
-            print(
-                f"Found existing index pattern for {index_name}, skipping creation")
+                valid_input = False
+                while not valid_input:
+                    value = input(
+                        f"Found existing index pattern, '{index_name}', would you like to overwrite? (Y/n)\t").lower()
+                    if value == 'y':
+                        if not silent:
+                            print(f"Deleting index pattern,'{index_name}' ...")
+                        del_response = requests.delete(
+                            index_url, headers=headers)
+                        if del_response.status_code != 200:
+                            raise Exception(
+                                "{del_response} Unable to delete index pattern for 'index_name'.")
+                        valid_input = True
+                    # If no is selected, then just exit out of this function and skip
+                    if value == 'n':
+                        if not silent:
+                            print(
+                                f"Skipping index pattern creation for '{index_name}'...")
+                            return
+        # API call to create index pattern
+        if not silent:
+            print(f"Creating index pattern for '{index_name}'...")
+        response = requests.post(
+            index_url, headers=headers, data=data)
+        if response.status_code == 200:
+            if not silent:
+                print(
+                    f"Successfully created index pattern for '{index_name}'!")
+        else:
+            # TODO: Log respons output on error
+            # response.json()
+            raise Exception(
+                f"{response} Unable to create bookings index pattern.")
+
     except Exception as ex:
         raise ex
 
@@ -115,6 +168,37 @@ def convert_grades(grade):
     # TODO: Convert climbing grades to normalize data
     # https://www.mec.ca/en/explore/climbing-grade-conversion
     raise Exception("TODO")
+
+
+def convert_to_24_hour(time):
+    '''
+    Converting time string to 24 hour format, throwing an error if unexpected format
+    :param time: time in 12 hour format
+    :type time: str
+    :raises Exception: Unexpected time format
+    :return: Time in HH:MM AM/PM format
+    :rtype: str
+    '''
+    try:
+        # 24 hour time regex
+        hh_mm = re.compile("^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$")
+        h_mm = re.compile("^([0-9]):[0-5][0-9]$")
+        # Declaring regex pattens
+        hh_mm_a = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
+        h_mm_a = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
+        hh_a = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
+        h_a = re.compile("^[1-9] (AM|PM)$")
+        if hh_mm_a.match(time) or h_mm_a.match(time):
+            return datetime.strftime(datetime.strptime(time, "%I:%M %p"), "%H:%M")
+        elif hh_a.match(time) or h_a.match(time):
+            return datetime.strftime(datetime.strptime(time, "%I %p"), "%H:%M")
+        elif hh_mm.match(time) or h_mm.match(time):
+            return datetime.strftime(datetime.strptime(time, "%H:%M"), "%H:%M")
+        else:
+            raise Exception(
+                f"Unexpected format. Unable to convert '{time}'to 24 hour format.")
+    except Exception as ex:
+        raise ex
 
 
 def convert_to_hhmm(time):
@@ -128,15 +212,19 @@ def convert_to_hhmm(time):
     '''
     try:
         # Declaring regex pattens
-        hh_mm = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
-        h_mm = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
-        hh = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
-        h = re.compile("^[1-9] (AM|PM)$")
-        if hh_mm.match(time) or h_mm.match(time):
+        hh_mm_a = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
+        h_mm_a = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
+        hh_a = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
+        h_a = re.compile("^[1-9] (AM|PM)$")
+        # 24 hour time regex
+        hh_mm = re.compile("^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$")
+        h_mm = re.compile("^([0-9]):[0-5][0-9]$")
+        if hh_mm_a.match(time) or h_mm_a.match(time):
             return datetime.strftime(datetime.strptime(time, "%I:%M %p"), "%I:%M %p")
-        elif hh.match(time) or h.match(time):
+        elif hh_a.match(time) or h_a.match(time):
             return datetime.strftime(datetime.strptime(time, "%I %p"), "%I:%M %p")
-        # TODO: Convert 24 hour format to 12 hour
+        elif hh_mm.match(time) or h_mm.match(time):
+            return datetime.strftime(datetime.strptime(time, "%H:%M"), "%I:%M %p")
         else:
             raise Exception(
                 f"Unexpected format. Unable to convert '{time}'to HH:MM AM/PM format.")
@@ -154,154 +242,73 @@ def delete_file(path):
         os.remove(path)
 
 
-def str_to_time(string):
+def export_kibana(kibana_url, output, silent=False, force=False):
     '''
-    Coverting time string to a datetime object, throwing an error if unexpected format
-    :param time: time in 12 hour format
-    :type time: str
-    :raises Exception: Unexpected time format
-    :return: datetime object
-    :rtype: datetime
+    Exporting all Kibana objects into ndjson by calling a cURL command
+    :param kibana_url: url to the Kibana instance
+    :param output: full path of output file for ndjson
+    :param silent: suppress print messages
+    :param force: force delete existing index
+    :type kibana_url: str
+    :type output: str
+    :type silent: bool
+    :type force: bool
+    :raises Exception: Unable to ping Kibana instance
     '''
     try:
-        # Declaring regex pattens
-        hh_mm = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
-        h_mm = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
-        hh = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
-        h = re.compile("^[1-9] (AM|PM)$")
-        if hh_mm.match(string) or h_mm.match(string):
-            return datetime.strptime(string, "%I:%M %p")
-        elif hh.match(string) or h.match(string):
-            return datetime.strptime(string, "%I %p")
-        # TODO: Convert 24 hour format to 12 hour
-        else:
+        # Variables
+        dashboard_ids, output_data = [], []
+        headers = {'kbn-xsrf': 'true', 'Content-Type': 'application/json'}
+        data = {"objects": [], "includeReferencesDeep": True}
+        export_url = urllib.parse.urljoin(
+            kibana_url, f"api/saved_objects/_export")
+        find_url = urllib.parse.urljoin(
+            kibana_url, f"api/saved_objects/_find")
+        # Try to ping Kibana
+        if requests.get(kibana_url).status_code != 200:
             raise Exception(
-                f"Unexpected format. Unable to convert '{string}'to HH:MM AM/PM format.")
-    except Exception as ex:
-        raise ex
+                f"Unable to ping Kibana instance located at '{kibana_url}'")
 
-
-def load_json(path):
-    '''
-    Opens and loads a JSON file
-    :param path: Path to JSON
-    :type path: str
-    :raises Exception: JSON path does not exist
-    :return: File contents
-    :rtype: json
-    '''
-    if os.path.exists(path):
-        raise Exception(f"The path: {path} does not exist")
-    with open(path, 'r') as file:
-        return json.load(file)
-
-
-def load_yaml(path):
-    '''
-    Reads the configuration file and returns the object
-    :param path: Path to yaml
-    :type path: str
-    :raises Exception: Yaml path does not exist
-    :return: Config contents
-    :rtype: yaml
-    '''
-    try:
-        if not os.path.exists(path):
-            raise Exception(f"The path: {path} does not exist")
-        with open(path, 'r') as stream:
-            return yaml.safe_load(stream)
-    except Exception as ex:
-        raise Exception(
-            f"Unable to read climbing log, formatting error found {ex.args[3]}")
-
-
-def load_file(path):
-    '''
-    Reads the contents of a file and returns a string with contents
-    :param path: Path to file
-    :type path: str
-    :raises Exception: file path does not exist
-    :return: file contents
-    :rtype: str
-    '''
-    try:
-        if not os.path.exists(path):
-            raise Exception(f"The path: {path} does not exist")
-        with open(path, 'r') as file:
-            return file.read()
-    except Exception as ex:
-        raise Exception(f"Unable to read file: {path}")
-
-
-def write_log(log, output_path):
-    '''
-    Writing to log file, will create file and parent folder if the path doesn't exist
-    :param log: Log information
-    :param output_path: path to log file
-    :type log: str
-    :type output_path: str
-    '''
-    try:
-        if not os.path.exists(os.path.dirname(output_path)):
-            print(f"'os.path.dirname(output_path)' does not exist, creating folder")
-            os.makedirs(os.path.dirname(output_path))
-        file_perm = 'a' if os.path.isfile(output_path) else 'w'
-        with open(output_path, file_perm) as file:
-            file.write(log + '\n')
-    except Exception as ex:
-        raise ex
-
-
-def write_json(data, output_path):
-    '''
-    Reads values and writes into output file path,
-    :param data: Ioc data to add write to json
-    :param output_path: Output path including filename.json
-    :type data: list of dict
-    :type output_path: str
-    '''
-
-    try:
-        file_perm = 'a' if os.path.isfile(output_path) else 'w'
-        with open(output_path, file_perm) as file:
-            json.dump(data, file, indent=4)
-    except Exception as ex:
-        raise ex
-
-
-def write_bulk_api(data, output_path, index_name):
-    '''
-    Writes to a json file in bulk api format given a list of information,
-    if the output path already exists, will overwrite
-    :param data: data to add write to json
-    :param output_path: the path to the json in bulk api format
-    :param index_name: Index name for elasticsearch
-    :type data: list of dict
-    :type output_path: str
-    :type index_name: str
-    '''
-    try:
-        new_contents = []
-        current_index = 0
-        # If the data is a dict, then assume it's one object
-        if type(data) is dict:
-            new_contents.append(json.dumps(
-                {"index": {"_index": index_name, "_id": current_index}}))
-            new_contents.append(json.dumps(data))
-        # If it's a list then, then assume it's multiple
-        elif type(data) is list:
-            for row in data:
-                new_contents.append(json.dumps(
-                    {"index": {"_index": index_name, "_id": current_index}}))
-                current_index += 1
-                new_contents.append(json.dumps(row))
+        # If the file already exists, prompt user about deletion
+        if os.path.isfile(output):
+            valid = True if force else False
+            while not valid:
+                user_response = input(
+                    f"A file already exists at '{output}', would you like to overwrite? (Y/n)\t").lower()
+                if user_response == 'y':
+                    valid = True
+                    if not silent:
+                        print(f"Overwriting file located at '{output}'...")
+                if user_response == 'n':
+                    raise Exception(
+                        f"File already exists at '{output}', please chose a different name using the '-o' argument or delete the existing file and try again.")
+        # Get all dashboard ids to export
+        if not silent:
+            print(f"Retrieving dashboards and related objects...")
+        dashboards = requests.get(find_url, params={'type': 'dashboard'}).json()[
+            'saved_objects']
+        for dashboard in dashboards:
+            dashboard_ids.append(dashboard['id'])
+            data['objects'].append(
+                {"type": "dashboard", "id": dashboard['id']})
+        data = str(data).replace("True", "true").replace('\'', '\"')
+        # Exporting dashboards and related objects
+        if not silent:
+            print(f"Exporting Kibana dashboard and objects...")
+        response = requests.post(
+            export_url, headers=headers, data=data)
+        if response.status_code == 200:
+            try:
+                with open(output, "w") as file:
+                    file.write(response.text)
+                if not silent:
+                    print(f"Successfully exported!")
+            except Exception as ex:
+                raise Exception(
+                    f"Unable to write to '{output}'. The file may be open in another program, please ensure all related files are closed and try again.")
         else:
-            raise Exception(
-                f"Object type '{type(data)} is not supported. Must be list or dict")
+            raise Exception(f"{response} Unable to export")
 
-        with open(output_path, "w") as file:
-            for line in new_contents:
-                file.write(line + "\n")
     except Exception as ex:
         raise ex
 
@@ -310,11 +317,11 @@ def get_last_id(bulk_api_path):
     '''
     Retreiving the last id from a JSON in bulk api format,
     will raise exception if file path doesn't exist
-    :param bulk_api_path: File path to json in bulk api format
-    :type bulk_api_path: str
-    :raises Exception: Bulk API path does not exist
-    :return last_id: The last id in the json
-    :rtype last_id: int
+    : param bulk_api_path: File path to json in bulk api format
+    : type bulk_api_path: str
+    : raises Exception: Bulk API path does not exist
+    : return last_id: The last id in the json
+    : rtype last_id: int
     '''
     try:
         if not os.path.exists(bulk_api_path):
@@ -330,13 +337,13 @@ def get_last_id(bulk_api_path):
 
 def get_last_document(bulk_api_path):
     '''
-    Retrieve the last document (row) from aa JSON in bulk api format,
+    Retrieve the last document(row) from aa JSON in bulk api format,
     will raise exception if file path doesn't exist
-    :param bulk_api_path: File path to json in bulk api format
-    :type bulk_api_path: str
-    :raises Exception: Bulk API path does not exist
-    :return last_document: The row of information
-    :rtype last_document: dict
+    : param bulk_api_path: File path to json in bulk api format
+    : type bulk_api_path: str
+    : raises Exception: Bulk API path does not exist
+    : return last_document: The row of information
+    : rtype last_document: dict
     '''
     try:
         if not os.path.exists(bulk_api_path):
@@ -353,15 +360,15 @@ def get_last_document(bulk_api_path):
 def get_files(path, pattern, recursive=False):
     '''
     This function returns a list of files that match a given pattern.
-    :param path: Path to a directory
-    :param regex: regex pattern to match files
-    :param recursive: option to look for files recursively within a directory, default=False
-    :type path: str
-    :type pattern: str
-    :type recursive: bool
-    :raises Exception: path is not a directory, does not exist
-    :return files: A list of found files, returning an empty list if nothing is found
-    :rtype files: list
+    : param path: Path to a directory
+    : param pattern: regex pattern to match files
+    : param recursive: option to look for files recursively within a directory, default = False
+    : type path: str
+    : type pattern: str
+    : type recursive: bool
+    : raises Exception: path is not a directory, does not exist
+    : return files: A list of found files, returning an empty list if nothing is found
+    : rtype files: list
     '''
     try:
         files = []
@@ -379,16 +386,155 @@ def get_files(path, pattern, recursive=False):
         raise(ex)
 
 
+def import_kibana(kibana_url, ndjson, silent=False):
+    '''
+    Import all Kibana objects using ndjson and api command
+    : param kibana_url: url to the Kibana instance
+    : param ndjson: path to ndjson file
+    : param silent: suppress print messages
+    : type kibana_url: str
+    : type ndjson: str
+    : type silent: bool
+    : raises Exception: Unable to ping Kibana instance
+    '''
+    try:
+        if not silent:
+            print(f"Importing Kibana dashboard and objects from '{ndjson}'...")
+        # Try to ping Kibana
+        if requests.get(kibana_url).status_code != 200:
+            raise Exception(
+                f"Unable to ping Kibana instance located at '{kibana_url}'")
+        url = urllib.parse.urljoin(
+            kibana_url, f"api/saved_objects/_import")
+        headers = {'kbn-xsrf': 'true'}
+        files = {'file': ('request.ndjson', load_file(ndjson))}
+        response = requests.post(url, headers=headers, files=files)
+        if response.status_code == 200:
+            if not silent:
+                print(f"Successfully imported!")
+        else:
+            # TODO: Log respons output on error
+            raise Exception(
+                f"{response} Unable to import")
+
+    except Exception as ex:
+        raise ex
+
+
+def load_bulk_json(path):
+    '''
+    Opens bulk json and loads as a dict
+    : param path: Path to regular json file to be converted
+    : type path: path
+    : return: Returns file contents
+    : rtype: dict
+    : raises Exception: JSON path does not exist
+    '''
+    if not os.path.exists(path):
+        raise Exception(f"The path: {path} does not exist")
+    with open(path, 'r') as file:
+        file_contents = file.read().splitlines()
+    new_contents = []
+    for line in file_contents:
+        if "{\"index\":" not in line:
+            new_contents.append(json.loads(line))
+    return new_contents
+
+
+def load_json(path):
+    '''
+    Opens and loads a JSON file
+    : param path: Path to JSON
+    : type path: str
+    : raises Exception: JSON path does not exist
+    : return: File contents
+    : rtype: json
+    '''
+    if os.path.exists(path):
+        raise Exception(f"The path: {path} does not exist")
+    with open(path, 'r') as file:
+        return json.load(file)
+
+
+def load_yaml(path):
+    '''
+    Reads the configuration file and returns the object
+    : param path: Path to yaml
+    : type path: str
+    : raises Exception: Yaml path does not exist
+    : return: Config contents
+    : rtype: yaml
+    '''
+    try:
+        if not os.path.exists(path):
+            raise Exception(f"The path: {path} does not exist")
+        with open(path, 'r') as stream:
+            return yaml.safe_load(stream)
+    except Exception as ex:
+        raise Exception(
+            f"Unable to read climbing log, formatting error found {ex.args[3]}")
+
+
+def load_file(path):
+    '''
+    Reads the contents of a file and returns a string with contents
+    : param path: Path to file
+    : type path: str
+    : raises Exception: file path does not exist
+    : return: file contents
+    : rtype: str
+    '''
+    try:
+        if not os.path.exists(path):
+            raise Exception(f"The path: {path} does not exist")
+        with open(path, 'r') as file:
+            return file.read()
+    except Exception as ex:
+        raise Exception(f"Unable to read file: {path}")
+
+
+def str_to_time(string):
+    '''
+    Coverting time string to a datetime object, throwing an error if unexpected format
+    : param time: time in 12 or 24 hour format
+    : type time: str
+    : raises Exception: Unexpected time format
+    : return: datetime object
+    : rtype: datetime
+    '''
+    try:
+        # Declaring regex pattens
+        hh_mm_a = re.compile("^(1[0-2]|0[1-9]):[0-5][0-9] (AM|PM)$")
+        h_mm_a = re.compile("^([1-9]):[0-5][0-9] (AM|PM)$")
+        hh_a = re.compile("^(1[0-2]|0[1-9]) (AM|PM)$")
+        h_a = re.compile("^[1-9] (AM|PM)$")
+        # 24 hour time regex
+        hh_mm = re.compile("^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$")
+        h_mm = re.compile("^([0-9]):[0-5][0-9]$")
+        if hh_mm_a.match(string) or h_mm_a.match(string):
+            return datetime.strptime(string, "%I:%M %p")
+        elif hh_a.match(string) or h_a.match(string):
+            return datetime.strptime(string, "%I %p")
+        elif hh_mm.match(string) or h_mm.match(string):
+            return datetime.strptime(string, "%H:%M")
+        # TODO: Convert 24 hour format to 12 hour
+        else:
+            raise Exception(
+                f"Unexpected format. Unable to convert '{string}'to HH:MM AM/PM format.")
+    except Exception as ex:
+        raise ex
+
+
 def update_bulk_api(data, output_path, index_name):
     '''
     Updating an existing json in bulk api format with new ioc information,
     will raise exception if file path doesn't exist
-    :param data: Ioc information that is to be added to the json
-    :param output_path: The path to the json in bulk api format
-    :param index_name: Index name for elasticsearch
-    :raises Exception: Output path does not exist
-    :type data: list of dict
-    :type output_path: str
+    : param data: Information that is to be added to the json
+    : param output_path: The path to the json in bulk api format
+    : param index_name: Index name for elasticsearch
+    : raises Exception: Output path does not exist
+    : type data: list of dict
+    : type output_path: str
     '''
     try:
         # Create a new file if it doesn't exist
@@ -426,15 +572,15 @@ def update_bulk_api(data, output_path, index_name):
 def upload_to_es(es_url, path, recursive=False, silent=False):
     '''
     Upload bulk json files into Elasticsearch
-    :param es_url: url to Elasticsearch instance
-    :param path: path to directory to import OR path to a specific file
-    :param recursive: optional bool to collect files from sub-dirs
-    :param silent: suppres print messages
-    :type es_url: str
-    :type path: str
-    :type recursive: bool
-    :type silent: bool
-    :raises Exception: path is not a directory, does not exist
+    : param es_url: url to Elasticsearch instance
+    : param path: path to directory to import OR path to a specific file
+    : param recursive: optional bool to collect files from sub-dirs
+    : param silent: suppres print messages
+    : type es_url: str
+    : type path: str
+    : type recursive: bool
+    : type silent: bool
+    : raises Exception: path is not a directory, does not exist
     '''
     try:
         # Connecting to Elasticsearch
@@ -466,5 +612,78 @@ def upload_to_es(es_url, path, recursive=False, silent=False):
                     f"Unable to upload '{file}' into Elasticsearch do to the following rows:\n{es_error}")
             elif not silent:
                 print(f"'{file}' has been successfully uploaded!")
+    except Exception as ex:
+        raise ex
+
+
+def write_bulk_api(data, output_path, index_name):
+    '''
+    Writes to a json file in bulk api format given a list of information,
+    if the output path already exists, will overwrite
+    : param data: data to add write to json
+    : param output_path: the path to the json in bulk api format
+    : param index_name: Index name for elasticsearch
+    : type data: list of dict
+    : type output_path: str
+    : type index_name: str
+    '''
+    try:
+        new_contents = []
+        current_index = 0
+        # If the data is a dict, then assume it's one object
+        if type(data) is dict:
+            new_contents.append(json.dumps(
+                {"index": {"_index": index_name, "_id": current_index}}))
+            new_contents.append(json.dumps(data))
+        # If it's a list then, then assume it's multiple
+        elif type(data) is list:
+            for row in data:
+                new_contents.append(json.dumps(
+                    {"index": {"_index": index_name, "_id": current_index}}))
+                current_index += 1
+                new_contents.append(json.dumps(row))
+        else:
+            raise Exception(
+                f"Object type '{type(data)} is not supported. Must be list or dict")
+
+        with open(output_path, "w") as file:
+            for line in new_contents:
+                file.write(line + "\n")
+    except Exception as ex:
+        raise ex
+
+
+def write_json(data, output_path):
+    '''
+    Reads values and writes into output file path,
+    : param data: data to add write to json
+    : param output_path: Output path including filename.json
+    : type data: list of dict
+    : type output_path: str
+    '''
+
+    try:
+        file_perm = 'a' if os.path.isfile(output_path) else 'w'
+        with open(output_path, file_perm) as file:
+            json.dump(data, file, indent=4)
+    except Exception as ex:
+        raise ex
+
+
+def write_log(log, output_path):
+    '''
+    Writing to log file, will create file and parent folder if the path doesn't exist
+    : param log: Log information
+    : param output_path: path to log file
+    : type log: str
+    : type output_path: str
+    '''
+    try:
+        if not os.path.exists(os.path.dirname(output_path)):
+            print(f"'os.path.dirname(output_path)' does not exist, creating folder")
+            os.makedirs(os.path.dirname(output_path))
+        file_perm = 'a' if os.path.isfile(output_path) else 'w'
+        with open(output_path, file_perm) as file:
+            file.write(log + '\n')
     except Exception as ex:
         raise ex

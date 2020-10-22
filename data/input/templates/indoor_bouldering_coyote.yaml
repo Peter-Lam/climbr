@@ -9,17 +9,8 @@ time:
   start: HH:MM AM/PM
   end: HH:MM AM/PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Carissa Wong
-  - Alvin Tam
-  - Austin Do
-  - Roy Saavedra
-  - Daniel Atlas
-  - Tamami Ichimura
-  - Daniel Alievsky
-  - Xavier
-  - Bilal Khalid
+  - Person A
+  - Person B
 injury: 
   isTrue: false
   description: Add a description of injury here
@@ -85,4 +76,5 @@ projects:
       FILLER
     media:
       - URL_to_image
-shoes: La Sportiva Tarantula / Scarpa Instinct VS
+    reset: false
+shoes: La Sportiva Tarantula

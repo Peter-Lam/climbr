@@ -2,18 +2,20 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Second day in a row climbing. Forearms and shoulders are still sore from yesterday's session
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-19
 time:
   start: 2:00 PM
   end: 3:30 PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Carissa Wong
-  - Austin Do
-  - Roy Saavedra
-  - Tamami Ichimura
+  - Frank N. Stein
+  - Rose Bush
+  - Fay Daway
+  - Cherry Blossom
+  - John Doe
+  - Manuel Labor
 counter:
   - grade: VB/V0
     flash: 2
@@ -61,8 +63,4 @@ projects:
     repeat: 0
     attempts: 6
     notes: Switched feet and started left this time but still struggling on the third move    
-media: null
-injury: 
-  isTrue: false
-  description: Add a description of injury here
 shoes: La Sportiva Tarantula
