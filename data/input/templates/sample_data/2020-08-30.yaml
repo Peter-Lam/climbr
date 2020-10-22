@@ -2,31 +2,33 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Got past my crux on "3 Pocket Death Punch" today. I think I should be able to get it next session. I also got a V5/V6 repeat on kids side recorded
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-30
 time:
   start: 8:25 PM
   end: 10:10 PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Bilal Khalid
-  - Xavier
+  - Frank N. Stein
+  - Rose Bush
+  - Jen Tile
+  - Liz Erd
 injury: 
   isTrue: true
   description: Right index finger hurts a little when curled
 media:
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipOov7ibAdARcVH58p4EVWUcrz0cjft2R3EsrVuH
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNnQ5vQEffKBzHHCM_EqWNEquJ63OJssrF5sbjB
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipPxymrmCQQPRBdtLmJMGsii9tZ-7UB-HgMDeQNK
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNsYED1d0c0J1u-jaRzSOx6yWEIYx5j70_usB6w
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipPpT3Fhxq4n0KEQkHV-nf0lcfihBKIjC2zJ29vj
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipPxiFlPMGDrr53WVv_KFdwZnEjn8ndqH7evHdXr
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMSwclfRrgKyUU-k1ONC8IwzH5L5DEf8bmDTtOs
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipMskFQfc32aSroHv4iWW50u6PtkQQJvJfGNLNtz
-  - https://photos.google.com/photo/AF1QipP5G6My75-sSSCN9smXtXScn67XUNaDmzuwgO4_
-  - https://photos.google.com/photo/AF1QipN38B0A_cT4-a9HNEW4KVtE9_ttvO6cK7IFiopn
-  - https://photos.google.com/photo/AF1QipOQKpwrSMM5k5rSgNuOUr3E_ZU7RaYIuuGmtgff
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -93,7 +95,7 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Kids - V5/6
+  - grade: Kids - V5/V6
     flash: 0
     redpoint: 0
     repeat: 1
@@ -133,6 +135,6 @@ projects:
     repeat: 0
     attempts: 2
     notes:
-      This climb was harder than it looked. The top half was hard for me to stick compared to Nancy. I think I need to move my feet lower because of my height to avoid moving away form the wall
+      This climb was harder than it looked. The top half was hard for me to stick compared to Frank. I think I need to move my feet lower because of my height to avoid moving away form the wall
       when moving to the right crimpy hold.
 shoes: Scarpa Instinct VS

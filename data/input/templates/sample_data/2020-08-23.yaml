@@ -2,23 +2,24 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Didn't spend too much time warming up on kids side this session. Spent most of our time on comp wall side since that was the
-  most recent reset was. I finally got the white competition problem, making it my first time completing 2 comp problems in a set.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-23
 time:
   start: 6:20 PM
   end: 8:05 PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Carissa Wong
-  - Xavier
+  - Frank N. Stein
+  - Rose Bush
+  - Fay Daway
+  - Liz Erd
 media:
-  - https://photos.google.com/photo/AF1QipNJU9shJpojukydSddVIAK_-dS6ukoLbpWAfr9O
-  - https://photos.google.com/photo/AF1QipM7O3uuImywn5aywiCIYfOws6GwHAbZYSGVtlkR
-  - https://photos.google.com/photo/AF1QipM9J6nftPjuLQzVzPlcHM9Iv7sxes5D-WI8YUuS
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipNpFIuqI73F2AMu91vlBzwgK5nyh71XiDFfjmtI
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipOeMRRvrpHIdUJnKEM7m3IbyCudPxubniP0ivHj
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -85,7 +86,7 @@ counter:
     redpoint: 0
     repeat: 1
     attempts: 0
-  - grade: Kids - V5/6
+  - grade: Kids - V5/V6
     flash: 0
     redpoint: 0
     repeat: 1
@@ -112,7 +113,9 @@ projects:
     repeat: 1
     attempts: 1
     notes:
-      Repeated to help Nancy with beta
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
   - name: mellow yellow mantle
     location: quarry
     style:

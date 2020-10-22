@@ -2,24 +2,25 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-   First day climbing with the new time changes. The session felt much longer, and I was dusted quite early.
-   Finished two new V3/V4's and worked on '3 Pocket Death Punch' with Nancy
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-10
 time:
   start: 8:25 PM
   end: 10:10 PM
 climbers: 
-  - Nancy Lam
-  - Xavier
+  - Frank N. Stein
+  - Liz Erd
 injury: 
   isTrue: false
   description: Add a description of injury here
 media:
-  - https://photos.google.com/photo/AF1QipPwX3YOan-uJxtuUzIigc5aTHFFPR-fpzo86EQO
-  - https://photos.google.com/photo/AF1QipMkpQ_ZjYO2cxypqZvXbFe3hHZ53L2tUrLJw8jj
-  - https://photos.google.com/photo/AF1QipMrGMKVHe8SGjb4NFkKNd3-UnUYx__Y7K6OgTsR
-  - https://photos.google.com/photo/AF1QipMf9UqX5XZETKk6G8qmpL2zqvhlalKgTjCxfDlm
-  - https://photos.google.com/photo/AF1QipM1cdVA7FzyZn5CIi4sGh0af5lFErGKPvvTl7PJ
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -114,6 +115,8 @@ projects:
     repeat: 0
     attempts: 2
     notes:
-      Trying different beta with Nancy but was pretty gassed out. Might look for static beta
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
 shoes: La Sportiva Tarantula
   

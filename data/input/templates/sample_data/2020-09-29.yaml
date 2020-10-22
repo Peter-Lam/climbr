@@ -1,0 +1,96 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-29
+time:
+  start: 11:40 AM
+  end: 1:20 PM
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 6
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 5
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 3
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 1
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 3
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: Yellow Donuts
+    location: right overhang / slabish
+    style:
+      - dynamic
+      - power
+      - shoulder
+      - jugs
+    grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 6
+    notes:
+      Realized it wasn't really a mental game for the last hold, I just don't think it's possible with the beta I'm using and my current strength to brute force
+      the finish. I'm going to have to try a flexibility move or get my hips close to the wall to match my hands first before attempting the last hold
+shoes: Scarpa Instinct VS

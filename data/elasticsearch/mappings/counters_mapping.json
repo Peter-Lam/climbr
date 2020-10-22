@@ -13,6 +13,10 @@
                 "location":{"type": "keyword"},
                 "style":{"type": "keyword"},
                 "date":{"type": "date"},
+                "month": {"type": "keyword"},
+                "day": {"type": "keyword"},
+                "day_of_week": {"type": "keyword"},
+                "year": {"type": "keyword"},
                 "shoes": {"type": "keyword"}
             }}
         }

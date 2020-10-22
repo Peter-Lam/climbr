@@ -1,0 +1,123 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  A brief description of the climbing session
+  Can span multiple lines if needed
+date: YYYY-MM-DD
+time:
+  start: HH:MM AM/PM
+  end: HH:MM AM/PM
+climbers: 
+  -
+  -
+  -
+  -
+  -
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - 
+  - 
+  - 
+  - 
+  - 
+counter:
+  - grade: VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: Describe the problem or give it a name
+    location: slab
+    style:
+      - dynamic
+      - overhang
+    grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+    notes:
+      FILLER
+    media:
+      - URL_to_image
+    reset: false
+shoes: La Sportiva Tarantula / Scarpa Instinct VS

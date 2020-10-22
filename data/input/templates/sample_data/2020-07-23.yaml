@@ -2,14 +2,15 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Impromptu climb during lunch today since there were not a lot of people signed up for the time slot. There was about 
-  5 or 6 other people at the gym today. A lot of repeat climbs today, focusing on quiet climbing.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-23
 time:
   start: 12:10 PM
   end: 1:25 PM
 climbers: 
-  - Nancy Lam
+  - Frank N. Stein
 counter:
   - grade: VB/V0
     flash: 0
@@ -60,15 +61,12 @@ projects:
       Topped the problem with a different approach. Following the same idea with the step up start, all I needed to do was move slowly and
       grab the top of the second hold
     media:
-      - https://photos.google.com/photo/AF1QipOo4RcOhwyQ-5SvsmOD4eL2dp-ymdYtr0OKEGZl
+      - Lorem ipsum dolor sit amet.
 media:
-  - https://photos.google.com/photo/AF1QipNCYIX46xw_1VUzVcj4BOtGrVuGzCcR4XyAvjJJ
-  - https://photos.google.com/photo/AF1QipOo4RcOhwyQ-5SvsmOD4eL2dp-ymdYtr0OKEGZl
-  - https://photos.google.com/photo/AF1QipM1BbVAgar9TLzfQn4spj6YQYQoIdgzMPJVWS6M
-  - https://photos.google.com/photo/AF1QipM6RbIt7LB0VPnpU6fVVUFjvhIUVneJmHLM9SY0
-  - https://photos.google.com/photo/AF1QipP4cfgCEXEdjkMprqnGyP-FnaF4ToHS09JF76L0
-  - https://photos.google.com/photo/AF1QipN2aybzPo4YMVslWsuWW__zWfQHIZyzMNhzkhqR
-injury: 
-  isTrue: false
-  description: Add a description of injury here
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 shoes: La Sportiva Tarantula

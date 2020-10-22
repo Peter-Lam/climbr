@@ -2,22 +2,19 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Re-opening day since Altitude closed because of COVID-19. We went as soon a it opened and was a full house.
-  I found that the easier problems had pretty non-juggy holds so they were a little difficult and scary to do.
-  Notably, before the shutdown, I was flashing almost all V3/V4's and projecting V5/V6 but now I'm struggling to do even 1 V3/V4.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-18
 time:
   start: 10:00 AM
   end: 11:30 AM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Carissa Wong
-  - Alvin Tam
-  - Austin Do
-injury: 
-  isTrue: false
-  description: Add a description of injury here
+  - Frank N. Stein
+  - Rose Bush
+  - Fay Daway
+  - U.R. Nice
+  - Cherry Blossom
 counter:
   - grade: VB/V0
     flash: 1
@@ -65,10 +62,11 @@ projects:
     repeat: 0
     attempts: 12
     notes:
-      Fun coordination problem. Ran up and down a lot until I realized that bending my legs instead of 
-      standing straight up allowed me to get under the starting holds better    
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.   
 media:
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipO_hnYyXi4KJqKjFo7XThg9VpJ6Z49UkGAVlMEW?key=SWJVYnZIaUxjcmE1dVppZGJFSmVXbThxQ3RTUTVn
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipO4QSrWp2OOkN_aZWYDaulFs0rMJPhXn-TCpfHe?key=SWJVYnZIaUxjcmE1dVppZGJFSmVXbThxQ3RTUTVn
-  - https://photos.google.com/share/AF1QipNP8ykQSJDWqPSuZDsroayv1oc0WinTgaewT2TyR3UhXL8vXA04_7Jnl_kRlDn35A/photo/AF1QipN66TuM_rLU84XLMxi_10hIbajlX5OLRL9Aor9E?key=SWJVYnZIaUxjcmE1dVppZGJFSmVXbThxQ3RTUTVn
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 shoes: La Sportiva Tarantula

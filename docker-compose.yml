@@ -1,16 +1,40 @@
 version: '3.7'
 services:
-  altitude-scraper:
-    build: ./web_scraper
-    container_name: bookings_scraper_cron
+  climbr_es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    container_name: climbr_es
+    environment:
+      - node.name=climbr_es
+      - cluster.name=es-docker-cluster
+      - cluster.initial_master_nodes=climbr_es
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+  climbr_kibana:
+    image: docker.elastic.co/kibana/kibana:7.9.2
+    container_name: climbr_kibana
+    ports:
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_URL: http://climbr_es:9200
+      ELASTICSEARCH_HOSTS: http://climbr_es:9200
+    depends_on:
+      - climbr_es
+  climbr_cli:
+    build: ./
+    container_name: climbr_cli
     volumes:
       - ./:/workspace/
-    command: cron && tail -f /workspace/logs/cron.log
-  # dev:
-  #   network_mode: host
-  #   build: ./
-  #   container_name: climb_dev
-  #   volumes:
-  #     - ./:/workspace/
-  #   command: tail -f /dev/null
-  
+    depends_on:
+      - climbr_kibana
+    command: bash -c "python ./climbr.py init -f && tail -f /workspace/logs/climbr.log"
+volumes:
+  data01:
+    driver: local

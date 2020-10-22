@@ -2,28 +2,29 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Daniel's first day back. It was super busy today so it was really hard to project and try the new problems. Saw a V5/V6 in the quarry that looked flash-able but
-  I got a cramp on my attempts.
-date: 2020-08-28
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-08-27
 time:
   start: 6:20 PM
   end: 8:05 PM
 climbers: 
-  - Nancy Lam
-  - Daniel Atlas
+  - Frank N. Stein
+  - Anne T. Kwayted
 injury: 
   isTrue: true
   description: Lower right but cramp on my V5/v6 flash attempt
 media:
-  - https://photos.google.com/u/0/photo/AF1QipNn7-2ZpHGDjRxMcCM8I1uIgXVBknIgBMEBXi6w
-  - https://photos.google.com/u/0/photo/AF1QipO9Q7BuRlFlas0QUJMOFCX_LuGdMVnjgiqicbLn
-  - https://photos.google.com/u/0/photo/AF1QipPca25hH_11FRJbAr3Xr8q5VFZBhIsUMSG8t8za
-  - https://photos.google.com/u/0/photo/AF1QipOCYmm1x0GRVB9imziMM4q7E330s4f2CYzUkwQR
-  - https://photos.google.com/u/0/photo/AF1QipMybkWgSG3PUhzRfBr2aydEsrBJxl7HHLTnkz3Q
-  - https://photos.google.com/u/0/photo/AF1QipONpBN1VxEDuFMa7faXcTvCv_6UdzvvQMJFwtyE
-  - https://photos.google.com/u/0/photo/AF1QipNVZuPIm5gzThTtma_sGcuhx-GqaQVE4zn4eVu0
-  - https://photos.google.com/u/0/photo/AF1QipOmgd3ILq-r7EBzFZLDWOmhYrFQbBoveCd7lWKX
-  - https://photos.google.com/u/0/photo/AF1QipMgU8lCYrqPhi5nCyemuCR_tObwwohU-hjIKEkA
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -95,7 +96,7 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Kids - V5/6
+  - grade: Kids - V5/V6
     flash: 0
     redpoint: 0
     repeat: 0
@@ -121,8 +122,9 @@ projects:
     repeat: 0
     attempts: 1
     notes:
-      For sure it's flash able but I got a cramp on the second move so I couldn't finish it.
-      I should be able to get it my next attempt but I'm still bummed I didn't flash it
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
     media:
-      - https://photos.google.com/u/0/photo/AF1QipMgU8lCYrqPhi5nCyemuCR_tObwwohU-hjIKEkA
+      - Lorem ipsum dolor sit amet.
 shoes: Scarpa Instinct VS

@@ -2,15 +2,17 @@
 location: Hog's Back Falls
 style: outdoor bouldering
 description:
-  Chill session today. Since the sun is setting earlier, I brought a light out to climb a little longer. Went to 'By the water' for the second time too.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-22
 time:
   start: 7:15 PM
   end: 8:35 PM
 climbers: 
-  - Nancy Lam
-  - Daniel Atlas
-  - Roy Saavedra
+  - Frank N. Stein
+  - Anne T. Kwayted
+  - John Doe
 injury: 
   isTrue: false
   description: Add a description of injury here
@@ -76,7 +78,7 @@ projects:
     attempts: 1
     notes:
       Failed the second attempt on the way back from Radioactive
-  - name: Shitty Paper Boy
+  - name: Shitty Paperboy
     location: Hog
     style:
       - Crimp
@@ -88,9 +90,9 @@ projects:
     repeat: 0
     attempts: 1
     notes:
-      Messing around with different beta. Watch Daniel do it and he puts his
-      left leg under him to shift his weight. I need to commit to the move more if 
-      I want to finish it.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
   - name: BeachBum
     location: By the Water
     style:
@@ -103,8 +105,8 @@ projects:
     repeat: 0
     attempts: 1
     notes:
-      The starting is really hard to statically climb, so Roy had a good
-      beta to skip the intermediate hold and dynamically move for the shelf/ last
-      hold instead.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
 shoes: La Sportiva Tarantula
   

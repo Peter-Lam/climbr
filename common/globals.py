@@ -16,7 +16,9 @@ OUTPUT_DIR = os.path.join(DATA_DIR, 'output')
 ES_URL = "http://localhost:9200"
 ES_URL_DOCKER = "http://host.docker.internal:9200"
 ES_DIR = os.path.join(DATA_DIR, 'elasticsearch')
+ES_MAPPINGS = os.path.join(ES_DIR, 'mappings')
 ES_INDEX_NAME = ['bookings', 'sessions', 'counters', 'projects']
+ES_BULK_DATA = os.path.join(ES_DIR, 'bulk_data')
 # Kibana
 KIBANA_URL = "http://localhost:5601"
 KIBANA_URL_DOCKER = "http://host.docker.internal:5601"

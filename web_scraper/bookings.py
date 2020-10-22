@@ -204,12 +204,14 @@ def main():
         try:
             # Preparing Elasticsearch and Kibana for data consumption
             common.create_index(es_url, 'bookings', validate.file(
-                os.path.join(glbs.ES_MAPPINGS, "bookings_mapping.json")), silent=True)
-            common.create_index_pattern(kibana_url, 'bookings', silent=True)
+                os.path.join(glbs.ES_MAPPINGS, "bookings_mapping.json")), silent=True, force=True)
+            common.create_index_pattern(
+                kibana_url, 'bookings', silent=True, force=True)
             # Uploading data into Elasticsearch
             common.upload_to_es(es_url, OUTPUT_FILE, silent=True)
         except Exception as ex:
-            print("WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information")
+            print(
+                f"WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information \n{ex}")
         print(
             f"[{str(datetime.now().isoformat())}] {args.locations} Session info successfully retrieved! See information at '{OUTPUT_FILE}' or on port 5601")
     except Exception as ex:

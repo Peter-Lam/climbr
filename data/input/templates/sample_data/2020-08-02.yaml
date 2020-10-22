@@ -2,17 +2,19 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Casual session today since Nancy and I climbed with Daniel at Hog's Back yesterday. Spent majority of the time in the Quarry. Flashed a kids 3/4
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-02
 time:
   start: 8:00 PM
   end: 9:30 PM
 climbers: 
-  - Nancy Lam
-  - Brandon Hua
-  - Carissa Wong
-  - Austin Do
-  - Xavier
+  - Frank N. Stein
+  - Rose Bush
+  - Fay Daway
+  - Cherry Blossom
+  - Liz Erd
 injury: 
   isTrue: false
   description: Add a description of injury here

@@ -1,0 +1,119 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-30
+time:
+  start: 9:00 PM
+  end: 10:30 PM
+climbers: 
+  - Frank N. Stein
+  - Rose Bush
+injury: 
+  isTrue: true
+  description: Felt flight pains in my right wrist again. Negligible right now but I should be more careful moving forward.
+counter:
+  - grade: VB/V0
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 4
+  - grade: V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: V6/V&
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 5
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 4
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: Yellow Donuts
+    location: right overhang / slabish
+    style:
+      - dynamic
+      - power
+      - shoulder
+      - jugs
+    grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      Failed at the big dynamic move, and didn't feel super confident in my wrists when I missed the hold. If i was half an inch deeper in the hold, i prob would have held it.
+shoes: Scarpa Instinct VS
