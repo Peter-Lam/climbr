@@ -1,0 +1,128 @@
+--- 
+location: Hog's Back Falls
+style: outdoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-23
+time:
+  start: 5:40 PM
+  end:  7:05 PM
+climbers: 
+  - Frank N. Stein
+  - Anne T. Kwayted
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 1
+  - grade: V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 3
+  - grade: V3
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+projects:
+  - name: Hog Wash
+    location: Hog
+    style:
+      - Slab
+      - Jugs
+    grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+    notes:
+      Top-out felt kinda scarier than I remembered
+  - name: Shitty Paperboy
+    location: Hog
+    style:
+      - Crimp
+      - Heel hook
+    grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 3
+    notes:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
+  - name: Radioactive
+    location: Hog
+    style:
+      - traverse
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - name: Radioactive 2.0
+    location: Hog
+    style:
+      - traverse
+    grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - name: From the Window to the Wall
+    location: Hog
+    style:
+      - traverse
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.

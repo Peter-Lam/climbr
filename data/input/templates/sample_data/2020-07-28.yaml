@@ -2,19 +2,20 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  More focus on the Quarry again. Nancy and I went to Coyote Rock Gym to buy liquid chalk from them ($20 for 500ml). The chalk is super liquidy but does the job.
-  Mini-projected a kid V4/V5 problem this session.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-28
 time:
   start: 6:00 PM
   end: 7:30 PM
 climbers: 
-  - Brandon Hua
-  - Carissa Wong
-  - Nancy Lam
-  - Austin Do
+  - Rose Bush
+  - Fay Daway
+  - Frank N. Stein
+  - Cherry Blossom
 media:
-  - https://photos.google.com/photo/AF1QipPR1BNbcOIN50IVYgPMnBk8_oxJX31IjaExCFFg
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -103,7 +104,7 @@ projects:
       up 3 attempts with the dyno once I got past the foot matching crux. Since I was able to do it in one session, my goal now is to see if I can affectively redo 
       the problem in the future. I want to also try with my Scarpa Instincts VS to see if the shoes would help me. 
     media:
-      - https://photos.google.com/photo/AF1QipMWJ3vPH599YZ96yxa1mx4gAuiBeH4sI_nTrxoh
+      - Lorem ipsum dolor sit amet.
   - name: mellow yellow mantle
     location: quarry
     style:
@@ -115,6 +116,6 @@ projects:
     repeat: 0
     attempts: 2
     notes:
-      Two more attempts today, first one I missed the dyno and second one I used Nancy's static beta to get past that move. With the second attempt,
+      Two more attempts today, first one I missed the dyno and second one I used Frank's static beta to get past that move. With the second attempt,
       I got to the mantle but lost balance as I started to extend out of the mantle and push myself up.
 shoes: La Sportiva Tarantula

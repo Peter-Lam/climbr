@@ -129,6 +129,8 @@ projects:
     media:
       - URL_to_image
       - URL_to_video
+    # If the problem has already been reset/ or will be by the next session
+    reset: false
   # Multiple climbs can be logged here, just copy and paste the format
   - name: Second Problem
     location: ______
@@ -147,3 +149,6 @@ projects:
     media:
       - ______
       - ______
+    reset: false
+# Tracking shoes used while climbing, useful if you own many pairs
+shoes: La Sportiva Tarantula

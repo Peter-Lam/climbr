@@ -1,0 +1,68 @@
+--- 
+location: Coyote Rock Gym
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-02
+time:
+  start: 9:00 PM
+  end: 11:00 PM
+climbers: 
+  - Frank N. Stein
+  - Anne T. Kwayted
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: White
+    flash: 0
+    redpoint: 0
+    repeat: 3
+    attempts: 0
+  - grade: Orange
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Red
+    flash: 5
+    redpoint: 0
+    repeat: 0
+    attempts: 3
+  - grade: Blue
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 11
+  - grade: Green
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Purple
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Black
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Ungraded
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 6
+shoes: La Sportiva Tarantula

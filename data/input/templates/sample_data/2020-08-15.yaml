@@ -2,27 +2,27 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Tried a few new problems. There are a couple V5/V6's that I might project in the future.
-  Worked on a V3/V4 small dyno but couldn't commit to jumping off my feet. I think it's good that 
-  I have been doing more static moves since that was my weakness pre covid.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-15
 time:
   start: 8:25 PM
   end: 10:10 PM
 climbers: 
-  - Brandon Hua
-  - Carissa Wong
-  - Xavier
+  - Rose Bush
+  - Fay Daway
+  - Liz Erd
 injury: 
   isTrue: false
   description: Add a description of injury here
 media:
-  - https://photos.google.com/photo/AF1QipN1Yte0MyUbW9VUGSrUHL4DNz_nS_MmBPpL3A8p
-  - https://photos.google.com/photo/AF1QipOg9jFInFqNPe7z86Gk279FuXkqv9enkyb9RFlU
-  - https://photos.google.com/photo/AF1QipMP4A_649yyyRV4Sls2BcjCeCpNCdCbsZ-1rqxF
-  - https://photos.google.com/photo/AF1QipOCRNtPayjBHHdDlbqCVfB_Mwj9nz54T5IQqj6p
-  - https://photos.google.com/photo/AF1QipPWHYUYN50ZJFOZWsQLFmJEtpPs2bsf9yKgy-rl
-  - https://photos.google.com/photo/AF1QipMacd6WlTYly_ctdtORSAuVh6Osp17KaJ-XdZlF
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0

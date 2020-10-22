@@ -2,6 +2,10 @@
 **/env/
 **/__pycache__
 **/.vscode/
-**/dev_test
+**/dev
 **personal.yaml
+# User specific files
 **.log
+data/input/*.yaml
+data/output/*
+data/elasticsearch/bulk_data/*_demo.json

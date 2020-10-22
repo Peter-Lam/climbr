@@ -2,20 +2,18 @@
 location: Calabogie
 style: outdoor bouldering
 description:
-  Quick evening climb. I still felt sore from the last indoor session so decided to mostly scout climbs, document, and spot.
-  Went and checked out Gateway, Nine-Tenths, and Frigid Cave
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-21
 time:
   start: 5:30 PM
   end: 7:40 PM
 climbers: 
-  - Nancy Lam
-  - Daniel Atlas
-injury: 
-  isTrue: false
-  description: Add a description of injury here
+  - Frank N. Stein
+  - Anne T. Kwayted
 media:
-  - https://photos.google.com/share/AF1QipNmSCLgFLq13YUFtS8rWi65CjQALk4FWhm8E6iti4tKzw5HIpJKTAKXHUpT-Ln3Fw
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: V0-
     onsight: 0
@@ -27,7 +25,8 @@ projects:
   - name: Bottoms Up
     location: Gateway
     style:
-        - arete
+      - arete
+      - sit-start
     grade: V0-
     onsight: 0
     flash: 0
@@ -38,8 +37,7 @@ projects:
       Mostly wanted to try at least one problem.
       Next time, should move feet and flag right instead of left
     media:
-      - https://www.thecrag.com/climbing/canada/calabogie/area/99993018
-      - https://photos.google.com/photo/AF1QipMdgo_SGCSYr1mkqTAKEswifK7ZXxeBzot-8sHN
-      - https://photos.google.com/photo/AF1QipMk6rZdKqBLVdIp8RudLlXSzh2I5axiv68s-YEz
-      - https://photos.google.com/photo/AF1QipMhez5E_Ss2BUCewMVt3QTpVn6VmIl3QIBDMIRK
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
 shoes: La Sportiva Tarantula

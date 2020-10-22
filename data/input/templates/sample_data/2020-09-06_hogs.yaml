@@ -1,0 +1,108 @@
+--- 
+location: Hog's Back Falls
+style: outdoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada..
+date: 2020-09-06
+time:
+  start: 12:30 PM
+  end: 2:30 PM
+climbers: 
+  - Anne T. Kwayted
+  - Laura Norda
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - URL_to_image
+  - URL_to_video
+counter:
+  - grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 2
+    attempts: 1
+  - grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: V1
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: V3
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+projects:
+  - name: Shitty Paperboy
+    location: Hog
+    style:
+      - Crimp
+      - Heel hook
+    grade: V2
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+    notes:
+      Small attempt just trying to find a beta with David
+  - name: Hog Wash
+    location: Hog
+    style:
+      - Slab
+      - Jugs
+    grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+    notes:
+      Warmup
+  - name: Radioactive
+    location: Hog
+    style:
+        - traverse
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 1
+    notes:
+      Warm up
+  - name: Radioactive 2.0
+    location: Hog
+    style:
+      - traverse
+    grade: VB
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+    notes:
+      Warmup

@@ -2,25 +2,26 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Climbing with Bilal for the first time since before COVID. Taking it easy today because
-  I climbed yesterday
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-28
 time:
   start: 6:20 PM
   end: 8:05 PM
 climbers: 
-  - Brandon Hua
-  - Carissa Wong
-  - Bilal Khalid
-  - Xavier
+  - Rose Bush
+  - Fay Daway
+  - Jen Tile
+  - Liz Erd
 injury: 
   isTrue: false
   description: Add a description of injury here
 media:
-  - https://photos.google.com/photo/AF1QipOdYuuXe6JHLDF4S_rPlH4bKhZ3EQFJbPnN3lQb
-  - https://photos.google.com/photo/AF1QipOnwL9VuLZA8VSKmKOaA_A6aD6hhE6r_ddFhYV_
-  - https://photos.google.com/photo/AF1QipOf1RX1odlXcjvyUEteFn3smVCV5HLMELMAR6mI
-  - https://photos.google.com/photo/AF1QipOS8pMnGSvzRhLz2SxaQSomIPCerZ2Db9nfQoga
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -87,7 +88,7 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Kids - V5/6
+  - grade: Kids - V5/V6
     flash: 0
     redpoint: 0
     repeat: 0
@@ -115,6 +116,7 @@ projects:
     repeat: 0
     attempts: 2
     notes:
-      Got my hands in the pocket for the first time. I was very controlled, so I should have just committed to grabbing the hold. I didn't think I would make it 
-      so I just fell.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
 shoes: La Sportiva Tarantula

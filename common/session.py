@@ -4,9 +4,11 @@
 This module contains classes and functions that relate to climbing sessions and it's data manipulation
 '''
 import datetime
+import pytz
 import common.constants as constants
 import common.common as common
 import common.validate as validate
+from timezonefinder import TimezoneFinder
 # Classes
 
 
@@ -78,7 +80,7 @@ class Project(Counter):
     :type media: list of str
     '''
 
-    def __init__(self, grade, flash, redpoint, repeat, attempts, name, location, style, notes, media, onsight=None):
+    def __init__(self, grade, flash, redpoint, repeat, attempts, name, location, style, notes, media, is_last, onsight=None, reset=False):
         try:
             # TO DO: Move validation of projects here
             self.name = name
@@ -86,9 +88,71 @@ class Project(Counter):
             self.style = style
             self.notes = notes
             self.media = media
+            self.is_last = is_last
+            self.reset = reset
             super().__init__(grade, flash, redpoint, repeat, attempts, onsight)
+            # Total counter
+            self.cumulative_onsight = self.onsight
+            self.cumulative_flash = self.flash
+            self.cumulative_redpoint = self.redpoint
+            self.cumulative_repeat = self.repeat
+            self.cumulative_attempts = self.attempts
+            self.cumulative_completed = self.completed
+            self.cumulative_total = self.total
         except Exception as ex:
             raise ex
+
+    def set_is_last(self, is_last):
+        '''
+        Assign new value for is_last
+        :param is_last: If it's the last known attempt on this project
+        :type is_last: bool
+        '''
+        try:
+            if type(is_last) == bool:
+                self.is_last = is_last
+            else:
+                raise Exception(
+                    "The parameter is_last expects a bool input, got {type(is_last)} instead")
+        except Exception as ex:
+            raise ex
+
+    def set_total_counter(self, flash, redpoint, repeat, attempts, completed, total, onsight=None):
+        '''
+        Assigning new values to the total counter of a project. This counter is the current running total of this specific project
+        :param flash: Total number of flashes
+        :param redpoint: Total number of redpoints
+        :param attempts: Total number of attempts
+        :param onsight: Optional - Total number of onsight
+        :type grade: int
+        :type flash: int
+        :type redpoint: int
+        :type attempts: int
+        :type onsight: int
+        '''
+        self.cumulative_onsight = onsight
+        self.cumulative_flash = flash
+        self.cumulative_redpoint = redpoint
+        self.cumulative_attempts = repeat
+        self.cumulative_attempts = attempts
+        self.cumulative_completed = completed
+        self.cumulative_total = total
+
+    def get_counters(self):
+        '''
+        Return a list of counters for the current project
+        :return: list of the counters for a given project [onsight, flash, redpoint, repeat, attempts]
+        :rtype: list
+        '''
+        return [self.onsight if self.onsight else 0, self.flash, self.redpoint, self.repeat, self.attempts, self.completed, self.total]
+
+    def get_total_counter(self):
+        '''
+        Return a list of the total/running counters of the current project
+        :return: list of the running total counters for a given project [onsight, flash, redpoint, repeat, attempts]
+        :rtype: list
+        '''
+        return [self.cumulative_onsight if self.cumulative_onsight else 0, self.cumulative_flash, self.cumulative_redpoint, self.cumulative_repeat, self.cumulative_attempts, self.cumulative_completed, self.cumulative_total]
 
     def toDict(self):
         '''
@@ -108,10 +172,21 @@ class Project(Counter):
                             "completed": self.completed,
                             "total": self.total,
                             "notes": self.notes,
-                            "media": self.media
+                            "media": self.media,
+                            "cumulative_flash": self.cumulative_flash,
+                            "cumulative_redpoint": self.cumulative_redpoint,
+                            "cumulative_repeat": self.cumulative_repeat,
+                            "cumulative_attempts": self.cumulative_attempts,
+                            "cumulative_completed": self.cumulative_completed,
+                            "cumulative_total": self.cumulative_total,
+                            "reset": self.reset,
+                            "is_completed": 1 if self.cumulative_completed > 0 else 0,
+                            "is_last": self.is_last
                             }
             if self.onsight:
                 project_dict['onsight'] = self.onsight
+                project_dict["cumulative_onsight"]: self.cumulative_onsight
+
             return project_dict
         except Exception as ex:
             raise ex
@@ -162,17 +237,26 @@ class Session:
             # Class variables
             self.climbers = session_info['climbers']
             self.coordinates = session_info['coordinates']
-            self.date = session_info['date']
+            self.date = session_info['date'].isoformat()
             self.description = session_info['description']
             self.duration = session_info['duration']
-            self.end_time = session_info['time']['end']
+            self.end_time = str(session_info['time']['end'].time())
+            self.end_hour = session_info['time']['end'].strftime('%H')
+            self.end_minute = session_info['time']['end'].strftime('%M')
             self.injury = session_info['injury']
             self.location_name = session_info['location']
             self.media = session_info['media']
             self.shoes = session_info['shoes'] if 'shoes' in session_info.keys(
             ) else None
-            self.start_time = session_info['time']['start']
+            self.start_time = str(session_info['time']['start'].time())
+            self.start_hour = session_info['time']['start'].strftime('%H')
+            self.start_minute = session_info['time']['start'].strftime('%M')
             self.style = session_info['style']
+            # New Date Values
+            self.month = session_info['date'].strftime('%B')
+            self.day = session_info['date'].strftime('%d')
+            self.day_of_week = session_info['date'].strftime('%A')
+            self.year = session_info['date'].strftime('%Y')
             # Classes
             self.Location = get_location(session_info['location'])
             self.Projects = session_info['projects']  # List of Projects
@@ -412,13 +496,21 @@ class Session:
                         climb['media'] = None
             session_log['projects'] = reformat_projects(
                 session_log['projects'])
-            # Format all time
-            session_log['time']['start'] = common.convert_to_hhmm(
-                session_log['time']['start'])
-            session_log['time']['end'] = common.convert_to_hhmm(
-                session_log['time']['end'])
-            # Reformat date
-            session_log['date'] = str(session_log['date'])
+            # Initializing Timezone info
+            tf = TimezoneFinder()
+            location = get_location(session_log['location'])
+            location_tz = pytz.timezone(tf.timezone_at(
+                lng=location.lon, lat=location.lat))
+            # Add time zone to start and end times
+            local_start = location_tz.normalize(location_tz.localize(datetime.datetime.combine(
+                session_log['date'], common.str_to_time(session_log['time']['start']).time())))
+            local_end = location_tz.normalize(location_tz.localize(datetime.datetime.combine(
+                session_log['date'], common.str_to_time(session_log['time']['end']).time())))
+            # Convert to UTC
+            session_log['date'] = datetime.datetime.combine(
+                session_log['date'], common.str_to_time(session_log['time']['start']).time())
+            session_log['time']['start'] = local_start
+            session_log['time']['end'] = local_end
             return session_log
         except Exception as ex:
             raise ex
@@ -433,8 +525,8 @@ class Session:
         '''
         try:
             # Get/set climbing duration
-            duration = common.str_to_time(
-                session_log['time']['end']) - common.str_to_time(session_log['time']['start'])
+            duration = session_log['time']['end'] - \
+                session_log['time']['start']
             session_log['duration'] = str(duration)
             # Get/set lon and latitude
             location = get_location(session_log['location'])
@@ -490,10 +582,17 @@ class Session:
                 "coordinates": self.coordinates,
                 "style": self.style,
                 "date": self.date,
+                "month": self.month,
+                "day_of_week": self.day_of_week,
+                "day": self.day,
+                "year": self.year,
                 "description": self.description,
                 "start": self.start_time,
-                "end": self.end_time,
+                "start_hour": self.start_hour,
+                "start_minute": self.start_minute,
                 "climbers": self.climbers,
+                "end_hour": self.end_hour,
+                "end_minute": self.end_minute,
                 "injury": self.injury,
                 "media": self.media,
                 "shoes": self.shoes,
@@ -542,6 +641,10 @@ class Session:
                     project_dict.update({"session": {"location": self.location_name,
                                                      "style": self.style,
                                                      "date": self.date,
+                                                     "month": self.month,
+                                                     "day_of_week": self.day_of_week,
+                                                     "day": self.day,
+                                                     "year": self.year,
                                                      "shoes": self.shoes}})
                     projects.append(project_dict)
             return projects
@@ -561,6 +664,10 @@ class Session:
                 counter_dict.update({"session": {"location": self.location_name,
                                                  "style": self.style,
                                                  "date": self.date,
+                                                 "month": self.month,
+                                                 "day_of_week": self.day_of_week,
+                                                 "day": self.day,
+                                                 "year": self.year,
                                                  "shoes": self.shoes}})
                 counters.append(counter_dict)
             return counters
@@ -582,7 +689,8 @@ _LOCATIONS = [Location('Altitude Kanata', '0E5, 501 Palladium Dr, Kanata, ON K2V
               Location('Lac Beauchamp', 'Lac Beauchamp, Gatineau, QC', 45.490288, -
                        75.617274, constants.V_SCALE, True),
               Location('Coyote Rock Gym', '1737B St Laurent Blvd, Ottawa, ON K1G 3V4', 45.406130, -75.625500, ['White', 'Orange', 'Red',
-                                                                                                               'Blue', 'Green', 'Purple', 'Black', 'Ungraded'], False)]
+                                                                                                               'Blue', 'Green', 'Purple', 'Black', 'Ungraded'], False),
+              Location('Klimat Wakefield', '911-A Chemin Riverside, Wakefield, QC J0X 3G0', 45.648430, -75.927340, constants.V_SCALE, False)]
 
 # Functions
 
@@ -632,7 +740,7 @@ def reformat_counter(counters):
         for counter in counters:
             if 'onsight' in counter.keys():
                 reformatted.append(Counter(counter['grade'], counter['flash'],
-                                           counter['redpoint'], counter['attempts'], counter['repeat'], onsight=counter['onsight']))
+                                           counter['redpoint'], counter['repeat'], counter['attempts'], onsight=counter['onsight']))
             else:
                 reformatted.append(Counter(
                     counter['grade'], counter['flash'], counter['redpoint'], counter['repeat'], counter['attempts']))
@@ -656,16 +764,12 @@ def reformat_projects(projects):
             return projects
         # Otherwise loop through and reformat
         for project in projects:
-            if 'onsight' in project.keys():
-                reformatted.append(Project(project['grade'], project['flash'], project['redpoint'],
-                                           project['repeat'], project['attempts'], project['name'],
-                                           project['location'], project['style'], project['notes'],
-                                           project['media'], onsight=project['onsight']))
-            else:
-                reformatted.append(Project(project['grade'], project['flash'], project['redpoint'],
-                                           project['repeat'], project['attempts'], project['name'],
-                                           project['location'], project['style'], project['notes'],
-                                           project['media']))
+            reformatted.append(Project(project['grade'], project['flash'], project['redpoint'],
+                                       project['repeat'], project['attempts'], project['name'],
+                                       project['location'], project['style'], project['notes'],
+                                       project['media'], False, onsight=project['onsight'] if 'onsight' in project.keys(
+            ) else None,
+                reset=True if 'reset' in project.keys() else False))
         return reformatted
     except Exception as ex:
         raise ex

@@ -1,0 +1,63 @@
+--- 
+location: Klimat Wakefield
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-27
+time:
+  start: 12:30 PM
+  end: 3:00 PM
+climbers: 
+  - Frank N. Stein
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1
+    flash: 3
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    flash: 3
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+  - grade: V3
+    flash: 5
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 23
+  - grade: V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 2
+shoes: Scarpa Instinct VS

@@ -1,0 +1,89 @@
+--- 
+location: Calabogie
+style: outdoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-09-20
+time:
+  start: 11:11 AM
+  end: 2:40 PM
+climbers: 
+  - Frank N. Stein
+  - Anne T. Kwayted
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: V0-
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 1
+    attempts: 0
+projects:
+  - name: Bottoms Up
+    location: Gateway
+    style:
+      - arete
+      - sit-start
+    grade: V0-
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 1
+    attempts: 1
+    notes:
+      I felt way more comfortable this time. Strength and footwork was pretty good and I didn't spend too much time finding my feet
+    media:
+      - Lorem ipsum dolor sit amet.
+  - name: Gateway Arete
+    location: Gateway
+    style:
+      - arete
+      - sit-start
+    grade: V1
+    onsight: 0
+    flash: 0
+    redpoint: 1
+    repeat: 0
+    attempts: 1
+    notes:
+      Pulling hard on the start was a little hard for me. The sit starts are pretty tough since that's not a move I practice much indoors. My foot slipped on the second last hold but was able top recover from it.
+  - name: Greenland
+    location: Africa
+    style:
+      - crimp
+      - sit-start
+    grade: V0
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 5
+    notes:
+      I found it difficult to start using Frank's beta so I went with a heel hook around the corner.
+      This works for a static left hand move to the crimp but leaves me too far to the right, making it hard
+      to switch feet and move the the left side pull.
+  - name: Mid-Atlantic Rift
+    location: Africa
+    style:
+      - arete
+    grade: V0
+    onsight: 0
+    flash: 1
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+    notes:
+      Much easier than Greenland
+shoes: La Sportiva Tarantula

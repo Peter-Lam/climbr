@@ -1,0 +1,110 @@
+--- 
+location: Altitude Kanata
+style: indoor bouldering
+description:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
+date: 2020-10-04
+time:
+  start: 6:40 PM
+  end: 8:40 PM
+climbers: 
+  - Frank N. Stein
+  - Rose Bush
+  - Fay Daway
+  - John Doe
+  - Jen Tile
+media:
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
+counter:
+  - grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 7
+  - grade: V5/V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 1
+  - grade: Kids - VB/V0
+    flash: 0
+    redpoint: 0
+    repeat: 6
+    attempts: 0
+  - grade: Kids - V0/V1
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V1/V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V2/V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Kids - V3/V4
+    flash: 1
+    redpoint: 0
+    repeat: 2
+    attempts: 0
+  - grade: Kids - V4/V5
+    flash: 0
+    redpoint: 0
+    repeat: 1
+    attempts: 0
+  - grade: Kids - V5/6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
+projects:
+  - name: Yellow Donuts
+    location: right overhang / slabish
+    style:
+      - dynamic
+      - power
+      - shoulder
+      - jugs
+    grade: V6/V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 7
+    notes:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+      Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+      Aenean finibus volutpat malesuada.
+    media:
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+      - Lorem ipsum dolor sit amet.
+shoes: Scarpa Instinct VS

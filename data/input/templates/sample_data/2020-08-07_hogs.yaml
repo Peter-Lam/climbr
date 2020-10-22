@@ -2,18 +2,20 @@
 location: Hog's Back Falls
 style: outdoor bouldering
 description:
-  Quick session since we were planning cottage logistics. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-08-07
 time:
   start: 8:00 PM
   end: 9:00 PM
 climbers: 
-  - Nancy Lam
-  - Daniel Atlas
+  - Frank N. Stein
+  - Anne T. Kwayted
   - Rebekka Chhom
 media:
-  - https://photos.google.com/photo/AF1QipMJCfwpxmOxyWgAToFMn-73BNbUrtiB8HPrUZqm
-  - https://photos.google.com/photo/AF1QipOHxr0osNk8UGurLgFQsnIrSXxKmy9eErKKex7O
+  - Lorem ipsum dolor sit amet.
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB
     onsight: 1
@@ -63,7 +65,7 @@ projects:
     repeat: 2
     attempts: 0
     notes:
-      Reverse of Radioactive that Nancy has been doing. Felt easier than Radioactive so I'm giving it a VB. I've usually have been doing this 
+      Reverse of Radioactive that Frank has been doing. Felt easier than Radioactive so I'm giving it a VB. I've usually have been doing this 
       problem on the way back from the down climb.
   - name: Geppetto
     location: Hog
@@ -91,7 +93,7 @@ projects:
     attempts: 0
     notes:
       Really easy. Didn't have much trouble other than feeling that the holds weren't super secure.
-  - name: Shitty Paper Boy
+  - name: Shitty Paperboy
     location: Hog
     style:
       - Crimp

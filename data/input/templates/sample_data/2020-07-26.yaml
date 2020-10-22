@@ -2,17 +2,18 @@
 location: Altitude Kanata
 style: indoor bouldering
 description:
-  Afternoon light climbing session today. Spent some more time in the Quarry, to warm up and work on technique.
-  Redpointed a pink overhang on the second attempt today (V3/V4).
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit mollis ligula, at porta nisl euismod sed.
+  Duis cursus nulla tortor. Praesent lacus eros, ultricies eu leo in, pellentesque gravida eros. Sed elementum sem ultrices ipsum pharetra porta.
+  Aenean finibus volutpat malesuada.
 date: 2020-07-26
 time:
   start: 4:00 PM
   end: 5:30 PM
 climbers: 
-  - Brandon Hua
-  - Carissa Wong
+  - Rose Bush
+  - Fay Daway
 media:
-  - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+  - Lorem ipsum dolor sit amet.
 counter:
   - grade: VB/V0
     flash: 0
@@ -98,5 +99,5 @@ projects:
     notes:
       Got it on the second attempt. Not too challenging but it was good to work on overhang problems
     media:
-      - https://photos.google.com/album/AF1QipNa4-CJyi9TipiQdtKO4g5QpzR6-in4KCXbnA6_/photo/AF1QipOA4H_D4IQHhtyxDq1W-An9Y-0kaRae3p3wOb7Q
+      - Lorem ipsum dolor sit amet.
 shoes: La Sportiva Tarantula
