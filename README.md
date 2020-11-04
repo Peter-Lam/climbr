@@ -14,7 +14,7 @@
   <p align="center">
     Visualize your rock climbing progression and trends. 
     <br />
-    <a href="https://github.com/Peter-Lam/climbr"> Website</a>
+    <a href="https://www.peterqlam.com/projects/#climbr"> Website</a>
         ·
     <a href="https://github.com/Peter-Lam/climbr/wiki">Wiki</a>
     ·
@@ -47,7 +47,7 @@ In addition, **`Climbr`** provides booking insights on local gyms (Altitude Kana
 
 ## Contributors
 ### Peter Lam
-  - [Website](peterqlam.com)
+  - [Website](https://www.peterqlam.com/)
   - [Linkedin](https://www.linkedin.com/in/peter-lam-612a00138/)
   - [Resume](https://www.peterqlam.com/s/Peter-Lam-Resume.pdf)
 # Features
