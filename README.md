@@ -9,7 +9,7 @@
 <p align="center">
   <h1 align="center">Climbr</h1>
   <a>
-    <img src="images\trends\trends_dash.png" alt="climbr dashboard dmeo">
+    <img src="images\sample_dash.png" alt="climbr dashboard demo">
   </a>
   <p align="center">
     Visualize your rock climbing progression and trends. 

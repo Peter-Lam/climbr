@@ -6,4 +6,6 @@ services:
     volumes:
       - ../:/workspace/
     command: cron && tail -f /workspace/logs/cron.log
+    restart: always
+
   
