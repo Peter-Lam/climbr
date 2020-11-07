@@ -1114,3 +1114,415 @@
 {"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-22T09:18:03.403414"}
 {"index": {"_index": "bookings", "_id": 557}}
 {"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 44, "reserved_spots": 31, "capacity": 75, "zone": null, "retrieved_at": "2020-10-22T11:38:03.310948"}
+{"index": {"_index": "bookings", "_id": 558}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-22T13:57:02.921626"}
+{"index": {"_index": "bookings", "_id": 559}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 19, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-22T16:18:02.725361"}
+{"index": {"_index": "bookings", "_id": 560}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-22T16:18:11.613091"}
+{"index": {"_index": "bookings", "_id": 561}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 69, "capacity": 75, "zone": null, "retrieved_at": "2020-10-22T16:18:02.725361"}
+{"index": {"_index": "bookings", "_id": 562}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-22T18:38:02.777415"}
+{"index": {"_index": "bookings", "_id": 563}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-22T18:38:10.067213"}
+{"index": {"_index": "bookings", "_id": 564}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "zone": null, "retrieved_at": "2020-10-22T18:38:02.777415"}
+{"index": {"_index": "bookings", "_id": 565}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 15, "reserved_spots": 10, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-22T20:58:02.935847"}
+{"index": {"_index": "bookings", "_id": 566}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-22T20:58:14.570437"}
+{"index": {"_index": "bookings", "_id": 567}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "22", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 15, "reserved_spots": 60, "capacity": 75, "zone": null, "retrieved_at": "2020-10-22T20:58:02.935847"}
+{"index": {"_index": "bookings", "_id": 568}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-23T09:18:03.684392"}
+{"index": {"_index": "bookings", "_id": 569}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-23T11:38:02.602624"}
+{"index": {"_index": "bookings", "_id": 570}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 37, "reserved_spots": 38, "capacity": 75, "zone": null, "retrieved_at": "2020-10-23T13:57:02.863501"}
+{"index": {"_index": "bookings", "_id": 571}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 12, "reserved_spots": 13, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-23T16:18:02.614173"}
+{"index": {"_index": "bookings", "_id": 572}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-23T16:18:11.357673"}
+{"index": {"_index": "bookings", "_id": 573}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 12, "reserved_spots": 63, "capacity": 75, "zone": null, "retrieved_at": "2020-10-23T16:18:02.614173"}
+{"index": {"_index": "bookings", "_id": 574}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-23T18:38:02.537507"}
+{"index": {"_index": "bookings", "_id": 575}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-23T18:38:09.822603"}
+{"index": {"_index": "bookings", "_id": 576}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 2, "reserved_spots": 73, "capacity": 75, "zone": null, "retrieved_at": "2020-10-23T18:38:02.537507"}
+{"index": {"_index": "bookings", "_id": 577}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 17, "reserved_spots": 8, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-23T20:58:02.663241"}
+{"index": {"_index": "bookings", "_id": 578}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-23T20:58:09.429751"}
+{"index": {"_index": "bookings", "_id": 579}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "23", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 17, "reserved_spots": 58, "capacity": 75, "zone": null, "retrieved_at": "2020-10-23T20:58:02.663241"}
+{"index": {"_index": "bookings", "_id": 580}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 16, "reserved_spots": 9, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-24T09:18:03.314298"}
+{"index": {"_index": "bookings", "_id": 581}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 23, "reserved_spots": 27, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-24T09:18:10.038425"}
+{"index": {"_index": "bookings", "_id": 582}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 39, "reserved_spots": 36, "capacity": 75, "zone": null, "retrieved_at": "2020-10-24T09:18:03.314298"}
+{"index": {"_index": "bookings", "_id": 583}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 16, "reserved_spots": 9, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-24T11:38:02.778438"}
+{"index": {"_index": "bookings", "_id": 584}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 20, "reserved_spots": 30, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-24T11:38:09.370045"}
+{"index": {"_index": "bookings", "_id": 585}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 36, "reserved_spots": 39, "capacity": 75, "zone": null, "retrieved_at": "2020-10-24T11:38:02.778438"}
+{"index": {"_index": "bookings", "_id": 586}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 9, "reserved_spots": 16, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-24T13:57:03.363793"}
+{"index": {"_index": "bookings", "_id": 587}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 15, "reserved_spots": 35, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-24T13:57:10.790551"}
+{"index": {"_index": "bookings", "_id": 588}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 24, "reserved_spots": 51, "capacity": 75, "zone": null, "retrieved_at": "2020-10-24T13:57:03.363793"}
+{"index": {"_index": "bookings", "_id": 589}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 17, "reserved_spots": 8, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-24T16:18:03.088299"}
+{"index": {"_index": "bookings", "_id": 590}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 16, "reserved_spots": 34, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-24T16:18:12.739296"}
+{"index": {"_index": "bookings", "_id": 591}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 33, "reserved_spots": 42, "capacity": 75, "zone": null, "retrieved_at": "2020-10-24T16:18:03.088299"}
+{"index": {"_index": "bookings", "_id": 592}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 18, "reserved_spots": 7, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-24T18:38:03.158693"}
+{"index": {"_index": "bookings", "_id": 593}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 12, "reserved_spots": 38, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-24T18:38:12.745889"}
+{"index": {"_index": "bookings", "_id": 594}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 30, "reserved_spots": 45, "capacity": 75, "zone": null, "retrieved_at": "2020-10-24T18:38:03.158693"}
+{"index": {"_index": "bookings", "_id": 595}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 20, "reserved_spots": 5, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-24T20:58:03.145060"}
+{"index": {"_index": "bookings", "_id": 596}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-24T20:58:10.496033"}
+{"index": {"_index": "bookings", "_id": 597}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "24", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 20, "reserved_spots": 55, "capacity": 75, "zone": null, "retrieved_at": "2020-10-24T20:58:03.145060"}
+{"index": {"_index": "bookings", "_id": 598}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 13, "reserved_spots": 12, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-25T09:18:02.891599"}
+{"index": {"_index": "bookings", "_id": 599}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 3, "reserved_spots": 47, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-25T09:18:09.504972"}
+{"index": {"_index": "bookings", "_id": 600}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 16, "reserved_spots": 59, "capacity": 75, "zone": null, "retrieved_at": "2020-10-25T09:18:02.891599"}
+{"index": {"_index": "bookings", "_id": 601}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 12, "reserved_spots": 13, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-25T11:38:02.870950"}
+{"index": {"_index": "bookings", "_id": 602}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-25T11:38:11.327196"}
+{"index": {"_index": "bookings", "_id": 603}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 12, "reserved_spots": 63, "capacity": 75, "zone": null, "retrieved_at": "2020-10-25T11:38:02.870950"}
+{"index": {"_index": "bookings", "_id": 604}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 11, "reserved_spots": 14, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-25T13:57:02.461609"}
+{"index": {"_index": "bookings", "_id": 605}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-25T13:57:08.990399"}
+{"index": {"_index": "bookings", "_id": 606}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 11, "reserved_spots": 64, "capacity": 75, "zone": null, "retrieved_at": "2020-10-25T13:57:02.461609"}
+{"index": {"_index": "bookings", "_id": 607}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 17, "reserved_spots": 8, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-25T16:18:02.460260"}
+{"index": {"_index": "bookings", "_id": 608}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 2, "reserved_spots": 48, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-25T16:18:09.123991"}
+{"index": {"_index": "bookings", "_id": 609}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 19, "reserved_spots": 56, "capacity": 75, "zone": null, "retrieved_at": "2020-10-25T16:18:02.460260"}
+{"index": {"_index": "bookings", "_id": 610}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 18, "reserved_spots": 7, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-25T18:38:02.492416"}
+{"index": {"_index": "bookings", "_id": 611}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 10, "reserved_spots": 40, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-25T18:38:11.530485"}
+{"index": {"_index": "bookings", "_id": 612}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 28, "reserved_spots": 47, "capacity": 75, "zone": null, "retrieved_at": "2020-10-25T18:38:02.492416"}
+{"index": {"_index": "bookings", "_id": 613}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 20, "reserved_spots": 5, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-25T20:58:02.535149"}
+{"index": {"_index": "bookings", "_id": 614}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 18, "reserved_spots": 32, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-25T20:58:10.581092"}
+{"index": {"_index": "bookings", "_id": 615}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Sunday", "day": "25", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 38, "reserved_spots": 37, "capacity": 75, "zone": null, "retrieved_at": "2020-10-25T20:58:02.535149"}
+{"index": {"_index": "bookings", "_id": 616}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-26T09:18:03.077842"}
+{"index": {"_index": "bookings", "_id": 617}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-26T11:38:03.192253"}
+{"index": {"_index": "bookings", "_id": 618}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 36, "reserved_spots": 39, "capacity": 75, "zone": null, "retrieved_at": "2020-10-26T13:57:02.545122"}
+{"index": {"_index": "bookings", "_id": 619}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 19, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-26T16:18:02.415113"}
+{"index": {"_index": "bookings", "_id": 620}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-26T16:18:10.678698"}
+{"index": {"_index": "bookings", "_id": 621}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 69, "capacity": 75, "zone": null, "retrieved_at": "2020-10-26T16:18:02.415113"}
+{"index": {"_index": "bookings", "_id": 622}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 3, "reserved_spots": 22, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-26T18:38:02.416922"}
+{"index": {"_index": "bookings", "_id": 623}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 3, "reserved_spots": 47, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-26T18:38:09.052965"}
+{"index": {"_index": "bookings", "_id": 624}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 6, "reserved_spots": 69, "capacity": 75, "zone": null, "retrieved_at": "2020-10-26T18:38:02.416922"}
+{"index": {"_index": "bookings", "_id": 625}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 18, "reserved_spots": 7, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-26T20:58:02.413611"}
+{"index": {"_index": "bookings", "_id": 626}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-26T20:58:11.506745"}
+{"index": {"_index": "bookings", "_id": 627}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Monday", "day": "26", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 18, "reserved_spots": 57, "capacity": 75, "zone": null, "retrieved_at": "2020-10-26T20:58:02.413611"}
+{"index": {"_index": "bookings", "_id": 628}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 47, "reserved_spots": 28, "capacity": 75, "zone": null, "retrieved_at": "2020-10-27T09:18:03.291496"}
+{"index": {"_index": "bookings", "_id": 629}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 42, "reserved_spots": 33, "capacity": 75, "zone": null, "retrieved_at": "2020-10-27T11:38:03.116119"}
+{"index": {"_index": "bookings", "_id": 630}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 43, "reserved_spots": 32, "capacity": 75, "zone": null, "retrieved_at": "2020-10-27T13:57:02.875206"}
+{"index": {"_index": "bookings", "_id": 631}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 7, "reserved_spots": 18, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-27T16:18:02.949829"}
+{"index": {"_index": "bookings", "_id": 632}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-27T16:18:09.739931"}
+{"index": {"_index": "bookings", "_id": 633}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 8, "reserved_spots": 67, "capacity": 75, "zone": null, "retrieved_at": "2020-10-27T16:18:02.949829"}
+{"index": {"_index": "bookings", "_id": 634}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 3, "reserved_spots": 22, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-27T18:38:02.915150"}
+{"index": {"_index": "bookings", "_id": 635}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 4, "reserved_spots": 46, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-27T18:38:14.759473"}
+{"index": {"_index": "bookings", "_id": 636}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 7, "reserved_spots": 68, "capacity": 75, "zone": null, "retrieved_at": "2020-10-27T18:38:02.915150"}
+{"index": {"_index": "bookings", "_id": 637}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 15, "reserved_spots": 10, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-27T20:58:02.967563"}
+{"index": {"_index": "bookings", "_id": 638}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-27T20:58:09.613971"}
+{"index": {"_index": "bookings", "_id": 639}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Tuesday", "day": "27", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 15, "reserved_spots": 60, "capacity": 75, "zone": null, "retrieved_at": "2020-10-27T20:58:02.967563"}
+{"index": {"_index": "bookings", "_id": 640}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-28T09:18:03.519951"}
+{"index": {"_index": "bookings", "_id": 641}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 39, "reserved_spots": 36, "capacity": 75, "zone": null, "retrieved_at": "2020-10-28T11:38:02.620295"}
+{"index": {"_index": "bookings", "_id": 642}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-28T13:57:02.819039"}
+{"index": {"_index": "bookings", "_id": 643}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 3, "reserved_spots": 22, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-28T16:18:02.997402"}
+{"index": {"_index": "bookings", "_id": 644}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-28T16:18:11.135642"}
+{"index": {"_index": "bookings", "_id": 645}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 3, "reserved_spots": 72, "capacity": 75, "zone": null, "retrieved_at": "2020-10-28T16:18:02.997402"}
+{"index": {"_index": "bookings", "_id": 646}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 3, "reserved_spots": 22, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-28T18:38:03.007403"}
+{"index": {"_index": "bookings", "_id": 647}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-28T18:38:10.570183"}
+{"index": {"_index": "bookings", "_id": 648}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 3, "reserved_spots": 72, "capacity": 75, "zone": null, "retrieved_at": "2020-10-28T18:38:03.007403"}
+{"index": {"_index": "bookings", "_id": 649}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 13, "reserved_spots": 12, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-28T20:58:02.940707"}
+{"index": {"_index": "bookings", "_id": 650}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-28T20:58:09.592208"}
+{"index": {"_index": "bookings", "_id": 651}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Wednesday", "day": "28", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 13, "reserved_spots": 62, "capacity": 75, "zone": null, "retrieved_at": "2020-10-28T20:58:02.940707"}
+{"index": {"_index": "bookings", "_id": 652}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-10-29T09:18:03.833056"}
+{"index": {"_index": "bookings", "_id": 653}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 47, "reserved_spots": 28, "capacity": 75, "zone": null, "retrieved_at": "2020-10-29T11:38:03.817562"}
+{"index": {"_index": "bookings", "_id": 654}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 40, "reserved_spots": 35, "capacity": 75, "zone": null, "retrieved_at": "2020-10-29T13:57:02.979190"}
+{"index": {"_index": "bookings", "_id": 655}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 1, "reserved_spots": 24, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-29T16:18:02.944667"}
+{"index": {"_index": "bookings", "_id": 656}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-29T16:18:10.370294"}
+{"index": {"_index": "bookings", "_id": 657}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 1, "reserved_spots": 74, "capacity": 75, "zone": null, "retrieved_at": "2020-10-29T16:18:02.944667"}
+{"index": {"_index": "bookings", "_id": 658}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-29T18:38:02.067971"}
+{"index": {"_index": "bookings", "_id": 659}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-29T18:38:09.499060"}
+{"index": {"_index": "bookings", "_id": 660}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "zone": null, "retrieved_at": "2020-10-29T18:38:02.067971"}
+{"index": {"_index": "bookings", "_id": 661}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 4, "reserved_spots": 21, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-29T20:58:03.225280"}
+{"index": {"_index": "bookings", "_id": 662}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-29T20:58:09.866198"}
+{"index": {"_index": "bookings", "_id": 663}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Thursday", "day": "29", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 5, "reserved_spots": 70, "capacity": 75, "zone": null, "retrieved_at": "2020-10-29T20:58:03.225280"}
+{"index": {"_index": "bookings", "_id": 664}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 49, "reserved_spots": 26, "capacity": 75, "zone": null, "retrieved_at": "2020-10-30T09:18:03.408091"}
+{"index": {"_index": "bookings", "_id": 665}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 45, "reserved_spots": 30, "capacity": 75, "zone": null, "retrieved_at": "2020-10-30T11:38:02.471455"}
+{"index": {"_index": "bookings", "_id": 666}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 34, "reserved_spots": 41, "capacity": 75, "zone": null, "retrieved_at": "2020-10-30T13:57:02.582361"}
+{"index": {"_index": "bookings", "_id": 667}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 19, "reserved_spots": 6, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-30T16:18:02.765384"}
+{"index": {"_index": "bookings", "_id": 668}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-30T16:18:09.469602"}
+{"index": {"_index": "bookings", "_id": 669}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 19, "reserved_spots": 56, "capacity": 75, "zone": null, "retrieved_at": "2020-10-30T16:18:02.765384"}
+{"index": {"_index": "bookings", "_id": 670}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 8, "reserved_spots": 17, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-30T18:38:03.011093"}
+{"index": {"_index": "bookings", "_id": 671}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 2, "reserved_spots": 48, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-30T18:38:10.677058"}
+{"index": {"_index": "bookings", "_id": 672}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Friday", "day": "30", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 10, "reserved_spots": 65, "capacity": 75, "zone": null, "retrieved_at": "2020-10-30T18:38:03.011093"}
+{"index": {"_index": "bookings", "_id": 673}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 12, "reserved_spots": 13, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-31T09:18:04.698128"}
+{"index": {"_index": "bookings", "_id": 674}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 6, "reserved_spots": 44, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-31T09:18:11.415094"}
+{"index": {"_index": "bookings", "_id": 675}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 18, "reserved_spots": 57, "capacity": 75, "zone": null, "retrieved_at": "2020-10-31T09:18:04.698128"}
+{"index": {"_index": "bookings", "_id": 676}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 14, "reserved_spots": 11, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-31T11:38:03.628363"}
+{"index": {"_index": "bookings", "_id": 677}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 2, "reserved_spots": 48, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-31T11:38:11.070098"}
+{"index": {"_index": "bookings", "_id": 678}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 16, "reserved_spots": 59, "capacity": 75, "zone": null, "retrieved_at": "2020-10-31T11:38:03.628363"}
+{"index": {"_index": "bookings", "_id": 679}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 17, "reserved_spots": 8, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-31T13:57:03.389716"}
+{"index": {"_index": "bookings", "_id": 680}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-31T13:57:11.969657"}
+{"index": {"_index": "bookings", "_id": 681}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 17, "reserved_spots": 58, "capacity": 75, "zone": null, "retrieved_at": "2020-10-31T13:57:03.389716"}
+{"index": {"_index": "bookings", "_id": 682}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 16, "reserved_spots": 9, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-31T16:18:03.059043"}
+{"index": {"_index": "bookings", "_id": 683}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 9, "reserved_spots": 41, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-31T16:18:11.922902"}
+{"index": {"_index": "bookings", "_id": 684}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 25, "reserved_spots": 50, "capacity": 75, "zone": null, "retrieved_at": "2020-10-31T16:18:03.059043"}
+{"index": {"_index": "bookings", "_id": 685}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 18, "reserved_spots": 7, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-31T18:38:02.636898"}
+{"index": {"_index": "bookings", "_id": 686}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 30, "reserved_spots": 20, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-31T18:38:11.105694"}
+{"index": {"_index": "bookings", "_id": 687}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 48, "reserved_spots": 27, "capacity": 75, "zone": null, "retrieved_at": "2020-10-31T18:38:02.636898"}
+{"index": {"_index": "bookings", "_id": 688}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 20, "reserved_spots": 5, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-10-31T20:58:02.495559"}
+{"index": {"_index": "bookings", "_id": 689}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 32, "reserved_spots": 18, "capacity": 50, "zone": "Main", "retrieved_at": "2020-10-31T20:58:09.971004"}
+{"index": {"_index": "bookings", "_id": 690}}
+{"location": "Altitude Gatineau", "month": "October", "day_of_week": "Saturday", "day": "31", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 52, "reserved_spots": 23, "capacity": 75, "zone": null, "retrieved_at": "2020-10-31T20:58:02.495559"}
+{"index": {"_index": "bookings", "_id": 691}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 13, "reserved_spots": 12, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-01T09:18:03.155282"}
+{"index": {"_index": "bookings", "_id": 692}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 11, "reserved_spots": 39, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-01T09:18:10.557340"}
+{"index": {"_index": "bookings", "_id": 693}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 24, "reserved_spots": 51, "capacity": 75, "zone": null, "retrieved_at": "2020-11-01T09:18:03.155282"}
+{"index": {"_index": "bookings", "_id": 694}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 6, "reserved_spots": 19, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-01T11:38:02.620579"}
+{"index": {"_index": "bookings", "_id": 695}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 15, "reserved_spots": 35, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-01T11:38:09.988008"}
+{"index": {"_index": "bookings", "_id": 696}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 21, "reserved_spots": 54, "capacity": 75, "zone": null, "retrieved_at": "2020-11-01T11:38:02.620579"}
+{"index": {"_index": "bookings", "_id": 697}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 5, "reserved_spots": 20, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-01T13:57:02.522805"}
+{"index": {"_index": "bookings", "_id": 698}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-01T13:57:09.958594"}
+{"index": {"_index": "bookings", "_id": 699}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 5, "reserved_spots": 70, "capacity": 75, "zone": null, "retrieved_at": "2020-11-01T13:57:02.522805"}
+{"index": {"_index": "bookings", "_id": 700}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 12, "reserved_spots": 13, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-01T16:18:02.898042"}
+{"index": {"_index": "bookings", "_id": 701}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-01T16:18:11.921458"}
+{"index": {"_index": "bookings", "_id": 702}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 12, "reserved_spots": 63, "capacity": 75, "zone": null, "retrieved_at": "2020-11-01T16:18:02.898042"}
+{"index": {"_index": "bookings", "_id": 703}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 13, "reserved_spots": 12, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-01T18:38:02.679004"}
+{"index": {"_index": "bookings", "_id": 704}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-01T18:38:10.020391"}
+{"index": {"_index": "bookings", "_id": 705}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 13, "reserved_spots": 62, "capacity": 75, "zone": null, "retrieved_at": "2020-11-01T18:38:02.679004"}
+{"index": {"_index": "bookings", "_id": 706}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 18, "reserved_spots": 7, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-01T20:58:02.642133"}
+{"index": {"_index": "bookings", "_id": 707}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 24, "reserved_spots": 26, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-01T20:58:09.997405"}
+{"index": {"_index": "bookings", "_id": 708}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Sunday", "day": "1", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 42, "reserved_spots": 33, "capacity": 75, "zone": null, "retrieved_at": "2020-11-01T20:58:02.642133"}
+{"index": {"_index": "bookings", "_id": 709}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "09:20 to 11:20", "start_time": "09:20 AM", "start_hour": 9, "start_minute": 20, "end_time": "11:20 AM", "availability": 50, "reserved_spots": 25, "capacity": 75, "zone": null, "retrieved_at": "2020-11-02T09:18:03.500626"}
+{"index": {"_index": "bookings", "_id": 710}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 44, "reserved_spots": 31, "capacity": 75, "zone": null, "retrieved_at": "2020-11-02T11:38:04.465650"}
+{"index": {"_index": "bookings", "_id": 711}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 48, "reserved_spots": 27, "capacity": 75, "zone": null, "retrieved_at": "2020-11-02T13:57:10.259344"}
+{"index": {"_index": "bookings", "_id": 712}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 16, "reserved_spots": 9, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-02T16:18:03.210010"}
+{"index": {"_index": "bookings", "_id": 713}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-02T16:18:10.727351"}
+{"index": {"_index": "bookings", "_id": 714}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 16, "reserved_spots": 59, "capacity": 75, "zone": null, "retrieved_at": "2020-11-02T16:18:03.210010"}
+{"index": {"_index": "bookings", "_id": 715}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-02T18:38:03.289932"}
+{"index": {"_index": "bookings", "_id": 716}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-02T18:38:10.799391"}
+{"index": {"_index": "bookings", "_id": 717}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "zone": null, "retrieved_at": "2020-11-02T18:38:03.289932"}
+{"index": {"_index": "bookings", "_id": 718}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 15, "reserved_spots": 10, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-02T20:58:02.937893"}
+{"index": {"_index": "bookings", "_id": 719}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-02T20:58:10.583127"}
+{"index": {"_index": "bookings", "_id": 720}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Monday", "day": "2", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 15, "reserved_spots": 60, "capacity": 75, "zone": null, "retrieved_at": "2020-11-02T20:58:02.937893"}
+{"index": {"_index": "bookings", "_id": 721}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 49, "reserved_spots": 26, "capacity": 75, "zone": null, "retrieved_at": "2020-11-03T13:57:04.492734"}
+{"index": {"_index": "bookings", "_id": 722}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-03T16:18:03.127511"}
+{"index": {"_index": "bookings", "_id": 723}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-03T16:18:10.696829"}
+{"index": {"_index": "bookings", "_id": 724}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "zone": null, "retrieved_at": "2020-11-03T16:18:03.127511"}
+{"index": {"_index": "bookings", "_id": 725}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-03T18:38:03.058158"}
+{"index": {"_index": "bookings", "_id": 726}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-03T18:38:10.637598"}
+{"index": {"_index": "bookings", "_id": 727}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "zone": null, "retrieved_at": "2020-11-03T18:38:03.058158"}
+{"index": {"_index": "bookings", "_id": 728}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 16, "reserved_spots": 9, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-03T20:58:02.860426"}
+{"index": {"_index": "bookings", "_id": 729}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-03T20:58:11.697625"}
+{"index": {"_index": "bookings", "_id": 730}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Tuesday", "day": "3", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 16, "reserved_spots": 59, "capacity": 75, "zone": null, "retrieved_at": "2020-11-03T20:58:02.860426"}
+{"index": {"_index": "bookings", "_id": 731}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 57.5, "reserved_spots": 17.5, "capacity": 75, "zone": null, "retrieved_at": "2020-11-04T11:38:04.188079"}
+{"index": {"_index": "bookings", "_id": 732}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 49, "reserved_spots": 26, "capacity": 75, "zone": null, "retrieved_at": "2020-11-04T13:57:03.377347"}
+{"index": {"_index": "bookings", "_id": 733}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-04T16:18:03.961519"}
+{"index": {"_index": "bookings", "_id": 734}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-04T16:18:10.677827"}
+{"index": {"_index": "bookings", "_id": 735}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 75, "capacity": 75, "zone": null, "retrieved_at": "2020-11-04T16:18:03.961519"}
+{"index": {"_index": "bookings", "_id": 736}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-04T18:38:03.139298"}
+{"index": {"_index": "bookings", "_id": 737}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-04T18:38:12.143090"}
+{"index": {"_index": "bookings", "_id": 738}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 2, "reserved_spots": 73, "capacity": 75, "zone": null, "retrieved_at": "2020-11-04T18:38:03.139298"}
+{"index": {"_index": "bookings", "_id": 739}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 14, "reserved_spots": 11, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-04T20:58:02.940271"}
+{"index": {"_index": "bookings", "_id": 740}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-04T20:58:10.883064"}
+{"index": {"_index": "bookings", "_id": 741}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Wednesday", "day": "4", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 14, "reserved_spots": 61, "capacity": 75, "zone": null, "retrieved_at": "2020-11-04T20:58:02.940271"}
+{"index": {"_index": "bookings", "_id": 742}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 39, "reserved_spots": 36, "capacity": 75, "zone": null, "retrieved_at": "2020-11-05T11:38:04.221361"}
+{"index": {"_index": "bookings", "_id": 743}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 43, "reserved_spots": 32, "capacity": 75, "zone": null, "retrieved_at": "2020-11-05T13:57:03.534711"}
+{"index": {"_index": "bookings", "_id": 744}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 19, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-05T16:18:03.314640"}
+{"index": {"_index": "bookings", "_id": 745}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-05T16:18:10.869527"}
+{"index": {"_index": "bookings", "_id": 746}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 6, "reserved_spots": 69, "capacity": 75, "zone": null, "retrieved_at": "2020-11-05T16:18:03.314640"}
+{"index": {"_index": "bookings", "_id": 747}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 5, "reserved_spots": 20, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-05T18:38:03.126153"}
+{"index": {"_index": "bookings", "_id": 748}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-05T18:38:14.997603"}
+{"index": {"_index": "bookings", "_id": 749}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 5, "reserved_spots": 70, "capacity": 75, "zone": null, "retrieved_at": "2020-11-05T18:38:03.126153"}
+{"index": {"_index": "bookings", "_id": 750}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 12, "reserved_spots": 13, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-05T20:58:02.754788"}
+{"index": {"_index": "bookings", "_id": 751}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-05T20:58:11.548741"}
+{"index": {"_index": "bookings", "_id": 752}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Thursday", "day": "5", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 12, "reserved_spots": 63, "capacity": 75, "zone": null, "retrieved_at": "2020-11-05T20:58:02.754788"}
+{"index": {"_index": "bookings", "_id": 753}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "11:40 to 13:40", "start_time": "11:40 AM", "start_hour": 11, "start_minute": 40, "end_time": "01:40 PM", "availability": 44, "reserved_spots": 31, "capacity": 75, "zone": null, "retrieved_at": "2020-11-06T11:38:04.722661"}
+{"index": {"_index": "bookings", "_id": 754}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "14:00 to 16:00", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 30, "reserved_spots": 45, "capacity": 75, "zone": null, "retrieved_at": "2020-11-06T13:57:03.778512"}
+{"index": {"_index": "bookings", "_id": 755}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 5, "reserved_spots": 20, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-06T16:18:02.807803"}
+{"index": {"_index": "bookings", "_id": 756}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 2, "reserved_spots": 48, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-06T16:18:10.497775"}
+{"index": {"_index": "bookings", "_id": 757}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "16:20 to 18:20", "start_time": "04:20 PM", "start_hour": 16, "start_minute": 20, "end_time": "06:20 PM", "availability": 7, "reserved_spots": 68, "capacity": 75, "zone": null, "retrieved_at": "2020-11-06T16:18:02.807803"}
+{"index": {"_index": "bookings", "_id": 758}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-06T18:38:03.290304"}
+{"index": {"_index": "bookings", "_id": 759}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-06T18:38:11.534166"}
+{"index": {"_index": "bookings", "_id": 760}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "18:40 to 20:40", "start_time": "06:40 PM", "start_hour": 18, "start_minute": 40, "end_time": "08:40 PM", "availability": 1, "reserved_spots": 74, "capacity": 75, "zone": null, "retrieved_at": "2020-11-06T18:38:03.290304"}
+{"index": {"_index": "bookings", "_id": 761}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 9, "reserved_spots": 16, "capacity": 25, "zone": "Annex", "retrieved_at": "2020-11-06T20:58:02.901381"}
+{"index": {"_index": "bookings", "_id": 762}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": "Main", "retrieved_at": "2020-11-06T20:58:09.864218"}
+{"index": {"_index": "bookings", "_id": 763}}
+{"location": "Altitude Gatineau", "month": "November", "day_of_week": "Friday", "day": "6", "year": "2020", "time_slot": "21:00 to 23:00", "start_time": "09:00 PM", "start_hour": 21, "start_minute": 0, "end_time": "11:00 PM", "availability": 9, "reserved_spots": 66, "capacity": 75, "zone": null, "retrieved_at": "2020-11-06T20:58:02.901381"}

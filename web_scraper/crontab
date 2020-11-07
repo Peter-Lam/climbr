@@ -1,6 +1,10 @@
-18 09 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
-38 11 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
-57 13 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
-18 16 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
-38 18 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
-58 20 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+18 09 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Kanata Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+38 11 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Kanata Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+57 13 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Kanata Altitude_Gatineau Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+18 16 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Kanata Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+38 18 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Kanata Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 20 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Altitude_Kanata Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+28 11 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+28 16 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+58 18 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+13 21 * * 1-5 cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
