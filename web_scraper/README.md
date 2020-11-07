@@ -1,4 +1,6 @@
-# bookings.py
+# Bookings - Web Scraper
+<img src="..\images\bookings\bookings_dashboard.png" alt="bookings dashboard">
+
 `bookings.py` collects the availability for a current climbing session. Although this script can be manually ran, a crontab has been provided to automatically call this script 2 minutes before the start of a session. This script currently collects booking data from Altitude Kanata, Altitude Gatineau, and Coyote Rock Gym
 
 ## Motivation
