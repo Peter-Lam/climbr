@@ -9,3 +9,7 @@
 data/input/*.yaml
 data/output/*
 data/elasticsearch/bulk_data/*_demo.json
+data/elasticsearch/bulk_data/counters.json
+data/elasticsearch/bulk_data/projects.json
+data/elasticsearch/bulk_data/sessions.json
+config.py
