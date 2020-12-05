@@ -14,7 +14,24 @@
         "availability": {"type":"integer"},
         "reserved_spots": {"type":"integer"},
         "capacity": {"type":"integer"},
-        "retrieved_at": {"type":"date"}
+        "retrieved_at": {"type":"date"},
+        "city": {"type":"keyword"},
+        "date": {"type":"date"},
+        "maximum_temperature": {"type":"integer"},
+        "minimum_temperature": {"type":"integer"},
+        "temperature": {"type":"integer"},
+        "wind_chill": {"type":"integer"},
+        "heat_index": {"type":"integer"},
+        "precipitation": {"type":"integer"},
+        "snow_depth": {"type":"integer"},
+        "wind_speed": {"type":"integer"},
+        "wind_gust": {"type":"integer"},
+        "visibility": {"type":"integer"},
+        "cloud_cover":{"type":"integer"},
+        "relative_humidity": {"type":"integer"},
+        "conditions": {"type":"keyword"},
+        "datetimestr": {"type":"date"},
+        "weather_type": {"type":"keyword"}
         }
     }
 }
