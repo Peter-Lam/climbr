@@ -12,7 +12,9 @@ import pathlib
 import argparse
 from datetime import datetime
 from time import sleep
-
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
 from selenium import webdriver
 from selenium.webdriver import Chrome
 
@@ -22,8 +24,10 @@ import common.globals as glbs  # noqa
 import common.common as common  # noqa
 import common.validate as validate  # noqa
 import web_scraper.utils.args as cmd_args  # noqa
-
+import config as config  # noqa
 OUTPUT_FILE = os.path.join(glbs.ES_BULK_DATA, 'bookings.json')
+if config.firestore_json:
+    db = common.connect_to_firestore()
 
 
 def get_bookings(driver, location, capacity, url, zone=None):
@@ -147,6 +151,65 @@ def get_driver():
     return webdriver.Chrome(options=chrome_options, executable_path=webdriver_path)
 
 
+def update_firestore(booking):
+    '''
+    Update firestore db with booking information
+    :param booking: booking information
+    :type booking: dict
+    '''
+    try:
+        doc_ref = db.collection('booking').document()
+        weather_keys = ['maximum_temperature', 'minimum_temperature', 'temperature',
+                        'wind_chill', 'heat_index', 'precipitation', 'snow_depth',
+                        'wind_speed', 'wind_gust', 'visibility', 'cloud_cover', 'relative_humidity', 'conditions', 'weather_type']
+        # Local variable for every booking
+        weather = {}
+        weather_ref = None
+        # If there is weather data, then remove and reference it to 'weather' collection if it's not already there
+        if set(weather_keys).issubset(booking.keys()):
+            # Move weather data to a new dict
+            for key in weather_keys:
+                weather[key] = booking.pop(key)
+            # Copy shared information to weather document
+            weather['date'] = booking['date']
+            weather['datetimestr'] = booking['datetimestr']
+            weather['city'] = booking['city']
+            # Query for existing weather data
+            weather_docs = db.collection('weather').where(
+                'date', '==', booking['date']).where('city', '==', booking['city']).get()
+            # If the weather data already exists, just reference it in bookings otherwise add to weather db
+            if weather_docs:
+                # Get the most recent weather document that matches the date
+                weather_ref = weather_docs[-1]
+            # Otherwise add new weather data, and get reference
+            else:
+                weather_ref = db.collection('weather').document()
+                weather_ref.set(weather)
+                print(
+                    f"[{str(datetime.now().isoformat())}] [Document ID: {weather_ref.id}] {weather['city']}'s weather data has been added to the db ")
+
+        # Referencing location and weather
+        locations = db.collection('locations').where(
+            'name', '==', booking['location']).get()
+        booking['location_ref'] = db.collection('locations').document(
+            locations[0].id) if locations else None
+        booking['weather_ref'] = db.collection('weather').document(
+            weather_ref.id) if weather_ref else None
+        # Storing string version of their id's
+        booking['location_id'] = locations[0].id if locations else None
+        booking['weather_id'] = weather_ref.id if weather_ref else None
+        # Removing Location data - No longer need because of reference
+        location_name = booking['location']
+        del booking['location']
+        # Push new document to bookings collection
+        booking_ref = db.collection('bookings').document()
+        booking_ref.set(booking)
+        print(
+            f"[{str(datetime.now().isoformat())}] [\'{location_name}\'] [Document ID: {booking_ref.id}] Session info successfully retrieved and added to Firestore")
+    except Exception as ex:
+        raise ex
+
+
 def main():
     '''
     Main Script
@@ -197,6 +260,9 @@ def main():
                                        name, locations[name]['capacity'], locations[name]['url'])
                 # Logging and saving info
                 common.update_bulk_api(booking, OUTPUT_FILE, 'bookings')
+            # If the config file is setup, push to Firestore too
+            if config.firestore_json:
+                update_firestore(booking)
         driver.quit()
         # Initialize ES and Kibana urls depending on if it's running in Docker or host
         es_url = glbs.ES_URL if 'DOCKER_SCRAPER' not in os.environ else glbs.ES_URL_DOCKER
@@ -213,7 +279,7 @@ def main():
             print(
                 f"WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information \n{ex}")
         print(
-            f"[{str(datetime.now().isoformat())}] {args.locations} Session info successfully retrieved! See information at '{OUTPUT_FILE}' or on port 5601")
+            f"[{str(datetime.now().isoformat())}] {args.locations} Session info successfully retrieved and added to '{OUTPUT_FILE}', view results on port 5601")
     except Exception as ex:
         raise ex
 
