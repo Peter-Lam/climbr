@@ -9,13 +9,15 @@
 <p align="center">
   <h1 align="center">Climbr</h1>
   <a>
-    <img src="images\sample_dash.png" alt="climbr dashboard demo">
+    <img src="images/dashboards/sample_dash.png" alt="climbr dashboard demo">
   </a>
   <p align="center">
     Visualize your rock climbing progression and trends. 
     <br />
     <a href="https://www.peterqlam.com/projects/#climbr"> Website</a>
-        ·
+    ·
+    <a href="https://www.peterqlam.com/projects/#climbr"> Screenshots </a>
+    ·
     <a href="https://github.com/Peter-Lam/climbr/wiki">Wiki</a>
     ·
     <a href="https://github.com/Peter-Lam/climbr/issues">Report Bug</a>
@@ -62,7 +64,6 @@ In addition, **`Climbr`** provides booking insights on local gyms (Altitude Kana
     - Progression in grades over time
     - What's your flash grade? project grade?
     - Strongest/Weakest climbing style? What areas should I improve?
-    -
   - Bookings
     - Busiest time to climb
     - Best time to climb to avoid crowds
