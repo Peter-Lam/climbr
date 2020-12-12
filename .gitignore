@@ -7,6 +7,7 @@
 # User specific files
 **.log
 data/input/*.yaml
+data/input/training/*.yaml
 data/output/*
 data/elasticsearch/bulk_data/*_demo.json
 data/elasticsearch/bulk_data/counters.json

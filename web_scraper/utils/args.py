@@ -19,7 +19,7 @@ def init():
             add_help=True, description='Utility for gathering booking data from climbing gyms', formatter_class=custom_formatter)
         general_option = parser.add_argument_group('General Options')
         general_option.add_argument('--version', action='version',
-                                    version='%(prog)s 1.0.1')
+                                    version='%(prog)s 1.2.0')
         parser.add_argument('-l', nargs='+',
                             dest='locations',
                             metavar='location(s)',

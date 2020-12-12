@@ -10,10 +10,14 @@ import sys
 import urllib
 import yaml
 import common.validate as validate
-
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
 from elasticsearch import Elasticsearch
 from datetime import datetime
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+import config as config  # noqa
 
 def connect_to_es(es_url):
     '''
@@ -33,6 +37,19 @@ def connect_to_es(es_url):
     except Exception as ex:
         raise ex
     # TODO: Check for docker, and if installed, build ELK stack images
+
+
+def connect_to_firestore():
+    '''
+    Establish connection to firestore using secrect service account credientials
+    :return: firestore db instance
+    '''
+    # Use a service account from json file
+    # For more information: https://firebase.google.com/docs/firestore/quickstart
+    cred = credentials.Certificate(config.firestore_json)
+    firebase_admin.initialize_app(cred)
+    db = firestore.client()
+    return db
 
 
 def create_index(es_url, index_name, mapping_path, silent=False, force=False):

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # --------------------------------
-# USe this script to periodically update weather data to bookings.json
+# Use this script to periodically update weather data to bookings.json
 # --------------------------------
 
 import os
@@ -10,12 +10,19 @@ import requests
 import sys
 import pandas as pd
 import datetime
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
 BASE_DIR = os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(BASE_DIR)
 import common.globals as glbs  # noqa
 import common.common as common  # noqa
 import config as config  # noqa
+
+if config.firestore_json:
+    # Make a connection to Firestore
+    db = common.connect_to_firestore()
 
 
 def last_updated(city):
@@ -145,12 +152,12 @@ def update_bookings(bookings, weather_df, city):
 
         # Loop through all bookings and update the data, if not present
         for row in bookings:
-            # Only add weather data to that match the weather location, and do not already have weather data
+            # Only add weather data to rows that match the weather location, and do not already have weather data
             if row['location'] in locations and (not row.keys() in ['Maximum Temperature', 'Minimum Temperature', 'Temperature', 'Wind Chill', 'Heat Index', 'Precipitation', 'Snow Depth']):
                 # reformat the date from json
                 date = datetime.datetime.fromisoformat(
                     row['retrieved_at']).strftime(("%Y-%m-%d"))
-                # Look for the corresponding date in the weather CSv, if not there skip
+                # Look for the corresponding date in the weather CSV, if not there skip
                 weather = weather_df.loc[weather_df['date'] == date]
                 if weather.shape[0] >= 1:
                     for col in list(weather):
@@ -165,6 +172,60 @@ def update_bookings(bookings, weather_df, city):
                     pass
         common.write_bulk_api(bookings, os.path.join(
             glbs.ES_BULK_DATA, 'bookings.json'), 'bookings')
+        # If config file is setup, update firestore too
+        if config.firestore_json:
+            # Get location ref ids that match the weather city data
+            locations_docs = db.collection('locations').where(
+                'city', '==', city).get()
+            location_ids = []
+            for location in locations_docs:
+                location_ids.append(location.id)
+            # Look for booking data that matches the same location as weather data and doesn't have a weather reference
+            bookings_docs = db.collection('bookings').where(
+                'weather_ref', '==', None).where('location_id', 'in', location_ids).get()
+            for booking in bookings_docs:
+                # Local variables
+                doc = booking.to_dict()
+                date = datetime.datetime.fromisoformat(
+                    doc['retrieved_at']).strftime(("%Y-%m-%d"))
+                weather_doc = {}
+                # Look for the corresponding date in the weather CSV, if not there skip
+                weather_row = weather_df.loc[weather_df['date'] == date]
+                if weather_row.shape[0] >= 1:
+                    # Loop through all columns of the CSV row and insert it into a weather dictionary
+                    for col in list(weather):
+                        if weather.shape[0] > 1:
+                            print(
+                                "Warning: More than one value found for weather, using last")
+                            weather_doc[col] = weather_row.iloc[-1][col]
+                        else:
+                            weather_doc[col] = weather_row.iloc[0][col]
+                    # Create a new document in the weather collection
+                    # Look again to see if weather is in db, if not then create a new document
+                    weather_docs = db.collection('weather').where(
+                        'date', '==', weather_doc['date']).where('city', '==', weather_doc['city']).get()
+                    if weather_docs:
+                        # Get the most recent weather document that matches the date
+                        weather_ref = weather_docs[-1]
+                    # Create a new document if not present
+                    else:
+                        weather_ref = db.collection('weather').document()
+                        weather_ref.set(weather_doc)
+                        print(f"[{str(datetime.datetime.now().isoformat())}] [Document ID: {weather_ref.id}] [\'{weather_doc['city']}\', \'{weather_doc['date']}\'] Successfully updated weather data to Firestore ")
+                    # Update current booking with weather reference
+                    booking_ref = db.collection(
+                        'bookings').document(booking.id)
+                    booking_ref.update({'weather_ref': db.collection('weather').document(weather_ref.id),
+                                        'weather_id': weather_ref.id,
+                                        'date': weather_doc['date'],
+                                        'datetimestr': weather_doc['datetimestr'],
+                                        'city': weather_doc['city']
+                                        })
+                    print(
+                        f"[{str(datetime.datetime.now().isoformat())}] [Document ID: {booking.id}] [\'{weather_doc['date']}\'] Successfully referenced weather data in bookings document in Firestore ")
+                else:
+                    # print(f"No weather data found for {date}")
+                    pass
     except Exception as ex:
         raise ex
 
@@ -191,24 +252,28 @@ def import_weather(csv_dir):
 
 
 def main():
-    current_time = str(datetime.datetime.now().isoformat())
-    bookings = get_bookings()
-    last_ottawa = last_updated('Ottawa')
-    last_gat = last_updated('Gatineau')
-    # Check if data is already up to date
-    if last_ottawa.date() == (datetime.datetime.now() - datetime.timedelta(days=1)).date() or last_gat.date() == (datetime.datetime.now() - datetime.timedelta(days=1)).date():
-        raise Exception(f"The weather data is already up to date")
-    # Otherwise get new weather data
-    ott = get_weather('Ottawa', last_ottawa)
-    gat = get_weather('Gatineau', last_gat)
-    # Update Weather CSVs
-    append_csv(glbs.OTTAWA_WEATHER, ott)
-    append_csv(glbs.GATINEAU_WEATHER, gat)
-    # Update Bookings JSONs
-    update_bookings(bookings, import_weather(glbs.OTTAWA_WEATHER), 'Ottawa')
-    update_bookings(bookings, import_weather(
-        glbs.GATINEAU_WEATHER), 'Gatineau')
-    print(f"[{current_time}] Bookings successfully updated")
+    if config.weather_key:
+        current_time = str(datetime.datetime.now().isoformat())
+        bookings = get_bookings()
+        last_ottawa = last_updated('Ottawa')
+        last_gat = last_updated('Gatineau')
+        # Check if data is already up to date
+        if last_ottawa.date() == (datetime.datetime.now() - datetime.timedelta(days=1)).date() or last_gat.date() == (datetime.datetime.now() - datetime.timedelta(days=1)).date():
+            raise Exception(f"The weather data is already up to date")
+        # Otherwise get new weather data
+        ott = get_weather('Ottawa', last_ottawa)
+        gat = get_weather('Gatineau', last_gat)
+        # Update Weather CSVs
+        append_csv(glbs.OTTAWA_WEATHER, ott)
+        append_csv(glbs.GATINEAU_WEATHER, gat)
+        # Update Bookings JSONs
+        update_bookings(bookings, import_weather(
+            glbs.OTTAWA_WEATHER), 'Ottawa')
+        update_bookings(bookings, import_weather(
+            glbs.GATINEAU_WEATHER), 'Gatineau')
+        print(f"[{current_time}] Successfully updated weather data locally")
+    else:
+        raise Exception(f"No API key found for VisualCrossing in 'config.py'")
 
 
 if __name__ == "__main__":
