@@ -220,40 +220,38 @@ def main():
         locations = {'Altitude Kanata': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=90a6abd5e5124f7384b2b60d00683e3d&random=5f1483d0c152d&iframeid=&mode=p',
                                          'capacity': 50},
                      'Altitude Gatineau': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=a443ee2f171e442b99079327c2ef6fc1&random=5f57c64752a17&iframeid=&mode=p',
-                                           'capacity': 75},
+                                           'capacity': 65},
                      'Coyote Rock Gym': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e99cbc88382e4b269eabe0cf45e111a7&random=5f792b35f0651&iframeid=&mode=p',
                                          'capacity': 50}}
-
         driver = get_driver()
         for name in args.locations:
             name = name.replace('_', ' ').strip()
             # Altitude made booking adjustments because of COVID-19 spike and restrictions
-            if name == 'Altitude Gatineau':
-                # If it's the weekend or after 4pm, then bookings are split into two sections. Get bookings for both
-                if datetime.now().weekday() >= 5 or datetime.now().hour >= 14:
-                    # Hard coding the values here because this is likely a temp change for ~month
-                    annex_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=88c1f4559dcf48a8b4db0c062faad971&widget_guid=eaffac73649e461bb5daf93c64a1167a&random=5f86760adbae7&iframeid=&mode=p'
-                    main_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=c3a37c2e9f0547d48351941a6634753e&widget_guid=eaffac73649e461bb5daf93c64a1167a&random=5f86760adbbaf&iframeid=&mode=p'
-                    annex_booking = get_bookings(
-                        driver, name, 25, annex_url, zone='Annex')
-                    main_booking = get_bookings(
-                        driver, name, 50, main_url, zone='Main')
-                    # Combine the two booking information
-                    combined_booking = annex_booking.copy()
-                    combined_booking['availability'] += main_booking['availability']
-                    combined_booking['reserved_spots'] += main_booking['reserved_spots']
-                    combined_booking['capacity'] += main_booking['capacity']
-                    combined_booking['zone'] = None
-                    # Log the data for zones - incase we want to visualize, and a combined data for general purposes
-                    for booking in [annex_booking, main_booking, combined_booking]:
-                        common.update_bulk_api(
-                            booking, OUTPUT_FILE, 'bookings')
-                else:
-                    weekday_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=a443ee2f171e442b99079327c2ef6fc1&widget_guid=eaffac73649e461bb5daf93c64a1167a&random=5f86760adaa8f&iframeid=&mode=p'
-                    booking = get_bookings(driver,
-                                           name, locations[name]['capacity'], weekday_url)
-                    # Logging and saving info
-                    common.update_bulk_api(booking, OUTPUT_FILE, 'bookings')
+            # If it's a weekday && before 3 then it's 1 booking, otherwise it's by 3 locations
+            if name == 'Altitude Gatineau' and datetime.now().weekday() < 5 and datetime.now().hour < 3:
+                # Hard coding the values here because this is likely a temp change for ~month
+                annex_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=de8bf81d740342e1a78e87f68ef74135&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b149&iframeid=&mode=p'
+                main_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=2fe86937914e4782a90eb92f023ed83a&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b078&iframeid=&mode=p'
+                basement_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=9dc37e9f88d441ee84bd6681ec792574&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b207&iframeid=&mode=p'
+                annex_booking = get_bookings(
+                    driver, name, 18, annex_url, zone='Annex')
+                main_booking = get_bookings(
+                    driver, name, 25, main_url, zone='Main')
+                basement_booking = get_bookings(
+                    driver, name, 20, basement_url, zone='Basement')
+                # Combine the two booking information
+                combined_booking = annex_booking.copy()
+                combined_booking['availability'] += main_booking['availability'] + \
+                    basement_booking['availability']
+                combined_booking['reserved_spots'] += main_booking['reserved_spots'] + \
+                    basement_booking['reserved_spots']
+                combined_booking['capacity'] += main_booking['capacity'] + \
+                    basement_booking['capacity']
+                combined_booking['zone'] = None
+                # Log the data for zones - incase we want to visualize, and a combined data for general purposes
+                for booking in [annex_booking, main_booking, basement_booking, combined_booking]:
+                    common.update_bulk_api(
+                        booking, OUTPUT_FILE, 'bookings')
             # Otherwise just gather bookings normally
             else:
                 booking = get_bookings(driver,

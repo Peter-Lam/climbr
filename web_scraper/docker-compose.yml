@@ -7,5 +7,7 @@ services:
       - ../:/workspace/
     command: cron && tail -f /workspace/logs/cron.log
     restart: always
+    environment:
+      PYTHONUNBUFFERED: 1
 
   
