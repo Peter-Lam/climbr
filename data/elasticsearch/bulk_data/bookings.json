@@ -5494,3 +5494,279 @@
 {"location": "Altitude Gatineau", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 1, "reserved_spots": 62, "capacity": 63, "zone": null, "retrieved_at": "2021-03-16T17:08:03.110242"}
 {"index": {"_index": "bookings", "_id": 2747}}
 {"location": "Altitude Kanata", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "6:10 PM to 7:55 PM", "start_time": "06:10 PM", "start_hour": 18, "start_minute": 10, "end_time": "07:55 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-16T18:08:03.022320"}
+{"index": {"_index": "bookings", "_id": 2748}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "start_minute": 0, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-16T18:58:03.395572"}
+{"index": {"_index": "bookings", "_id": 2749}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 18, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-16T19:13:03.188846"}
+{"index": {"_index": "bookings", "_id": 2750}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-16T19:13:09.645950"}
+{"index": {"_index": "bookings", "_id": 2751}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-16T19:13:15.123120"}
+{"index": {"_index": "bookings", "_id": 2752}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 63, "capacity": 63, "zone": null, "retrieved_at": "2021-03-16T19:13:03.188846"}
+{"index": {"_index": "bookings", "_id": 2753}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "8:15 PM to 10 PM", "start_time": "08:15 PM", "start_hour": 20, "start_minute": 15, "end_time": "10:00 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-16T20:13:03.439228"}
+{"index": {"_index": "bookings", "_id": 2754}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Tuesday", "day": "16", "year": "2021", "time_slot": "9:15 PM to 11:15 PM", "start_time": "09:15 PM", "start_hour": 21, "start_minute": 15, "end_time": "11:15 PM", "availability": 12, "reserved_spots": 38, "capacity": 50, "zone": null, "retrieved_at": "2021-03-16T21:13:03.573585"}
+{"index": {"_index": "bookings", "_id": 2755}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 12, "reserved_spots": 6, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-17T08:48:03.029121"}
+{"index": {"_index": "bookings", "_id": 2756}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-17T08:48:09.595262"}
+{"index": {"_index": "bookings", "_id": 2757}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 5, "reserved_spots": 15, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-17T08:48:15.021252"}
+{"index": {"_index": "bookings", "_id": 2758}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 19, "reserved_spots": 44, "capacity": 63, "zone": null, "retrieved_at": "2021-03-17T08:48:03.029121"}
+{"index": {"_index": "bookings", "_id": 2759}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "9:50 AM to 11:35 AM", "start_time": "09:50 AM", "start_hour": 9, "start_minute": 50, "end_time": "11:35 AM", "availability": 17, "reserved_spots": 33, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T09:48:02.823919"}
+{"index": {"_index": "bookings", "_id": 2760}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 12, "reserved_spots": 6, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-17T10:52:03.035463"}
+{"index": {"_index": "bookings", "_id": 2761}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-17T10:52:09.616879"}
+{"index": {"_index": "bookings", "_id": 2762}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 5, "reserved_spots": 15, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-17T10:52:15.081339"}
+{"index": {"_index": "bookings", "_id": 2763}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 19, "reserved_spots": 44, "capacity": 63, "zone": null, "retrieved_at": "2021-03-17T10:52:03.035463"}
+{"index": {"_index": "bookings", "_id": 2764}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "11:30 AM to 1:30 PM", "start_time": "11:30 AM", "start_hour": 11, "start_minute": 30, "end_time": "01:30 PM", "availability": 32, "reserved_spots": 18, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T11:28:03.366326"}
+{"index": {"_index": "bookings", "_id": 2765}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "11:55 AM to 1:40 PM", "start_time": "11:55 AM", "start_hour": 11, "start_minute": 55, "end_time": "01:40 PM", "availability": 17, "reserved_spots": 33, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T11:52:02.955364"}
+{"index": {"_index": "bookings", "_id": 2766}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 12, "reserved_spots": 6, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-17T12:58:03.505508"}
+{"index": {"_index": "bookings", "_id": 2767}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 1, "reserved_spots": 24, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-17T12:58:10.765540"}
+{"index": {"_index": "bookings", "_id": 2768}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 4, "reserved_spots": 16, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-17T12:58:16.251537"}
+{"index": {"_index": "bookings", "_id": 2769}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 17, "reserved_spots": 46, "capacity": 63, "zone": null, "retrieved_at": "2021-03-17T12:58:03.505508"}
+{"index": {"_index": "bookings", "_id": 2770}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "2 PM to 3:45 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "03:45 PM", "availability": 14, "reserved_spots": 36, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T13:58:02.758734"}
+{"index": {"_index": "bookings", "_id": 2771}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 34, "reserved_spots": 16, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T13:58:09.372546"}
+{"index": {"_index": "bookings", "_id": 2772}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 12, "reserved_spots": 6, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-17T15:03:03.013486"}
+{"index": {"_index": "bookings", "_id": 2773}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-17T15:03:10.302007"}
+{"index": {"_index": "bookings", "_id": 2774}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 3, "reserved_spots": 17, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-17T15:03:15.761591"}
+{"index": {"_index": "bookings", "_id": 2775}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 15, "reserved_spots": 48, "capacity": 63, "zone": null, "retrieved_at": "2021-03-17T15:03:03.013486"}
+{"index": {"_index": "bookings", "_id": 2776}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "4:05 PM to 5:50 PM", "start_time": "04:05 PM", "start_hour": 16, "start_minute": 5, "end_time": "05:50 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T16:03:03.424031"}
+{"index": {"_index": "bookings", "_id": 2777}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "4:30 PM to 6:30 PM", "start_time": "04:30 PM", "start_hour": 16, "start_minute": 30, "end_time": "06:30 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T16:28:02.888846"}
+{"index": {"_index": "bookings", "_id": 2778}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 1, "reserved_spots": 17, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-17T17:08:03.588300"}
+{"index": {"_index": "bookings", "_id": 2779}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-17T17:08:10.082346"}
+{"index": {"_index": "bookings", "_id": 2780}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-17T17:08:15.519520"}
+{"index": {"_index": "bookings", "_id": 2781}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 1, "reserved_spots": 62, "capacity": 63, "zone": null, "retrieved_at": "2021-03-17T17:08:03.588300"}
+{"index": {"_index": "bookings", "_id": 2782}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "6:10 PM to 7:55 PM", "start_time": "06:10 PM", "start_hour": 18, "start_minute": 10, "end_time": "07:55 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T18:08:03.473654"}
+{"index": {"_index": "bookings", "_id": 2783}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "start_minute": 0, "end_time": "09:00 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T18:58:02.713872"}
+{"index": {"_index": "bookings", "_id": 2784}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 16, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-17T19:13:02.723835"}
+{"index": {"_index": "bookings", "_id": 2785}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-17T19:13:09.300205"}
+{"index": {"_index": "bookings", "_id": 2786}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-17T19:13:14.833046"}
+{"index": {"_index": "bookings", "_id": 2787}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 61, "capacity": 63, "zone": null, "retrieved_at": "2021-03-17T19:13:02.723835"}
+{"index": {"_index": "bookings", "_id": 2788}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "8:15 PM to 10 PM", "start_time": "08:15 PM", "start_hour": 20, "start_minute": 15, "end_time": "10:00 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T20:13:03.050495"}
+{"index": {"_index": "bookings", "_id": 2789}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Wednesday", "day": "17", "year": "2021", "time_slot": "9:15 PM to 11:15 PM", "start_time": "09:15 PM", "start_hour": 21, "start_minute": 15, "end_time": "11:15 PM", "availability": 8, "reserved_spots": 42, "capacity": 50, "zone": null, "retrieved_at": "2021-03-17T21:13:03.231608"}
+{"index": {"_index": "bookings", "_id": 2790}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 8, "reserved_spots": 10, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-18T08:48:03.818633"}
+{"index": {"_index": "bookings", "_id": 2791}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 6, "reserved_spots": 19, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-18T08:48:11.175371"}
+{"index": {"_index": "bookings", "_id": 2792}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 9, "reserved_spots": 11, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-18T08:48:16.595734"}
+{"index": {"_index": "bookings", "_id": 2793}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 23, "reserved_spots": 40, "capacity": 63, "zone": null, "retrieved_at": "2021-03-18T08:48:03.818633"}
+{"index": {"_index": "bookings", "_id": 2794}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "9:50 AM to 11:35 AM", "start_time": "09:50 AM", "start_hour": 9, "start_minute": 50, "end_time": "11:35 AM", "availability": 30, "reserved_spots": 20, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T09:48:03.287658"}
+{"index": {"_index": "bookings", "_id": 2795}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 8, "reserved_spots": 10, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-18T10:52:03.679503"}
+{"index": {"_index": "bookings", "_id": 2796}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 6, "reserved_spots": 19, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-18T10:52:13.290052"}
+{"index": {"_index": "bookings", "_id": 2797}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 9, "reserved_spots": 11, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-18T10:52:18.719262"}
+{"index": {"_index": "bookings", "_id": 2798}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 23, "reserved_spots": 40, "capacity": 63, "zone": null, "retrieved_at": "2021-03-18T10:52:03.679503"}
+{"index": {"_index": "bookings", "_id": 2799}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "11:30 AM to 1:30 PM", "start_time": "11:30 AM", "start_hour": 11, "start_minute": 30, "end_time": "01:30 PM", "availability": 33, "reserved_spots": 17, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T11:28:03.082121"}
+{"index": {"_index": "bookings", "_id": 2800}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "11:55 AM to 1:40 PM", "start_time": "11:55 AM", "start_hour": 11, "start_minute": 55, "end_time": "01:40 PM", "availability": 22, "reserved_spots": 28, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T11:52:02.855952"}
+{"index": {"_index": "bookings", "_id": 2801}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 7, "reserved_spots": 11, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-18T12:58:03.423497"}
+{"index": {"_index": "bookings", "_id": 2802}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 5, "reserved_spots": 20, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-18T12:58:10.684912"}
+{"index": {"_index": "bookings", "_id": 2803}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 9, "reserved_spots": 11, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-18T12:58:16.132995"}
+{"index": {"_index": "bookings", "_id": 2804}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 21, "reserved_spots": 42, "capacity": 63, "zone": null, "retrieved_at": "2021-03-18T12:58:03.423497"}
+{"index": {"_index": "bookings", "_id": 2805}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "2 PM to 3:45 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "03:45 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T13:58:02.693912"}
+{"index": {"_index": "bookings", "_id": 2806}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "2 PM to 4 PM", "start_time": "02:00 PM", "start_hour": 14, "start_minute": 0, "end_time": "04:00 PM", "availability": 19, "reserved_spots": 31, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T13:58:11.000960"}
+{"index": {"_index": "bookings", "_id": 2807}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 8, "reserved_spots": 10, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-18T15:03:02.977246"}
+{"index": {"_index": "bookings", "_id": 2808}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 5, "reserved_spots": 20, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-18T15:03:09.403493"}
+{"index": {"_index": "bookings", "_id": 2809}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 3, "reserved_spots": 17, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-18T15:03:14.870867"}
+{"index": {"_index": "bookings", "_id": 2810}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 16, "reserved_spots": 47, "capacity": 63, "zone": null, "retrieved_at": "2021-03-18T15:03:02.977246"}
+{"index": {"_index": "bookings", "_id": 2811}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "4:05 PM to 5:50 PM", "start_time": "04:05 PM", "start_hour": 16, "start_minute": 5, "end_time": "05:50 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T16:03:03.223175"}
+{"index": {"_index": "bookings", "_id": 2812}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "4:30 PM to 6:30 PM", "start_time": "04:30 PM", "start_hour": 16, "start_minute": 30, "end_time": "06:30 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T16:28:03.525954"}
+{"index": {"_index": "bookings", "_id": 2813}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 3, "reserved_spots": 15, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-18T17:08:02.954310"}
+{"index": {"_index": "bookings", "_id": 2814}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-18T17:08:10.518007"}
+{"index": {"_index": "bookings", "_id": 2815}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-18T17:08:15.990072"}
+{"index": {"_index": "bookings", "_id": 2816}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 3, "reserved_spots": 60, "capacity": 63, "zone": null, "retrieved_at": "2021-03-18T17:08:02.954310"}
+{"index": {"_index": "bookings", "_id": 2817}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "6:10 PM to 7:55 PM", "start_time": "06:10 PM", "start_hour": 18, "start_minute": 10, "end_time": "07:55 PM", "availability": 0, "reserved_spots": 50, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T18:08:02.918954"}
+{"index": {"_index": "bookings", "_id": 2818}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "7 PM to 9 PM", "start_time": "07:00 PM", "start_hour": 19, "start_minute": 0, "end_time": "09:00 PM", "availability": 1, "reserved_spots": 49, "capacity": 50, "zone": null, "retrieved_at": "2021-03-18T18:58:03.122846"}
+{"index": {"_index": "bookings", "_id": 2819}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 18, "capacity": 18, "zone": "Annex", "retrieved_at": "2021-03-18T19:13:03.180964"}
+{"index": {"_index": "bookings", "_id": 2820}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-18T19:13:09.850289"}
+{"index": {"_index": "bookings", "_id": 2821}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-18T19:13:15.283015"}
+{"index": {"_index": "bookings", "_id": 2822}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Thursday", "day": "18", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 61, "capacity": 63, "zone": null, "retrieved_at": "2021-03-18T19:13:03.180964"}
+{"index": {"_index": "bookings", "_id": 2823}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:45 AM to 10 AM", "start_time": "08:45 AM", "start_hour": 8, "start_minute": 45, "end_time": "10:00 AM", "availability": 8, "reserved_spots": 2, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T08:43:02.995631"}
+{"index": {"_index": "bookings", "_id": 2824}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 16, "reserved_spots": 4, "capacity": 20, "zone": "Annex", "retrieved_at": "2021-03-19T08:48:03.698518"}
+{"index": {"_index": "bookings", "_id": 2825}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-19T08:48:11.046213"}
+{"index": {"_index": "bookings", "_id": 2826}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 6, "reserved_spots": 14, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-19T08:48:16.543468"}
+{"index": {"_index": "bookings", "_id": 2827}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 24, "reserved_spots": 41, "capacity": 65, "zone": null, "retrieved_at": "2021-03-19T08:48:03.698518"}
+{"index": {"_index": "bookings", "_id": 2828}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "10:15 AM to 11:30 AM", "start_time": "10:15 AM", "start_hour": 10, "start_minute": 15, "end_time": "11:30 AM", "availability": 5, "reserved_spots": 5, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T10:13:02.719851"}
+{"index": {"_index": "bookings", "_id": 2829}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 16, "reserved_spots": 4, "capacity": 20, "zone": "Annex", "retrieved_at": "2021-03-19T10:52:03.146001"}
+{"index": {"_index": "bookings", "_id": 2830}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 2, "reserved_spots": 23, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-19T10:52:11.223835"}
+{"index": {"_index": "bookings", "_id": 2831}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 6, "reserved_spots": 14, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-19T10:52:16.648960"}
+{"index": {"_index": "bookings", "_id": 2832}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 24, "reserved_spots": 41, "capacity": 65, "zone": null, "retrieved_at": "2021-03-19T10:52:03.146001"}
+{"index": {"_index": "bookings", "_id": 2833}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "11:45 AM to 1 PM", "start_time": "11:45 AM", "start_hour": 11, "start_minute": 45, "end_time": "01:00 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T11:43:03.245838"}
+{"index": {"_index": "bookings", "_id": 2834}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 16, "reserved_spots": 4, "capacity": 20, "zone": "Annex", "retrieved_at": "2021-03-19T12:58:04.139617"}
+{"index": {"_index": "bookings", "_id": 2835}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-19T12:58:11.465014"}
+{"index": {"_index": "bookings", "_id": 2836}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 3, "reserved_spots": 17, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-19T12:58:16.913542"}
+{"index": {"_index": "bookings", "_id": 2837}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 19, "reserved_spots": 46, "capacity": 65, "zone": null, "retrieved_at": "2021-03-19T12:58:04.139617"}
+{"index": {"_index": "bookings", "_id": 2838}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "1:15 PM to 2:30 PM", "start_time": "01:15 PM", "start_hour": 13, "start_minute": 15, "end_time": "02:30 PM", "availability": 7, "reserved_spots": 3, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T13:13:02.800379"}
+{"index": {"_index": "bookings", "_id": 2839}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "1:30 PM to 3 PM", "start_time": "01:30 PM", "start_hour": 13, "start_minute": 30, "end_time": "03:00 PM", "availability": 6, "reserved_spots": 4, "capacity": 10, "zone": "Zone 1 - All topropes on the Blue, Green, and Blue Island walls", "retrieved_at": "2021-03-19T13:28:03.024184"}
+{"index": {"_index": "bookings", "_id": 2840}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "1:30 PM to 3 PM", "start_time": "01:30 PM", "start_hour": 13, "start_minute": 30, "end_time": "03:00 PM", "availability": 5, "reserved_spots": 5, "capacity": 10, "zone": "Zone 2 - Yellow area and Red Cave", "retrieved_at": "2021-03-19T13:28:11.514295"}
+{"index": {"_index": "bookings", "_id": 2841}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "1:30 PM to 3 PM", "start_time": "01:30 PM", "start_hour": 13, "start_minute": 30, "end_time": "03:00 PM", "availability": 6, "reserved_spots": 4, "capacity": 10, "zone": "Zone 3 - Boulder and Upstairs Caves", "retrieved_at": "2021-03-19T13:28:16.979530"}
+{"index": {"_index": "bookings", "_id": 2842}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "1:30 PM to 3 PM", "start_time": "01:30 PM", "start_hour": 13, "start_minute": 30, "end_time": "03:00 PM", "availability": 8, "reserved_spots": 2, "capacity": 10, "zone": "Zone 4 - North Wall Area", "retrieved_at": "2021-03-19T13:28:22.516241"}
+{"index": {"_index": "bookings", "_id": 2843}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "1:30 PM to 3 PM", "start_time": "01:30 PM", "start_hour": 13, "start_minute": 30, "end_time": "03:00 PM", "availability": 25, "reserved_spots": 15, "capacity": 40, "zone": null, "retrieved_at": "2021-03-19T13:28:03.024184"}
+{"index": {"_index": "bookings", "_id": 2844}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "2:45 PM to 4 PM", "start_time": "02:45 PM", "start_hour": 14, "start_minute": 45, "end_time": "04:00 PM", "availability": 3, "reserved_spots": 7, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T14:43:02.872999"}
+{"index": {"_index": "bookings", "_id": 2845}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 15, "reserved_spots": 5, "capacity": 20, "zone": "Annex", "retrieved_at": "2021-03-19T15:03:05.751996"}
+{"index": {"_index": "bookings", "_id": 2846}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 1, "reserved_spots": 24, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-19T15:03:13.134673"}
+{"index": {"_index": "bookings", "_id": 2847}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-19T15:03:18.609587"}
+{"index": {"_index": "bookings", "_id": 2848}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "15:05 to 16:50", "start_time": "03:05 PM", "start_hour": 15, "start_minute": 5, "end_time": "04:50 PM", "availability": 16, "reserved_spots": 49, "capacity": 65, "zone": null, "retrieved_at": "2021-03-19T15:03:05.751996"}
+{"index": {"_index": "bookings", "_id": 2849}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "3:15 PM to 4:45 PM", "start_time": "03:15 PM", "start_hour": 15, "start_minute": 15, "end_time": "04:45 PM", "availability": 10, "reserved_spots": 0, "capacity": 10, "zone": "Zone 1 - All topropes on the Blue, Green, and Blue Island walls", "retrieved_at": "2021-03-19T15:13:03.624795"}
+{"index": {"_index": "bookings", "_id": 2850}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "3:15 PM to 4:45 PM", "start_time": "03:15 PM", "start_hour": 15, "start_minute": 15, "end_time": "04:45 PM", "availability": 4, "reserved_spots": 6, "capacity": 10, "zone": "Zone 2 - Yellow area and Red Cave", "retrieved_at": "2021-03-19T15:13:10.178902"}
+{"index": {"_index": "bookings", "_id": 2851}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "3:15 PM to 4:45 PM", "start_time": "03:15 PM", "start_hour": 15, "start_minute": 15, "end_time": "04:45 PM", "availability": 7, "reserved_spots": 3, "capacity": 10, "zone": "Zone 3 - Boulder and Upstairs Caves", "retrieved_at": "2021-03-19T15:13:15.602528"}
+{"index": {"_index": "bookings", "_id": 2852}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "3:15 PM to 4:45 PM", "start_time": "03:15 PM", "start_hour": 15, "start_minute": 15, "end_time": "04:45 PM", "availability": 8, "reserved_spots": 2, "capacity": 10, "zone": "Zone 4 - North Wall Area", "retrieved_at": "2021-03-19T15:13:21.124235"}
+{"index": {"_index": "bookings", "_id": 2853}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "3:15 PM to 4:45 PM", "start_time": "03:15 PM", "start_hour": 15, "start_minute": 15, "end_time": "04:45 PM", "availability": 29, "reserved_spots": 11, "capacity": 40, "zone": null, "retrieved_at": "2021-03-19T15:13:03.624795"}
+{"index": {"_index": "bookings", "_id": 2854}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "4:15 PM to 5:30 PM", "start_time": "04:15 PM", "start_hour": 16, "start_minute": 15, "end_time": "05:30 PM", "availability": 6, "reserved_spots": 4, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T16:13:03.177108"}
+{"index": {"_index": "bookings", "_id": 2855}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 1, "reserved_spots": 19, "capacity": 20, "zone": "Annex", "retrieved_at": "2021-03-19T17:08:03.166707"}
+{"index": {"_index": "bookings", "_id": 2856}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-19T17:08:09.694755"}
+{"index": {"_index": "bookings", "_id": 2857}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 1, "reserved_spots": 19, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-19T17:08:15.163820"}
+{"index": {"_index": "bookings", "_id": 2858}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "17:10 to 18:55", "start_time": "05:10 PM", "start_hour": 17, "start_minute": 10, "end_time": "06:55 PM", "availability": 2, "reserved_spots": 63, "capacity": 65, "zone": null, "retrieved_at": "2021-03-19T17:08:03.166707"}
+{"index": {"_index": "bookings", "_id": 2859}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "5:45 PM to 7 PM", "start_time": "05:45 PM", "start_hour": 17, "start_minute": 45, "end_time": "07:00 PM", "availability": 1, "reserved_spots": 9, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T17:43:03.158514"}
+{"index": {"_index": "bookings", "_id": 2860}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 10, "reserved_spots": 0, "capacity": 10, "zone": "Zone 1 - All topropes on the Blue, Green, and Blue Island walls", "retrieved_at": "2021-03-19T17:58:02.775250"}
+{"index": {"_index": "bookings", "_id": 2861}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 1, "reserved_spots": 9, "capacity": 10, "zone": "Zone 2 - Yellow area and Red Cave", "retrieved_at": "2021-03-19T17:58:11.265696"}
+{"index": {"_index": "bookings", "_id": 2862}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": "Zone 3 - Boulder and Upstairs Caves", "retrieved_at": "2021-03-19T17:58:16.719138"}
+{"index": {"_index": "bookings", "_id": 2863}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 4, "reserved_spots": 6, "capacity": 10, "zone": "Zone 4 - North Wall Area", "retrieved_at": "2021-03-19T17:58:22.264711"}
+{"index": {"_index": "bookings", "_id": 2864}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 15, "reserved_spots": 25, "capacity": 40, "zone": null, "retrieved_at": "2021-03-19T17:58:02.775250"}
+{"index": {"_index": "bookings", "_id": 2865}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 10, "reserved_spots": 0, "capacity": 10, "zone": "Zone 1 - All topropes on the Blue, Green, and Blue Island walls", "retrieved_at": "2021-03-19T18:43:03.672330"}
+{"index": {"_index": "bookings", "_id": 2866}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 1, "reserved_spots": 9, "capacity": 10, "zone": "Zone 2 - Yellow area and Red Cave", "retrieved_at": "2021-03-19T18:43:11.134227"}
+{"index": {"_index": "bookings", "_id": 2867}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": "Zone 3 - Boulder and Upstairs Caves", "retrieved_at": "2021-03-19T18:43:16.552917"}
+{"index": {"_index": "bookings", "_id": 2868}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 4, "reserved_spots": 6, "capacity": 10, "zone": "Zone 4 - North Wall Area", "retrieved_at": "2021-03-19T18:43:21.970741"}
+{"index": {"_index": "bookings", "_id": 2869}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "6:45 PM to 8:15 PM", "start_time": "06:45 PM", "start_hour": 18, "start_minute": 45, "end_time": "08:15 PM", "availability": 15, "reserved_spots": 25, "capacity": 40, "zone": null, "retrieved_at": "2021-03-19T18:43:03.672330"}
+{"index": {"_index": "bookings", "_id": 2870}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "7:15 PM to 8:30 PM", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "08:30 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T19:13:03.570033"}
+{"index": {"_index": "bookings", "_id": 2871}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 18, "capacity": 20, "zone": "Annex", "retrieved_at": "2021-03-19T19:13:03.558484"}
+{"index": {"_index": "bookings", "_id": 2872}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 25, "capacity": 25, "zone": "Main", "retrieved_at": "2021-03-19T19:13:11.531148"}
+{"index": {"_index": "bookings", "_id": 2873}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 0, "reserved_spots": 20, "capacity": 20, "zone": "Basement", "retrieved_at": "2021-03-19T19:13:16.985715"}
+{"index": {"_index": "bookings", "_id": 2874}}
+{"location": "Altitude Gatineau", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "19:15 to 21:00", "start_time": "07:15 PM", "start_hour": 19, "start_minute": 15, "end_time": "09:00 PM", "availability": 2, "reserved_spots": 63, "capacity": 65, "zone": null, "retrieved_at": "2021-03-19T19:13:03.558484"}
+{"index": {"_index": "bookings", "_id": 2875}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:30 PM to 10 PM", "start_time": "08:30 PM", "start_hour": 20, "start_minute": 30, "end_time": "10:00 PM", "availability": 4, "reserved_spots": 6, "capacity": 10, "zone": "Zone 1 - All topropes on the Blue, Green, and Blue Island walls", "retrieved_at": "2021-03-19T20:28:03.119208"}
+{"index": {"_index": "bookings", "_id": 2876}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:30 PM to 10 PM", "start_time": "08:30 PM", "start_hour": 20, "start_minute": 30, "end_time": "10:00 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": "Zone 2 - Yellow area and Red Cave", "retrieved_at": "2021-03-19T20:28:11.261673"}
+{"index": {"_index": "bookings", "_id": 2877}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:30 PM to 10 PM", "start_time": "08:30 PM", "start_hour": 20, "start_minute": 30, "end_time": "10:00 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": "Zone 3 - Boulder and Upstairs Caves", "retrieved_at": "2021-03-19T20:28:16.682308"}
+{"index": {"_index": "bookings", "_id": 2878}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:30 PM to 10 PM", "start_time": "08:30 PM", "start_hour": 20, "start_minute": 30, "end_time": "10:00 PM", "availability": 5, "reserved_spots": 5, "capacity": 10, "zone": "Zone 4 - North Wall Area", "retrieved_at": "2021-03-19T20:28:22.099903"}
+{"index": {"_index": "bookings", "_id": 2879}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:30 PM to 10 PM", "start_time": "08:30 PM", "start_hour": 20, "start_minute": 30, "end_time": "10:00 PM", "availability": 9, "reserved_spots": 31, "capacity": 40, "zone": null, "retrieved_at": "2021-03-19T20:28:03.119208"}
+{"index": {"_index": "bookings", "_id": 2880}}
+{"location": "Altitude Kanata", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "8:45 PM to 10 PM", "start_time": "08:45 PM", "start_hour": 20, "start_minute": 45, "end_time": "10:00 PM", "availability": 0, "reserved_spots": 10, "capacity": 10, "zone": null, "retrieved_at": "2021-03-19T20:43:03.540802"}
+{"index": {"_index": "bookings", "_id": 2881}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "10 PM to 11:30 PM", "start_time": "10:00 PM", "start_hour": 22, "start_minute": 0, "end_time": "11:30 PM", "availability": 10, "reserved_spots": 0, "capacity": 10, "zone": "Zone 1 - All topropes on the Blue, Green, and Blue Island walls", "retrieved_at": "2021-03-19T21:58:03.617243"}
+{"index": {"_index": "bookings", "_id": 2882}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "10 PM to 11:30 PM", "start_time": "10:00 PM", "start_hour": 22, "start_minute": 0, "end_time": "11:30 PM", "availability": 6, "reserved_spots": 4, "capacity": 10, "zone": "Zone 2 - Yellow area and Red Cave", "retrieved_at": "2021-03-19T21:58:10.244596"}
+{"index": {"_index": "bookings", "_id": 2883}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "10 PM to 11:30 PM", "start_time": "10:00 PM", "start_hour": 22, "start_minute": 0, "end_time": "11:30 PM", "availability": 2, "reserved_spots": 8, "capacity": 10, "zone": "Zone 3 - Boulder and Upstairs Caves", "retrieved_at": "2021-03-19T21:58:15.693108"}
+{"index": {"_index": "bookings", "_id": 2884}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "10 PM to 11:30 PM", "start_time": "10:00 PM", "start_hour": 22, "start_minute": 0, "end_time": "11:30 PM", "availability": 10, "reserved_spots": 0, "capacity": 10, "zone": "Zone 4 - North Wall Area", "retrieved_at": "2021-03-19T21:58:21.131424"}
+{"index": {"_index": "bookings", "_id": 2885}}
+{"location": "Coyote Rock Gym", "month": "March", "day_of_week": "Friday", "day": "19", "year": "2021", "time_slot": "10 PM to 11:30 PM", "start_time": "10:00 PM", "start_hour": 22, "start_minute": 0, "end_time": "11:30 PM", "availability": 28, "reserved_spots": 12, "capacity": 40, "zone": null, "retrieved_at": "2021-03-19T21:58:03.617243"}

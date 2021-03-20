@@ -151,4 +151,5 @@ projects:
       - ______
     reset: false
 # Tracking shoes used while climbing, useful if you own many pairs
-shoes: La Sportiva Tarantula
+shoes: climbing_shoe_here
+

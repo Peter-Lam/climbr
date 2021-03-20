@@ -217,29 +217,29 @@ def main():
     try:
         args = cmd_args.init()
         # Variables
-        locations = {'Altitude Kanata': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=90a6abd5e5124f7384b2b60d00683e3d&random=5f1483d0c152d&iframeid=&mode=p',
-                                         'capacity': 50},
+        locations = {'Altitude Kanata': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=6bbc6c242b344368a32f82ed63059fe9&random=605417e3cb2d3&iframeid=&mode=p',
+                                         'capacity': 10},
                      'Altitude Gatineau': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=a443ee2f171e442b99079327c2ef6fc1&random=5f57c64752a17&iframeid=&mode=p',
                                            'capacity': 65},
                      'Coyote Rock Gym': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e99cbc88382e4b269eabe0cf45e111a7&random=5f792b35f0651&iframeid=&mode=p',
-                                         'capacity': 50}}
+                                         'capacity': 40}}
         driver = get_driver()
         for name in args.locations:
             name = name.replace('_', ' ').strip()
             # Altitude made booking adjustments because of COVID-19 spike and restrictions
             # If it's a weekday && before 3 then it's 1 booking, otherwise it's by 3 locations
-            if name == 'Altitude Gatineau' and datetime.now().weekday() < 5 and datetime.now().hour < 3:
+            if (name == 'Altitude Gatineau' and datetime.now().weekday() < 5 and datetime.now().hour >= 3) or (name == 'Altitude Gatineau' and datetime.now().weekday() >= 5):
                 # Hard coding the values here because this is likely a temp change for ~month
                 annex_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=de8bf81d740342e1a78e87f68ef74135&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b149&iframeid=&mode=p'
                 main_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=2fe86937914e4782a90eb92f023ed83a&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b078&iframeid=&mode=p'
                 basement_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=9dc37e9f88d441ee84bd6681ec792574&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b207&iframeid=&mode=p'
                 annex_booking = get_bookings(
-                    driver, name, 18, annex_url, zone='Annex')
+                    driver, name, 20, annex_url, zone='Annex')
                 main_booking = get_bookings(
                     driver, name, 25, main_url, zone='Main')
                 basement_booking = get_bookings(
                     driver, name, 20, basement_url, zone='Basement')
-                # Combine the two booking information
+                # Combine the all booking zones together
                 combined_booking = annex_booking.copy()
                 combined_booking['availability'] += main_booking['availability'] + \
                     basement_booking['availability']
@@ -250,6 +250,36 @@ def main():
                 combined_booking['zone'] = None
                 # Log the data for zones - incase we want to visualize, and a combined data for general purposes
                 for booking in [annex_booking, main_booking, basement_booking, combined_booking]:
+                    common.update_bulk_api(
+                        booking, OUTPUT_FILE, 'bookings')
+            # Coyote Adjustments for COVID-19 REd ZOne Response - Multi zone like Altitude
+            elif (name == 'Coyote Rock Gym'):
+                zone_1 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=c8f63096988b457891da8442931ebc11&random=60549c429b3d6&iframeid=&mode=p'
+                zone_2 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=0a283f4776ed45eda69e8bf57d59d65f&random=60549c4451ff3&iframeid=&mode=p'
+                zone_3 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=0d52f12114a7498cb92bbbe0d8c28d16&random=60549c45b97f9&iframeid=&mode=p'
+                zone_4 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=94c9afedbbdd4d7c8f15f4af863fba39&random=60549c470309e&iframeid=&mode=p'
+                zone_1_booking = get_bookings(
+                    driver, name, 10, zone_1, zone='Zone 1 - All topropes on the Blue, Green, and Blue Island walls')
+                zone_2_booking = get_bookings(
+                    driver, name, 10, zone_2, zone='Zone 2 - Yellow area and Red Cave')
+                zone_3_booking = get_bookings(
+                    driver, name, 10, zone_3, zone='Zone 3 - Boulder and Upstairs Caves')
+                zone_4_booking = get_bookings(
+                    driver, name, 10, zone_4, zone='Zone 4 - North Wall Area')
+
+                # Combine the two booking information
+                coyote_combined_booking = zone_1_booking.copy()
+                coyote_combined_booking['availability'] += zone_2_booking['availability'] + \
+                    zone_3_booking['availability'] + \
+                    zone_4_booking['availability']
+                coyote_combined_booking['reserved_spots'] += zone_2_booking['reserved_spots'] + \
+                    zone_3_booking['reserved_spots'] + \
+                    zone_4_booking['reserved_spots']
+                coyote_combined_booking['capacity'] += zone_2_booking['capacity'] + \
+                    zone_3_booking['capacity'] + zone_4_booking['capacity']
+                coyote_combined_booking['zone'] = None
+                # Log the data for zones - incase we want to visualize, and a combined data for general purposes
+                for booking in [zone_1_booking, zone_2_booking, zone_3_booking, zone_4_booking, coyote_combined_booking]:
                     common.update_bulk_api(
                         booking, OUTPUT_FILE, 'bookings')
             # Otherwise just gather bookings normally

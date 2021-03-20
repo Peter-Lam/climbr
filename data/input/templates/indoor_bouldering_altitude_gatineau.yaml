@@ -1,5 +1,5 @@
 --- 
-location: Coyote Rock Gym
+location: Altitude Kanata
 style: indoor bouldering
 description:
   A brief description of the climbing session
@@ -9,8 +9,11 @@ time:
   start: HH:MM AM/PM
   end: HH:MM AM/PM
 climbers: 
-  - Person A
-  - Person B
+  -
+  -
+  -
+  -
+  -
 injury: 
   isTrue: false
   description: Add a description of injury here
@@ -21,46 +24,51 @@ media:
   - 
   - 
 counter:
-  - grade: White
+  - grade: VB/V0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Orange
+  - grade: V0/V1
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Red
+  - grade: V1/V2
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Blue
+  - grade: V2/V3
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Green
+  - grade: V3/V4
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Purple
+  - grade: V4/V5
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Black
+  - grade: V5/V6
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Ungraded
+  - grade: competition
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
+  - grade: routesetting-squad
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0 
 projects:
   - name: Describe the problem or give it a name
     location: slab
