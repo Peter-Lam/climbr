@@ -45,4 +45,4 @@ tim==0.5
 timezonefinder==4.4.1
 toml==0.10.1
 uritemplate==3.0.1
-urllib3==1.25.10
+urllib3==1.26.5
