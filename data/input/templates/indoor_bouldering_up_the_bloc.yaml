@@ -1,5 +1,5 @@
 --- 
-location: Coyote Rock Gym
+location: Up the Bloc
 style: indoor bouldering
 description:
   A brief description of the climbing session
@@ -16,13 +16,15 @@ injury:
   isTrue: false
   description: Add a description of injury here
 media:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - URL_to_image
+  - URL_to_video
 counter:
   - grade: White
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: Yellow
     flash: 0
     redpoint: 0
     repeat: 0
@@ -32,7 +34,7 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Red
+  - grade: Green
     flash: 0
     redpoint: 0
     repeat: 0
@@ -42,12 +44,12 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Green
+  - grade: Purple
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Purple
+  - grade: Red
     flash: 0
     redpoint: 0
     repeat: 0
@@ -57,7 +59,7 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: Ungraded
+  - grade: Pink
     flash: 0
     redpoint: 0
     repeat: 0
@@ -66,16 +68,20 @@ projects:
   - name: Describe the problem or give it a name
     location: slab
     style:
-      - dynamic
-      - overhang
+        - dynamic
+        - overhang
     grade: competition
+    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
     notes:
-      FILLER
+      Any notes about this climb
+      It can also spawn many lines
     media:
       - URL_to_image
+      - URL_to_video
     reset: false
 shoes: climbing_shoe_here
+

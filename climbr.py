@@ -3,6 +3,7 @@
 The core logic behind tracking climbing sessions and stats
 '''
 from datetime import datetime
+import config as config
 import common.args as cmd_args
 import common.validate as validate
 import common.common as common
@@ -10,6 +11,7 @@ import common.globals as glbs
 import os
 import requests
 import urllib3
+import traceback
 from time import sleep
 from common.session import Session
 from operator import add
@@ -31,7 +33,7 @@ def get_session_yamls(path):
             path, ".*\.yaml$", recursive=False)
         if not sessions:
             raise Exception(
-                "Unable to find logs located at {path}. Consider using the 'demo' command to view sample data...")
+                f"Unable to find logs located at {path}. Consider using the 'demo' command to view sample data...")
         return sessions
     except Exception as ex:
         raise ex
@@ -143,7 +145,7 @@ def main():
             common.upload_to_es(es_url, data_dir, silent=True)
             if not args.silent:
                 print(
-                    f"[5/5] Visualizations and stats are ready at {kibana_url}/app/dashboard")
+                    f"[5/5] Visualizations and stats are ready at {kibana_url}/app/home")
         # Exporting Kibana and ES Objects
         elif cmd == 'export':
             # Default export name used (ex. climbr_2020-09-19_02-55-15) unless overwritten by -o option
@@ -172,6 +174,29 @@ def main():
                 else:
                     raise Exception(
                         f"Unable to import '{path}'. File path or directory does not exist.")
+        # Create a new climbing log from template
+        elif cmd == 'log':
+            filename = None
+            default_filename = args.log_date if args.log_date else datetime.now().strftime('%Y-%m-%d')
+            # If the value doesn't exist or not a supported gym location, default the template
+            if args.climbing_location not in glbs.GYM_TEMPLATE.keys():
+                args.climbing_location = 'default'
+            if args.export_name:
+                filename = f"{args.export_name}.yaml"
+            # Special case for home gym, no need to highlight location
+            elif 'kanata' in args.climbing_location or 'default' == args.climbing_location:
+                filename = f"{default_filename}.yaml"
+            else:
+                filename = f"{default_filename}_{args.climbing_location}.yaml"
+            climbing_log = common.copy_file(glbs.GYM_TEMPLATE[args.climbing_location],
+                                            glbs.INPUT_DIR, filename)
+            # if args.log_date:
+            # Open yaml and edit the date
+            content = common.load_yaml(climbing_log)
+            content['date'] = args.log_date if args.log_date else datetime.now().date()
+            common.write_yaml(content, climbing_log, force=True, silent=True)
+            print(f"New climbing log created at '{climbing_log}'!")
+
     except Exception as ex:
         raise ex
 
@@ -184,5 +209,13 @@ if __name__ == "__main__":
     #     # rollback()
     #     raise
     except Exception as ex:
-        # print(ex)
+        # Send an email alert of error if config.py is setup
+        if config.smpt_email and config.smpt_pass and config.to_notify:
+            common.send_email(config.smpt_email, config.smpt_pass,
+                              config.to_notify, f"[{str(datetime.now())}] Error in climbr.py",
+                              os.path.join(glbs.EMAIL_TEMPLATE_DIR,
+                                           'error_notification'),
+                              "".join(
+                                  traceback.TracebackException.from_exception(ex).format()),
+                              common.get_files(glbs.LOG_DIR, ".*"))
         raise ex

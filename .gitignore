@@ -14,3 +14,4 @@ data/elasticsearch/bulk_data/counters.json
 data/elasticsearch/bulk_data/projects.json
 data/elasticsearch/bulk_data/sessions.json
 config.py
+web_scraper/utils/check_bookings.py

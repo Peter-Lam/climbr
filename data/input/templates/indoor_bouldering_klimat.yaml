@@ -4,6 +4,7 @@ style: indoor bouldering
 description:
   A brief description of the climbing session
   Can span multiple lines if needed
+experience: positive negative neutral
 date: YYYY-MM-DD
 time:
   start: HH:MM AM/PM
@@ -69,4 +70,4 @@ projects:
     media:
       - URL_to_image
     reset: False
-shoes: La Sportiva Tarantula
+shoes: climbing_shoe_here

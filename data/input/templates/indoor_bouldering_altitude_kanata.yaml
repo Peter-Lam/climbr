@@ -4,25 +4,20 @@ style: indoor bouldering
 description:
   A brief description of the climbing session
   Can span multiple lines if needed
+experience: positive negative neutral
 date: YYYY-MM-DD
 time:
   start: HH:MM AM/PM
   end: HH:MM AM/PM
 climbers: 
-  -
-  -
-  -
-  -
-  -
+  - null
+  - null
 injury: 
   isTrue: false
   description: Add a description of injury here
 media:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - null
+  - null
 counter:
   - grade: VB/V0
     flash: 0
@@ -120,4 +115,4 @@ projects:
     media:
       - URL_to_image
     reset: false
-shoes: La Sportiva Tarantula / Scarpa Instinct VS
+shoes: climbing_shoe_here

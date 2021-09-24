@@ -2,6 +2,7 @@
 '''File containing validation utilities'''
 
 import datetime
+import re
 import socket
 import os
 import yaml
@@ -9,7 +10,7 @@ import yaml
 
 def date(value):
     '''
-    Validating if date string is in YYYY-MM-DD format. Returning the value if true, otherwise raises an error
+    Validating if date string is in YYYY-MM-DD format. Returns value if true, otherwise raises error
     :param value: date to validate
     :type value: string
     :raises Exception: Date does not follow YYYY-MM-DD format
@@ -31,7 +32,7 @@ def date(value):
 
 def directory(path):
     '''
-    Checking if path is a directory, raises error otherwise
+    Checking if path is a directory. Returns value if true, otherwise raises error
     :param path: Path to directory
     :type path: str
     :raises Exception: directory does not exist
@@ -43,9 +44,24 @@ def directory(path):
     return path
 
 
+def email(value):
+    '''
+    Checking if value is a valid email based on regex. Returns value if true otherwise raises error
+    :param value: email to verify
+    :type value: str
+    :return: email
+    :rtype: str
+    :raises Exception: email does not exist
+    '''
+    regex = '^[a-z0-9]+[\._]?[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$'
+    if not re.search(regex, value):
+        raise Exception(f"Invalid email:'{value}'")
+    return value
+
+
 def file(path):
     '''
-    Checking if path is a file, raises error otherwise
+    Checking if path is a file. Returns value if true otherwise raises error
     :param path: Path to file
     :type path: str
     :raises Exception: file path does not exist

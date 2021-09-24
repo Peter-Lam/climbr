@@ -6,6 +6,7 @@ style: outdoor bouldering
 description:
   A brief description of the climbing session
   Can span multiple lines if needed
+experience: positive negative neutral
 date: YYYY-MM-DD
 time:
   start: HH:MM AM/PM
@@ -90,7 +91,7 @@ projects:
         - static
     grade: V0
     # See counter for terminology
-              # Note: Since this is tracking 1 specific problem, it is not possible to flash AND redpoint AND onsight the same problem
+    # Note: Since this is tracking 1 specific problem, it is not possible to flash AND redpoint AND onsight the same problem
     # It's also not possible to onsight, flash, or redpoint multiple times, instead uses 'repeat'
     onsight: 0
     flash: 0
@@ -120,4 +121,4 @@ projects:
       - URL_to_image
       - URL_to_video
 # Tracking shoes used while climbing, useful if you own many pairs
-shoes: La Sportiva Tarantula
+shoes: climbing_shoe_here
