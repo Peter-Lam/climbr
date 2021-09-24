@@ -8,6 +8,7 @@ import os
 import json
 import requests
 import sys
+import traceback
 import pandas as pd
 import datetime
 import firebase_admin
@@ -153,7 +154,7 @@ def update_bookings(bookings, weather_df, city):
         # Loop through all bookings and update the data, if not present
         for row in bookings:
             # Only add weather data to rows that match the weather location, and do not already have weather data
-            if row['location'] in locations and (not row.keys() in ['Maximum Temperature', 'Minimum Temperature', 'Temperature', 'Wind Chill', 'Heat Index', 'Precipitation', 'Snow Depth']):
+            if row['location'] in locations and (not set(['maximum_temperature', 'minimum_temperature', 'temperature', 'wind_chill', 'heat_index', 'precipitation', 'snow_depth']).issubset(row.keys())):
                 # reformat the date from json
                 date = datetime.datetime.fromisoformat(
                     row['retrieved_at']).strftime(("%Y-%m-%d"))
@@ -167,6 +168,9 @@ def update_bookings(bookings, weather_df, city):
                             row[col] = weather.iloc[-1][col]
                         else:
                             row[col] = weather.iloc[0][col]
+                        if pd.isna(row[col]):
+                            row[col] = None
+
                 else:
                     # print(f"No weather data found for {date}")
                     pass
@@ -254,6 +258,14 @@ def import_weather(csv_dir):
 def main():
     if config.weather_key:
         current_time = str(datetime.datetime.now().isoformat())
+        # Check for environment variables
+        for var in ['CLIMBR_EMAIL', 'CLIMBR_PASS', 'DOCKER_SCRAPER', 'PYTHONUNBUFFERED', 'TZ']:
+            if var not in os.environ:
+                try:
+                    common.import_env(glbs.BOOKINGS_ENV)
+                    break
+                except Exception as e:
+                    print("Warning: ", e)
         bookings = get_bookings()
         last_ottawa = last_updated('Ottawa')
         last_gat = last_updated('Gatineau')
@@ -277,4 +289,16 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as ex:
+        # Send an email alert of error if config.py is setup
+        if os.getenv('CLIMBR_EMAIL') and os.getenv('CLIMBR_PASS') and config.to_notify:
+            common.send_email(os.getenv('CLIMBR_EMAIL'), os.getenv('CLIMBR_PASS'),
+                              config.to_notify, f"[{str(datetime.datetime.now())}] Error in weather.py",
+                              os.path.join(glbs.EMAIL_TEMPLATE_DIR,
+                                           'error_notification'),
+                              "".join(
+                                  traceback.TracebackException.from_exception(ex).format()),
+                              common.get_files(glbs.LOG_DIR, ".*"))
+        raise ex

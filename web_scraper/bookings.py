@@ -10,6 +10,7 @@ import platform
 import os
 import pathlib
 import argparse
+import traceback
 from datetime import datetime
 from time import sleep
 import firebase_admin
@@ -54,8 +55,11 @@ def get_bookings(driver, location, capacity, url, zone=None):
 
         driver.get(url)
         # Click on the current date, find the selected date and verify
-        driver.find_element_by_xpath(
-            "//td[contains(@class,'ui-datepicker-today')]").click()
+        try:
+            driver.find_element_by_xpath(
+                "//td[contains(@class,'ui-datepicker-today')]").click()
+        except Exception:
+            pass
         selected_day = int(driver.find_element_by_xpath(
             "//a[contains(@class,'ui-state-active')]").text)
         if selected_day != current_day:
@@ -74,7 +78,7 @@ def get_bookings(driver, location, capacity, url, zone=None):
         # For Gatineau location, this means 50-75 available spots. Since leaving it NULL will skew, and there is no way to calculate the spots
         # Choosing to set availability 1/2 way between 50 and 75 (max)
         elif 'Available' in availability:
-            availability = 57.5
+            availability = (capacity - 50)/2 + 50
         else:
             try:
                 availability = int(availability.replace('Availability', '').replace(
@@ -124,6 +128,7 @@ def get_bookings(driver, location, capacity, url, zone=None):
         return booking
     except Exception as ex:
         driver.quit()
+        print(f"Unable to get booking information for: {location}")
         raise ex
 
 
@@ -217,18 +222,19 @@ def main():
     try:
         args = cmd_args.init()
         # Variables
-        locations = {'Altitude Kanata': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=6bbc6c242b344368a32f82ed63059fe9&random=605417e3cb2d3&iframeid=&mode=p',
-                                         'capacity': 10},
+        locations = {'Altitude Kanata': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=3b34573ebf36421fb31011f8dc557032&random=60f0fa980c2c2&iframeid=&mode=p',
+                                         'capacity': 100},
                      'Altitude Gatineau': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=a443ee2f171e442b99079327c2ef6fc1&random=5f57c64752a17&iframeid=&mode=p',
-                                           'capacity': 65},
+                                           'capacity': 85},
                      'Coyote Rock Gym': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e99cbc88382e4b269eabe0cf45e111a7&random=5f792b35f0651&iframeid=&mode=p',
-                                         'capacity': 40}}
+                                         'capacity': 80}}
         driver = get_driver()
         for name in args.locations:
             name = name.replace('_', ' ').strip()
             # Altitude made booking adjustments because of COVID-19 spike and restrictions
             # If it's a weekday && before 3 then it's 1 booking, otherwise it's by 3 locations
-            if (name == 'Altitude Gatineau' and datetime.now().weekday() < 5 and datetime.now().hour >= 3) or (name == 'Altitude Gatineau' and datetime.now().weekday() >= 5):
+            # Disabling since Gatineau is back to 1 area booking
+            if False and ((name == 'Altitude Gatineau' and datetime.now().weekday() < 5 and datetime.now().hour >= 3) or (name == 'Altitude Gatineau' and datetime.now().weekday() >= 5)):
                 # Hard coding the values here because this is likely a temp change for ~month
                 annex_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=de8bf81d740342e1a78e87f68ef74135&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b149&iframeid=&mode=p'
                 main_url = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=2fe86937914e4782a90eb92f023ed83a&widget_guid=0769717ed49c4aa2b4549477104a14b1&random=5ff1585a9b078&iframeid=&mode=p'
@@ -253,7 +259,7 @@ def main():
                     common.update_bulk_api(
                         booking, OUTPUT_FILE, 'bookings')
             # Coyote Adjustments for COVID-19 REd ZOne Response - Multi zone like Altitude
-            elif (name == 'Coyote Rock Gym'):
+            elif False and (name == 'Coyote Rock Gym'):
                 zone_1 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=c8f63096988b457891da8442931ebc11&random=60549c429b3d6&iframeid=&mode=p'
                 zone_2 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=0a283f4776ed45eda69e8bf57d59d65f&random=60549c4451ff3&iframeid=&mode=p'
                 zone_3 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=0d52f12114a7498cb92bbbe0d8c28d16&random=60549c45b97f9&iframeid=&mode=p'
@@ -321,5 +327,13 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as ex:
-        # print(ex)
+        # Send an email alert of error if config.py is setup
+        if config.smpt_email and config.smpt_pass and config.to_notify:
+            common.send_email(config.smpt_email, config.smpt_pass,
+                              config.to_notify, f"[{str(datetime.now())}] Error in bookings.py",
+                              os.path.join(glbs.EMAIL_TEMPLATE_DIR,
+                                           'error_notification'),
+                              "".join(
+                                  traceback.TracebackException.from_exception(ex).format()),
+                              common.get_files(glbs.LOG_DIR, ".*"))
         raise ex

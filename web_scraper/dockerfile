@@ -1,6 +1,6 @@
 # Automating the scraping Alitudes booking information based on a cron tab
 FROM ubuntu
-ENV DOCKER_SCRAPER = true
+ENV DOCKER_SCRAPER=true
 ENV TZ=America/Toronto
 ENV DISPLAY=:99
 # Creating working director
@@ -10,9 +10,9 @@ WORKDIR /workspace/web_scraper
 # Install packages and python libraries
 RUN apt-get -y update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y install cron curl python3 python3-pip tzdata wget unzip\
-    && ln -s /usr/bin/python3 /usr/bin/python \ 
-    && ln -s /usr/bin/pip3 /usr/bin/pip \
-    && pip install requests selenium pyyaml elasticsearch pandas firebase_admin\ 
+    && ln -sf /usr/bin/python3 /usr/bin/python \ 
+    && ln -sf /usr/bin/pip3 /usr/bin/pip \
+    && pip install requests selenium pyyaml elasticsearch pandas firebase_admin python-dotenv\ 
     && apt-get update
 # Install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
@@ -26,4 +26,5 @@ RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`cu
 COPY crontab /etc/cron.d/simple-cron
 RUN chmod 0644 /etc/cron.d/simple-cron && crontab /etc/cron.d/simple-cron && touch /workspace/logs/cron.log
 # Start cron and keep running
-CMD cron && tail -f /workspace/logs/cron.log
+# CMD cron && tail -f /workspace/logs/cron.log
+ENTRYPOINT ./entrypoint.sh
