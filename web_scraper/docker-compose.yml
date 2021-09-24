@@ -5,9 +5,11 @@ services:
     container_name: climbr_bookings
     volumes:
       - ../:/workspace/
-    command: cron && tail -f /workspace/logs/cron.log
+    # command: cron && tail -f /workspace/logs/cron.log
     restart: always
     environment:
-      PYTHONUNBUFFERED: 1
+      - PYTHONUNBUFFERED=1
+      - CLIMBR_EMAIL=${CLIMBR_EMAIL}
+      - CLIMBR_PASS=${CLIMBR_PASS}
 
   

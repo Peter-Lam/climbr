@@ -5,7 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.0] New log option and email notification support
+## [2.1.0] [2021-03-19] Updated web scraper for local gyms
+
+### Added 
+- restart scripts for quick reboot of webscraper docker containers
+
+### Changed
+- Updated cron times for gyms, capacity changes and new data for updated covid guidelines
+
+## [2.0.0] [2021-09-23] New log option and email notification support
 
 ### Added
 - New option to create log from template via command line
