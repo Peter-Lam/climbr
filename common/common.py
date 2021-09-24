@@ -2,22 +2,34 @@
 '''
 This module contains common used functions by scripts within Climbing-Tracker
 '''
+import base64
+import codecs
 import json
 import os
 import re
 import requests
+import shutil
+import smtplib
+import ssl
 import sys
 import urllib
 import yaml
 import common.validate as validate
 import firebase_admin
+from datetime import datetime
+from dotenv import load_dotenv
 from firebase_admin import credentials
 from firebase_admin import firestore
 from elasticsearch import Elasticsearch
-from datetime import datetime
+from email import encoders
+from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 import config as config  # noqa
+
 
 def connect_to_es(es_url):
     '''
@@ -50,6 +62,43 @@ def connect_to_firestore():
     firebase_admin.initialize_app(cred)
     db = firestore.client()
     return db
+
+
+def copy_file(src, dest, file_name=''):
+    '''
+    Copy a file from source to destination, if the file already exists, it will add _copy to the filename. Returns path of file destination if successful
+    :param src: source path of file
+    :param dest: destination path
+    :param file_name: Optional way to change filename
+    :type src: str
+    :type dest: str
+    :type file_name: str
+    :return: file destination
+    :rtype: str
+    :raises Exception: path does not exist
+    '''
+    try:
+        # Keeping track of duplicate files, and incrementing filename as needed
+        duplicate = 0
+        # Checking if paths exist
+        if not os.path.exists(src) or not os.path.exists(dest):
+            raise Exception(f"The file {src}, does not exist")
+        else:
+            # Set the destination path with filename if given otherwise use the source name
+            dest_path = f"{os.path.join(dest, file_name)}" if file_name else os.path.join(
+                dest, os.path.basename(src))
+            # If the file already exists, then append _copy to the end
+            while os.path.isfile(dest_path):
+                file, ext = os.path.splitext(os.path.basename(dest_path))
+                dest_path = os.path.join(os.path.dirname(
+                    dest_path), f"{file}_copy{ext}")
+                print(
+                    f"Warning: `{dest_path}` already exists, creating `{dest_path}` instead...")
+            # Copy file to destination with new name if file_name is not empty
+            shutil.copyfile(src, dest_path)
+            return dest_path
+    except Exception as ex:
+        raise ex
 
 
 def create_index(es_url, index_name, mapping_path, silent=False, force=False):
@@ -403,6 +452,23 @@ def get_files(path, pattern, recursive=False):
         raise(ex)
 
 
+def import_env(path):
+    '''
+    Get and set environment variables from an .env file
+    :param path: path to .env file
+    :type path: str
+    :raises Exception: Unable to find .env file at '{path}'.
+    '''
+    try:
+        # Load environment variables from given path
+        if os.path.isfile(path):
+            load_dotenv(path)
+        else:
+            raise Exception(f"Unable to find .env file at '{path}'.")
+    except Exception as ex:
+        raise ex
+
+
 def import_kibana(kibana_url, ndjson, silent=False):
     '''
     Import all Kibana objects using ndjson and api command
@@ -475,7 +541,7 @@ def load_json(path):
 
 def load_yaml(path):
     '''
-    Reads the configuration file and returns the object
+    Reads a yaml climbing log file and returns the object
     : param path: Path to yaml
     : type path: str
     : raises Exception: Yaml path does not exist
@@ -508,6 +574,70 @@ def load_file(path):
             return file.read()
     except Exception as ex:
         raise Exception(f"Unable to read file: {path}")
+
+
+def send_email(sender, sender_pass, receiver, subject, template_dir, message, attachments=None):
+    '''
+    Send a email to a recipient with a html formatted message. Used to automate error notification
+    :param sender: senders email
+    :param sender_pass: senders password used to send email on behalf of user
+    :param receiver: destination email
+    :param message: message to be included in the email, in html format
+    :param attachments: paths to attachments
+    :type sender: str
+    :type sender_pass: str
+    :type receiver: str
+    :type message: str
+    :type attachments: list of str
+    '''
+    try:
+        # Verifying emails, will throw Exception if not valid
+        validate.email(sender)
+        validate.email(receiver)
+        # Create a secure SSL context
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as server:
+            # Logging in
+            server.login(sender, sender_pass)
+            # Create email with formatting
+            msg = MIMEMultipart("alternative")
+            # Email Params
+            msg['Subject'] = subject
+            msg['From'] = sender
+            msg['To'] = receiver
+
+            # # Read HTML and replace filler text with message
+            template = codecs.open(
+                get_files(template_dir, ".*\.html$", recursive=False).pop())
+            template = str(template.read()).replace("REPLACE_ME", message).replace(
+                "DATETIME_HERE", str(datetime.now().isoformat()))
+            # Embedding all relating images
+            images = get_files(os.path.join(template_dir, 'images'), ".*")
+            for img in images:
+                filename, __ = os.path.splitext(os.path.basename(img))
+                msg.attach(MIMEText(template, "html"))
+                fp = open(img, "rb")
+                image = MIMEImage(fp.read())
+                fp.close()
+                image.add_header('Content-ID', f'<{filename}>')
+                msg.attach(image)
+            # If there are attachments, then add them to the email
+            if attachments:
+                for filepath in attachments:
+                    filename = os.path.basename(filepath)
+                    # Open the file as binary mode
+                    attach_file = open(filepath, 'rb')
+                    payload = MIMEBase('application', 'octate-stream')
+                    payload.set_payload((attach_file).read())
+                    encoders.encode_base64(payload)  # encode the attachment
+                    # add payload header with filename
+                    payload.add_header('Content-Decomposition',
+                                       f"attachment; filename= {filename}")
+                    msg.attach(payload)
+            # Send email
+            server.sendmail(sender, receiver, msg.as_string())
+        print(f"'{subject}' was sent to : {receiver}")
+    except Exception as ex:
+        raise Exception(f"Unable to send email to {receiver}:\n{ex}")
 
 
 def str_to_time(string):
@@ -680,8 +810,7 @@ def write_json(data, output_path):
     '''
 
     try:
-        file_perm = 'a' if os.path.isfile(output_path) else 'w'
-        with open(output_path, file_perm) as file:
+        with open(output_path, w) as file:
             json.dump(data, file, indent=4)
     except Exception as ex:
         raise ex
@@ -702,5 +831,39 @@ def write_log(log, output_path):
         file_perm = 'a' if os.path.isfile(output_path) else 'w'
         with open(output_path, file_perm) as file:
             file.write(log + '\n')
+    except Exception as ex:
+        raise ex
+
+
+def write_yaml(data, output_path, force=False, silent=False):
+    '''
+    Reads values and writes into output file path,
+    if the output path already exists, will overwrite if force is True
+    : param data: data to add write to yaml
+    : param output_path: Output path including filename.yaml
+    : type data: list of dict
+    : type output_path: path
+    '''
+
+    try:
+        if os.path.exists(output_path):
+            if force:
+                if not silent:
+                    print(f"Overwriting existing file: '{output_path}'")
+            else:
+                valid_input = False
+                while not valid_input:
+                    value = input(
+                        f"The following file, '{output_path}', already exists. Would you like you override the file? All data will be deleted. (y/N)\t").lower()
+                    if value == 'y':
+                        print(f"Overwriting existing file: '{output_path}'")
+                        valid_input = True
+                    if value == 'n':
+                        print(
+                            f"Not overwriting. Please try again with a unique filename.")
+                        sys.exit(1)
+        with open(output_path, 'w') as f:
+            data = yaml.safe_dump(data, f, sort_keys=False,
+                                  default_flow_style=False)
     except Exception as ex:
         raise ex

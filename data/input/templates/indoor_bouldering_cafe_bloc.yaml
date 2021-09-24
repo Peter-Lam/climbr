@@ -1,7 +1,5 @@
 --- 
-location: Altitude Kanata
-# some options: indoor bouldering, outdoor bouldering, indoor lead, outdoor lead, auto-belay, speed
-# multiple styles can be added to a session (indoor bouldering, indoor lead)
+location: Cafe Bloc
 style: indoor bouldering
 description:
   A brief description of the climbing session
@@ -14,23 +12,13 @@ time:
 climbers: 
   - Person A
   - Person B
-# You can leave this blank if not injured
 injury: 
   isTrue: false
   description: Add a description of injury here
-# Links to any media (images, videos) related to this climbing session
 media:
   - URL_to_image
   - URL_to_video
-# Session counter is used to track the TOTAL problems/routes climbed in a session
 counter:
-  # Enter a grade, it can be format you want as long as you are consistent (V Scale, Font, Dankyu, ungraded ...)
-  # This template shows range between two grades since that's how Altitude grades problems, however this can be changed for your gym
-  # ---- Terminology ----
-  # Onsight - Completing a problem on your first try - without beta from others (typically not used indoors, so you can remove this section if you want)
-  # Flash - Completing a problem on your first try, beta from others is allowed
-  # Redpoint - Completing a problem for the first time but with multiple attempts (ie. Finishing V3/V4 after 5 attempts)
-  # Attempts - Trying a problem
   - grade: VB
     flash: 0
     redpoint: 0
@@ -82,32 +70,33 @@ counter:
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: V9+
+  - grade: V9
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-  - grade: ungraded
+  - grade: V10
     flash: 0
     redpoint: 0
     repeat: 0
     attempts: 0
-# This section is for logging individual climbs, can be useful for tracking projects
+  - grade: V11
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V12
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
 projects:
-  # If you are projecting a problem, make sure to name it the same every time
   - name: Describe the problem or give it a name
-    # Some suggested options: slab / left overhang / comp wall / cave / right overhang / slabish
     location: slab
-    # Some suggested styles: [compression, coordination, competition, crimp, dynamic, overhang, power]
-    # Each climb can have multiple styles
     style:
         - dynamic
         - overhang
-    # Enter a grade, it can be format you want as long as you are consistent (V Scale, Font, Dankyu, ungraded ...)
     grade: competition
-    # Note: Since this is tracking 1 specific problem, it is not possible to flash AND redpoint AND onsight the same problem
-    # It's also not possible to onsight, flash, or redpoint multiple times, instead uses 'repeat'
-    onsight: 0
     flash: 0
     redpoint: 0
     repeat: 0
@@ -115,11 +104,9 @@ projects:
     notes:
       Any notes about this climb
       It can also spawn many lines
-    # Links to any media specific for this climb
     media:
       - URL_to_image
       - URL_to_video
-    # If the problem has already been reset/ or will be by the next session
     reset: false
   # Multiple climbs can be logged here, just copy and paste the format
   - name: Second Problem

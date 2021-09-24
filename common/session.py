@@ -8,6 +8,7 @@ import pytz
 import common.constants as constants
 import common.common as common
 import common.validate as validate
+import re
 from timezonefinder import TimezoneFinder
 # Classes
 
@@ -245,7 +246,8 @@ class Session:
             self.end_minute = session_info['time']['end'].strftime('%M')
             self.injury = session_info['injury']
             self.location_name = session_info['location']
-            self.media = session_info['media']
+            self.media = session_info['media'] if 'media' in session_info.keys(
+            ) else None
             self.shoes = session_info['shoes'] if 'shoes' in session_info.keys(
             ) else None
             self.start_time = str(session_info['time']['start'].time())
@@ -308,8 +310,7 @@ class Session:
                         'date': 'date' in session_keys,
                         'time': 'time' in session_keys,
                         'start_time': 'time' in session_keys and 'start' in session_log['time'].keys(),
-                        'end_time': 'time' in session_keys and 'end' in session_log['time'].keys(),
-                        'counter': 'counter' in session_keys}
+                        'end_time': 'time' in session_keys and 'end' in session_log['time'].keys()}
             missing = []
             # If not all values are present, then raise an error
             if not (all(list(required.values()))):
@@ -363,8 +364,9 @@ class Session:
                     pass
                 else:
                     valid_media = False
-            valid_counter = type(session_log['counter']) == list
-            if valid_counter:
+            valid_counter = type(
+                session_log['counter']) == list if 'counter' in session_keys else True
+            if 'counter' in session_keys and valid_counter:
                 for counter in session_log['counter']:
                     min_set = ['grade', 'flash',
                                'redpoint', 'repeat', 'attempts']
@@ -461,10 +463,19 @@ class Session:
                     f"No location found for {session_log['location']}. Current supported locations include: {get_location_names()}")
             # Split the style field by commas and turn it into a list instead
             #  This is because style could be multiple fields ie. indoor bouldering, indoor lead
-            session_log['style'] = session_log['style'].split(',')
+            style_list = session_log['style'].split(',')
+            session_log['style'] = [style.strip(' ') for style in style_list]
+
+            # Splitting shoe field for multiple shoes in a session
+            if 'shoes' in session_log.keys():
+                shoe_list = re.split("[,/]", session_log['shoes'])
+                session_log['shoes'] = [shoe.strip(' ') for shoe in shoe_list]
+
             # Compare the counter list with the location's grading scale
             # If any counters are missing, add to it and just defult to 0 for all categories
             counted_grades = []
+            if 'counter' not in session_log.keys():
+                session_log['counter'] = []
             for counter in session_log['counter']:
                 counted_grades.append(counter['grade'])
             missing_counters = list(
@@ -690,8 +701,11 @@ _LOCATIONS = [Location('Altitude Kanata', '0E5, 501 Palladium Dr, Kanata, ON K2V
                        75.617274, constants.V_SCALE, True),
               Location('Coyote Rock Gym', '1737B St Laurent Blvd, Ottawa, ON K1G 3V4', 45.406130, -75.625500, ['White', 'Orange', 'Red',
                                                                                                                'Blue', 'Green', 'Purple', 'Black', 'Ungraded'], False),
-              Location('Klimat Wakefield', '911-A Chemin Riverside, Wakefield, QC J0X 3G0', 45.648430, -75.927340, constants.V_SCALE, False)]
-
+              Location('Klimat Wakefield', '911-A Chemin Riverside, Wakefield, QC J0X 3G0',
+                       45.648430, -75.927340, constants.V_SCALE, False),
+              Location('Up the Bloc', '1224 Dundas St E #28, Mississauga, ON L4Y 4A2', 43.6037512, -79.5866032,
+                       ['White', 'Yellow', 'Orange', 'Green', 'Blue', 'Purple', 'Red', 'Black', 'Pink'], False),
+              Location('Cafe Bloc', '1209-1211 St Laurent Blvd, Montreal, Quebec H2X 2S6', 45.5096931, -73.5652951, constants.V_SCALE, False)]
 # Functions
 
 

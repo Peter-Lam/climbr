@@ -258,6 +258,7 @@ def main():
                 zone_2 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=0a283f4776ed45eda69e8bf57d59d65f&random=60549c4451ff3&iframeid=&mode=p'
                 zone_3 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=0d52f12114a7498cb92bbbe0d8c28d16&random=60549c45b97f9&iframeid=&mode=p'
                 zone_4 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=94c9afedbbdd4d7c8f15f4af863fba39&random=60549c470309e&iframeid=&mode=p'
+                zone_5 = 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=f9e486d095fa47dc87a45fcc57b8daab&random=6055fc64e1b8e&iframeid=&mode=p'
                 zone_1_booking = get_bookings(
                     driver, name, 10, zone_1, zone='Zone 1 - All topropes on the Blue, Green, and Blue Island walls')
                 zone_2_booking = get_bookings(
@@ -266,20 +267,24 @@ def main():
                     driver, name, 10, zone_3, zone='Zone 3 - Boulder and Upstairs Caves')
                 zone_4_booking = get_bookings(
                     driver, name, 10, zone_4, zone='Zone 4 - North Wall Area')
-
+                zone_5_booking = get_bookings(
+                    driver, name, 2, zone_5, zone='Zone 5 - Fitness Room')
                 # Combine the two booking information
                 coyote_combined_booking = zone_1_booking.copy()
                 coyote_combined_booking['availability'] += zone_2_booking['availability'] + \
                     zone_3_booking['availability'] + \
-                    zone_4_booking['availability']
+                    zone_4_booking['availability'] + \
+                    zone_5_booking['availability']
                 coyote_combined_booking['reserved_spots'] += zone_2_booking['reserved_spots'] + \
                     zone_3_booking['reserved_spots'] + \
-                    zone_4_booking['reserved_spots']
+                    zone_4_booking['reserved_spots'] + \
+                    zone_5_booking['reserved_spots']
                 coyote_combined_booking['capacity'] += zone_2_booking['capacity'] + \
-                    zone_3_booking['capacity'] + zone_4_booking['capacity']
+                    zone_3_booking['capacity'] + \
+                    zone_4_booking['capacity'] + zone_5_booking['capacity']
                 coyote_combined_booking['zone'] = None
                 # Log the data for zones - incase we want to visualize, and a combined data for general purposes
-                for booking in [zone_1_booking, zone_2_booking, zone_3_booking, zone_4_booking, coyote_combined_booking]:
+                for booking in [zone_1_booking, zone_2_booking, zone_3_booking, zone_4_booking, zone_5_booking, coyote_combined_booking]:
                     common.update_bulk_api(
                         booking, OUTPUT_FILE, 'bookings')
             # Otherwise just gather bookings normally

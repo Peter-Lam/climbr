@@ -3,6 +3,7 @@
 Parsing arguments for climb.py
 '''
 import argparse
+import datetime
 import sys
 import os
 
@@ -35,9 +36,27 @@ def init():
         general_option.add_argument('-h', '--help', action='help',
                                     help='show this help message and exit')
         general_option.add_argument('--version', action='version',
-                                    version='%(prog)s 0.1.0')
+                                    version='%(prog)s 1.3.0')
+        # Log Command
+        log_cmd = subparsers.add_parser(
+            'log', parents=[parent_parser], add_help=False, help='Log a climbing session', formatter_class=custom_formatter)
+        log_cmd.add_argument('-l', '--location',
+                             dest='climbing_location',
+                             type=str.lower,
+                             metavar='location',
+                             help='Indoor climbing location. For locations with multiple words, wrap it in quotes.')
+        log_cmd.add_argument('-o',
+                             dest='export_name',
+                             metavar='filename',
+                             help='Change the default filename name for climbing log (Default: YYYY-MM-DD.yaml)')
+        log_cmd.add_argument('-d', '--date',
+                             type=lambda s: datetime.datetime.strptime(
+                                 s, '%Y-%m-%d').date(),
+                             dest='log_date',
+                             metavar='date',
+                             help='Enter the date of the climbing log (YYYY-MM-DD)(Default: Change it manually)')
         # Init Command
-        update_cmd = subparsers.add_parser(
+        init_cmd = subparsers.add_parser(
             'init', parents=[parent_parser], add_help=False, help='Initialize and setup climbr visualizations', formatter_class=custom_formatter)
         # Update command
         update_cmd = subparsers.add_parser(
@@ -66,12 +85,6 @@ def init():
         if (args.command == None):
             parser.print_help(sys.stderr)
             sys.exit(0)
-        # Checking validity of paths when using 'log' command
-        if args.command == 'log':
-            for path in args.log_path:
-                if not os.path.isfile(path):
-                    parser.error(
-                        f"Unable to log climbing entry, the file '{path}' does not exist!")
         return args
     except Exception as ex:
         raise ex
