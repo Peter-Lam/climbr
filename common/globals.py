@@ -54,7 +54,7 @@ _hogs_back = os.path.join(
     TEMPLATE_DIR, 'outdoor_bouldering_personal.yaml') if os.path.exists(os.path.join(TEMPLATE_DIR, 'outdoor_bouldering_personal.yaml')) else os.path.join(TEMPLATE_DIR, 'outdoor_bouldering.yaml')
 _default = os.path.join(
     TEMPLATE_DIR, 'indoor_bouldering_personal.yaml') if os.path.exists(os.path.join(TEMPLATE_DIR, 'indoor_bouldering_personal.yaml')) else os.path.join(TEMPLATE_DIR, 'indoor_bouldering.yaml')
-
+_default = _altitude_kanata
 GYM_TEMPLATE = {'kanata': _altitude_kanata,
                 'altitude kanata': _altitude_kanata,
                 'gatineau': _altitude_gatineau,
