@@ -27,4 +27,4 @@ COPY crontab /etc/cron.d/simple-cron
 RUN chmod 0644 /etc/cron.d/simple-cron && crontab /etc/cron.d/simple-cron && touch /workspace/logs/cron.log
 # Start cron and keep running
 # CMD cron && tail -f /workspace/logs/cron.log
-ENTRYPOINT ./entrypoint.sh
+ENTRYPOINT ["/bin/bash", "./entrypoint.sh"]
