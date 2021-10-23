@@ -1,6 +1,8 @@
 import os
-import common.globals as glbs
+
 import common.common as common
+import common.globals as glbs
+
 # API key for https://www.visualcrossing.com/
 # Used for weather data on bookings
 # Can be left empty if features are not needed
