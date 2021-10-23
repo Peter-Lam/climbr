@@ -4,6 +4,8 @@
 **/.vscode/
 **/dev
 **personal.yaml
+poetry.lock
+
 # User specific files
 **.log
 data/input/*.yaml

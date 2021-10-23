@@ -6,27 +6,28 @@
 
 import os
 import sys
-import pandas as pd
 from datetime import datetime
-BASE_DIR = os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__))))
+
+import pandas as pd
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(BASE_DIR)
-import common.globals as glbs  # noqa
 import common.common as common  # noqa
+import common.globals as glbs  # noqa
 
 
 def get_bookings():
-    '''
+    """
     Retreive booking data and return the data
-    '''
-    file = os.path.join(glbs.ES_BULK_DATA, 'bookings.json')
+    """
+    file = os.path.join(glbs.ES_BULK_DATA, "bookings.json")
     return common.load_bulk_json(file)
 
 
 def update():
-    '''
+    """
     Edit this function to update the existing json file
-    '''
+    """
     # # Get data
     # bookings = get_bookings()
     # for row in bookings:

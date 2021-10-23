@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.4] [2021-10-22] #29 Adding Poetry and Nox
+
+### Added
+
+- pyproject.toml for installing dependencies for Poetry
+- noxfile.py for running nox linters and safety checks
+
+### Changed
+
+- All python files to comply with flake8 linting standards
+- climbr.py by separating commands into their own functions
 ## [3.0.3] [2021-10-24] Updated Crontab & Webscraper for October 25
 
 ### Changed
@@ -36,6 +47,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated cron times for gyms, capacity changes and new data for updated covid guidelines
 
+----
+
 ## [2.0.0] [2021-09-23] New log option and email notification support
 
 ### Added
@@ -54,6 +67,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - When entering multiple climbing styles, each style is now stripped on whitespace
 - Counters are no longer a requirement in climbing logs (allows for logging visits or hangout days)
 - Corrected the path thats displayed to user when uploading to Kibana 
+
+----
 
 ## [1.3.0] [2021-03-19] Updated web scraper for local gyms
 
@@ -78,10 +93,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - requirements.txt file for firebase_admin dependancu
 - config.py to add an option for Firestore connections
 - common.py to add a firestore connection function
+
 ## [1.1.0] [2020-12-05] Added Jupyter Notebook with corresponding scripts to gather weather data
  Python Notebook added, Weather is now being tracked, and booking crontab has been updated to reflect recent Coyote time changes
 
 ### Added
+
 - weather.py to gather weather data for Kanata and Gatineau
 - Python notebook to analyze online booking trends associated with weather
 - Python notebook to analyze common words within session logs
@@ -90,18 +107,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Config file for API key for https://www.visualcrossing.com/
 
 ### Changed
+
 - crontab with new booking times and scheduled API calls for weather
 - bookings.json with more data
 - requirements.txt
 
-# Fixed
+### Fixed
+
 - Templates had 'V5/6' instead of 'V5/V6'
 
 ## [1.0.1] [2020-11-06] Web scraper updated
 
-### Added 
+### Added
+
 - New bookings data
 
 ### Changed
+
 - crontab to track Altitude Kanata, and Coyote (reopens Oct 7th)
 - Docker-compse now auto restarts when closed 
