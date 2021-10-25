@@ -223,7 +223,7 @@ def main():
         args = cmd_args.init()
         # Variables
         locations = {'Altitude Kanata': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=3b34573ebf36421fb31011f8dc557032&random=60f0fa980c2c2&iframeid=&mode=p',
-                                         'capacity': 100},
+                                         'capacity': 250},
                      'Altitude Gatineau': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=a443ee2f171e442b99079327c2ef6fc1&random=5f57c64752a17&iframeid=&mode=p',
                                            'capacity': 85},
                      'Coyote Rock Gym': {'url': 'https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e99cbc88382e4b269eabe0cf45e111a7&random=5f792b35f0651&iframeid=&mode=p',
@@ -315,8 +315,11 @@ def main():
             # Uploading data into Elasticsearch
             common.upload_to_es(es_url, OUTPUT_FILE, silent=True)
         except Exception as ex:
-            print(
-                f"WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information \n{ex}")
+            if "index_not_found_exception: no such index [bookings]" in ex:
+                print( f"WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information. no such index [bookings]")
+            else:
+                print(
+                    f"WARNING: Unable to update bookings to Elasticsearch. Please use 'climb.py update' to manually update the information \n{ex}")
         print(
             f"[{str(datetime.now().isoformat())}] {args.locations} Session info successfully retrieved and added to '{OUTPUT_FILE}', view results on port 5601")
     except Exception as ex:

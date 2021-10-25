@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.3] [2021-10-24] Updated Crontab & Webscraper for October 25
+
+### Changed
+
+- crontab to removed coyote rock gym times since they will no longer use a reservation system
+- bookings.py to increase Altitude Kanata capacity to 250
+
+## [3.0.2] [2021-10-17] Bugfix: reduced logging output
+
+### Changed
+
+- bookings.py to output fell exception only when it doesn't contain: "no such index [bookings]" to reduce the 5k line log output
+
 ## [3.0.1] [2021-10-03] Bugfix: Webscraper container would not start
 
 ### Fixed
