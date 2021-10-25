@@ -17,6 +17,12 @@ OUTPUT_DIR = os.path.join(DATA_DIR, "output")
 TREND_DIR = os.path.join(DATA_DIR, "trend_analysis")
 IMAGE_DIR = os.path.join(BASE_DIR, "images")
 NOTEBOOK_DIR = os.path.join(IMAGE_DIR, "notebook")
+# Create directories not tracked by git
+if not os.path.exists(OUTPUT_DIR):
+    os.mkdir(OUTPUT_DIR)
+if not os.path.exists(LOG_DIR):
+    os.mkdir(LOG_DIR)
+
 # Elasticsearch
 ES_URL = "http://localhost:9200"
 ES_URL_DOCKER = "http://host.docker.internal:9200"
