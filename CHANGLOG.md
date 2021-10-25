@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.5] [2021-10-25] #31 Create missing untracked folders
+
+### Fixed
+
+- globals.py to create "logs" and "output" folders if ti doesn't exist in the project
+
 ## [3.0.4] [2021-10-22] #29 Adding Poetry and Nox
 
 ### Added
@@ -16,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - All python files to comply with flake8 linting standards
 - climbr.py by separating commands into their own functions
+
 ## [3.0.3] [2021-10-24] Updated Crontab & Webscraper for October 25
 
 ### Changed
