@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-This module contains classes and functions that relate to climbing sessions and it's data manipulation
-"""
+"""This module contains classes and functions that relate to climbing sessions."""
+
 import datetime
 import re
 
@@ -17,7 +16,10 @@ import common.validate as validate
 
 class Counter:
     """
-    A counter that tracks a specific grade's stats: Onsight, Flash, Redpoint, Repeat, Attempts
+    A counter that tracks a specific grade's stats.
+
+    Onsight, Flash, Redpoint, Repeat, Attempts.
+
     :param grade: The grade of the problem (ie V4/V5)
     :param flash: Number of flashes
     :param redpoint: Number of redpoints
@@ -31,6 +33,7 @@ class Counter:
     """
 
     def __init__(self, grade, flash, redpoint, repeat, attempts, onsight=None):
+        """Create counter object."""
         try:
             # TO DO: Move validation of counters here
             self.grade = grade
@@ -48,7 +51,8 @@ class Counter:
 
     def toDict(self):
         """
-        Return the object as a dictionary
+        Return the object as a dictionary.
+
         :return: Problem dictionary
         :rtype: dict
         """
@@ -71,8 +75,11 @@ class Counter:
 
 class Project(Counter):
     """
-    A specifc problem/route that is being worked on for many sessions. Identified by the 'name', a Project
-    is a subclass of Counter with the addition of fields such as style, media, notes, location
+    A specifc problem/route that is being worked on for many sessions.
+
+    Identified by the 'name', a Project is a subclass of Counter with
+    the addition of fields such as style, media, notes, location.
+
     :param name: The identifying name of the project
     :param location: The location of the problem (ie. Quarry)
     :param style: The style of problem (ie. Dyno)
@@ -101,6 +108,7 @@ class Project(Counter):
         onsight=None,
         reset=False,
     ):
+        """Create project object."""
         try:
             # TO DO: Move validation of projects here
             self.name = name
@@ -124,7 +132,8 @@ class Project(Counter):
 
     def set_is_last(self, is_last):
         """
-        Assign new value for is_last
+        Assign new value for is_last.
+
         :param is_last: If it's the last known attempt on this project
         :type is_last: bool
         """
@@ -133,7 +142,8 @@ class Project(Counter):
                 self.is_last = is_last
             else:
                 raise Exception(
-                    "The parameter is_last expects a bool input, got {type(is_last)} instead"
+                    "The parameter is_last expects a bool input,"
+                    f" got {type(is_last)} instead"
                 )
         except Exception as ex:
             raise ex
@@ -142,7 +152,10 @@ class Project(Counter):
         self, flash, redpoint, repeat, attempts, completed, total, onsight=None
     ):
         """
-        Assigning new values to the total counter of a project. This counter is the current running total of this specific project
+        Assign new values to the total counter of a project.
+
+        This counter is the current running total of this specific project.
+
         :param flash: Total number of flashes
         :param redpoint: Total number of redpoints
         :param attempts: Total number of attempts
@@ -163,8 +176,9 @@ class Project(Counter):
 
     def get_counters(self):
         """
-        Return a list of counters for the current project
-        :return: list of the counters for a given project [onsight, flash, redpoint, repeat, attempts]
+        Return a list of counters for the current project.
+
+        :return: list of the counters for a given project
         :rtype: list
         """
         return [
@@ -179,8 +193,9 @@ class Project(Counter):
 
     def get_total_counter(self):
         """
-        Return a list of the total/running counters of the current project
-        :return: list of the running total counters for a given project [onsight, flash, redpoint, repeat, attempts]
+        Return a list of the total/running counters of the current project.
+
+        :return: list of the running total counters for a given project
         :rtype: list
         """
         return [
@@ -195,7 +210,8 @@ class Project(Counter):
 
     def toDict(self):
         """
-        Return the object as a dictionary
+        Return the object as a dictionary.
+
         :return: Problem dictionary
         :rtype: dict
         """
@@ -234,7 +250,8 @@ class Project(Counter):
 
 class Location:
     """
-    A location object that contains basic information about a climbing location
+    A location object that contains basic information about a climbing location.
+
     :param name: The name of the location
     :param address: Full address of the location
     :param lat: Latitude
@@ -250,6 +267,7 @@ class Location:
     """
 
     def __init__(self, name, address, lat, lon, grading, is_outdoor):
+        """Create a climbing location object."""
         try:
             self.name = name
             self.address = address
@@ -263,12 +281,14 @@ class Location:
 
 class Session:
     """
-    A climbing session object that contains information from user logs
+    A climbing session object that contains information from user logs.
+
     :param session_log: A YAML path containing information on a climbing session
     :type: str
     """
 
     def __init__(self, session_log):
+        """Create initial climbing session object."""
         try:
             # Validate, normalize and add additional information to session log data
             validated = self.__is_valid(common.load_yaml(session_log))
@@ -313,7 +333,8 @@ class Session:
             self.total_problems = session_info["total_problems"]
             if self.Location.is_outdoor:
                 self.onsight = session_info["onsight"]
-            # If the session location is at Altitude Kanata, then track kids VS adult problems
+            # If the session location is at Altitude Kanata,
+            # then track kids VS adult problems
             if self.Location.lat == 45.297970 and self.Location.lon == -75.911150:
                 self.flash_kids = session_info["flash_kids"]
                 self.redpoint_kids = session_info["redpoint_kids"]
@@ -336,8 +357,11 @@ class Session:
 
     def __is_valid(self, session_log):
         """
-        Validating if a session_log has all minimal required fields. Returning the session object if valid
-        :param session_log: a session_log that contains a dict of session information and stats
+        Validate if a session_log has all minimal required fields.
+
+        Returning the session object if valid/
+
+        :param session_log: contains a dict of session information and stats
         :type session_log: dict
         :raises Exception: Climbing session does not meet minimal required fields
         :return: session
@@ -376,7 +400,7 @@ class Session:
             if type(session_log["date"]) == datetime.date:
                 try:
                     validate.date(str(session_log["date"]))
-                except Exception as ex:
+                except Exception:
                     valid_date = False
             else:
                 valid_date = False
@@ -416,7 +440,7 @@ class Session:
                         if type(item) != str:
                             valid_media = False
                             break
-                elif type(session_log["media"]) is type(None):
+                elif isinstance(session_log["media"], None):
                     pass
                 else:
                     valid_media = False
@@ -471,7 +495,8 @@ class Session:
                                 type(climb["attempts"]) == int
                                 and climb["attempts"] >= 0,
                             ]
-                            # For projects, Flash, Redpoint and Onsighting are mutually exclusive
+                            # For projects, Flash, Redpoint and Onsighting
+                            # are mutually exclusive
                             if climb["flash"] and climb["redpoint"]:
                                 climb_fields.append(False)
                             if "onsight" in climb.keys():
@@ -522,7 +547,8 @@ class Session:
 
     def __normalize(self, session_log):
         """
-        Normalize and fill missing fields in a session log
+        Normalize and fill missing fields in a session log.
+
         :param session_log: climbing session object
         :type session_log: dict
         :return: normalized session object
@@ -534,10 +560,11 @@ class Session:
 
             if not location:
                 raise Exception(
-                    f"No location found for {session_log['location']}. Current supported locations include: {get_location_names()}"
+                    f"No location found for {session_log['location']}."
+                    f" Current supported locations include: {get_location_names()}"
                 )
             # Split the style field by commas and turn it into a list instead
-            #  This is because style could be multiple fields ie. indoor bouldering, indoor lead
+            # This is because style could be multiple fields
             style_list = session_log["style"].split(",")
             session_log["style"] = [style.strip(" ") for style in style_list]
 
@@ -547,7 +574,7 @@ class Session:
                 session_log["shoes"] = [shoe.strip(" ") for shoe in shoe_list]
 
             # Compare the counter list with the location's grading scale
-            # If any counters are missing, add to it and just defult to 0 for all categories
+            # Add missing counters and just defult to 0 for all categories
             counted_grades = []
             if "counter" not in session_log.keys():
                 session_log["counter"] = []
@@ -572,7 +599,7 @@ class Session:
             if "injury" not in available_fields:
                 session_log["injury"] = {"isTrue": False, "description": None}
             elif (
-                session_log["injury"]["isTrue"] == False
+                not session_log["injury"]["isTrue"]
                 and session_log["injury"]["description"]
                 == "Add a description of injury here"
             ):
@@ -624,10 +651,14 @@ class Session:
 
     def __enchance(self, session_log):
         """
-        Adding coordinates, climbing duration and other information for data analysis
+        Adding additional values to the session.
+
+        Coordinates, climbing duration and other information for data analysis.
+        Additions include: og duration, lon, lat values, and additional counters.
+
         :param session_log: climbing session object
         :type session_log: dict
-        :return: enhanced session log with duration, lon, lat values, and additional counters added
+        :return: enhanced session l
         :rtype: dict
         """
         try:
@@ -692,7 +723,8 @@ class Session:
 
     def toDict(self):
         """
-        Return the object as a dictionary
+        Return the object as a dictionary.
+
         :return: Session dictionary
         :rtype: dict
         """
@@ -749,7 +781,8 @@ class Session:
 
     def getProjects(self):
         """
-        Return the projects as a dictionary
+        Return the projects as a dictionary.
+
         :return: Project dictionary
         :rtype: dict
         """
@@ -779,7 +812,8 @@ class Session:
 
     def getCounters(self):
         """
-        Return the climbing counters as a dictionary with additional session information
+        Return the climbing counters as a dict with additional session information.
+
         :return: Counter dictionary
         :rtype: list of dict
         """
@@ -923,7 +957,10 @@ _LOCATIONS = [
 
 def get_location(name):
     """
-    Returns location object based on a name parameter. If no location is found, will return None
+    Return location object based on a name parameter.
+
+    If no location is found, return None.
+
     :param name: name of location
     :type name: str
     :return: location information
@@ -940,7 +977,8 @@ def get_location(name):
 
 def get_location_names():
     """
-    Retrieves a list of location names
+    Retrieve a list of location names.
+
     :return: location names
     :rtype: list
     """
@@ -955,7 +993,8 @@ def get_location_names():
 
 def reformat_counter(counters):
     """
-    Converting the list of counters dicts to objects
+    Convert the list of counters dicts to objects.
+
     :param counters: list of counter logs
     :type: list of dict
     :return: Converted dicts to Counters
@@ -992,7 +1031,8 @@ def reformat_counter(counters):
 
 def reformat_projects(projects):
     """
-    Converting the list of projects dicts to objects
+    Convert the list of projects dicts to objects.
+
     :param projects: list of projects
     :type: list of dict
     :return: Coverted dicts to Projects

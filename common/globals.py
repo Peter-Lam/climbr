@@ -1,8 +1,6 @@
-"""
-This module contains global variables used by various scripts within this project
-"""
+"""This module contains global variables used by various scripts within this project."""
+
 import os
-import urllib.parse
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG_DIR = os.path.join(BASE_DIR, "logs")
@@ -37,7 +35,7 @@ KIBANA_URL_DOCKER = "http://host.docker.internal:5601"
 WEATHER_DIR = os.path.join(DATA_DIR, "weather")
 OTTAWA_WEATHER = os.path.join(WEATHER_DIR, "ottawa_weather.csv")
 GATINEAU_WEATHER = os.path.join(WEATHER_DIR, "gatineau_weather.csv")
-WEATHER_URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history"
+WEATHER_URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history"  # noqa
 # Generated ENV File
 BOOKINGS_ENV = os.path.join(WEB_SCRAPER_DIR, "bookings.env")
 # Paths to default templates for climbing logs
