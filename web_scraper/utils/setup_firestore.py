@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
-# --------------------------------
-# A onetime startup script to push ALL local data on bookings to a new FireStore database
-# --------------------------------
+"""A onetime startup script to push ALL local data to a new FireStore database."""
 
 import os
 import sys
 
-import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import firestore
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(BASE_DIR)
@@ -19,7 +16,8 @@ import config as config  # noqa
 
 def create_locations(db):
     """
-    Create location collection with the 3 local gyms
+    Create location collection with the 3 local gyms.
+
     :param db: firestore database
     :return: Dict of location references
     :rtype: dict of ref
@@ -116,7 +114,8 @@ def create_locations(db):
             location_dict[location["name"]] = doc_ref
             doc_ref.set(location)
             print(
-                f"[Document ID: {doc_ref.id}] {location['name']}'s location data has been added to the db "
+                f"[Document ID: {doc_ref.id}] {location['name']}'s"
+                " location data has been added to the db."
             )
 
         return location_dict
@@ -126,7 +125,8 @@ def create_locations(db):
 
 def get_locations(db):
     """
-    Retrieve location data from db
+    Retrieve location data from db.
+
     :param db: firestore database
     :return: Dict of location references
     :rtype: dict of ref
@@ -143,6 +143,7 @@ def get_locations(db):
 
 
 def main():
+    """Seting up firestore."""
     print("Connecting to db...")
     db = common.connect_to_firestore()
     # location_dict = create_locations(db)
@@ -171,7 +172,7 @@ def main():
         # Local variable for every booking
         weather = {}
         weather_ref = None
-        # If there is weather data, then remove and reference it to 'weather' collection if it's not already there
+        # Remove and reference it to 'weather' collection if it's not already there
         if set(weather_keys).issubset(booking.keys()):
             # Move weather data to a new dict
             for key in weather_keys:
@@ -187,7 +188,7 @@ def main():
                 .where("city", "==", booking["city"])
                 .get()
             )
-            # If the weather data already exists, just reference it in bookings otherwise add to weather db
+            # Reference data in bookings if exists otherwise add to weather db
             if weather_docs:
                 # Get the most recent weather document that matches the date
                 weather_ref = weather_docs[-1]
@@ -196,7 +197,8 @@ def main():
                 weather_ref = db.collection("weather").document()
                 weather_ref.set(weather)
                 print(
-                    f"[Document ID: {weather_ref.id}] {weather['city']}'s weather data has been added to the db "
+                    f"[Document ID: {weather_ref.id}] {weather['city']}'s"
+                    " weather data has been added to the db."
                 )
 
         # Referencing location and weather

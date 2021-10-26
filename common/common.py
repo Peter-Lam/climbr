@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-This module contains common used functions by scripts within Climbing-Tracker
-"""
-import base64
+"""This module contains common used functions by scripts within Climbing-Tracker."""
 import codecs
 import json
 import os
@@ -35,7 +32,10 @@ import config as config  # noqa
 
 def connect_to_es(es_url):
     """
-    Try to connect to Elasticsearch and return ES object, raises exception if unable to ping
+    Connect to Elasticsearch and return ES object.
+
+    Raises exception if unable to ping.
+
     :param es_url: url to the Elasticsearch instance
     :type: str
     :return: ES Instance
@@ -56,7 +56,8 @@ def connect_to_es(es_url):
 
 def connect_to_firestore():
     """
-    Establish connection to firestore using secrect service account credientials
+    Connect to firestore using secrect service account credientials.
+
     :return: firestore db instance
     """
     # Use a service account from json file
@@ -69,7 +70,11 @@ def connect_to_firestore():
 
 def copy_file(src, dest, file_name=""):
     """
-    Copy a file from source to destination, if the file already exists, it will add _copy to the filename. Returns path of file destination if successful
+    Copy a file from source to destination.
+
+    If the file already exists, it will add _copy to the filename.
+    Returns path of file destination if successful.
+
     :param src: source path of file
     :param dest: destination path
     :param file_name: Optional way to change filename
@@ -82,12 +87,11 @@ def copy_file(src, dest, file_name=""):
     """
     try:
         # Keeping track of duplicate files, and incrementing filename as needed
-        duplicate = 0
         # Checking if paths exist
         if not os.path.exists(src) or not os.path.exists(dest):
             raise Exception(f"The file {src}, does not exist")
         else:
-            # Set the destination path with filename if given otherwise use the source name
+            # Set the dest path with filename if given otherwise use the source name
             dest_path = (
                 f"{os.path.join(dest, file_name)}"
                 if file_name
@@ -100,7 +104,8 @@ def copy_file(src, dest, file_name=""):
                     os.path.dirname(dest_path), f"{file}_copy{ext}"
                 )
                 print(
-                    f"Warning: `{dest_path}` already exists, creating `{dest_path}` instead..."
+                    f"Warning: `{dest_path}` already exists,"
+                    f" creating `{dest_path}` instead..."
                 )
             # Copy file to destination with new name if file_name is not empty
             shutil.copyfile(src, dest_path)
@@ -111,7 +116,8 @@ def copy_file(src, dest, file_name=""):
 
 def create_index(es_url, index_name, mapping_path, silent=False, force=False):
     """
-    Create an Elasticsearch index (table) using a mapping to define field types
+    Create an Elasticsearch index (table) using a mapping to define field types.
+
     :param es_url: url to Elasticsearch instance
     :param index_name: Name of index
     :param mapping_path: Path to a json
@@ -122,7 +128,7 @@ def create_index(es_url, index_name, mapping_path, silent=False, force=False):
     :type mapping_path: str
     :type silent: bool
     :type force: bool
-    :raises Exception: path is not a directory, does not exist or Elasticsearch is not running
+    :raises Exception: path is not a dir, does not exist or Elasticsearch is not running
     """
     try:
         # Connecting to Elasticsearch
@@ -137,7 +143,9 @@ def create_index(es_url, index_name, mapping_path, silent=False, force=False):
                 valid_input = False
                 while not valid_input:
                     value = input(
-                        f"The following index, '{index_name}', already exists. Would you like you override the index? All data will be deleted. (y/N)\t"
+                        f"The following index, '{index_name}', already exists."
+                        f" Would you like you override the index?"
+                        " All data will be deleted. (y/N)\t"
                     ).lower()
                     if value == "y":
                         print(f"Deleting index {index_name}...")
@@ -153,7 +161,7 @@ def create_index(es_url, index_name, mapping_path, silent=False, force=False):
             es.indices.create(index_name, body=mapping)
             if not silent:
                 print(f"Successfully created {index_name} index!")
-        except Exception as ex:
+        except Exception:
             raise Exception(f"Unable to create mapping from '{mapping_path}'.")
     except Exception as ex:
         raise ex
@@ -161,7 +169,8 @@ def create_index(es_url, index_name, mapping_path, silent=False, force=False):
 
 def create_index_pattern(kibana_url, index_name, silent=False, force=False):
     """
-    Create a general Kibana index pattern by calling a cURL command
+    Create a Kibana index pattern by calling a cURL command.
+
     :param kibana_url: url to the Kibana instance
     :param index_name: Name of index
     :param silent: suppress print messages
@@ -205,13 +214,15 @@ def create_index_pattern(kibana_url, index_name, silent=False, force=False):
                 del_response = requests.delete(index_url, headers=headers)
                 if del_response.status_code != 200:
                     raise Exception(
-                        "{del_response} Unable to delete index pattern for 'index_name'."
+                        "{del_response} Unable to delete index pattern"
+                        " for 'index_name'."
                     )
             else:
                 valid_input = False
                 while not valid_input:
                     value = input(
-                        f"Found existing index pattern, '{index_name}', would you like to overwrite? (Y/n)\t"
+                        f"Found existing index pattern, '{index_name}',"
+                        " would you like to overwrite? (Y/n)\t"
                     ).lower()
                     if value == "y":
                         if not silent:
@@ -219,7 +230,8 @@ def create_index_pattern(kibana_url, index_name, silent=False, force=False):
                         del_response = requests.delete(index_url, headers=headers)
                         if del_response.status_code != 200:
                             raise Exception(
-                                "{del_response} Unable to delete index pattern for 'index_name'."
+                                "{del_response} Unable to delete index pattern"
+                                " for 'index_name'."
                             )
                         valid_input = True
                     # If no is selected, then just exit out of this function and skip
@@ -245,15 +257,12 @@ def create_index_pattern(kibana_url, index_name, silent=False, force=False):
         raise ex
 
 
-def convert_grades(grade):
-    # TODO: Convert climbing grades to normalize data
-    # https://www.mec.ca/en/explore/climbing-grade-conversion
-    raise Exception("TODO")
-
-
 def convert_to_24_hour(time):
     """
-    Converting time string to 24 hour format, throwing an error if unexpected format
+    Convert time string to 24 hour format.
+
+    Raises an error if unexpected format.
+
     :param time: time in 12 hour format
     :type time: str
     :raises Exception: Unexpected time format
@@ -285,7 +294,9 @@ def convert_to_24_hour(time):
 
 def convert_to_hhmm(time):
     """
-    Coverting time string to HH:MM AM/PM format, throwing an error if unexpected format
+    Coverts time string to HH:MM AM/PM format.
+
+    Raises an error if unexpected format.
     :param time: time in 12 hour format
     :type time: str
     :raises Exception: Unexpected time format
@@ -317,7 +328,8 @@ def convert_to_hhmm(time):
 
 def delete_file(path):
     """
-    Deletes file if it exists
+    Delete file if it exists.
+
     :param path: Path of file
     :type: str
     """
@@ -327,7 +339,8 @@ def delete_file(path):
 
 def export_kibana(kibana_url, output, silent=False, force=False):
     """
-    Exporting all Kibana objects into ndjson by calling a cURL command
+    Export Kibana objects into ndjson by calling a cURL command.
+
     :param kibana_url: url to the Kibana instance
     :param output: full path of output file for ndjson
     :param silent: suppress print messages
@@ -340,11 +353,11 @@ def export_kibana(kibana_url, output, silent=False, force=False):
     """
     try:
         # Variables
-        dashboard_ids, output_data = [], []
+        dashboard_ids = []
         headers = {"kbn-xsrf": "true", "Content-Type": "application/json"}
         data = {"objects": [], "includeReferencesDeep": True}
-        export_url = urllib.parse.urljoin(kibana_url, f"api/saved_objects/_export")
-        find_url = urllib.parse.urljoin(kibana_url, f"api/saved_objects/_find")
+        export_url = urllib.parse.urljoin(kibana_url, "api/saved_objects/_export")
+        find_url = urllib.parse.urljoin(kibana_url, "api/saved_objects/_find")
         # Try to ping Kibana
         if requests.get(kibana_url).status_code != 200:
             raise Exception(f"Unable to ping Kibana instance located at '{kibana_url}'")
@@ -354,7 +367,8 @@ def export_kibana(kibana_url, output, silent=False, force=False):
             valid = True if force else False
             while not valid:
                 user_response = input(
-                    f"A file already exists at '{output}', would you like to overwrite? (Y/n)\t"
+                    f"A file already exists at '{output}',"
+                    " would you like to overwrite? (Y/n)\t"
                 ).lower()
                 if user_response == "y":
                     valid = True
@@ -362,11 +376,13 @@ def export_kibana(kibana_url, output, silent=False, force=False):
                         print(f"Overwriting file located at '{output}'...")
                 if user_response == "n":
                     raise Exception(
-                        f"File already exists at '{output}', please chose a different name using the '-o' argument or delete the existing file and try again."
+                        f"File already exists at '{output}',"
+                        " please chose a different name using the '-o' argument"
+                        " or delete the existing file and try again."
                     )
         # Get all dashboard ids to export
         if not silent:
-            print(f"Retrieving dashboards and related objects...")
+            print("Retrieving dashboards and related objects...")
         dashboards = requests.get(find_url, params={"type": "dashboard"}).json()[
             "saved_objects"
         ]
@@ -376,17 +392,19 @@ def export_kibana(kibana_url, output, silent=False, force=False):
         data = str(data).replace("True", "true").replace("'", '"')
         # Exporting dashboards and related objects
         if not silent:
-            print(f"Exporting Kibana dashboard and objects...")
+            print("Exporting Kibana dashboard and objects...")
         response = requests.post(export_url, headers=headers, data=data)
         if response.status_code == 200:
             try:
                 with open(output, "w") as file:
                     file.write(response.text)
                 if not silent:
-                    print(f"Successfully exported!")
-            except Exception as ex:
+                    print("Successfully exported!")
+            except Exception:
                 raise Exception(
-                    f"Unable to write to '{output}'. The file may be open in another program, please ensure all related files are closed and try again."
+                    f"Unable to write to '{output}'."
+                    " The file may be open in another program,"
+                    " please ensure all related files are closed and try again."
                 )
         else:
             raise Exception(f"{response} Unable to export")
@@ -397,8 +415,10 @@ def export_kibana(kibana_url, output, silent=False, force=False):
 
 def get_last_id(bulk_api_path):
     """
-    Retreiving the last id from a JSON in bulk api format,
-    will raise exception if file path doesn't exist
+    Retrieve the last id from a JSON in bulk api format.
+
+    Raise exception if file path doesn't exist.
+
     : param bulk_api_path: File path to json in bulk api format
     : type bulk_api_path: str
     : raises Exception: Bulk API path does not exist
@@ -419,8 +439,10 @@ def get_last_id(bulk_api_path):
 
 def get_last_document(bulk_api_path):
     """
-    Retrieve the last document(row) from aa JSON in bulk api format,
-    will raise exception if file path doesn't exist
+    Retrieve the last document(row) from bulk json.
+
+    Raises exception if file path doesn't exist.
+
     : param bulk_api_path: File path to json in bulk api format
     : type bulk_api_path: str
     : raises Exception: Bulk API path does not exist
@@ -441,10 +463,11 @@ def get_last_document(bulk_api_path):
 
 def get_files(path, pattern, recursive=False):
     """
-    This function returns a list of files that match a given pattern.
+    Return a list of files that match a given pattern.
+
     : param path: Path to a directory
     : param pattern: regex pattern to match files
-    : param recursive: option to look for files recursively within a directory, default = False
+    : param recursive: option to look for files recursively within a directory
     : type path: str
     : type pattern: str
     : type recursive: bool
@@ -470,7 +493,8 @@ def get_files(path, pattern, recursive=False):
 
 def import_env(path):
     """
-    Get and set environment variables from an .env file
+    Get and set environment variables from an .env file.
+
     :param path: path to .env file
     :type path: str
     :raises Exception: Unable to find .env file at '{path}'.
@@ -487,7 +511,8 @@ def import_env(path):
 
 def import_kibana(kibana_url, ndjson, silent=False):
     """
-    Import all Kibana objects using ndjson and api command
+    Import all Kibana objects using ndjson and api command.
+
     : param kibana_url: url to the Kibana instance
     : param ndjson: path to ndjson file
     : param silent: suppress print messages
@@ -502,13 +527,13 @@ def import_kibana(kibana_url, ndjson, silent=False):
         # Try to ping Kibana
         if requests.get(kibana_url).status_code != 200:
             raise Exception(f"Unable to ping Kibana instance located at '{kibana_url}'")
-        url = urllib.parse.urljoin(kibana_url, f"api/saved_objects/_import")
+        url = urllib.parse.urljoin(kibana_url, "api/saved_objects/_import")
         headers = {"kbn-xsrf": "true"}
         files = {"file": ("request.ndjson", load_file(ndjson))}
         response = requests.post(url, headers=headers, files=files)
         if response.status_code == 200:
             if not silent:
-                print(f"Successfully imported!")
+                print("Successfully imported!")
         else:
             # TODO: Log respons output on error
             raise Exception(f"{response} Unable to import")
@@ -519,7 +544,8 @@ def import_kibana(kibana_url, ndjson, silent=False):
 
 def load_bulk_json(path):
     """
-    Opens bulk json and loads as a dict
+    Load build json as a dict.
+
     : param path: Path to regular json file to be converted
     : type path: path
     : return: Returns file contents
@@ -539,7 +565,8 @@ def load_bulk_json(path):
 
 def load_json(path):
     """
-    Opens and loads a JSON file
+    Load a JSON file.
+
     : param path: Path to JSON
     : type path: str
     : raises Exception: JSON path does not exist
@@ -554,7 +581,8 @@ def load_json(path):
 
 def load_yaml(path):
     """
-    Reads a yaml climbing log file and returns the object
+    Read a yaml climbing log file and returns the object.
+
     : param path: Path to yaml
     : type path: str
     : raises Exception: Yaml path does not exist
@@ -574,7 +602,8 @@ def load_yaml(path):
 
 def load_file(path):
     """
-    Reads the contents of a file and returns a string with contents
+    Read the contents of a file and returns a string with contents.
+
     : param path: Path to file
     : type path: str
     : raises Exception: file path does not exist
@@ -586,7 +615,7 @@ def load_file(path):
             raise Exception(f"The path: {path} does not exist")
         with open(path, "r") as file:
             return file.read()
-    except Exception as ex:
+    except Exception:
         raise Exception(f"Unable to read file: {path}")
 
 
@@ -594,7 +623,8 @@ def send_email(
     sender, sender_pass, receiver, subject, template_dir, message, attachments=None
 ):
     """
-    Send a email to a recipient with a html formatted message. Used to automate error notification
+    Send a email to a recipient with a html formatted message.
+
     :param sender: senders email
     :param sender_pass: senders password used to send email on behalf of user
     :param receiver: destination email
@@ -625,7 +655,7 @@ def send_email(
 
             # # Read HTML and replace filler text with message
             template = codecs.open(
-                get_files(template_dir, ".*\.html$", recursive=False).pop()
+                get_files(template_dir, r".*\.html$", recursive=False).pop()
             )
             template = (
                 str(template.read())
@@ -665,7 +695,8 @@ def send_email(
 
 def str_to_time(string):
     """
-    Coverting time string to a datetime object, throwing an error if unexpected format
+    Convert time string to datatime object.
+
     : param time: time in 12 or 24 hour format
     : type time: str
     : raises Exception: Unexpected time format
@@ -698,8 +729,10 @@ def str_to_time(string):
 
 def update_bulk_api(data, output_path, index_name):
     """
-    Updating an existing json in bulk api format with new ioc information,
-    will raise exception if file path doesn't exist
+    Update an existing bulk api file.
+
+    Raises exception if file path doesn't exist.
+
     : param data: Information that is to be added to the json
     : param output_path: The path to the json in bulk api format
     : param index_name: Index name for elasticsearch
@@ -747,7 +780,8 @@ def update_bulk_api(data, output_path, index_name):
 
 def upload_to_es(es_url, path, recursive=False, silent=False):
     """
-    Upload bulk json files into Elasticsearch
+    Upload bulk json files into Elasticsearch.
+
     : param es_url: url to Elasticsearch instance
     : param path: path to directory to import OR path to a specific file
     : param recursive: optional bool to collect files from sub-dirs
@@ -767,10 +801,11 @@ def upload_to_es(es_url, path, recursive=False, silent=False):
             validate.file(path)
             bulk_json.append(path)
         except Exception:
-            bulk_json = get_files(path, ".*\.json$")
+            bulk_json = get_files(path, r".*\.json$")
             if not bulk_json:
                 raise Exception(
-                    f"Unable to find files to upload, please use 'climb.py update' first then re-run 'climb.py show'"
+                    "Unable to find files to upload, please use 'climb.py update'"
+                    " first then re-run 'climb.py show'"
                 )
 
         for file in bulk_json:
@@ -786,7 +821,8 @@ def upload_to_es(es_url, path, recursive=False, silent=False):
                         reason = item["index"]["error"]["reason"]
                         es_error += f"  [id:{id}] {exception_type}: {reason} \n"
                 raise Exception(
-                    f"Unable to upload '{file}' into Elasticsearch do to the following rows:\n{es_error}"
+                    f"Unable to upload '{file}' into Elasticsearch do to"
+                    f" the following rows:\n{es_error}"
                 )
             elif not silent:
                 print(f"'{file}' has been successfully uploaded!")
@@ -796,8 +832,10 @@ def upload_to_es(es_url, path, recursive=False, silent=False):
 
 def write_bulk_api(data, output_path, index_name):
     """
-    Writes to a json file in bulk api format given a list of information,
-    if the output path already exists, will overwrite
+    Write data in bulk api format.
+
+    If the output path already exists, tge file will be overwritten.
+
     : param data: data to add write to json
     : param output_path: the path to the json in bulk api format
     : param index_name: Index name for elasticsearch
@@ -836,15 +874,15 @@ def write_bulk_api(data, output_path, index_name):
 
 def write_json(data, output_path):
     """
-    Reads values and writes into output file path,
+    Write data to JSON.
+
     : param data: data to add write to json
     : param output_path: Output path including filename.json
     : type data: list of dict
     : type output_path: str
     """
-
     try:
-        with open(output_path, w) as file:
+        with open(output_path, "w") as file:
             json.dump(data, file, indent=4)
     except Exception as ex:
         raise ex
@@ -852,15 +890,19 @@ def write_json(data, output_path):
 
 def write_log(log, output_path):
     """
-    Writing to log file, will create file and parent folder if the path doesn't exist
+    Write data to log file.
+
+    Creates file and parent folder if the path doesn't exist.
+
     : param log: Log information
     : param output_path: path to log file
     : type log: str
     : type output_path: str
     """
     try:
-        if not os.path.exists(os.path.dirname(output_path)):
-            print(f"'os.path.dirname(output_path)' does not exist, creating folder")
+        dirname = os.path.dirname(output_path)
+        if not os.path.exists(dirname):
+            print(f"{dirname} does not exist, creating folder")
             os.makedirs(os.path.dirname(output_path))
         file_perm = "a" if os.path.isfile(output_path) else "w"
         with open(output_path, file_perm) as file:
@@ -871,14 +913,15 @@ def write_log(log, output_path):
 
 def write_yaml(data, output_path, force=False, silent=False):
     """
-    Reads values and writes into output file path,
-    if the output path already exists, will overwrite if force is True
+    Write to yaml file.
+
+    If the output path already exists, will overwrite if force is True.
+
     : param data: data to add write to yaml
     : param output_path: Output path including filename.yaml
     : type data: list of dict
     : type output_path: path
     """
-
     try:
         if os.path.exists(output_path):
             if force:
@@ -888,15 +931,15 @@ def write_yaml(data, output_path, force=False, silent=False):
                 valid_input = False
                 while not valid_input:
                     value = input(
-                        f"The following file, '{output_path}', already exists. Would you like you override the file? All data will be deleted. (y/N)\t"
+                        f"The following file, '{output_path}', already exists."
+                        " Would you like you override the file?"
+                        " All data will be deleted. (y/N)\t"
                     ).lower()
                     if value == "y":
                         print(f"Overwriting existing file: '{output_path}'")
                         valid_input = True
                     if value == "n":
-                        print(
-                            f"Not overwriting. Please try again with a unique filename."
-                        )
+                        print("Not overwriting. Please try again with a unique name.")
                         sys.exit(1)
         with open(output_path, "w") as f:
             data = yaml.safe_dump(data, f, sort_keys=False, default_flow_style=False)

@@ -1,19 +1,14 @@
 #!/usr/bin/python3
 
-# --------------------------------
-# Use this script to periodically update weather data to bookings.json
-# --------------------------------
+"""Use this script to periodically update weather data to 'bookings.json'."""
 
 import datetime
-import json
 import os
 import sys
 import traceback
 
-import firebase_admin
 import pandas as pd
 import requests
-from firebase_admin import credentials, firestore
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(BASE_DIR)
@@ -28,7 +23,8 @@ if config.firestore_json:
 
 def last_updated(city):
     """
-    Get the date for the last CSV entry of weather info as a datetime object
+    Get the date for the last CSV entry of weather info as a datetime object.
+
     :param city: The city to get weather data from
     :type city: str
     :return: date of the last entry
@@ -53,9 +49,7 @@ def last_updated(city):
 
 
 def get_bookings():
-    """
-    Retreive booking data and return the data
-    """
+    """Retreive booking data and return the data."""
     try:
         file = os.path.join(glbs.ES_BULK_DATA, "bookings.json")
         return common.load_bulk_json(file)
@@ -65,7 +59,11 @@ def get_bookings():
 
 def get_weather(city, last_updated):
     """
-    Use visualcrossing api to get historical weather by params up until the day before the current date. Returning a pandas dataframe
+    Use visualcrossing api to get historical weather.
+
+    Retrieves by params up until the day before the current date.
+    Returning a pandas dataframe.
+
     :param city: city for weather data
     :param last_updated: the last weather entry that is stored locally
     :type city: str
@@ -115,7 +113,8 @@ def get_weather(city, last_updated):
             return df
         else:
             raise Exception(
-                f"[Response: {response.status_code}] Unable to retrieve weather data from VisualCrossing"
+                f"[Response: {response.status_code}]"
+                " Unable to retrieve weather data from VisualCrossing."
             )
     except Exception as ex:
         raise ex
@@ -123,7 +122,8 @@ def get_weather(city, last_updated):
 
 def append_csv(csv_path, dataframe):
     """
-    Append the csv with new rows of information
+    Append the csv with new rows of information.
+
     :param csv_path: path to csv
     :param dataframe: dataframe of rows to be appended
     :type csv_path: str
@@ -140,7 +140,8 @@ def append_csv(csv_path, dataframe):
 
 def update_bookings(bookings, weather_df, city):
     """
-    Update bookings with weather data
+    Update bookings with weather data.
+
     :param bookings: dictionary of booking data
     :param weather_df: dataframe of weather information
     :param city: city of weather data
@@ -160,7 +161,8 @@ def update_bookings(bookings, weather_df, city):
 
         # Loop through all bookings and update the data, if not present
         for row in bookings:
-            # Only add weather data to rows that match the weather location, and do not already have weather data
+            # Only add weather data to rows that match the weather location,
+            # and do not already have weather data
             if row["location"] in locations and (
                 not set(
                     [
@@ -184,7 +186,8 @@ def update_bookings(bookings, weather_df, city):
                     for col in list(weather):
                         if weather.shape[0] > 1:
                             print(
-                                "Warning: More than one value found for weather, using last"
+                                "Warning: More than one value found for weather,"
+                                " using last"
                             )
                             row[col] = weather.iloc[-1][col]
                         else:
@@ -205,7 +208,8 @@ def update_bookings(bookings, weather_df, city):
             location_ids = []
             for location in locations_docs:
                 location_ids.append(location.id)
-            # Look for booking data that matches the same location as weather data and doesn't have a weather reference
+            # Look for booking data that matches the same location as weather data
+            # AND doesn't have a weather reference
             bookings_docs = (
                 db.collection("bookings")
                 .where("weather_ref", "==", None)
@@ -222,17 +226,18 @@ def update_bookings(bookings, weather_df, city):
                 # Look for the corresponding date in the weather CSV, if not there skip
                 weather_row = weather_df.loc[weather_df["date"] == date]
                 if weather_row.shape[0] >= 1:
-                    # Loop through all columns of the CSV row and insert it into a weather dictionary
+                    # Loop through col of the CSV row and insert it into a weather dict
                     for col in list(weather):
                         if weather.shape[0] > 1:
                             print(
-                                "Warning: More than one value found for weather, using last"
+                                "Warning: More than one value found for weather,"
+                                " using last."
                             )
                             weather_doc[col] = weather_row.iloc[-1][col]
                         else:
                             weather_doc[col] = weather_row.iloc[0][col]
                     # Create a new document in the weather collection
-                    # Look again to see if weather is in db, if not then create a new document
+                    # Look to see if weather is in db, if not then create a new document
                     weather_docs = (
                         db.collection("weather")
                         .where("date", "==", weather_doc["date"])
@@ -247,7 +252,10 @@ def update_bookings(bookings, weather_df, city):
                         weather_ref = db.collection("weather").document()
                         weather_ref.set(weather_doc)
                         print(
-                            f"[{str(datetime.datetime.now().isoformat())}] [Document ID: {weather_ref.id}] ['{weather_doc['city']}', '{weather_doc['date']}'] Successfully updated weather data to Firestore "
+                            f"[{str(datetime.datetime.now().isoformat())}]"
+                            f" [Document ID: {weather_ref.id}]"
+                            f" ['{weather_doc['city']}', '{weather_doc['date']}']"
+                            " Successfully updated weather data to Firestore."
                         )
                     # Update current booking with weather reference
                     booking_ref = db.collection("bookings").document(booking.id)
@@ -263,7 +271,10 @@ def update_bookings(bookings, weather_df, city):
                         }
                     )
                     print(
-                        f"[{str(datetime.datetime.now().isoformat())}] [Document ID: {booking.id}] ['{weather_doc['date']}'] Successfully referenced weather data in bookings document in Firestore "
+                        f"[{str(datetime.datetime.now().isoformat())}]"
+                        f" [Document ID: {booking.id}] ['{weather_doc['date']}']"
+                        " Successfully referenced weather data in"
+                        " bookings document in Firestore."
                     )
                 else:
                     # print(f"No weather data found for {date}")
@@ -274,7 +285,8 @@ def update_bookings(bookings, weather_df, city):
 
 def import_weather(csv_dir):
     """
-    Import and clean CSV weather data to insert into booking
+    Import and clean CSV weather data to insert into booking.
+
     :param csv_dir: Path to weather csv
     :type csv_dir: str
     :return: dataframe of weather csv
@@ -293,6 +305,7 @@ def import_weather(csv_dir):
 
 
 def main():
+    """Retroactively update weather data."""
     if config.weather_key:
         current_time = str(datetime.datetime.now().isoformat())
         # Check for environment variables
@@ -319,7 +332,7 @@ def main():
             or last_gat.date()
             == (datetime.datetime.now() - datetime.timedelta(days=1)).date()
         ):
-            raise Exception(f"The weather data is already up to date")
+            raise Exception("The weather data is already up to date")
         # Otherwise get new weather data
         ott = get_weather("Ottawa", last_ottawa)
         gat = get_weather("Gatineau", last_gat)
@@ -331,7 +344,7 @@ def main():
         update_bookings(bookings, import_weather(glbs.GATINEAU_WEATHER), "Gatineau")
         print(f"[{current_time}] Successfully updated weather data locally")
     else:
-        raise Exception(f"No API key found for VisualCrossing in 'config.py'")
+        raise Exception("No API key found for VisualCrossing in 'config.py'")
 
 
 if __name__ == "__main__":
