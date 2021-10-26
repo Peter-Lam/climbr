@@ -1,16 +1,12 @@
 #!/usr/bin/python
-"""
-Parsing arguments for climb.py
-"""
+"""Parsing arguments for climb.py."""
+
 import argparse
-import os
 import sys
 
 
 def init():
-    """
-    Initializing argparser for climb.py
-    """
+    """Parse command args for climb.py."""
     try:
         # Parsers
         def custom_formatter(prog):
@@ -31,7 +27,8 @@ def init():
             dest="locations",
             metavar="location(s)",
             required=True,
-            help=f"Climbing Gym locations [Altitude_Kanata, Altitude_Gatineau, Coyote_Rock_Gym]",
+            help="Climbing Gym locations [Altitude_Kanata,"
+            " Altitude_Gatineau, Coyote_Rock_Gym]",
         )
         parsed = parser.parse_args()
         # Checking for choices after parsing because '\r' is present in cronjobs
@@ -41,7 +38,8 @@ def init():
         for location in parsed.locations:
             if location not in choices:
                 print(
-                    f"bookings.py: error: argument -l: invalid choice: '{location}'. Must be one or more of the following: {choices}"
+                    f"bookings.py: error: argument -l: invalid choice: '{location}'."
+                    f" Must be one or more of the following: {choices}."
                 )
                 sys.exit()
         return parsed

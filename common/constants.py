@@ -1,6 +1,5 @@
-"""
-This module contains contants used by various scripts within this project
-"""
+"""This module contains contants used by various scripts within this project."""
+
 V_SCALE = [
     "VB",
     "V0-",
