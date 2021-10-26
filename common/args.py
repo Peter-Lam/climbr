@@ -1,17 +1,13 @@
 #!/usr/bin/python
-"""
-Parsing arguments for climb.py
-"""
+"""Parse arguments for climb.py."""
+
 import argparse
 import datetime
-import os
 import sys
 
 
 def init():
-    """
-    Initializing argparser for climb.py
-    """
+    """Handle argparser for climb.py."""
     try:
         # Parsers
         def custom_formatter(prog):
@@ -69,13 +65,15 @@ def init():
             dest="climbing_location",
             type=str.lower,
             metavar="location",
-            help="Indoor climbing location. For locations with multiple words, wrap it in quotes.",
+            help="Indoor climbing location. For locations with multiple words,"
+            " wrap it in quotes.",
         )
         log_cmd.add_argument(
             "-o",
             dest="export_name",
             metavar="filename",
-            help="Change the default filename name for climbing log (Default: YYYY-MM-DD.yaml)",
+            help="Change the default filename name for climbing log"
+            " (Default: YYYY-MM-DD.yaml)",
         )
         log_cmd.add_argument(
             "-d",
@@ -83,10 +81,11 @@ def init():
             type=lambda s: datetime.datetime.strptime(s, "%Y-%m-%d").date(),
             dest="log_date",
             metavar="date",
-            help="Enter the date of the climbing log (YYYY-MM-DD)(Default: Change it manually)",
+            help="Enter the date of the climbing log (YYYY-MM-DD)"
+            "(Default: Change it manually)",
         )
         # Init Command
-        init_cmd = subparsers.add_parser(
+        init_cmd = subparsers.add_parser(  # noqa
             "init",
             parents=[parent_parser],
             add_help=False,
@@ -94,7 +93,7 @@ def init():
             formatter_class=custom_formatter,
         )
         # Update command
-        update_cmd = subparsers.add_parser(
+        update_cmd = subparsers.add_parser(  # noqa
             "update",
             parents=[parent_parser],
             add_help=False,
@@ -120,7 +119,8 @@ def init():
             "--dest",
             dest="export_dest",
             metavar="destination",
-            help="Change the default destination path for Kibana visualizations and objects",
+            help="Change the default destination path"
+            " for Kibana visualizations & objects",
         )
         # Import Kibana objects, allows for multiple paths - directories and files
         import_cmd = subparsers.add_parser(
@@ -137,7 +137,7 @@ def init():
             help="Path to the ndjson object file(s) or directory",
         )
         # Importing demo files
-        demo_cmd = subparsers.add_parser(
+        demo_cmd = subparsers.add_parser(  # noqa
             "demo",
             parents=[parent_parser],
             add_help=False,
@@ -146,7 +146,7 @@ def init():
         )
         args = parser.parse_args()
         # If "py climb.py" called without subparser, then just display help
-        if args.command == None:
+        if args.command is None:
             parser.print_help(sys.stderr)
             sys.exit(0)
         return args

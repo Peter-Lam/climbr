@@ -1,3 +1,4 @@
+"""Automated tests."""
 import tempfile
 from pathlib import Path
 
@@ -12,6 +13,7 @@ locations = "web_scraper", "noxfile.py", "climbr.py", "config.py", "common"
 
 
 def install_with_constraints(session, *args, **kwargs):
+    """Use poetry instead of pip."""
     requirements = tempfile.NamedTemporaryFile(delete=False)
     try:
         session.run(
@@ -31,6 +33,7 @@ def install_with_constraints(session, *args, **kwargs):
 
 @nox.session
 def black(session):
+    """Run formater in codebase."""
     args = session.posargs or locations
     install_with_constraints(session, "black")
     session.run("black", *args)
@@ -38,6 +41,7 @@ def black(session):
 
 @nox.session
 def lint(session):
+    """Run linter in codebase."""
     args = session.posargs or locations
 
     install_with_constraints(
@@ -50,11 +54,12 @@ def lint(session):
         "flake8-docstrings",
     )
     session.run("isort", "--profile", "black", *args)
-    session.run("flake8", "--max-line-length", "88", "climbr.py")
+    session.run("flake8", "--max-line-length", "88", *args)
 
 
 @nox.session
 def safety(session):
+    """Run safety checks in codebase."""
     with tempfile.NamedTemporaryFile(delete=False) as requirements:
         session.run(
             "poetry",

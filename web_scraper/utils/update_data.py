@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 
-# --------------------------------
-# Quick script to update prexisting bulk JSON data
-# --------------------------------
+"""Quick script to update prexisting bulk JSON data."""
 
 import os
 import sys
-from datetime import datetime
-
-import pandas as pd
+from datetime import datetime  # noqa
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(BASE_DIR)
@@ -17,17 +13,13 @@ import common.globals as glbs  # noqa
 
 
 def get_bookings():
-    """
-    Retreive booking data and return the data
-    """
+    """Retreive booking data and return the data."""
     file = os.path.join(glbs.ES_BULK_DATA, "bookings.json")
     return common.load_bulk_json(file)
 
 
 def update():
-    """
-    Edit this function to update the existing json file
-    """
+    """Update the existing json file."""
     # # Get data
     # bookings = get_bookings()
     # for row in bookings:
@@ -42,7 +34,8 @@ def update():
     #     if weather.shape[0] >= 1:
     #         for col in list(weather):
     #             if weather.shape[0] > 1:
-    #                 print("Warning: More than one value found for weather, using last")
+    #                 print("Warning: More than one value found"
+    #                       " for weather, using last")
     #                 row[col] = weather.iloc[-1][col]
     #             else:
     #                 row[col] = weather.iloc[0][col]
@@ -55,6 +48,7 @@ def update():
 
 
 def main():
+    """Retroactively update data."""
     update()
 
 
