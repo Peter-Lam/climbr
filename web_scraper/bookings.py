@@ -9,6 +9,7 @@ from datetime import datetime
 from time import sleep
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -23,9 +24,60 @@ if config.firestore_json:
     db = common.connect_to_firestore()
 
 
-def get_bookings(driver, location, capacity, url, zone=None):
+def get_capacity(driver, location, url):
     """
-    Gather  booking information based on the location.
+    Gather the live occupancy numbers based on the location.
+
+    :param driver: Selenium driver
+    :param location: The location of the climbing gym
+    :param capacity: The max capacity of a climbing gym
+    :param url: Rockgympro booking url
+    :type driver: driver
+    :type location: str
+    :type capacity: int
+    :type url: str
+    :return: Booking infomation
+    :rtype: dict
+    """
+    # Getting the current time
+    driver.get(url)
+    sleep(10)
+    current_datetime = datetime.now()
+
+    # Grab data from website
+    try:
+        reserved_spots = int(driver.find_element(By.ID, "count").text)
+        capacity = int(driver.find_element(By.ID, "capacity").text.strip("of").strip())
+        percent_full = (reserved_spots / capacity) * 100
+    # Take a screenshot if there is an error
+    except NoSuchElementException as ex:
+        file_name_date = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+        image_name = f"webscraper_{location.lower()}_{file_name_date}.png"
+        driver.save_screenshot(os.path.join(glbs.IMAGE_LOG_DIR, image_name))
+        raise ex
+
+    booking = {
+        "location": location,
+        "month": current_datetime.strftime("%B"),
+        "day_of_week": current_datetime.strftime("%A"),
+        "day": str(current_datetime.day),
+        "year": str(current_datetime.year),
+        "start_time": current_datetime.strftime("%I:%M %p"),
+        "start_hour": current_datetime.hour,
+        "start_minute": current_datetime.minute,
+        "end_time": current_datetime.strftime("%I:%M %p"),
+        "availability": capacity - reserved_spots,
+        "reserved_spots": reserved_spots,
+        "capacity": capacity,
+        "percent_full": percent_full,
+        "retrieved_at": datetime.now().isoformat(),
+    }
+    return booking
+
+
+def get__rgpro_bookings(driver, location, capacity, url, zone=None):
+    """
+    Gather booking information from RGPro based on the location.
 
     :param driver: Selenium driver
     :param location: The location of the climbing gym
@@ -52,7 +104,7 @@ def get_bookings(driver, location, capacity, url, zone=None):
             driver.find_element_by_xpath(
                 "//td[contains(@class,'ui-datepicker-today')]"
             ).click()
-        except Exception: # noqa
+        except Exception:  # noqa
             pass  # noqa
         selected_day = int(
             driver.find_element_by_xpath("//a[contains(@class,'ui-state-active')]").text
@@ -243,7 +295,7 @@ def update_firestore(booking):
 
 
 def update_es(location):
-    """Update newly data to Elasticsaeach and Kibana."""
+    """Update newly data to Elasticsearch and Kibana."""
     # Initialize ES and Kibana urls depending on if it's running in Docker or host
     es_url = glbs.ES_URL if "DOCKER_SCRAPER" not in os.environ else glbs.ES_URL_DOCKER
     kibana_url = (
@@ -288,25 +340,14 @@ def main():
     args = cmd_args.init()
     # Variables
     locations = {
-        "Altitude Kanata": {
-            "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=3b34573ebf36421fb31011f8dc557032&random=60f0fa980c2c2&iframeid=&mode=p",  # noqa
-            "capacity": 250,
-        },
         "Altitude Gatineau": {
-            "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=a443ee2f171e442b99079327c2ef6fc1&random=5f57c64752a17&iframeid=&mode=p",  # noqa
-            "capacity": 85,
-        },
-        "Coyote Rock Gym": {
-            "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e99cbc88382e4b269eabe0cf45e111a7&random=5f792b35f0651&iframeid=&mode=p",  # noqa
-            "capacity": 80,
+            "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1658",  # noqa
         },
     }
     driver = get_driver()
     for name in args.locations:
         name = name.replace("_", " ").strip()
-        booking = get_bookings(
-            driver, name, locations[name]["capacity"], locations[name]["url"]
-        )
+        booking = get_capacity(driver, name, locations[name]["url"])
         # Logging and saving info
         common.update_bulk_api(booking, OUTPUT_FILE, "bookings")
         # If the config file is setup, push to Firestore too
