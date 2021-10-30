@@ -8,9 +8,10 @@ license = "MIT"
 
 [tool.poetry.scripts]
 cli = "climbr:main"
+bookings = "web_scraper.bookings:main"
 
 [tool.poetry.dependencies]
-python = "3.8.6"
+python = "^3.8.6"
 requests = "^2.26.0"
 PyYAML = "^6.0"
 firebase-admin = "^5.0.3"

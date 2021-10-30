@@ -14,9 +14,6 @@ RUN apt-get -y update \
     && ln -sf /usr/bin/pip3 /usr/bin/pip \
     && pip install poetry==1.1.7 \
     && apt-get update
-COPY poetry.lock pyproject.toml /workspace/web_scraper/
-RUN poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi
 # Install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' \
