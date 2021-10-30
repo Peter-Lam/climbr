@@ -4,6 +4,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG_DIR = os.path.join(BASE_DIR, "logs")
+IMAGE_LOG_DIR = os.path.join(LOG_DIR, "images")
 COMMON_DIR = os.path.join(BASE_DIR, "common")
 WEB_SCRAPER_DIR = os.path.join(BASE_DIR, "web_scraper")
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -20,6 +21,10 @@ if not os.path.exists(OUTPUT_DIR):
     os.mkdir(OUTPUT_DIR)
 if not os.path.exists(LOG_DIR):
     os.mkdir(LOG_DIR)
+    with open("cron.log", "w") as f:
+        pass
+if not os.path.exists(IMAGE_LOG_DIR):
+    os.mkdir(IMAGE_LOG_DIR)
 
 # Elasticsearch
 ES_URL = "http://localhost:9200"

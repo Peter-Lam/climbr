@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0] [2021-10-29] Updated webscraper for Gatineau and added Poetry to docker
+
+### Changed
+
+- bookings.py to check a new url for the gatineau location
+- crontab to check every 30 mins from 9 AM - 10:40
+- dockerfile to use poetry instead of pip install
+
+### Fixed
+
+- Bug with starting a webscraper container without the cron.log file
+
 ## [3.0.7] [2021-10-28] Fixed linting issues
 
 ### Fixed
