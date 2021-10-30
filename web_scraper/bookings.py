@@ -10,6 +10,8 @@ from time import sleep
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.common.exceptions import NoSuchElementException
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -205,7 +207,9 @@ def get_driver():
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
-    return webdriver.Chrome(options=chrome_options, executable_path=webdriver_path)
+    chrome_options.add_argument("--log-level=3")
+
+    return webdriver.Chrome(service=Service(webdriver_path), options=chrome_options)
 
 
 def update_firestore(booking):
@@ -287,7 +291,7 @@ def update_firestore(booking):
         booking_ref.set(booking)
         print(
             f"[{str(datetime.now().isoformat())}] ['{location_name}']"
-            " [Document ID: {booking_ref.id}] Session info successfully "
+            f" [Document ID: {booking_ref.id}] Session info successfully "
             "retrieved and added to Firestore."
         )
     except Exception as ex:
