@@ -7,6 +7,7 @@
 poetry.lock
 
 # User specific files
+**/logs
 **.log
 data/input/*.yaml
 data/input/training/*.yaml
