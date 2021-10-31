@@ -20,31 +20,16 @@ def get_bookings():
 
 def update():
     """Update the existing json file."""
-    # # Get data
-    # bookings = get_bookings()
-    # for row in bookings:
-    #     # Set dataframe depending on the location of the booking
-    #     df = ott if row['location'] in [
-    #         'Altitude Kanata', 'Coyote Rock Gym'] else gat
-    #     # reformat the date from json
-    #     date = datetime.fromisoformat(
-    #         row['retrieved_at']).strftime(("%Y-%m-%d"))
-    #     # Look for booking data with weather, if it doesn't match then ignore
-    #     weather = df.loc[df['date'] == date]
-    #     if weather.shape[0] >= 1:
-    #         for col in list(weather):
-    #             if weather.shape[0] > 1:
-    #                 print("Warning: More than one value found"
-    #                       " for weather, using last")
-    #                 row[col] = weather.iloc[-1][col]
-    #             else:
-    #                 row[col] = weather.iloc[0][col]
-    #     else:
-    #         print(f"No weather data found for {date}")
-    #         pass
-    # common.write_bulk_api(bookings, os.path.join(
-    #     glbs.ES_BULK_DATA, 'bookings22.json'), 'bookings')
-    # print("Update complete")
+    # Get data
+    bookings = get_bookings()
+    for row in bookings:
+        # Set dataframe depending on the location of the booking
+        if "percent_full" not in row.keys():
+            row["percent_full"] = (row["reserved_spots"] / row["capacity"]) * 100
+    common.write_bulk_api(
+        bookings, os.path.join(glbs.ES_BULK_DATA, "bookings.json"), "bookings"
+    )
+    print("Update complete")
 
 
 def main():
