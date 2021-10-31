@@ -23,9 +23,11 @@ def update():
     # Get data
     bookings = get_bookings()
     for row in bookings:
-        # Set dataframe depending on the location of the booking
-        if "percent_full" not in row.keys():
-            row["percent_full"] = (row["reserved_spots"] / row["capacity"]) * 100
+        # Add end hour and minute to data
+        if "end_hour" not in row.keys():
+            row["end_hour"] = int(common.str_to_time(row["end_time"]).hour)
+        if "end_minute" not in row.keys():
+            row["end_minute"] = int(common.str_to_time(row["end_time"]).minute)
     common.write_bulk_api(
         bookings, os.path.join(glbs.ES_BULK_DATA, "bookings.json"), "bookings"
     )
