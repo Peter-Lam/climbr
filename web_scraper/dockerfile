@@ -25,7 +25,6 @@ RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`cu
 # Setup cron job
 COPY crontab /etc/cron.d/simple-cron
 RUN chmod 0644 /etc/cron.d/simple-cron && crontab /etc/cron.d/simple-cron && touch /workspace/logs/cron.log
-
 # Start cron and keep running
 # CMD cron && tail -f /workspace/logs/cron.log
 ENTRYPOINT ["/bin/bash", "./entrypoint.sh"]
