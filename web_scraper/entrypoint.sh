@@ -4,10 +4,8 @@
 echo "Webscraper container has started"
 env > bookings.env
 chmod +x bookings.env
-cd ../
 poetry config virtualenvs.create false
 poetry install --no-interaction --no-ansi
-cd ./web_scraper
 # cron already running from dockerfile
 # Setup cron job
 cron && tail -f /workspace/logs/cron.log
