@@ -1,0 +1,137 @@
+--- 
+location: Bloc Shop Chabanel
+style: indoor bouldering
+description:
+  A brief description of the climbing session
+  Can span multiple lines if needed
+experience: positive negative neutral
+date: YYYY-MM-DD
+time:
+  start: HH:MM AM/PM
+  end: HH:MM AM/PM
+climbers: 
+  - Person A
+  - Person B
+injury: 
+  isTrue: false
+  description: Add a description of injury here
+media:
+  - URL_to_image
+  - URL_to_video
+counter:
+  - grade: VB
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V1
+    redpoint: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V2
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V3
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V4
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V5
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V6
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V7
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V8
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V9
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V10
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V11
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V12
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+  - grade: V13
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+projects:
+  - name: Describe the problem or give it a name
+    location: slab
+    style:
+        - dynamic
+        - overhang
+    grade: competition
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+    notes:
+      Any notes about this climb
+      It can also spawn many lines
+    media:
+      - URL_to_image
+      - URL_to_video
+    reset: false
+  # Multiple climbs can be logged here, just copy and paste the format
+  - name: Second Problem
+    location: ______
+    style:
+        - ______
+        - ______
+    grade: ______
+    onsight: 0
+    flash: 0
+    redpoint: 0
+    repeat: 0
+    attempts: 0
+    notes:
+      ______
+    # Links to any media specific for this climb
+    media:
+      - ______
+      - ______
+    reset: false
+# Tracking shoes used while climbing, useful if you own many pairs
+shoes: climbing_shoe_here
+

@@ -517,7 +517,10 @@ class Session:
                 else:
                     valid_projects = False
             valid_shoes = (
-                type(session_log["shoes"]) == str if "shoes" in session_keys else True
+                isinstance(session_log["shoes"], str)
+                or isinstance(session_log["shoes"], list)
+                if "shoes" in session_keys
+                else True
             )
             valid_fields = {
                 "location": valid_location,
@@ -570,8 +573,9 @@ class Session:
 
             # Splitting shoe field for multiple shoes in a session
             if "shoes" in session_log.keys():
-                shoe_list = re.split("[,/]", session_log["shoes"])
-                session_log["shoes"] = [shoe.strip(" ") for shoe in shoe_list]
+                if isinstance(session_log["shoes"], str):
+                    shoe_list = re.split("[,/]", session_log["shoes"])
+                    session_log["shoes"] = [shoe.strip(" ") for shoe in shoe_list]
 
             # Compare the counter list with the location's grading scale
             # Add missing counters and just defult to 0 for all categories
@@ -945,10 +949,44 @@ _LOCATIONS = [
     ),
     Location(
         "Cafe Bloc",
-        "1209-1211 St Laurent Blvd, Montreal, Quebec H2X 2S6",
+        "1209-1211 St Laurent Blvd, Montreal, QC H2X 2S6",
         45.5096931,
         -73.5652951,
         constants.V_SCALE,
+        False,
+    ),
+    Location(
+        "Bloc Shop Hochelaga",
+        "2985 St Catherine St E, Montreal, QC H1W 3Y8",
+        45.5341923,
+        -73.6355159,
+        constants.V_SCALE,
+        False,
+    ),
+    Location(
+        "Bloc Shop Chabanel",
+        "1370 Rue Chabanel O, Montréal, QC H4N 1H4",
+        45.531948,
+        -73.6599657,
+        constants.V_SCALE,
+        False,
+    ),
+    Location(
+        "Allez Up",
+        "1555 Rue Saint-Patrick, Montréal, QC H3K 2B7",
+        45.4868841,
+        -73.5632112,
+        [
+            "White",
+            "Yellow",
+            "Orange",
+            "Green",
+            "Blue",
+            "Purple",
+            "Red",
+            "Black",
+            "Pink",
+        ],
         False,
     ),
 ]

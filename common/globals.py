@@ -1,6 +1,11 @@
 """This module contains global variables used by various scripts within this project."""
 
 import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+import config  # noqa
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG_DIR = os.path.join(BASE_DIR, "logs")
@@ -94,6 +99,29 @@ _cafe_bloc = (
     )
     else os.path.join(TEMPLATE_DIR, "indoor_bouldering_cafe_bloc.yaml")
 )
+_allez_up = (
+    os.path.join(TEMPLATE_DIR, "indoor_bouldering_allez_up_personal.yaml")
+    if os.path.exists(
+        os.path.join(TEMPLATE_DIR, "indoor_bouldering_allez_up_personal.yaml")
+    )
+    else os.path.join(TEMPLATE_DIR, "indoor_bouldering_allez_up.yaml")
+)
+_bloc_shop_chabanel = (
+    os.path.join(TEMPLATE_DIR, "indoor_bouldering_bloc_shop_chabanel_personal.yaml")
+    if os.path.exists(
+        os.path.join(TEMPLATE_DIR, "indoor_bouldering_bloc_shop_chabanel_personal.yaml")
+    )
+    else os.path.join(TEMPLATE_DIR, "indoor_bouldering_bloc_shop_chabanel.yaml")
+)
+_bloc_shop_hochelaga = (
+    os.path.join(TEMPLATE_DIR, "indoor_bouldering_bloc_shop_hochelaga_personal.yaml")
+    if os.path.exists(
+        os.path.join(
+            TEMPLATE_DIR, "indoor_bouldering_bloc_shop_hochelaga_personal.yaml"
+        )
+    )
+    else os.path.join(TEMPLATE_DIR, "indoor_bouldering_bloc_shop_hochelaga.yaml")
+)
 _hogs_back = (
     os.path.join(TEMPLATE_DIR, "outdoor_bouldering_personal.yaml")
     if os.path.exists(os.path.join(TEMPLATE_DIR, "outdoor_bouldering_personal.yaml"))
@@ -118,5 +146,15 @@ GYM_TEMPLATE = {
     "hogs back": _hogs_back,
     "hog's back": _hogs_back,
     "cafe bloc": _cafe_bloc,
+    "allez up": _allez_up,
+    "bloc shop chabanel": _bloc_shop_chabanel,
+    "bloc shop hochelaga": _bloc_shop_hochelaga,
     "default": _default,
 }
+
+if config.default_gym:
+    default = config.default_gym.lower()
+if isinstance(default, str) and default in GYM_TEMPLATE.keys():
+    GYM_TEMPLATE.update({"default": GYM_TEMPLATE[default]})
+
+print(_allez_up)
