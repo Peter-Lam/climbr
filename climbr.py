@@ -68,13 +68,17 @@ def log_session(args):
     climbing_log = common.copy_file(
         glbs.GYM_TEMPLATE[args.climbing_location], glbs.INPUT_DIR, filename
     )
-    # if args.log_date:
-    # Open yaml and edit the date
+    # Open yaml and pre-fill fields bases on config.py and cmd args
     content = common.load_yaml(climbing_log)
     if args.log_date:
         content["date"] = args.log_date
     else:
         content["date"] = datetime.now().date()
+    if config.shoes and isinstance(config.shoes, str):
+        content["shoes"] = config.shoes
+    if config.climbers and isinstance(config.climbers, list):
+        content["climbers"] = config.climbers
+
     common.write_yaml(content, climbing_log, force=True, silent=True)
     print(f"New climbing log created at '{climbing_log}'!")
 

@@ -1,2 +1,2 @@
-00 08 * * * cd /workspace/web_scraper && TZ=America/Toronto /usr/bin/python3 ./utils/weather.py >> /workspace/logs/cron.log 2>&1 
+30 08 * * * cd /workspace/web_scraper && TZ=America/Toronto /usr/bin/python3 ./utils/weather.py >> /workspace/logs/cron.log 2>&1 
 */30 9-22 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1 

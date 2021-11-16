@@ -15,5 +15,7 @@ smpt_pass = os.getenv("CLIMBR_PASS")
 # Email to send notifications to
 to_notify = ""
 
-# Home gym
-home_gym = ""
+# User configurable template information
+default_gym = ""
+shoes = ["Shoes_Here", "Shoes_Here"]
+climbers = ["Climber A", "Climber B"]
