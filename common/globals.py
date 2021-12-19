@@ -156,5 +156,3 @@ if config.default_gym:
     default = config.default_gym.lower()
 if isinstance(default, str) and default in GYM_TEMPLATE.keys():
     GYM_TEMPLATE.update({"default": GYM_TEMPLATE[default]})
-
-print(_allez_up)

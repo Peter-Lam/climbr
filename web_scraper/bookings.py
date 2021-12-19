@@ -48,9 +48,21 @@ def get_capacity(driver, location, url):
 
     # Grab data from website
     try:
-        reserved_spots = int(driver.find_element(By.ID, "count").text)
-        capacity = int(driver.find_element(By.ID, "capacity").text.strip("of").strip())
+        if location == "Altitude Gatineau":
+            data = driver.execute_script("""return data.GAT""")
+            reserved_spots = int(data["count"])
+            capacity = int(data["capacity"])
+        elif location == "Altitude Kanata":
+            data = driver.execute_script("""return data.KAN""")
+            reserved_spots = int(data["count"])
+            capacity = int(data["capacity"])
+        else:
+            reserved_spots = int(driver.find_element(By.ID, "count").text)
+            capacity = int(
+                driver.find_element(By.ID, "capacity").text.strip("of").strip()
+            )
         percent_full = (reserved_spots / capacity) * 100
+
     # Take a screenshot if there is an error
     except NoSuchElementException as ex:
         file_name_date = datetime.now().strftime("%Y-%m-%d-%H%M%S")
@@ -346,12 +358,28 @@ def main():
     locations = {
         "Altitude Gatineau": {
             "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1658",  # noqa
+            "reservation": False,
+        },
+        "Altitude Kanata": {
+            "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1658",  # noqa
+            "reservation": False,
+        },
+        "Coyote Rock Gym": {
+            "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=2fdc519b5db6455f84c3a687d0a40c64&random=5f79eb6c8450f&iframeid=&mode=p",  # noqa
+            "reservation": True,
+            "capacity": 80,
         },
     }
     driver = get_driver()
     for name in args.locations:
         name = name.replace("_", " ").strip()
-        booking = get_capacity(driver, name, locations[name]["url"])
+        # Used to account for 2 types of rgpro systems, capacity vs reservation
+        if locations[name]["reservation"]:
+            booking = get__rgpro_bookings(
+                driver, name, locations[name]["capacity"], locations[name]["url"]
+            )
+        else:
+            booking = get_capacity(driver, name, locations[name]["url"])
         # Logging and saving info
         common.update_bulk_api(booking, OUTPUT_FILE, "bookings")
         # If the config file is setup, push to Firestore too
