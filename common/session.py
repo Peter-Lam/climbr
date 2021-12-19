@@ -241,7 +241,7 @@ class Project(Counter):
             }
             if self.onsight:
                 project_dict["onsight"] = self.onsight
-                project_dict["cumulative_onsight"]: self.cumulative_onsight
+                project_dict["cumulative_onsight"] = self.cumulative_onsight
 
             return project_dict
         except Exception as ex:

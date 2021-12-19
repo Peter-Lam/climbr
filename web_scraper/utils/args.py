@@ -19,7 +19,7 @@ def init():
         )
         general_option = parser.add_argument_group("General Options")
         general_option.add_argument(
-            "--version", action="version", version="%(prog)s 1.2.0"
+            "--version", action="version", version="%(prog)s 3.3.0"
         )
         parser.add_argument(
             "-l",
@@ -27,11 +27,12 @@ def init():
             dest="locations",
             metavar="location(s)",
             required=True,
-            help="Climbing Gym locations [Altitude_Gatineau]",
+            help="Climbing Gym locations [Altitude_Gatineau, "
+            "Altitude_Kanata, Coyote_Rock_Gym]",
         )
         parsed = parser.parse_args()
         # Checking for choices after parsing because '\r' is present in cronjobs
-        choices = ["Altitude_Gatineau"]
+        choices = ["Altitude_Gatineau", "Altitude_Kanata", "Coyote_Rock_Gym"]
         if "\r" in parsed.locations:
             parsed.locations.remove("\r")
         for location in parsed.locations:
