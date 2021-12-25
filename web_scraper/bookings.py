@@ -89,7 +89,7 @@ def get_capacity(driver, location, url):
     return booking
 
 
-def get__rgpro_bookings(driver, location, capacity, url, zone=None):
+def get_rgpro_bookings(driver, location, capacity, url, zone=None):
     """
     Gather booking information from RGPro based on the location.
 
@@ -130,13 +130,17 @@ def get__rgpro_bookings(driver, location, capacity, url, zone=None):
             )
         sleep(5)
         # Find the first time slot and it's availability
-        time_slot = driver.find_element_by_class_name(
-            "offering-page-schedule-list-time-column"
-        ).text
-        availability = driver.find_element_by_xpath(
-            "//td[@class='offering-page-schedule-list-time-column']/following-sibling::td"  # noqa
-        ).text
-
+        try:
+            time_slot = driver.find_element_by_class_name(
+                "offering-page-schedule-list-time-column"
+            ).text
+            availability = driver.find_element_by_xpath(
+                "//td[@class='offering-page-schedule-list-time-column']/following-sibling::td"  # noqa
+            ).text
+        except Exception:
+            raise Exception(
+                f"[{current_time}] Unable to find timeslot and availability for: {location}."
+            )
         # Checking availability
         if "Full" in availability:
             availability = 0
@@ -185,6 +189,7 @@ def get__rgpro_bookings(driver, location, capacity, url, zone=None):
             if availability is not None
             else None,
             "capacity": capacity,
+            "percent_full": ((capacity - availability) / capacity) * 100,
             "zone": zone,
             "retrieved_at": current_time,
         }
@@ -358,7 +363,26 @@ def main():
     locations = {
         "Altitude Gatineau": {
             "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1658",  # noqa
-            "reservation": False,
+            "reservation": True,
+            "zone": {
+                "Annex": {
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=88c1f4559dcf48a8b4db0c062faad971&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39ab0351&iframeid=&mode=p",
+                    "capacity": 20,
+                },
+                "Main": {
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=14fa372e850d43f6a725aff3e0fef115&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39aae36d&iframeid=&mode=p",
+                    "capacity": 25,
+                },
+                "Basement": {
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=f3613ad8e2fd436f8aff84a0fc87e6ef&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39aaf518&iframeid=&mode=p",
+                    "capacity": 25,
+                },
+                "Training": {
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e686357a778843b2b4afafefb36f3e72&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39ab1534&iframeid=&mode=p",
+                    "capacity": 8,
+                },
+                # "Clip 'N Climb": {"url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=69da3ee36da1490689dd14d2e4bf1a02&random=61c165553979a&iframeid=&mode=p", "capacity": 36},
+            },
         },
         "Altitude Kanata": {
             "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1658",  # noqa
@@ -375,9 +399,35 @@ def main():
         name = name.replace("_", " ").strip()
         # Used to account for 2 types of rgpro systems, capacity vs reservation
         if locations[name]["reservation"]:
-            booking = get__rgpro_bookings(
-                driver, name, locations[name]["capacity"], locations[name]["url"]
-            )
+            # Used to account for 2 types of booking, zones vs regular
+            if "zone" in locations[name]:
+                # Variable to check if first sub booking has been inserted
+                first = True
+                booking = None
+                for zone_name in locations[name]["zone"]:
+                    capacity = locations[name]["zone"][zone_name]["capacity"]
+                    url = locations[name]["zone"][zone_name]["url"]
+                    sub_booking = get_rgpro_bookings(driver, name, capacity, url)
+                    if first:
+                        booking = sub_booking.copy()
+                        first = False
+                    else:
+                        booking["availability"] += sub_booking["availability"]
+                        booking["reserved_spots"] += sub_booking["reserved_spots"]
+                        booking["capacity"] += sub_booking["capacity"]
+                        booking["percent_full"] = (
+                            booking["reserved_spots"] / booking["capacity"]
+                        ) * 100
+                        booking["zone"] = None
+                    # Updating the zone, will update the full booking after
+                    common.update_bulk_api(sub_booking, OUTPUT_FILE, "bookings")
+                    # If the config file is setup, push to Firestore too
+                    if config.firestore_json:
+                        update_firestore(sub_booking)
+            else:
+                booking = get_rgpro_bookings(
+                    driver, name, locations[name]["capacity"], locations[name]["url"]
+                )
         else:
             booking = get_capacity(driver, name, locations[name]["url"])
         # Logging and saving info
