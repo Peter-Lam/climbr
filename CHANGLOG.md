@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.4.0] [2021-12-24] Updated webscraper for Altitude Zones
+
+### Added
+
+- startup.bat to quickly start the webscraper
+- weather command to update FireStore weather in pyproject.toml
+- new weather and bookings data
+
+### Changed
+
+- bookings.py and crontab to account for Gatineau's Zone system
+- crontab with updated times
+
 ## [3.3.0] [2021-12-19] Updated webscraper for Altitude and Coyote
 
 ### Changed

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "climbr"
-version = "3.3.0"
+version = "3.4.0"
 description = "A utility that allows users to visualize and highlight their climbing strengths, weaknesses, and trends."
 authors = ["Peter Lam <peter.quach.lam@gmail.com>"]
 license = "MIT"
@@ -9,6 +9,7 @@ license = "MIT"
 [tool.poetry.scripts]
 cli = "climbr:main"
 bookings = "web_scraper.bookings:main"
+weather = "web_scraper.utils.weather:main"
 
 [tool.poetry.dependencies]
 python = "^3.8.6"

@@ -1,8 +1,15 @@
-30 08 * * * cd /workspace/web_scraper && TZ=America/Toronto /usr/bin/python3 ./utils/weather.py >> /workspace/logs/cron.log 2>&1 
-*/30 9-22 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau Altitude_Kanata>> /workspace/logs/cron.log 2>&1 
-28 10 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
-43 12 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
-58 14 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
-13 17 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
-28 19 * * * cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
-43 21 * * 1-5 cd /workspace/web_scraper && DOCKER_SCRAPER=true TZ=America/Toronto /usr/bin/python3 ./bookings.py -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+30 08 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run weather >> /workspace/logs/cron.log 2>&1 
+*/30 9-22 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Kanata>> /workspace/logs/cron.log 2>&1  
+58 08 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 10 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 12 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 14 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 16 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 18 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+58 20 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
+28 10 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+43 12 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+58 14 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+13 17 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+28 19 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  
+43 21 * * 1-5 cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Coyote_Rock_Gym >> /workspace/logs/cron.log 2>&1  

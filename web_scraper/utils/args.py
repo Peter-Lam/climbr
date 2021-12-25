@@ -19,7 +19,7 @@ def init():
         )
         general_option = parser.add_argument_group("General Options")
         general_option.add_argument(
-            "--version", action="version", version="%(prog)s 3.3.0"
+            "--version", action="version", version="%(prog)s 3.4.0"
         )
         parser.add_argument(
             "-l",
