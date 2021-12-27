@@ -1,5 +1,5 @@
-30 08 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run weather >> /workspace/logs/cron.log 2>&1 
-*/30 9-22 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Kanata>> /workspace/logs/cron.log 2>&1  
+30 08 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run weather >> /workspace/logs/cron.log 2>&1  
+*/30 9-22 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Kanata Altitude_Gatineau_Capacity >> /workspace/logs/cron.log 2>&1  
 58 08 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
 58 10 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  
 58 12 * * * cd /workspace && DOCKER_SCRAPER=true TZ=America/Toronto /usr/local/bin/poetry run bookings -l Altitude_Gatineau >> /workspace/logs/cron.log 2>&1  

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "climbr"
-version = "3.4.0"
+version = "3.4.1"
 description = "A utility that allows users to visualize and highlight their climbing strengths, weaknesses, and trends."
 authors = ["Peter Lam <peter.quach.lam@gmail.com>"]
 license = "MIT"
