@@ -48,15 +48,22 @@ def get_capacity(driver, location, url):
 
     # Grab data from website
     try:
-        if location == "Altitude Gatineau":
+        if "Gatineau" in location:
             data = driver.execute_script("""return data.GAT""")
             reserved_spots = int(data["count"])
-            capacity = int(data["capacity"])
-        elif location == "Altitude Kanata":
+            # Counter on the site is incorrect,
+            # well at least not accurate to current zoning (150 vs 107)
+            # capacity = int(data["capacity"])
+            capacity = 83 + 24
+        elif "Kanata" in location:
             data = driver.execute_script("""return data.KAN""")
             reserved_spots = int(data["count"])
             capacity = int(data["capacity"])
         else:
+            print(
+                f"Unable to read locatoin: {location}, "
+                "using generical parser instead..."
+            )
             reserved_spots = int(driver.find_element(By.ID, "count").text)
             capacity = int(
                 driver.find_element(By.ID, "capacity").text.strip("of").strip()
@@ -139,7 +146,8 @@ def get_rgpro_bookings(driver, location, capacity, url, zone=None):
             ).text
         except Exception:
             raise Exception(
-                f"[{current_time}] Unable to find timeslot and availability for: {location}."
+                f"[{current_time}] Unable to find timeslot "
+                f"& availability for: {location}."
             )
         # Checking availability
         if "Full" in availability:
@@ -366,26 +374,29 @@ def main():
             "reservation": True,
             "zone": {
                 "Annex": {
-                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=88c1f4559dcf48a8b4db0c062faad971&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39ab0351&iframeid=&mode=p",
-                    "capacity": 20,
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=88c1f4559dcf48a8b4db0c062faad971&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39ab0351&iframeid=&mode=p",  # noqa
+                    "capacity": 25,
                 },
                 "Main": {
-                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=14fa372e850d43f6a725aff3e0fef115&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39aae36d&iframeid=&mode=p",
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=14fa372e850d43f6a725aff3e0fef115&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39aae36d&iframeid=&mode=p",  # noqa
                     "capacity": 25,
                 },
                 "Basement": {
-                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=f3613ad8e2fd436f8aff84a0fc87e6ef&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39aaf518&iframeid=&mode=p",
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=f3613ad8e2fd436f8aff84a0fc87e6ef&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39aaf518&iframeid=&mode=p",  # noqa
                     "capacity": 25,
                 },
                 "Training": {
-                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e686357a778843b2b4afafefb36f3e72&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39ab1534&iframeid=&mode=p",
+                    "url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=e686357a778843b2b4afafefb36f3e72&widget_guid=ce62e0ff738e4faf8042bafa71fa48e5&random=61c1e39ab1534&iframeid=&mode=p",  # noqa
                     "capacity": 8,
                 },
-                # "Clip 'N Climb": {"url": "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=69da3ee36da1490689dd14d2e4bf1a02&random=61c165553979a&iframeid=&mode=p", "capacity": 36},
             },
         },
-        "Altitude Kanata": {
+        "Altitude Gatineau Capacity": {
             "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1658",  # noqa
+            "reservation": False,
+        },
+        "Altitude Kanata": {
+            "url": "https://portal.rockgympro.com/portal/public/d8debad49996f64b9734856be4913a25/occupancy?&iframeid=occupancyCounter&fId=1748",  # noqa
             "reservation": False,
         },
         "Coyote Rock Gym": {
@@ -407,7 +418,9 @@ def main():
                 for zone_name in locations[name]["zone"]:
                     capacity = locations[name]["zone"][zone_name]["capacity"]
                     url = locations[name]["zone"][zone_name]["url"]
-                    sub_booking = get_rgpro_bookings(driver, name, capacity, url)
+                    sub_booking = get_rgpro_bookings(
+                        driver, name, capacity, url, zone=zone_name
+                    )
                     if first:
                         booking = sub_booking.copy()
                         first = False
@@ -429,7 +442,9 @@ def main():
                     driver, name, locations[name]["capacity"], locations[name]["url"]
                 )
         else:
-            booking = get_capacity(driver, name, locations[name]["url"])
+            booking = get_capacity(
+                driver, name.replace("Capacity", "").strip(), locations[name]["url"]
+            )
         # Logging and saving info
         common.update_bulk_api(booking, OUTPUT_FILE, "bookings")
         # If the config file is setup, push to Firestore too
@@ -444,6 +459,9 @@ if __name__ == "__main__":
         main()
     except Exception as ex:
         # Send an email alert of error if config.py is setup
+        print(
+            f"Attemping to notify error to {config.to_notify} from {config.smpt_email}"
+        )
         if config.smpt_email and config.smpt_pass and config.to_notify:
             common.send_email(
                 config.smpt_email,
@@ -454,4 +472,6 @@ if __name__ == "__main__":
                 "".join(traceback.TracebackException.from_exception(ex).format()),
                 common.get_files(glbs.LOG_DIR, ".*"),
             )
+        else:
+            print("Email config file not found.")
         raise ex
