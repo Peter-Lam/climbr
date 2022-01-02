@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.0] [2022-01-01] Added logging and fixed email notifications
+
+### Added
+
+- loguru to log all python files (Resolves #21 and #24)
+  - climbr.py -> climbr.log
+  - bookings.py -> webscraper.log (monthly file rotation)
+  - cron.log (for system out of webscraper)
+- callback functions to send email notificaion upon error
+- warning when number of reservations is greater than capacirt (#41)
+
+### Fixed
+
+- Error notification when using crontab
+- Error notification attachment to display filename
+
+### Removed
+
+- Removed redundant try & except statements
+- Replaced silent option in existing functions with log levels. If -q is selected, log level will only show errors
+
 ## [3.4.1] [2021-12-27] Updated webscraper for Altitude Capacity
 
 ### Changed

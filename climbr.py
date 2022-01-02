@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """The core logic behind tracking climbing sessions and stats."""
 import os
-import traceback
+import sys
 from datetime import datetime
 from time import sleep
 
 import requests
+from loguru import logger
 
 import common.args as cmd_args
 import common.common as common
@@ -13,6 +14,47 @@ import common.globals as glbs
 import common.validate as validate
 import config as config
 from common.session import Session
+
+
+def error_callback(message):
+    """
+    Send an email notification about a given error.
+
+    :param message:
+    :type: loguru.Message
+    """
+    if config.smpt_email and config.smpt_pass and config.to_notify:
+        logger.info(
+            "An error has occured in climbr, "
+            f"attempting to send notification to '{config.to_notify}'"
+        )
+        common.send_email(
+            config.smpt_email,
+            config.smpt_pass,
+            config.to_notify,
+            f"[{str(datetime.now())}] Climbr Error: climbr.py",
+            os.path.join(glbs.EMAIL_TEMPLATE_DIR, "error_notification"),
+            message,
+            common.get_files(glbs.LOG_DIR, "climbr.log"),
+        )
+    else:
+        logger.info(
+            "Email credentials not found - unable to send email about error. "
+            "See log file for error details instead."
+        )
+    sys.exit(1)
+
+
+# Logging
+logger.remove()
+# System out
+stdout_fmt = "<level>{level: <8}</level><level>{message}</level>"
+logger.add(sys.stdout, colorize=True, level="INFO", format=stdout_fmt)
+# Log file
+logfile_fmt = "[{time:YYYY-MM-DD HH:mm:ss}] {level: <8}\t{message}"
+logger.add(os.path.join(glbs.LOG_DIR, "climbr.log"), level="DEBUG", format=logfile_fmt)
+# Error email handling
+logger.add(error_callback, filter=lambda r: r["level"].name == "ERROR")
 
 # Variables
 data_dir = validate.directory(glbs.ES_BULK_DATA)
@@ -29,20 +71,19 @@ def get_session_yamls(path):
     :return: list of session files
     :rtype: list of str
     """
-    try:
-        if not os.path.exists(path):
-            raise Exception(
-                f"Unable to find climbing sessions, the path '{path}' does not exist."
-            )
-        sessions = common.get_files(path, r".*\.yaml$", recursive=False)
-        if not sessions:
-            raise Exception(
-                f"Unable to find logs located at {path}."
-                "Consider using the 'demo' command to view sample data..."
-            )
-        return sessions
-    except Exception as ex:
-        raise ex
+    if not os.path.exists(path):
+        logger.error(
+            f"Unable to find climbing sessions, the path '{path}' does not exist."
+        )
+        sys.exit(1)
+    sessions = common.get_files(path, r".*\.yaml$", recursive=False)
+    if not sessions:
+        logger.error(
+            f"Unable to find logs located at {path}. "
+            "Consider using the 'demo' command to view sample data..."
+        )
+        sys.exit(1)
+    return sessions
 
 
 def log_session(args):
@@ -79,8 +120,8 @@ def log_session(args):
     if config.climbers and isinstance(config.climbers, list):
         content["climbers"] = config.climbers
 
-    common.write_yaml(content, climbing_log, force=True, silent=True)
-    print(f"New climbing log created at '{climbing_log}'!")
+    common.write_yaml(content, climbing_log, force=True)
+    logger.info(f"New climbing log created at '{climbing_log}'!")
 
 
 def export_files(args):
@@ -99,7 +140,7 @@ def export_files(args):
         if args.export_dest
         else os.path.join(glbs.OUTPUT_DIR, f"{filename}.ndjson")
     )
-    common.export_kibana(kibana_url, destination, silent=args.silent)
+    common.export_kibana(kibana_url, destination)
 
 
 def import_files(args):
@@ -112,21 +153,23 @@ def import_files(args):
     for path in args.import_path:
         if os.path.isfile(path):
             if ".ndjson" in os.path.splitext(path)[1]:
-                common.import_kibana(kibana_url, path, silent=args.silent)
+                common.import_kibana(kibana_url, path)
             else:
-                raise TypeError(
-                    f"Unable to import '{path}'."
+                logger.error(
+                    f"Unable to import '{path}'. "
                     "Invlaid file extension, must be '.ndjson'."
                 )
+                sys.exit(1)
         # If the given path is a directory, gather all .ndjson files
         elif os.path.isdir(path):
             files = common.get_files(path, r".*\.ndjson$")
             for file in files:
-                common.import_kibana(kibana_url, file, silent=args.silent)
+                common.import_kibana(kibana_url, file)
         else:
-            raise Exception(
-                f"Unable to import '{path}'." " File path or directory does not exist."
+            logger.error(
+                f"Unable to import '{path}'. File path or directory does not exist."
             )
+            sys.exit(1)
 
 
 def update(args, cmd):
@@ -137,8 +180,7 @@ def update(args, cmd):
     :type args: dict
     """
     # Loop through all climbing logs, normalize and add additional information
-    if not args.silent:
-        print("[1/5] Retreiving climbing logs...")
+    logger.info("[1/5] Retreiving climbing logs...")
     if cmd == "demo":
         session_logs = get_session_yamls(glbs.SAMPLE_DATA_DIR)
     else:
@@ -148,56 +190,51 @@ def update(args, cmd):
     project_data = []
     counter_data = []
     project_list = {}
-    if not args.silent:
-        print("[2/5] Enhancing and normalizing data...")
+    logger.info("[2/5] Enhancing and normalizing data...")
     for log in session_logs:
-        try:
-            # Creating Session class from logs
-            climbing_session = Session(log)
-            # Create and maintain a running list of projects
-            # Including a total counter across all Sessions
-            if climbing_session.Projects:
-                for project in climbing_session.Projects:
-                    if project.name in project_list.keys():
-                        updated_total = [
-                            x + y
-                            for x, y in zip(
-                                project_list[project.name].get_counters(),
-                                project.get_counters(),
-                            )
-                        ]
-                        # Remove is_last from the previous project instance
-                        # and assign the new value to the current project
-                        project_list[project.name].set_is_last(False)
-                        project.set_is_last(True)
-                        # Increase the running counters
-                        # and update the project with the current running counter
-                        project.set_total_counter(
-                            updated_total[0],
-                            updated_total[1],
-                            updated_total[3],
-                            updated_total[4],
-                            updated_total[5],
-                            updated_total[6],
+        # Creating Session class from logs
+        climbing_session = Session(log)
+        # Create and maintain a running list of projects
+        # Including a total counter across all Sessions
+        if climbing_session.Projects:
+            for project in climbing_session.Projects:
+                if project.name in project_list.keys():
+                    updated_total = [
+                        x + y
+                        for x, y in zip(
+                            project_list[project.name].get_counters(),
+                            project.get_counters(),
                         )
-                        # del project_list[project.name]
-                        project_list[project.name] = project
-                    # If the project isn't in the running list, add it.
-                    # Total counter is default the same as counter
-                    else:
-                        project.set_is_last(True)
-                        project_list[project.name] = project
-            sessions.append(climbing_session)
+                    ]
+                    # Remove is_last from the previous project instance
+                    # and assign the new value to the current project
+                    project_list[project.name].set_is_last(False)
+                    project.set_is_last(True)
+                    # Increase the running counters
+                    # and update the project with the current running counter
+                    project.set_total_counter(
+                        updated_total[0],
+                        updated_total[1],
+                        updated_total[3],
+                        updated_total[4],
+                        updated_total[5],
+                        updated_total[6],
+                    )
+                    # del project_list[project.name]
+                    project_list[project.name] = project
+                # If the project isn't in the running list, add it.
+                # Total counter is default the same as counter
+                else:
+                    project.set_is_last(True)
+                    project_list[project.name] = project
+        sessions.append(climbing_session)
 
-        except Exception as ex:
-            raise Exception(f"Unable to update '{log}'. {ex}")
     # Loop through the list of Sessions and update the output lists
     for session in sessions:
         session_data.append(session.toDict())
         counter_data.extend(session.getCounters())
         project_data.extend(session.getProjects())
-    if not args.silent:
-        print("[3/5] Writing climbing data to json...")
+    logger.info("[3/5] Writing climbing data to json...")
     common.write_bulk_api(
         session_data,
         os.path.join(
@@ -223,11 +260,9 @@ def update(args, cmd):
         "projects",
     )
     # Importing all data into elasticSearch
-    if not args.silent:
-        print("[4/5] Uploading data into ElasticSearch...")
-    common.upload_to_es(es_url, data_dir, silent=True)
-    if not args.silent:
-        print("[5/5] Visualizations and stats are ready at" f" {kibana_url}/app/home")
+    logger.info("[4/5] Uploading data into ElasticSearch...")
+    common.upload_to_es(es_url, data_dir)
+    logger.info("[5/5] Visualizations and stats are ready at" f" {kibana_url}/app/home")
 
 
 def init(args):
@@ -250,14 +285,16 @@ def init(args):
             except Exception:
                 response = 400
                 pass
+
             if response == 200:
                 waiting = False
             else:
                 if timeout_counter >= 5:
-                    raise Exception(f"Unable to ping Kibana at '{kibana_url}'")
-                print(
+                    logger.error(f"Unable to ping Kibana at '{kibana_url}'")
+                    sys.exit(1)
+                logger.warning(
                     "ElasticSearch and Kibana services are not ready yet,"
-                    " trying again in 60 seconds"
+                    " trying again in 60 seconds..."
                 )
                 sleep(60)
                 timeout_counter += 1
@@ -268,61 +305,40 @@ def init(args):
             es_url,
             index,
             validate.file(os.path.join(glbs.ES_MAPPINGS, f"{index}_mapping.json")),
-            silent=args.silent,
             force=args.force,
         )
-        common.create_index_pattern(
-            kibana_url, index, silent=args.silent, force=args.force
-        )
+        common.create_index_pattern(kibana_url, index, force=args.force)
     # Importing visualizations
     common.import_kibana(
         kibana_url,
         ndjson=common.get_files(glbs.ES_DIR, "visualizations.ndjson").pop(),
-        silent=args.silent,
     )
 
 
+@logger.catch
 def main():
     """Re-route command line arguments to appropriate functions."""
-    try:
-        args = cmd_args.init()
-        cmd = args.command
-        # Command-line Options
-        # Initializing Kibana and ES with mappings and visualizations
-        if cmd == "init":
-            init(args)
-        # Uploading user data into ES
-        if cmd == "update" or cmd == "demo":
-            update(args, cmd)
-        # Exporting Kibana and ES Objects
-        elif cmd == "export":
-            export_files(args)
-        elif cmd == "import":
-            import_files(args)
-        elif cmd == "log":
-            log_session(args)
-
-    except Exception as ex:
-        raise ex
+    args = cmd_args.init()
+    cmd = args.command
+    # Set system out settings
+    if args.silent:
+        logger.remove(1)
+        logger.add(sys.stdout, colorize=True, level="ERROR", format=stdout_fmt)
+    # Command-line Options
+    # Initializing Kibana and ES with mappings and visualizations
+    if cmd == "init":
+        init(args)
+    # Uploading user data into ES
+    if cmd == "update" or cmd == "demo":
+        update(args, cmd)
+    # Exporting Kibana and ES Objects
+    elif cmd == "export":
+        export_files(args)
+    elif cmd == "import":
+        import_files(args)
+    elif cmd == "log":
+        log_session(args)
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    # except KeyboardInterrupt:
-    #     # TODO
-    #     # rollback()
-    #     raise
-    except Exception as ex:
-        # Send an email alert of error if config.py is setup
-        if config.smpt_email and config.smpt_pass and config.to_notify:
-            common.send_email(
-                config.smpt_email,
-                config.smpt_pass,
-                config.to_notify,
-                f"[{str(datetime.now())}] Error in climbr.py",
-                os.path.join(glbs.EMAIL_TEMPLATE_DIR, "error_notification"),
-                "".join(traceback.TracebackException.from_exception(ex).format()),
-                common.get_files(glbs.LOG_DIR, ".*"),
-            )
-        raise ex
+    main()

@@ -4,6 +4,9 @@
 import datetime
 import os
 import re
+import sys
+
+from loguru import logger
 
 
 def date(value):
@@ -20,15 +23,13 @@ def date(value):
     """
     try:
         if type(value) != str:
-            raise TypeError("Excepting string parameter, but got {type(value)} instead")
+            logger.error("Excepting string parameter, but got {type(value)} instead")
+            sys.exit(1)
         datetime.datetime.strptime(value, "%Y-%m-%d")
         return value
     except ValueError:
-        raise ValueError(
-            f"Inappropriate data format for '{value}', expecting YYYY-MM-DD"
-        )
-    except Exception as ex:
-        raise ex
+        logger.error(f"Inappropriate data format for '{value}', expecting YYYY-MM-DD")
+        sys.exit(1)
 
 
 def directory(path):
@@ -42,7 +43,8 @@ def directory(path):
     :rtype: str
     """
     if not os.path.isdir(path):
-        raise IOError(f"'{path}' is not a directory.")
+        logger.error(f"'{path}' is not a directory.")
+        sys.exit(1)
     return path
 
 
@@ -60,7 +62,8 @@ def email(value):
     """
     regex = r"^[a-z0-9]+[\._]?[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$"
     if not re.search(regex, value):
-        raise Exception(f"Invalid email:'{value}'")
+        logger.error(f"Invalid email:'{value}'")
+        sys.exit(1)
     return value
 
 
@@ -75,5 +78,6 @@ def file(path):
     :rtype: str
     """
     if not os.path.isfile(path):
-        raise IOError(f"'{path}' is not a file.")
+        logger.error(f"'{path}' is not a file.")
+        sys.exit(1)
     return path
