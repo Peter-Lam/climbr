@@ -35,7 +35,7 @@ def error_callback(message):
             f"[{str(datetime.now())}] Climbr Error: climbr.py",
             os.path.join(glbs.EMAIL_TEMPLATE_DIR, "error_notification"),
             message,
-            common.get_files(glbs.LOG_DIR, "climbr.log"),
+            common.get_files(glbs.CLI_LOG_DIR, "climbr.log"),
         )
     else:
         logger.info(
@@ -52,7 +52,9 @@ stdout_fmt = "<level>{level: <8}</level><level>{message}</level>"
 logger.add(sys.stdout, colorize=True, level="INFO", format=stdout_fmt)
 # Log file
 logfile_fmt = "[{time:YYYY-MM-DD HH:mm:ss}] {level: <8}\t{message}"
-logger.add(os.path.join(glbs.LOG_DIR, "climbr.log"), level="DEBUG", format=logfile_fmt)
+logger.add(
+    os.path.join(glbs.CLI_LOG_DIR, "climbr.log"), level="DEBUG", format=logfile_fmt
+)
 # Error email handling
 logger.add(error_callback, filter=lambda r: r["level"].name == "ERROR")
 

@@ -9,9 +9,12 @@ import config  # noqa
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG_DIR = os.path.join(BASE_DIR, "logs")
+CLI_LOG_DIR = os.path.join(LOG_DIR, "cli")
+WEB_SCRAPER_LOG_DIR = os.path.join(LOG_DIR, "webscraper")
 IMAGE_LOG_DIR = os.path.join(LOG_DIR, "images")
 COMMON_DIR = os.path.join(BASE_DIR, "common")
 WEB_SCRAPER_DIR = os.path.join(BASE_DIR, "web_scraper")
+WEB_SCRAPER_ENV_DIR = os.path.join(WEB_SCRAPER_DIR, "env")
 DATA_DIR = os.path.join(BASE_DIR, "data")
 INPUT_DIR = os.path.join(DATA_DIR, "input")
 EMAIL_TEMPLATE_DIR = os.path.join(DATA_DIR, "email_templates")
@@ -26,6 +29,10 @@ if not os.path.exists(OUTPUT_DIR):
     os.mkdir(OUTPUT_DIR)
 if not os.path.exists(LOG_DIR):
     os.mkdir(LOG_DIR)
+if not os.path.exists(CLI_LOG_DIR):
+    os.mkdir(CLI_LOG_DIR)
+if not os.path.exists(WEB_SCRAPER_LOG_DIR):
+    os.mkdir(WEB_SCRAPER_LOG_DIR)
     with open("cron.log", "w") as f:
         pass
 if not os.path.exists(IMAGE_LOG_DIR):
@@ -47,7 +54,7 @@ OTTAWA_WEATHER = os.path.join(WEATHER_DIR, "ottawa_weather.csv")
 GATINEAU_WEATHER = os.path.join(WEATHER_DIR, "gatineau_weather.csv")
 WEATHER_URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history"  # noqa
 # Generated ENV File
-BOOKINGS_ENV = os.path.join(WEB_SCRAPER_DIR, "bookings.env")
+BOOKINGS_ENV = os.path.join(WEB_SCRAPER_ENV_DIR, "bookings.env")
 # Paths to default templates for climbing logs
 
 _altitude_kanata = (
