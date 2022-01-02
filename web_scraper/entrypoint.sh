@@ -4,7 +4,8 @@
 echo "Webscraper container has started"
 env > bookings.env
 chmod +x bookings.env
-poetry config virtualenvs.create false
+printenv | grep -v "no_proxy" >> /etc/environment
+# poetry config virtualenvs.create false
 poetry install --no-interaction --no-ansi
 # cron already running from dockerfile
 # Setup cron job

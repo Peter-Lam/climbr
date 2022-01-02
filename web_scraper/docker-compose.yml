@@ -3,6 +3,7 @@ services:
   web_scraper:
     build: ./
     container_name: climbr_bookings
+    network_mode: "host"
     volumes:
       - ../:/workspace/
     # command: cron && tail -f /workspace/logs/cron.log
@@ -11,5 +12,3 @@ services:
       - PYTHONUNBUFFERED=1
       - CLIMBR_EMAIL=${CLIMBR_EMAIL}
       - CLIMBR_PASS=${CLIMBR_PASS}
-
-  

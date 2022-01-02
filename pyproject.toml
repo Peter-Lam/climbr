@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "climbr"
-version = "3.4.1"
+version = "4.0.0"
 description = "A utility that allows users to visualize and highlight their climbing strengths, weaknesses, and trends."
 authors = ["Peter Lam <peter.quach.lam@gmail.com>"]
 license = "MIT"
@@ -21,6 +21,7 @@ elasticsearch = "^7.15.1"
 pytz = "^2021.3"
 timezonefinder = "^5.2.0"
 selenium = "^4.0.0"
+loguru = "^0.5.3"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^21.9b0", allow-prereleases = true}
