@@ -45,7 +45,7 @@ def error_callback(message):
             f"[{str(datetime.now())}] Climbr Error: bookings.py'",
             os.path.join(glbs.EMAIL_TEMPLATE_DIR, "error_notification"),
             message,
-            common.get_files(glbs.LOG_DIR, "web_scraper.log"),
+            common.get_files(glbs.WEB_SCRAPER_LOG_DIR, "web_scraper.log"),
         )
     else:
         logger.info(
@@ -63,7 +63,7 @@ logger.add(sys.stdout, level="INFO", format=stdout_fmt)
 # Log file
 logfile_fmt = "[{time:YYYY-MM-DD HH:mm:ss}] {level: <8}\t{message}"
 logger.add(
-    os.path.join(glbs.LOG_DIR, "web_scraper.log"),
+    os.path.join(glbs.WEB_SCRAPER_LOG_DIR, "web_scraper.log"),
     level="DEBUG",
     format=logfile_fmt,
     rotation="monthly",
@@ -256,9 +256,7 @@ def get_rgpro_bookings(driver, location, capacity, url, zone=None):
             "start_minute": int(common.str_to_time(start).minute),
             "end_time": end,
             "availability": availability,
-            "reserved_spots": reserved_spots
-            if availability is not None
-            else None,
+            "reserved_spots": reserved_spots if availability is not None else None,
             "capacity": capacity,
             "percent_full": ((reserved_spots) / capacity) * 100,
             "zone": zone,
@@ -281,7 +279,7 @@ def get_driver():
     # Setting up chromedriver depending on OS
     webdriver_path = None
     if platform.system() == "Windows":
-        webdriver_path = os.path.join(glbs.WEB_SCRAPER_DIR, "chromedriver.exe")
+        webdriver_path = os.path.join(glbs.WEB_SCRAPER_ENV_DIR, "chromedriver.exe")
     elif platform.system() == "Linux":
         if "DOCKER_SCRAPER" not in os.environ:
             logger.warning(

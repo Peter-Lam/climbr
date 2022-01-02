@@ -36,7 +36,8 @@ services:
       - ./:/workspace/
     depends_on:
       - climbr_kibana
-    command: bash -c "python ./climbr.py init -f && tail -f /workspace/logs/climbr.log"
+    command: bash -c "python ./climbr.py init -f && tail -f
+      /workspace/logs/cli/climbr.log"
     restart: always
 volumes:
   data01:

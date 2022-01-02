@@ -369,7 +369,7 @@ def export_kibana(kibana_url, output, force=False):
         try:
             with open(output, "w") as file:
                 file.write(response.text)
-            logger.info("Successfully exported!")
+            logger.info(f"Successfully exported files to '{output}'")
         except Exception:
             logger.error(
                 f"Unable to write to '{output}'."

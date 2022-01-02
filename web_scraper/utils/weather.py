@@ -36,7 +36,7 @@ def error_callback(message):
             f"[{str(datetime.datetime.now())}] Climbr Error: weather.py",
             os.path.join(glbs.EMAIL_TEMPLATE_DIR, "error_notification"),
             message,
-            common.get_files(glbs.LOG_DIR, "web_scraper.log"),
+            common.get_files(glbs.WEB_SCRAPER_LOG_DIR, "web_scraper.log"),
         )
     else:
         logger.info(
@@ -54,7 +54,7 @@ logger.add(sys.stdout, level="INFO", format=stdout_fmt)
 logfile_fmt = "[{time:YYYY-MM-DD HH:mm:ss}] {level: <8}\t{message}"
 # Log file
 logger.add(
-    os.path.join(glbs.LOG_DIR, "web_scraper.log"),
+    os.path.join(glbs.WEB_SCRAPER_LOG_DIR, "web_scraper.log"),
     level="DEBUG",
     format=logfile_fmt,
     rotation="monthly",
@@ -286,7 +286,7 @@ def update_bookings(bookings, weather_df, city):
                     logger.info(
                         f" [Document ID: {weather_ref.id}]"
                         f" ['{weather_doc['city']}', '{weather_doc['date']}']"
-                        " Successfully updated weather data to Firestore."
+                        "Successfully updated weather data to Firestore."
                     )
                 # Update current booking with weather reference
                 booking_ref = db.collection("bookings").document(booking.id)
@@ -301,7 +301,7 @@ def update_bookings(bookings, weather_df, city):
                         "city": weather_doc["city"],
                     }
                 )
-                logger.info(
+                logger.debug(
                     f"[Document ID: {booking.id}] ['{weather_doc['date']}'] "
                     "Successfully referenced weather data in "
                     "bookings document in Firestore."
@@ -309,6 +309,9 @@ def update_bookings(bookings, weather_df, city):
             else:
                 logger.debug(f"No weather data found for {date}")
                 pass
+        logger.info(
+            "Successfully referenced weather data in bookings document in Firestore."
+        )
 
 
 def import_weather(csv_dir):

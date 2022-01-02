@@ -1,5 +1,4 @@
 # Setup files
-**/env/
 **/__pycache__
 **/.vscode/
 **/dev

@@ -4,7 +4,7 @@ ENV DOCKER=true
 ENV TZ=America/Toronto
 ENV DISPLAY=:99
 ENV DEBIAN_FRONTEND=noninteractive
-RUN mkdir /workspace /workspace/logs/
+RUN mkdir /workspace /workspace/logs/ /workspace/logs/cli/
 WORKDIR /workspace
 COPY /requirements.txt /workspace/requirements.txt
 RUN apt-get -y update \
@@ -12,5 +12,5 @@ RUN apt-get -y update \
     && ln -sf /usr/bin/python3 /usr/bin/python \
     && ln -sf /usr/bin/pip3 /usr/bin/pip \
     && apt-get -y update
-RUN pip install -r /workspace/requirements.txt && touch /workspace/logs/climbr.log
-CMD tail -f /workspace/logs/climbr.log
+RUN pip install -r /workspace/requirements.txt && touch /workspace/logs/cli/climbr.log
+CMD tail -f /workspace/logs/cli/climbr.log
