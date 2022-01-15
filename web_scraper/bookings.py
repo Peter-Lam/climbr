@@ -64,7 +64,7 @@ logger.add(sys.stdout, level="INFO", format=stdout_fmt)
 logfile_fmt = "[{time:YYYY-MM-DD HH:mm:ss}] {level: <8}\t{message}"
 logger.add(
     os.path.join(glbs.WEB_SCRAPER_LOG_DIR, "web_scraper.log"),
-    level="DEBUG",
+    level="INFO",
     format=logfile_fmt,
     rotation="monthly",
 )
