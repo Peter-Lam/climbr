@@ -47,7 +47,7 @@ def init():
     general_option.add_argument(
         "-h", "--help", action="help", help="show this help message and exit"
     )
-    general_option.add_argument("--version", action="version", version="%(prog)s 4.1.0")
+    general_option.add_argument("--version", action="version", version="%(prog)s 4.1.1")
     # Log Command
     log_cmd = subparsers.add_parser(
         "log",

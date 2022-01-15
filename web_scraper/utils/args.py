@@ -17,7 +17,7 @@ def init():
         formatter_class=custom_formatter,
     )
     general_option = parser.add_argument_group("General Options")
-    general_option.add_argument("--version", action="version", version="%(prog)s 4.1.0")
+    general_option.add_argument("--version", action="version", version="%(prog)s 4.1.1")
     parser.add_argument(
         "-l",
         nargs="+",

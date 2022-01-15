@@ -284,8 +284,8 @@ def update_bookings(bookings, weather_df, city):
                     weather_ref = db.collection("weather").document()
                     weather_ref.set(weather_doc)
                     logger.info(
-                        f" [Document ID: {weather_ref.id}]"
-                        f" ['{weather_doc['city']}', '{weather_doc['date']}']"
+                        f"[Document ID: {weather_ref.id}]"
+                        f" ['{weather_doc['city']}', '{weather_doc['date']}'] "
                         "Successfully updated weather data to Firestore."
                     )
                 # Update current booking with weather reference

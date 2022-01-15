@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [4.1.1] [2022-01-15] Minor logging fixes
+
+### Changed
+
+- log level of webscraper
+- crontab (note as of Jan 14th, all local gyms are closed again)
+
+### Fixed
+
+- log output format for weather.py
 
 ## [4.1.0] [2022-01-02] Webscraper directory clean up
 
