@@ -26,7 +26,7 @@ def error_callback(message):
     if config.smpt_email and config.smpt_pass and config.to_notify:
         logger.info(
             "An error has occured in climbr, "
-            f"attempting to send notification to '{config.to_notify}'"
+            f"attempting to send notification to: {config.to_notify}"
         )
         common.send_email(
             config.smpt_email,

@@ -42,7 +42,7 @@ def error_callback(message):
             config.smpt_email,
             config.smpt_pass,
             config.to_notify,
-            f"[{str(datetime.now())}] Climbr Error: bookings.py'",
+            f"[{str(datetime.now())}] Climbr Error: bookings.py",
             os.path.join(glbs.EMAIL_TEMPLATE_DIR, "error_notification"),
             message,
             common.get_files(glbs.WEB_SCRAPER_LOG_DIR, "web_scraper.log"),

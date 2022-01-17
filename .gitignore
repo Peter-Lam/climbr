@@ -11,6 +11,7 @@ poetry.lock
 data/input/*.yaml
 data/input/training/*.yaml
 data/output/*
+data/elasticsearch/data/*
 data/elasticsearch/bulk_data/*_demo.json
 data/elasticsearch/bulk_data/counters.json
 data/elasticsearch/bulk_data/projects.json

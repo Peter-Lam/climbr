@@ -26,12 +26,14 @@
         "snow_depth": {"type":"integer"},
         "wind_speed": {"type":"integer"},
         "wind_gust": {"type":"integer"},
+        "percent_full": {"type":"integer"},
         "visibility": {"type":"integer"},
         "cloud_cover":{"type":"integer"},
         "relative_humidity": {"type":"integer"},
         "conditions": {"type":"keyword"},
         "datetimestr": {"type":"date"},
-        "weather_type": {"type":"keyword"}
+        "weather_type": {"type":"keyword"},
+        "zone": {"type":"keyword"}
         }
     }
 }

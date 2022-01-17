@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.3.0] [2022-01-16] Restructuring Dockerfiles & docker-compose
+
+### Added
+
+- local ES isntance directory to .gitignore
+- global variables for docker dir
+
+### Changed
+
+- dockefile for climbr_cli
+  - Now located: /docker/cli/dockerfile
+  - Updated to use poetry
+- dockerfile & env variables for climbr_bookings
+  - Now located: /docker/webscraper/dockerfile
+- climbr_bookings moved to /docker-compose.yml
+  - to enable container creation use "docker-compose up -d --build --profile webscraper" or "docker-compose up -d --build climbr_bookings"
+- docker-compose scripts moved to /scripts
+  - Added webscraper specific scripts since this is restarted the most
+- dockercompose to properly mount local ES instance
+- crontab since no gyms are currently open
+- minor log formatting in climbr.py
+- readme.md with updated instructions and images
+
+### Fixed
+
+- climbr cli dockerfile
+- index mapping for boookings
+
 ## [4.2.0] [2022-01-16] Nox workflow added to Github Actions
 
 ### Added

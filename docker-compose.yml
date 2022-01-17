@@ -14,7 +14,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - data01:/usr/share/elasticsearch/data
+      - ./data/elasticsearch/data:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
     restart: always
@@ -30,15 +30,28 @@ services:
       - climbr_es
     restart: always
   climbr_cli:
-    build: ./
+    build: ./docker/cli
     container_name: climbr_cli
     volumes:
       - ./:/workspace/
     depends_on:
       - climbr_kibana
-    command: bash -c "python ./climbr.py init -f && tail -f
-      /workspace/logs/cli/climbr.log"
     restart: always
+  climbr_bookings:
+    build:
+      context: .
+      dockerfile: ./docker/webscraper/dockerfile
+    container_name: climbr_bookings
+    network_mode: "host"
+    volumes:
+      - ./:/workspace/
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CLIMBR_EMAIL=${CLIMBR_EMAIL}
+      - CLIMBR_PASS=${CLIMBR_PASS}
+    profiles:
+      - webscraper
 volumes:
   data01:
     driver: local

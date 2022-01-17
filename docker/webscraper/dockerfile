@@ -23,8 +23,8 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip \
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/bin/
 # Setup cron job
-COPY /env/crontab /etc/cron.d/simple-cron
+COPY ./docker/webscraper/crontab /etc/cron.d/simple-cron
 RUN chmod 0644 /etc/cron.d/simple-cron && crontab /etc/cron.d/simple-cron && touch /workspace/logs/webscraper/cron.log
 # Start cron and keep running
 # CMD cron && tail -f /workspace/logs/cron.log
-ENTRYPOINT ["/bin/bash", "./env/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "../docker/webscraper/entrypoint.sh"]
