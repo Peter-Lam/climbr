@@ -8,6 +8,9 @@ sys.path.append(BASE_DIR)
 import config  # noqa
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOCKER_DIR = os.path.join(BASE_DIR, "docker")
+CLI_DOCKER_DIR = os.path.join(DOCKER_DIR, "cli")
+WEB_SCRAPER_DOCKER_DIR = os.path.join(DOCKER_DIR, "webscraper")
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 CLI_LOG_DIR = os.path.join(LOG_DIR, "cli")
 WEB_SCRAPER_LOG_DIR = os.path.join(LOG_DIR, "webscraper")
@@ -54,7 +57,7 @@ OTTAWA_WEATHER = os.path.join(WEATHER_DIR, "ottawa_weather.csv")
 GATINEAU_WEATHER = os.path.join(WEATHER_DIR, "gatineau_weather.csv")
 WEATHER_URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history"  # noqa
 # Generated ENV File
-BOOKINGS_ENV = os.path.join(WEB_SCRAPER_ENV_DIR, "bookings.env")
+BOOKINGS_ENV = os.path.join(WEB_SCRAPER_DOCKER_DIR, "bookings.env")
 # Paths to default templates for climbing logs
 
 _altitude_kanata = (
